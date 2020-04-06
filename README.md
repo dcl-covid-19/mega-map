@@ -1,2 +1,1 @@
-# smart-thermometers
-Smart thermometers
+# Smart thermometers
