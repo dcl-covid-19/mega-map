@@ -1,1 +1,1 @@
-# Smart thermometers
+# Bay Area resource map
