@@ -111,6 +111,24 @@ process_hours <- function(day_hour, senior = FALSE) {
 
 ```
 
+#Phone number regex
+
+```{r}
+phone <- "[0-9]{3})[- .]([0-9]{3})[- .]([0-9]{4})"
+
+
+# test <- retailers %>% 
+#   mutate(phone_test = str_extract_all(Phone, "[0-9]+") %>% str_c(collapse = " ")) 
+# 
+# test$phone_test
+
+retailers %>% 
+  mutate(phone_test = str_remove_all(Phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1)\\2-\\3")) %>% 
+  select(phone_test)
+
+```
+
+
 ## Format retailers
 
 ```{r}
@@ -126,7 +144,7 @@ retailers <-
          address = Address,
          city = City,
          state = 'CA',
-         zip = '',
+         zip = as.numeric(Zip),
          lat = Latitude,
          lon =  map_dbl(Longitude, function(x) {
            l <- x[[1]]
@@ -137,7 +155,9 @@ retailers <-
              }
            }
            ),
-         contact = Phone,
+         contact = 
+           str_remove_all( Phone, "[^\\d]") %>%
+           str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1)\\2-\\3"), 
          call_in_advance = 0,
          email = '',
          cuisine = '',
@@ -153,18 +173,19 @@ retailers <-
          special_hours = (!is.na(senior_hours)) %>% as.numeric(),
          order_online = (!is.na(online_ordering)) %>% as.numeric(),
          pay_online = 0,
-         must_preorder = 0,
-) %>% 
-  bind_cols(retailers$days_hours %>% 
-              map_dfr(process_hours, senior = F)) %>% 
-  bind_cols(retailers$senior_hours %>% 
+         must_preorder = 0) %>%
+  bind_cols(retailers$days_hours %>%
+              map_dfr(process_hours, senior = F)) %>%
+  bind_cols(retailers$senior_hours %>%
                map_dfr(process_hours, senior = T))
 
 
-# TODO: zipcode
-# TODO: clean up phone numbers (some have text)
-# TODO: missing columns?
+# TODO: zipcode #done 
+# TODO: clean up phone numbers (some have text) #done 
+# TODO: missing columns?  
 # TODO: manually inspect final table
+
+view(retailers)
 
 ```
 
