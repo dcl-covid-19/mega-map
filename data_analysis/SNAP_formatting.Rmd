@@ -46,36 +46,36 @@ process_hours <- function(day_hour, senior = FALSE) {
   
   try({
     out <- rep("0", 7)
-  
-  for (dt in str_split(day_hour, '\\n') %>% unlist()) {
     
-    d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
-    t <- str_split(dt, ': ') %>% unlist() %>% .[2]
-    
-    # day range
-    if (str_detect(d, '-')) {
-      start = str_split(d, ' - ') %>% unlist() %>% .[1]
-      end = str_split(d, ' - ') %>% unlist() %>% .[2]
-  
+    for (dt in str_split(day_hour, '\\n') %>% unlist()) {
       
-      if (str_ends(start, 's')) {
-        start <- str_sub(start, 1, -2)
-      }
-      if (str_ends(end, 's')) {
-        end <- str_sub(end, 1, -2)
-      }
-      start_i = match(start, days_long)
-      end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
+      d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
+      t <- str_split(dt, ': ') %>% unlist() %>% .[2]
       
-      for (i in seq(start_i, end_i)) {
-        if (i > 7) {
-            out[i %% 7] = t
-        } else {
-            out[i] = t
+      # day range
+      if (str_detect(d, '-')) {
+        start = str_split(d, ' - ') %>% unlist() %>% .[1]
+        end = str_split(d, ' - ') %>% unlist() %>% .[2]
+        
+        
+        if (str_ends(start, 's')) {
+          start <- str_sub(start, 1, -2)
         }
-      }
-    # multiple, non contiguous days
-    } else if (str_detect(d, ', ')) {
+        if (str_ends(end, 's')) {
+          end <- str_sub(end, 1, -2)
+        }
+        start_i = match(start, days_long)
+        end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
+        
+        for (i in seq(start_i, end_i)) {
+          if (i > 7) {
+            out[i %% 7] = t
+          } else {
+            out[i] = t
+          }
+        }
+        # multiple, non contiguous days
+      } else if (str_detect(d, ', ')) {
         for (single_d in str_split(d, ', ') %>% unlist()) {
           if (str_ends(single_d, 's')) {
             single_d <- str_sub(single_d, 1, -2)
@@ -83,23 +83,23 @@ process_hours <- function(day_hour, senior = FALSE) {
           start_i = match(single_d, days_long)
           out[start_i] = t
         }
-    # single day
-    } else {
-      if (str_ends(d, 's')) {
-        d <- str_sub(d, 1, -2)
+        # single day
+      } else {
+        if (str_ends(d, 's')) {
+          d <- str_sub(d, 1, -2)
+        }
+        start_i = match(d, days_long)
+        
+        if (is.na(start_i)) {
+          stop()
+        }
+        out[start_i] = t
       }
-      start_i = match(d, days_long)
-      
-      if (is.na(start_i)) {
-        stop()
-      }
-      out[start_i] = t
     }
-  }
-  
-  out <- str_to_upper(out)
-  names(out) <- days_col[1:7]
-  return(out %>% as_tibble_row())
+    
+    out <- str_to_upper(out)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
     
   }, silent = T)
   
@@ -115,7 +115,6 @@ process_hours <- function(day_hour, senior = FALSE) {
 #Phone number regex
 
 ```{r}
-phone <- "[0-9]{3})[- .]([0-9]{3})[- .]([0-9]{4})"
 
 
 # test <- retailers %>% 
@@ -135,50 +134,69 @@ retailers %>%
 ```{r}
 retailers <- 
   retailers %>% 
-  mutate(SNAP = str_detect(Type, 'SNAP') %>%  as.integer(),
-         WIC = str_detect(Type, 'WIC') %>%  as.integer(),
-         region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
-         resource = 'grocery',
-         free = 0,
-         provider_name = Name,
-         provider_addloc = '',
-         address = Address,
-         city = City,
-         state = 'CA',
-         zip = as.numeric(Zip),
-         lat = Latitude,
-         lon =  map_dbl(Longitude, function(x) {
-           l <- x[[1]]
-           if (is.null(l)) {
-             return( NA_real_)
-             } else {
-               return(l)
-             }
-           }
-           ),
-         contact = 
-           str_remove_all( Phone, "[^\\d]") %>%
-           str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
-         call_in_advance = 0,
-         email = '',
-         cuisine = '',
-         instructions = 'EBT at register',
-         offers = '',
-         notes = notes,
-         web_link = web_link,
-         twitter = '',
-         instagram = '',
-         facebook = facebook,
-         local = 0,
-         status = if_else(str_detect(days_hours, 'CLOSED'), 0, 1),
-         special_hours = (!is.na(senior_hours)) %>% as.numeric(),
-         order_online = (!is.na(online_ordering)) %>% as.numeric(),
-         pay_online = 0,
-         must_preorder = 0) %>%
-  bind_cols(retailers$days_hours %>%
-              map_dfr(process_hours, senior = F)) %>%
+  transmute(
+    SNAP = str_detect(Type, 'SNAP') %>%  as.integer(),
+    WIC = str_detect(Type, 'WIC') %>%  as.integer(),
+    region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
+    resource = 'grocery',
+    free = 0,
+    provider_name = Name,
+    provider_addloc = '',
+    address = Address,
+    city = City,
+    state = 'CA',
+    zip = as.numeric(Zip),
+    lat = Latitude,
+    lon =  map_dbl(Longitude, function(x) {
+      l <- x[[1]]
+      if (is.null(l)) {
+        return( NA_real_)
+      } else {
+        return(l)
+      }
+    }
+    ),
+    contact = 
+      str_remove_all( Phone, "[^\\d]") %>%
+      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
+    call_in_advance = 0,
+    email = '',
+    cuisine = '',
+    instructions = 'EBT at register',
+    offers = '',
+    notes = notes,
+    web_link = web_link,
+    twitter = '',
+    instagram = '',
+    facebook = facebook,
+    local = 0,
+    status = if_else(str_detect(days_hours, 'CLOSED'), 0, 1),
+    special_hours = (!is.na(senior_hours)) %>% as.numeric(),
+    order_online = (!is.na(online_ordering)) %>% as.numeric(),
+    pay_online = if_else(!is.na(online_ordering), 1, 0),
+    must_preorder = 0, 
+    `in-store` = 0,       #I want to make this an underscore
+    `in-store_pickup` = 0,      #I want to make this an underscore
+    curbside = if_else(!is.na(curbside_pickup), 1, 0),
+    drive_thru = 0 
+    delivery = if_else(!is.na(delivery), 1, 0), 
+    `farm_pick-up` = 0,
+    farmers_market = str_detect(Type, 'farmers') %>%  as.integer(),   
+    business_closed = 0,
+    discount_medical = 0,
+    meal_student = 0,
+    meal_public = 0,
+    family_meal = 0,
+    free_produce	= 0,
+    free_groceries	= 0,
+    quality_check_complete = 0,   #Not sure what to do for this one 
+    last_update = date_verified,
+    updated_by = verified_by
+  ) %>%
+         bind_cols(retailers$days_hours %>%
+               map_dfr(process_hours, senior = F)) %>%
   bind_cols(retailers$senior_hours %>%
-               map_dfr(process_hours, senior = T))
+              map_dfr(process_hours, senior = T))
 
 
 # TODO: zipcode #done 
