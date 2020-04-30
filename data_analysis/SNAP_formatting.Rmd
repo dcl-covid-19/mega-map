@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(googlesheets4)
 library(lubridate)
 library(tidyverse)
+
 ```
 
 ## Load data
@@ -28,7 +29,7 @@ process_hours <- function(day_hour, senior = FALSE) {
   
   days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
   days_col_normal <- c("mon", "tues", "wed", "thr", "fri", "sat", "sun", "mon", "tues", "wed", "thr", "fri", "sat", "sun")
-  days_col_senior <- str_c("sp_", days_col)
+  days_col_senior <- str_c("sp_", days_col_normal)
   
   if (senior) {
     days_col <- days_col_senior
@@ -100,7 +101,7 @@ process_hours <- function(day_hour, senior = FALSE) {
   names(out) <- days_col[1:7]
   return(out %>% as_tibble_row())
     
-  })
+  }, silent = T)
   
   out <- rep(day_hour, 7)
   names(out) <- days_col[1:7]
@@ -123,7 +124,7 @@ phone <- "[0-9]{3})[- .]([0-9]{3})[- .]([0-9]{4})"
 # test$phone_test
 
 retailers %>% 
-  mutate(phone_test = str_remove_all(Phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1)\\2-\\3")) %>% 
+  mutate(phone_test = str_remove_all(Phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3")) %>% 
   select(phone_test)
 
 ```
@@ -157,7 +158,7 @@ retailers <-
            ),
          contact = 
            str_remove_all( Phone, "[^\\d]") %>%
-           str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1)\\2-\\3"), 
+           str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
          call_in_advance = 0,
          email = '',
          cuisine = '',
