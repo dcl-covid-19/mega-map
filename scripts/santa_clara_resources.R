@@ -55,5 +55,5 @@ data <-
   ) %>% 
   map_chr("url") %>% 
   map(arcgis_data) %>% 
-  walk2(names(.), ~ write_rds(.x, path(dir_data, .y, ext = "csv")))
+  walk2(names(.), ~ write_rds(.x, path(dir_data, .y, ext = "rds")))
 
