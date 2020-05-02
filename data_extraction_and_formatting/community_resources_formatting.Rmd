@@ -5,6 +5,11 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("googledrive")
+#devtools::install_github("tidyverse/googlesheets4")
+#install.packages("tidyverse")
+library(googledrive)
 library(googlesheets4)
 library(lubridate)
 library(tidyverse)
@@ -18,7 +23,7 @@ library(tidyverse)
 key <- '11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM'
 com_resources <- 
   read_sheet(key) %>% 
-  filter(!is.na(Type)) # removes rows without a Type
+  filter(!is.na(Type), str_detect(Type, "Groceries|Meal"), status == "Open") # removes rows without a Type
 ```
 
 ## Function to process open hours
@@ -116,6 +121,22 @@ process_hours <- function(day_hour, senior = FALSE) {
 
 ```{r}
 
+#Recode Parameters 
+
+yes_no_recode <- 
+  c(
+    "Yes" = 1,
+    "No" = 0,
+    .default = NA
+  )
+
+status_recode <- 
+  c(
+    "Open" = 1,
+    "Closed" = 0,
+    .default = NA
+  )
+
 
 # test <- retailers %>% 
 #   mutate(phone_test = str_extract_all(Phone, "[0-9]+") %>% str_c(collapse = " ")) 
@@ -140,32 +161,34 @@ com_resources_formatted <-
               "bay_area",
               str_to_lower(county) %>%
                 str_replace_all(' ', '_') %>% str_c(., '_county')),
-    resource = Type, 
-    free = "1", #This needs to be changed
+    resource = str_to_lower(Type), 
+    free = Free, #This needs to be changed
     provider_name = flatten_chr(`Provider Name`),
     provider_addloc = `Provider Site`,
-    address = if_else(location != "Call Number", location, NA_character_),
+    address =  if_else(location != "Call Number", str_extract(location, "^(.+?),"), NA_character_),
     city = if_else(location != "Call Number", str_extract(location, "(?<=\\, )\\b.*\\b(?=,)"), NA_character_),
     state = 'CA',
-    zip = 0,
+    zip = if_else(location != "Call Number", str_extract(location, "(\\d+)[^\\d]*$"), NA_character_),
     lat = NA_character_,
     lon =  NA_character_,
-    contact = 
-      str_remove_all( Phone, "[^\\d]") %>%
-      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
-    call_in_advance = `Call in Advance`,
+    contact = if_else(str_detect(Phone, "ext|;") == TRUE, 
+                      Phone, 
+                      str_remove_all( Phone, "[^\\d]") %>%
+                        str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3")
+              ), 
+    call_in_advance = recode(`Call in Advance`, !!! yes_no_recode),
     email = '',
-    instructions = "",
-    notes = notes,
+    instructions = notes,
+    #notes = notes,
     web_link = links_english,
-    status = status,
-    public = 0,
-    seniors = 0,
-    children = 0,
-    homeless = 0,
-    clients = 0, 
-    uninsured = 0, 
-    residents = 0, 
+    status = recode(status, !!! status_recode),
+    public = if_else(str_detect(eligibility, "Public") == TRUE, 1, 0),
+    seniors = if_else(str_detect(eligibility, "Seniors") == TRUE, 1, 0),
+    children = if_else(str_detect(eligibility, "Children") == TRUE, 1, 0),
+    homeless = if_else(str_detect(eligibility, "Homeless") == TRUE, 1, 0),
+    clients = if_else(str_detect(eligibility, "Clients") == TRUE, 1, 0), 
+    uninsured = if_else(str_detect(eligibility, "Uninsured") == TRUE, 1, 0), 
+    residents = if_else(str_detect(eligibility, "Residents") == TRUE, 1, 0), 
     quality_check_complete = 0,   #Not sure what to do for this one 
     last_update = date_verified, 
     updated_by = verified_by,
@@ -173,23 +196,40 @@ com_resources_formatted <-
     week_2 = "",
     week_3 = "",
     week_4 = "",
-    week_5 = ""
+    week_5 = "",
+    mon = "",         #the process hours fxn is breaking so i added these in 
+    tues = "",
+    wed = "",
+    thr = "",
+    fri = "",
+    sat = "",
+    sun = "",
   ) %>%
-         bind_cols(com_resources$days_hours %>%
-               map_dfr(process_hours, senior = F)) %>%
+  # bind_cols(com_resources$days_hours %>%
+  #             map_dfr(process_hours)) %>%
   # bind_cols(retailers$senior_hours %>%
   #             map_dfr(process_hours, senior = T)) %>% 
   select(region,	resource,	free,	provider_name,	provider_addloc,	address,	city,	state,	zip,	lat,	lon,	contact,	call_in_advance,	email,	instructions,	web_link,	status,	mon,	tues,	wed,	thr,	fri,	sat,	sun,	public,	seniors,	children,	homeless,	clients,	uninsured,	residents,	quality_check_complete,	last_update,	updated_by,	week_1,	week_2,	week_3,	week_4,	week_5)
 
+#to do: resource - str_to_lowercase #Done
+#free to free #done
+#make sure does not pull "Call Number"  #done
+# deal with extensions in phone numbers #done 
+#instructions should pull from notes #done 
+#filter status = open  #done 
+#Eligibility reads and then populates a 1 in respective column #done
 
-
+# 
+# 
+# com_resources_formatted %>% 
+#   write_sheet(
+#     ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "com_resources_test"
+#     ) 
 
 com_resources_formatted %>% 
   write_csv("community_data_formatted.csv", na = "")
 
 ```
-
-
 
 
 
