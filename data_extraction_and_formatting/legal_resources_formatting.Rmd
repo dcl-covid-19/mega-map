@@ -148,11 +148,17 @@ legal_resources_template <-
   ) %>% 
   unite(legal_type, c(`Housing & Homelessness`, `Employment & Worker Protections`, Healthcare, Immigration, Criminal, `Domestic Violence`, Contracts), na.rm = TRUE, sep = ", ")
 
-legal_resources_template$legal_type
+
+
+#To do: Add in the da
+
+
+
+#legal_resources_template$legal_type
 ```
 ```{r}
-legal_resources_template %>% 
-  write_csv("legal_data_template.csv", na = "")
+# legal_resources_template %>% 
+#   write_csv("legal_data_template.csv", na = "")
 ```
 
 
@@ -200,6 +206,8 @@ Contracts`,
     updated_by = `Who updated the row`
   )
 
+#To do: Add days hours 
+#
 
 
 ```
