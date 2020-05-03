@@ -1,0 +1,328 @@
+---
+title: "School Map data formatting"
+author: 
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+library(googlesheets4)
+library(lubridate)
+
+# Parameters
+
+school_meal_key <- "1hAXM1ImpWsQWF12WWY9pMCUKgQBFBmvbR4zm6QhLtws"
+school_meal_private <- "1fea1BSSAhbSB0HLsatDaD8wxmwsF7ezQjNvjRK-QJQI"
+date <- Sys.Date()
+
+csv_out <- here::here(str_glue("mega-map/data/school_meals_out_{date}.csv"))
+#===============================================================================
+
+
+```
+
+## Load the data
+
+```{r}
+
+schools <- 
+  read_sheet(
+    school_meal_private, 
+    col_types = "ccccddiccccccccccccDDcccccDDccccc"
+  ) %>% 
+  mutate(
+    days_of_week = na_if(days_of_week, "N/A")
+  ) %>% 
+  drop_na(open_hour, close_hour)
+
+schools
+
+
+```
+
+
+## Function to process open hours
+
+
+```{r}
+
+process_hours <- function(day_of_week, open_hour, close_hour) {
+  
+  days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+  days_col <- c("mon", "tues", "wed", "thr", "fri", "sat", "sun", "mon", "tues", "wed", "thr", "fri", "sat", "sun")
+  
+  
+  if (is.na(day_of_week)) {
+    out <- rep("0", 7)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+  }
+  
+  else {
+    out <- rep("0", 7)
+    
+    # for (d in days_of_week) {
+    
+    t = str_c(open_hour, " - ", close_hour)
+    
+    # day range
+      # All weekdays
+    if (str_detect(day_of_week, "Weekdays")) {
+      
+      for (i in seq(1, 5)) {
+        out[i] = t
+      }
+      # multiple, non contiguous days
+    } else if (str_detect(day_of_week, '-')) {
+      start = str_split(day_of_week, ' - ') %>% unlist() %>% .[1]
+      end = str_split(day_of_week, ' - ') %>% unlist() %>% .[2]
+      
+      
+      if (str_ends(start, 's')) {
+        start <- str_sub(start, 1, -2)
+      }
+      if (str_ends(end, 's')) {
+        end <- str_sub(end, 1, -2)
+      }
+      start_i = match(start, days_long)
+      end_i = match(end, days_long[start_i:length(days_long)]) + start_i - 1
+      
+      for (i in seq(start_i, end_i)) {
+        if (i > 7) {
+          out[i %% 7] = t
+        } else {
+          out[i] = t
+        }
+      }
+      # multiple, non contiguous days
+    } else if (str_detect(day_of_week, "through")) {
+      
+      start = str_split(day_of_week, ' through ') %>% unlist() %>% .[1]
+      end = str_split(day_of_week, ' through ') %>% unlist() %>% .[2]
+      
+      
+      if (str_ends(start, 's')) {
+        start <- str_sub(start, 1, -2)
+      }
+      if (str_ends(end, 's')) {
+        end <- str_sub(end, 1, -2)
+      }
+      start_i = match(start, days_long)
+      end_i = match(end, days_long[start_i:length(days_long)]) + start_i - 1
+      
+      for (i in seq(start_i, end_i)) {
+        if (i > 7) {
+          out[i %% 7] = t
+        } else {
+          out[i] = t
+        }
+      }
+      
+    }
+    
+    else if (str_detect(day_of_week, ', ')) {
+      for (single_d in str_split(day_of_week, ', ') %>% unlist()) {
+        if (str_ends(single_d, 's')) {
+          single_d <- str_sub(single_d, 1, -2)
+        }
+        start_i = match(single_d, days_long)
+        out[start_i] = t
+      }
+      # single day
+    } else {
+      if (str_ends(day_of_week, 's')) {
+        day_of_week <- str_sub(d, 1, -2)
+      }
+      start_i = match(day_of_week, days_long)
+      
+      if (is.na(start_i)) {
+        stop()
+      }
+      out[start_i] = t
+    }
+    
+    
+    out <- str_to_upper(out)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+    
+  }
+  
+  out <- rep(days_of_week, 7)
+  names(out) <- days_col[1:7]
+  return(out %>% as_tibble_row())
+  
+}
+
+```
+
+### Testing function
+
+```{r}
+# 
+# mapped_schools <- 
+#   pmap_dfr(
+#     .l = list(schools$days_of_week, schools$open_hour, schools$close_hour), 
+#     .f = process_hours
+#   )
+# 
+# days <- schools$days_of_week[1:20]
+# opens <- schools$open_hour[1:20]
+# closes <- schools$close_hour[1:20]
+# 
+# pmap_dfr(list(days, opens, closes), process_hours)
+
+```
+
+### Create a Null senior hours 
+
+```{r}
+
+
+add_senior_hours <- function(row) {
+  days_col_senior <- c("sp_mon", "sp_tues", "sp_wed", "sp_thr", "sp_fri", "sp_sat", "sp_sun")
+  out_sp <- rep(0, 7)
+  names(out_sp) <- days_col_senior[1:7]
+  return(out_sp %>% as_tibble_row())
+}
+
+
+```
+
+
+## Contact extraction
+
+```{r}
+
+schools %>% 
+  mutate(
+    phone_test = if_else(
+      str_detect(phone, "\\(?(\\d{3})[). -]?(\\d{3})[. -]?(\\d{4})"),
+      str_remove_all(phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"),
+      NA_character_
+    )
+  ) %>% 
+  select(phone_test)
+      
+
+```
+
+## Transform Data
+
+```{r}
+
+output_schools <- 
+  schools %>% 
+  transmute(
+    SNAP = 0,
+    WIC = 0,
+    region = county %>% str_to_lower() %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
+    resource = 'meal',
+    free = 1,
+    provider_name = provider_name,
+    provider_addloc = site_name,
+    address = address,
+    city = city,
+    state = 'CA',
+    zip = as.numeric(zip),
+    lat = lat,
+    lon = long,
+    contact = 
+      str_remove_all(phone, "[^\\d]") %>%
+      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
+    call_in_advance = 0,
+    email = email,
+    cuisine = '',
+    instructions = '',
+    offers = '',
+    notes = notes,
+    web_link = source,
+    twitter = '',
+    instagram = '',
+    facebook = '',
+    local = 0,
+    status = 1, # Assume all are open
+    special_hours = 0,
+    order_online = 0,
+    pay_online = 0,
+    must_preorder = 0, 
+    in_store = 0,       # Maeva: I want to make this an underscore
+    in_store_pickup = 0,      #Maeva: I want to make this an underscore
+    curbside = 0, # To add later
+    drive_thru = 0,
+    delivery = ifelse(address == "Delivery", 1, 0), 
+    farm_pickup = 0,
+    farmers_market = 0,   
+    business_closed = 0,
+    discount_medical = 0,
+    meal_student = 1,
+    meal_public = 0,
+    meal_senior = 0,
+    family_meal = 0,
+    free_produce	= 0,
+    free_groceries	= 0,
+    public = 0,
+    seniors = 0, 
+    children = 1,
+    homeless = 0,
+    clients = 0,
+    uninsured = 0,
+    residents = if_else(eligible_ages == "any child 18 and younger", 0, 1),
+    ebt_online = 0,
+    ebt_phone = 0,
+    quality_check_complete = 0,   #Not sure what to do for this one 
+    last_update = map(schools$date_verified, 
+                      function(d) {
+                          d_verified <- d[[1]]
+                          if (is.null(d_verified) || as.character(d_verified) == 'X') {
+                            d_verified <- NA_Date_
+                            } 
+                          return(as.Date(d_verified))
+                          }) %>% 
+                          simplify() %>% 
+                          as.Date(origin = origin),
+    updated_by = '',
+    week_1 = "",
+    week_2 = "",
+    week_3 = "",
+    week_4 = "",
+    week_5 = ""
+  ) %>%
+  bind_cols(pmap_dfr(list(schools$days_of_week, schools$open_hour, schools$close_hour), process_hours)) %>% 
+  bind_cols(map_dfr(.x = schools$days_of_week, .f = add_senior_hours)) %>% 
+  select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
+         call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
+         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
+         special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
+         delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
+         meal_public, family_meal, free_produce, free_groceries, public, seniors, children, homeless, clients, uninsured, residents, ebt_online, ebt_phone, quality_check_complete, last_update, updated_by,
+         week_1, week_2, week_3, week_4, week_5, SNAP, WIC) %>% 
+  filter(address != "Closed") 
+
+output_schools
+
+```
+
+
+```{r}
+
+# Write to CSV
+output_schools %>% 
+  write_csv(csv_out)
+
+# Write to Google sheet
+output_schools %>%
+  write_sheet(ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "school_meal_data")
+  
+
+
+```
+
