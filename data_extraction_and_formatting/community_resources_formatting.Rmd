@@ -211,6 +211,13 @@ com_resources_formatted <-
   #             map_dfr(process_hours, senior = T)) %>% 
   select(region,	resource,	free,	provider_name,	provider_addloc,	address,	city,	state,	zip,	lat,	lon,	contact,	call_in_advance,	email,	instructions,	web_link,	status,	mon,	tues,	wed,	thr,	fri,	sat,	sun,	public,	seniors,	children,	homeless,	clients,	uninsured,	residents,	quality_check_complete,	last_update,	updated_by,	week_1,	week_2,	week_3,	week_4,	week_5)
 
+#to do: resource - str_to_lowercase #Done
+#free to free #done
+#make sure does not pull "Call Number"  #done
+# deal with extensions in phone numbers #done 
+#instructions should pull from notes #done 
+#filter status = open  #done 
+#Eligibility reads and then populates a 1 in respective column #done
 
 # 
 # 
