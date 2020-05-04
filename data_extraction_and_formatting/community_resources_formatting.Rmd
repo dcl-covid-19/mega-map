@@ -14,16 +14,21 @@ library(googlesheets4)
 library(lubridate)
 library(tidyverse)
 
+date <- Sys.Date()
+key <- '11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM'
+csv_out <- "com_resources.csv"
+
 ```
 
 ## Load data
 
 ```{r}
 #  SNAP retailer sheet - copy, to not mess the original
-key <- '11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM'
 com_resources <- 
-  read_sheet(key) %>% 
+  read_sheet(key, col_types = "ccccccddcccdccccccccccDccccc") %>%
   filter(!is.na(Type), str_detect(Type, "Groceries|Meal"), status == "Open") # removes rows without a Type
+
+com_resources
 ```
 
 ## Function to process open hours
@@ -117,6 +122,15 @@ process_hours <- function(day_hour, senior = FALSE) {
 
 ```
 
+## Test process_hours
+
+```{r}
+
+process_hours(com_resources$days_hours)
+
+```
+
+
 #Phone number regex
 
 ```{r}
@@ -153,42 +167,73 @@ status_recode <-
 ## Format retailers
 
 ```{r}
-com_resources_formatted <- 
+output_com_resources <- 
   com_resources %>% 
-  mutate(
+  transmute(
+    SNAP = 0,
+    WIC = 0,
     region = 
       if_else(str_detect(county, "Bay Area") == TRUE,
               "bay_area",
               str_to_lower(county) %>%
                 str_replace_all(' ', '_') %>% str_c(., '_county')),
     resource = str_to_lower(Type), 
-    free = Free, #This needs to be changed
+    free = 1,  
     provider_name = flatten_chr(`Provider Name`),
-    provider_addloc = `Provider Site`,
-    address =  if_else(location != "Call Number", str_extract(location, "^(.+?),"), NA_character_),
-    city = if_else(location != "Call Number", str_extract(location, "(?<=\\, )\\b.*\\b(?=,)"), NA_character_),
+    provider_addloc = `Provider Site` %>% replace_na(""),
+    address =  if_else(location != "Call Number", str_extract(location, "^([^,])+"), ""),
+    city = if_else(location != "Call Number", str_extract(location, "(?<=\\, )\\b.*\\b(?=,)"), "") %>% replace_na(""),
     state = 'CA',
-    zip = if_else(location != "Call Number", str_extract(location, "(\\d+)[^\\d]*$"), NA_character_),
-    lat = NA_character_,
-    lon =  NA_character_,
+    zip = if_else(location != "Call Number", str_extract(location, "(\\d+)[^\\d]*$"), ""), 
+    zip = if_else(str_detect(zip, "9") == TRUE, zip, ""),  #there is a way to make this more eloquent
+    lat = 0,
+    lon = 0,
     contact = if_else(str_detect(Phone, "ext|;") == TRUE, 
                       Phone, 
                       str_remove_all( Phone, "[^\\d]") %>%
                         str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3")
-              ), 
+    ) %>% 
+      replace_na(""),
     call_in_advance = recode(`Call in Advance`, !!! yes_no_recode),
     email = '',
-    instructions = notes,
-    #notes = notes,
-    web_link = links_english,
+    cuisine = '',
+    instructions = notes %>%  replace_na(""),
+    offers = '',
+    notes = "",
+    web_link = links_english %>% replace_na(""),
+    twitter = '',
+    instagram = '',
+    facebook = '',
+    local = 0,
     status = recode(status, !!! status_recode),
+    special_hours = 0,
+    order_online = 0,
+    pay_online = 0,
+    must_preorder = 0, 
+    in_store = 0,       # Maeva: I want to make this an underscore
+    in_store_pickup = 0,      #Maeva: I want to make this an underscore
+    curbside = 0, # To add later
+    drive_thru = 0,
+    delivery = ifelse(address == "Delivery", 1, 0), 
+    farm_pickup = 0,
+    farmers_market = 0,   
+    business_closed = 0,
+    discount_medical = 0,
+    meal_student = if_else(str_detect(eligibility, "Children") == TRUE, 1, 0),
+    meal_public = if_else(str_detect(eligibility, "Children") == TRUE, 1, 0),
+    meal_senior = if_else(str_detect(eligibility, "Seniors") == TRUE, 1, 0),
+    family_meal = 0,
+    free_produce = if_else(Type == "groceries", 1, 0),
+    free_groceries = if_else(Type == "groceries", 1, 0), 
     public = if_else(str_detect(eligibility, "Public") == TRUE, 1, 0),
     seniors = if_else(str_detect(eligibility, "Seniors") == TRUE, 1, 0),
     children = if_else(str_detect(eligibility, "Children") == TRUE, 1, 0),
     homeless = if_else(str_detect(eligibility, "Homeless") == TRUE, 1, 0),
     clients = if_else(str_detect(eligibility, "Clients") == TRUE, 1, 0), 
     uninsured = if_else(str_detect(eligibility, "Uninsured") == TRUE, 1, 0), 
-    residents = if_else(str_detect(eligibility, "Residents") == TRUE, 1, 0), 
+    residents = if_else(str_detect(eligibility, "Residents") == TRUE, 1, 0),
+    ebt_online = 0, 
+    ebt_phone = 0, 
     quality_check_complete = 0,   #Not sure what to do for this one 
     last_update = date_verified, 
     updated_by = verified_by,
@@ -197,33 +242,29 @@ com_resources_formatted <-
     week_3 = "",
     week_4 = "",
     week_5 = "",
-    mon = "",         #the process hours fxn is breaking so i added these in 
-    tues = "",
-    wed = "",
-    thr = "",
-    fri = "",
-    sat = "",
-    sun = "",
   ) %>%
-  # bind_cols(com_resources$days_hours %>%
-  #             map_dfr(process_hours)) %>%
-  # bind_cols(retailers$senior_hours %>%
-  #             map_dfr(process_hours, senior = T)) %>% 
-  select(region,	resource,	free,	provider_name,	provider_addloc,	address,	city,	state,	zip,	lat,	lon,	contact,	call_in_advance,	email,	instructions,	web_link,	status,	mon,	tues,	wed,	thr,	fri,	sat,	sun,	public,	seniors,	children,	homeless,	clients,	uninsured,	residents,	quality_check_complete,	last_update,	updated_by,	week_1,	week_2,	week_3,	week_4,	week_5)
-
-
-# 
-# 
-# com_resources_formatted %>% 
-#   write_sheet(
-#     ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "com_resources_test"
-#     ) 
-
-com_resources_formatted %>% 
-  write_csv("community_data_formatted.csv", na = "")
+  bind_cols(com_resources$days_hours %>%
+              map_dfr(process_hours)) %>%
+  bind_cols(com_resources$days_hours %>%
+              map_dfr(process_hours, senior = T)) %>% 
+  select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
+         call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
+         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
+         special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
+         delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
+         meal_public, family_meal, free_produce, free_groceries, public, seniors, children, homeless, clients, uninsured,
+         residents, ebt_online, ebt_phone, quality_check_complete, last_update, updated_by,
+         week_1, week_2, week_3, week_4, week_5, SNAP, WIC) %>%
+  filter(address != "Closed")
 
 ```
 
+```{r}
+# Write to CSV
+output_com_resources %>% 
+  write_csv(csv_out)
+
+```
 
 
 
