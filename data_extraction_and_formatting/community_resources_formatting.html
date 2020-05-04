@@ -382,15 +382,15 @@ summary {
 <div id="load-data" class="section level2">
 <h2>Load data</h2>
 <pre class="r"><code>#  SNAP retailer sheet - copy, to not mess the original
-key &lt;- &#39;11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM&#39;
+
 com_resources &lt;- 
   read_sheet(key) %&gt;% 
-  filter(!is.na(Type)) # removes rows without a Type</code></pre>
+  filter(!is.na(Type), str_detect(Type, &quot;Groceries|Meal&quot;), status == &quot;Open&quot;) # removes rows without a Type</code></pre>
 <pre><code>## Using an auto-discovered, cached token.
 ## To suppress this message, modify your code or options to clearly consent to the use of a cached token.
 ## See gargle&#39;s &quot;Non-interactive auth&quot; vignette for more details:
-## https://gargle.r-lib.org/articles/non-interactive-auth.html
-## The googlesheets4 package is using a cached token for cleboa@stanford.edu.</code></pre>
+## https://gargle.r-lib.org/articles/non-interactive-auth.html</code></pre>
+<pre><code>## The googlesheets4 package is using a cached token for cleboa@stanford.edu.</code></pre>
 <pre><code>## Reading from &quot;COVID-19 Community Resources - Bay Area&quot;</code></pre>
 <pre><code>## Range &quot;MAIN SHEET -- UPDATE HERE&quot;</code></pre>
 </div>
@@ -481,7 +481,24 @@ process_hours &lt;- function(day_hour, senior = FALSE) {
   
 }</code></pre>
 <p>#Phone number regex</p>
-<pre class="r"><code># test &lt;- retailers %&gt;% 
+<pre class="r"><code>#Recode Parameters 
+
+yes_no_recode &lt;- 
+  c(
+    &quot;Yes&quot; = 1,
+    &quot;No&quot; = 0,
+    .default = NA
+  )
+
+status_recode &lt;- 
+  c(
+    &quot;Open&quot; = 1,
+    &quot;Closed&quot; = 0,
+    .default = NA
+  )
+
+
+# test &lt;- retailers %&gt;% 
 #   mutate(phone_test = str_extract_all(Phone, &quot;[0-9]+&quot;) %&gt;% str_c(collapse = &quot; &quot;)) 
 # 
 # test$phone_test
@@ -492,40 +509,72 @@ process_hours &lt;- function(day_hour, senior = FALSE) {
 </div>
 <div id="format-retailers" class="section level2">
 <h2>Format retailers</h2>
-<pre class="r"><code>com_resources_formatted &lt;- 
+<pre class="r"><code>output_com_resources &lt;- 
   com_resources %&gt;% 
-  mutate(
+  transmute(
+    SNAP = 0,
+    WIC = 0,
     region = 
       if_else(str_detect(county, &quot;Bay Area&quot;) == TRUE,
               &quot;bay_area&quot;,
               str_to_lower(county) %&gt;%
                 str_replace_all(&#39; &#39;, &#39;_&#39;) %&gt;% str_c(., &#39;_county&#39;)),
-    resource = Type, 
-    free = &quot;1&quot;, #This needs to be changed
+    resource = str_to_lower(Type), 
+    free = 1,  
     provider_name = flatten_chr(`Provider Name`),
     provider_addloc = `Provider Site`,
-    address = if_else(location != &quot;Call Number&quot;, location, NA_character_),
-    city = if_else(location != &quot;Call Number&quot;, str_extract(location, &quot;(?&lt;=\\, )\\b.*\\b(?=,)&quot;), NA_character_),
+    address =  if_else(location != &quot;Call Number&quot;, str_extract(location, &quot;^([^,])+&quot;), &quot;&quot;),
+    city = if_else(location != &quot;Call Number&quot;, str_extract(location, &quot;(?&lt;=\\, )\\b.*\\b(?=,)&quot;), &quot;&quot;),
     state = &#39;CA&#39;,
-    zip = 0,
-    lat = NA_character_,
-    lon =  NA_character_,
-    contact = 
-      str_remove_all( Phone, &quot;[^\\d]&quot;) %&gt;%
-      str_replace(.,&quot;(\\d{3})(\\d{3})(\\d{4})$&quot;,&quot;(\\1) \\2-\\3&quot;), 
-    call_in_advance = `Call in Advance`,
+    zip = if_else(location != &quot;Call Number&quot;, str_extract(location, &quot;(\\d+)[^\\d]*$&quot;), &quot;&quot;), 
+    zip = if_else(str_detect(zip, &quot;9&quot;) == TRUE, zip, &quot;&quot;),  #there is a way to make this more eloquent
+    lat = 0,
+    lon = 0,
+    contact = if_else(str_detect(Phone, &quot;ext|;&quot;) == TRUE, 
+                      Phone, 
+                      str_remove_all( Phone, &quot;[^\\d]&quot;) %&gt;%
+                        str_replace(.,&quot;(\\d{3})(\\d{3})(\\d{4})$&quot;,&quot;(\\1) \\2-\\3&quot;)
+    ), 
+    call_in_advance = recode(`Call in Advance`, !!! yes_no_recode),
     email = &#39;&#39;,
-    instructions = &quot;&quot;,
-    notes = notes,
+    cuisine = &#39;&#39;,
+    instructions = notes,
+    offers = &#39;&#39;,
+    notes = &quot;&quot;,
     web_link = links_english,
-    status = status,
-    public = 0,
-    seniors = 0,
-    children = 0,
-    homeless = 0,
-    clients = 0, 
-    uninsured = 0, 
-    residents = 0, 
+    twitter = &#39;&#39;,
+    instagram = &#39;&#39;,
+    facebook = &#39;&#39;,
+    local = 0,
+    status = recode(status, !!! status_recode),
+    special_hours = 0,
+    order_online = 0,
+    pay_online = 0,
+    must_preorder = 0, 
+    in_store = 0,       # Maeva: I want to make this an underscore
+    in_store_pickup = 0,      #Maeva: I want to make this an underscore
+    curbside = 0, # To add later
+    drive_thru = 0,
+    delivery = ifelse(address == &quot;Delivery&quot;, 1, 0), 
+    farm_pickup = 0,
+    farmers_market = 0,   
+    business_closed = 0,
+    discount_medical = 0,
+    meal_student = if_else(str_detect(eligibility, &quot;Children&quot;) == TRUE, 1, 0),
+    meal_public = if_else(str_detect(eligibility, &quot;Children&quot;) == TRUE, 1, 0),
+    meal_senior = if_else(str_detect(eligibility, &quot;Seniors&quot;) == TRUE, 1, 0),
+    family_meal = 0,
+    free_produce = if_else(Type == &quot;groceries&quot;, 1, 0),
+    free_groceries = if_else(Type == &quot;groceries&quot;, 1, 0), 
+    public = if_else(str_detect(eligibility, &quot;Public&quot;) == TRUE, 1, 0),
+    seniors = if_else(str_detect(eligibility, &quot;Seniors&quot;) == TRUE, 1, 0),
+    children = if_else(str_detect(eligibility, &quot;Children&quot;) == TRUE, 1, 0),
+    homeless = if_else(str_detect(eligibility, &quot;Homeless&quot;) == TRUE, 1, 0),
+    clients = if_else(str_detect(eligibility, &quot;Clients&quot;) == TRUE, 1, 0), 
+    uninsured = if_else(str_detect(eligibility, &quot;Uninsured&quot;) == TRUE, 1, 0), 
+    residents = if_else(str_detect(eligibility, &quot;Residents&quot;) == TRUE, 1, 0),
+    ebt_online = 0, 
+    ebt_phone = 0, 
     quality_check_complete = 0,   #Not sure what to do for this one 
     last_update = date_verified, 
     updated_by = verified_by,
@@ -533,19 +582,24 @@ process_hours &lt;- function(day_hour, senior = FALSE) {
     week_2 = &quot;&quot;,
     week_3 = &quot;&quot;,
     week_4 = &quot;&quot;,
-    week_5 = &quot;&quot;
+    week_5 = &quot;&quot;,
   ) %&gt;%
-         bind_cols(com_resources$days_hours %&gt;%
-               map_dfr(process_hours, senior = F)) %&gt;%
-  # bind_cols(retailers$senior_hours %&gt;%
-  #             map_dfr(process_hours, senior = T)) %&gt;% 
-  select(region,    resource,   free,   provider_name,  provider_addloc,    address,    city,   state,  zip,    lat,    lon,    contact,    call_in_advance,    email,  instructions,   web_link,   status, mon,    tues,   wed,    thr,    fri,    sat,    sun,    public, seniors,    children,   homeless,   clients,    uninsured,  residents,  quality_check_complete, last_update,    updated_by, week_1, week_2, week_3, week_4, week_5)
-
-
-
-
-com_resources_formatted %&gt;% 
-  write_csv(&quot;community_data_formatted.csv&quot;, na = &quot;&quot;)</code></pre>
+  bind_cols(com_resources$days_hours %&gt;%
+              map_dfr(process_hours)) %&gt;%
+  bind_cols(com_resources$days_hours %&gt;%
+              map_dfr(process_hours, senior = T)) %&gt;% 
+  select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
+         call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
+         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
+         special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
+         delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
+         meal_public, family_meal, free_produce, free_groceries, public, seniors, children, homeless, clients, uninsured,
+         residents, ebt_online, ebt_phone, quality_check_complete, last_update, updated_by,
+         week_1, week_2, week_3, week_4, week_5, SNAP, WIC) %&gt;%
+  filter(address != &quot;Closed&quot;)</code></pre>
+<pre class="r"><code># Write to CSV
+output_com_resources %&gt;% 
+  write_csv(csv_out)</code></pre>
 </div>
 
 
