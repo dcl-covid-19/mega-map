@@ -131,114 +131,6 @@ retailers %>%
 
 ## Format retailers
 
-```{r}
-wic_only <- 
-  retailers %>% 
-  filter(Type == "WIC_only_store")
-```
-
-```{r}
-str_c(c("Only serves WIC-customers.", notes), " ")
-wic_only %>% 
-  transmute(
-    notes = if_else(Type == "WIC_only_store", str_c(str_replace_na(c(notes, "Only serves")), collapse = " "), notes),
-  )
-
-str_c(c("hello", "there"), collapse = " ")
-```
-
-
-```{r}
-
-wic_only %>% 
-  transmute(
-    SNAP = 1,
-    WIC = str_detect(Type, 'WIC') %>%  as.integer(),
-    region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
-    resource = 'grocery',
-    free = 0,
-    provider_name = Name,
-    provider_addloc = '',
-    address = Address,
-    city = City,
-    state = 'CA',
-    zip = as.numeric(Zip),
-    lat = Latitude,
-    lon =  map_dbl(Longitude, function(x) {
-      l <- x[[1]]
-      if (is.null(l)) {
-        return( NA_real_)
-      } else {
-        return(l)
-      }
-    }
-    ),
-    contact = 
-      str_remove_all( Phone, "[^\\d]") %>%
-      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
-    call_in_advance = 0,
-    email = '',
-    cuisine = '',
-    instructions = 'EBT at register',
-    offers = '',
-    notes = if_else(Type == "WIC_only_store", str_c("Only serves WIC-customers. ", notes), notes),
-    web_link = web_link,
-    twitter = '',
-    instagram = '',
-    facebook = facebook,
-    local = 0,
-    status = if_else(str_detect(days_hours, 'CLOSED'), 0, 1),
-    special_hours = (!is.na(senior_hours)) %>% as.numeric(),
-    order_online = (!is.na(online_ordering)) %>% as.numeric(),
-    pay_online = if_else(!is.na(online_ordering), 1, 0),
-    must_preorder = 0, 
-    in_store = 0,       #I want to make this an underscore
-    in_store_pickup = 0,      #I want to make this an underscore
-    curbside = if_else(!is.na(curbside_pickup), 1, 0),
-    drive_thru = 0,
-    delivery = if_else(!is.na(delivery), 1, 0), 
-    farm_pickup = 0,
-    farmers_market = str_detect(Type, 'farmers') %>%  as.integer(),   
-    business_closed = 0,
-    discount_medical = 0,
-    meal_student = 0,
-    meal_public = 0,
-    meal_senior = 0,
-    family_meal = 0,
-    free_produce	= 0,
-    free_groceries	= 0,
-    quality_check_complete = 0,   #Not sure what to do for this one 
-    last_update = map(retailers$date_verified, 
-                      function(d) {
-                          d_verified <- d[[1]]
-                          if (is.null(d_verified) || as.character(d_verified) == 'X') {
-                            d_verified <- NA_Date_
-                            } 
-                          return(as.Date(d_verified))
-                          }) %>% 
-                          simplify() %>% 
-                          as.Date(origin = origin),
-    updated_by = verified_by,
-    week_1 = "",
-    week_2 = "",
-    week_3 = "",
-    week_4 = "",
-    week_5 = ""
-  ) %>%
-         bind_cols(retailers$days_hours %>%
-               map_dfr(process_hours, senior = F)) %>%
-  bind_cols(retailers$senior_hours %>%
-              map_dfr(process_hours, senior = T)) %>% 
-  select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
-         call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
-         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
-         special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
-         delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
-         meal_public, family_meal, free_produce, free_groceries, quality_check_complete, last_update, updated_by,
-         week_1, week_2, week_3, week_4, week_5, SNAP, WIC)
-
-```
-
 
 ```{r}
 retailers_benefit <- 
@@ -249,7 +141,7 @@ retailers_benefit <-
     region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
     resource = 'grocery',
     free = 0,
-    provider_name = Name,
+    provider_name = str_to_title(Name),
     provider_addloc = '',
     address = Address,
     city = City,
@@ -273,7 +165,7 @@ retailers_benefit <-
     cuisine = '',
     instructions = 'EBT at register',
     offers = '',
-    notes = if_else(Type == "WIC_only_store", str_c("Only serves WIC-customers. ", notes), notes),
+    notes = if_else(Type == "WIC_only_store", "Only serves WIC customers", notes),
     web_link = web_link,
     twitter = '',
     instagram = '',
@@ -299,6 +191,15 @@ retailers_benefit <-
     family_meal = 0,
     free_produce	= 0,
     free_groceries	= 0,
+    public = 1,
+    seniors = (!is.na(senior_hours)) %>% as.numeric(), 
+    children = 0,
+    homeless = 0,
+    clients = 0,
+    uninsured = 0,
+    residents = 0,
+    ebt_online = 0,
+    ebt_phone = 0,
     quality_check_complete = 0,   #Not sure what to do for this one 
     last_update = map(retailers$date_verified, 
                       function(d) {
@@ -326,7 +227,7 @@ retailers_benefit <-
          local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
          special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
          delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
-         meal_public, family_meal, free_produce, free_groceries, quality_check_complete, last_update, updated_by,
+         meal_public, family_meal, free_produce, free_groceries, public, seniors, children, homeless, clients, uninsured, residents, ebt_online, ebt_phone, quality_check_complete, last_update, updated_by,
          week_1, week_2, week_3, week_4, week_5, SNAP, WIC)
 
 
@@ -335,8 +236,6 @@ retailers_benefit <-
 # TODO: missing columns #done
 # TODO: manually inspect final table
 
-retailers_benefit %>% 
-  pull(notes)
 
 retailers_benefit %>% 
   write_tsv("SNAP_data_formatted.tsv", na = "")
