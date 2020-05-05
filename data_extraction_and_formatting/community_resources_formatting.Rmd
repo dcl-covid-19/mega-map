@@ -17,7 +17,6 @@ library(tidyverse)
 date <- Sys.Date()
 key <- '11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM'
 csv_out <- "com_resources.csv"
-
 ```
 
 ## Load data
@@ -263,8 +262,5 @@ output_com_resources <-
 # Write to CSV
 output_com_resources %>% 
   write_csv(csv_out)
-
 ```
-
-
 
