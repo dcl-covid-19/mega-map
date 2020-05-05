@@ -247,6 +247,13 @@ output_com_resources <-
          week_1, week_2, week_3, week_4, week_5, SNAP, WIC) %>%
   filter(address != "Closed")
 
+#to do: resource - str_to_lowercase #Done
+#free to free #done
+#make sure does not pull "Call Number"  #done
+# deal with extensions in phone numbers #done 
+#instructions should pull from notes #done 
+#filter status = open  #done 
+#Eligibility reads and then populates a 1 in respective column #done
 
 
 ```
