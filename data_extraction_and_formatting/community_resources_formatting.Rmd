@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("googledrive")
 #devtools::install_github("tidyverse/googlesheets4")
 #install.packages("tidyverse")
-library(googledrive)
+# library(googledrive)
 library(googlesheets4)
 library(lubridate)
 library(tidyverse)
@@ -26,14 +26,19 @@ csv_out <- "com_resources.csv"
 #  SNAP retailer sheet - copy, to not mess the original
 
 com_resources <- 
-  read_sheet(key) %>% 
+  read_sheet(key, sheet = "MAIN SHEET -- UPDATE HERE") %>% 
   filter(!is.na(Type), str_detect(Type, "Groceries|Meal"), status == "Open") # removes rows without a Type
 ```
 
 ## Function to process open hours
 
 ```{r}
-# Function to turn the day_hour / senior_hour col into one col per day 
+# Function to turn the day_hour / senior_hour col into one col per day
+# return a tibble with 8 columns: one for each day of the week + additional hours
+# Values in the columns are : 
+# - 0 if closed or not available
+# - open hours or unparsed text if open or unparsable
+
 process_hours <- function(day_hour, senior = FALSE) {
   
   days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
@@ -48,51 +53,65 @@ process_hours <- function(day_hour, senior = FALSE) {
   
   
   if (is.na(day_hour)) {
-    out <- rep("0", 7)
-    names(out) <- days_col[1:7]
+    out <- rep("0", 8)
+    names(out) <- c(days_col[1:7], "additional_hours")
     return(out %>% as_tibble_row())
   }
   
   try({
-    out <- rep("0", 7)
+    out <- rep("0", 8)
     
-    for (dt in str_split(day_hour, '\\n') %>% unlist()) {
-      
+    # split into groups of "days: hours"
+    for (dt in str_split(day_hour, '[\\n;]+') %>% unlist()) {
+      dt <- str_trim(dt)
       d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
       t <- str_split(dt, ': ') %>% unlist() %>% .[2]
       
+      # handles additional openings on odd days
+      if (str_starts(str_trim(d, side = "left"), "\\d+")) {
+        out[8] <- if (out[8] == "0") dt else str_c(out[8], dt, sep = ", ")
+        next
+      }
+      
+      # handles normal opening hours
       # day range
       if (str_detect(d, '-')) {
         start = str_split(d, ' - ') %>% unlist() %>% .[1]
         end = str_split(d, ' - ') %>% unlist() %>% .[2]
         
-        
+        # remove plurals
         if (str_ends(start, 's')) {
           start <- str_sub(start, 1, -2)
         }
         if (str_ends(end, 's')) {
           end <- str_sub(end, 1, -2)
         }
+        
+        # find corresponding day indeces
         start_i = match(start, days_long)
         end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
         
+        # populate output vector
         for (i in seq(start_i, end_i)) {
           if (i > 7) {
-            out[i %% 7] = t
+            out[i %% 7] = if (out[i %% 7] == "0") t else str_c(out[i %% 7], t, sep = ", ")
           } else {
-            out[i] = t
+            out[i] = if (out[i] == "0") t else str_c(out[i], t, sep = ", ")
           }
         }
-        # multiple, non contiguous days
+      # multiple, non contiguous days
       } else if (str_detect(d, ', ')) {
+        
+        # split by days, find index and populate output
         for (single_d in str_split(d, ', ') %>% unlist()) {
           if (str_ends(single_d, 's')) {
             single_d <- str_sub(single_d, 1, -2)
           }
           start_i = match(single_d, days_long)
-          out[start_i] = t
+          out[start_i] = if (out[start_i] == "0") t else str_c(out[start_i], t, sep = ", ")
         }
-        # single day
+        
+      # single day
       } else {
         if (str_ends(d, 's')) {
           d <- str_sub(d, 1, -2)
@@ -102,24 +121,28 @@ process_hours <- function(day_hour, senior = FALSE) {
         if (is.na(start_i)) {
           stop()
         }
-        out[start_i] = t
+        out[start_i] = if (out[start_i] == "0") t else str_c(out[start_i], t, sep = ", ")
       }
     }
     
-    out <- str_to_upper(out)
-    names(out) <- days_col[1:7]
+    out <- str_to_upper(out) %>% replace_na("")
+    names(out) <- c(days_col[1:7], "additional_hours")
     return(out %>% as_tibble_row())
     
   }, silent = T)
   
-  out <- rep(day_hour, 7)
-  names(out) <- days_col[1:7]
+  # handles unparsable text
+  out <- c(rep(day_hour, 7), "0")
+  names(out) <- c(days_col[1:7], "additional_hours")
   return(out %>% as_tibble_row())
   
 }
 
-
+# test
+# com_resources$days_hours %>% tail(10) %>% 
+#   map_dfr(process_hours)
 ```
+
 
 #Phone number regex
 
@@ -235,11 +258,25 @@ output_com_resources <-
   ) %>%
   bind_cols(com_resources$days_hours %>%
               map_dfr(process_hours)) %>%
-  bind_cols(com_resources$days_hours %>%
-              map_dfr(process_hours, senior = T)) %>% 
+  mutate(instructions = if_else(additional_hours == "0", 
+                                instructions, 
+                                str_c(instructions, 
+                                      " Additional hours: ", 
+                                      additional_hours))) %>% 
+  select(-additional_hours) %>% 
+  ## you don't have senior hours in this database
+  # bind_cols(com_resources$days_hours %>% 
+  #             map_dfr(process_hours, senior = T)) %>% 
+  # mutate(instructions = if_else(additional_hours == "0", 
+  #                               instructions, 
+  #                               str_c(instructions, additional_hours, sep = ", "))) %>% 
+  # select(-additional_hours) %>% 
+  mutate(sp_mon = "0", sp_tues = "0", sp_wed = "0", 
+         sp_thr = "0", sp_fri = "0", sp_sat = "0", sp_sun = "0") %>% 
   select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
          call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
-         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
+         local, status, mon, tues, wed, thr, fri, sat, sun, 
+         sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
          special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
          delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
          meal_public, family_meal, free_produce, free_groceries, public, seniors, children, homeless, clients, uninsured,
@@ -256,6 +293,7 @@ output_com_resources <-
 #Eligibility reads and then populates a 1 in respective column #done
 
 
+output_com_resources %>% head()
 ```
 
 
