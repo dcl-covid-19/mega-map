@@ -17,8 +17,6 @@ library(yaml)
 # Parameters
   # Site data
 file_sites <- here::here("web-scraping/sites.yml")
-  # Exclude sites
-exclude_sites <- NULL
   # Hash algorithm
 hash_alg <- "md5"
   # Email read error message
@@ -57,7 +55,6 @@ check_site <- function(site) {
 }
 
 read_yaml(file_sites) %>% 
-  .[setdiff(names(.), exclude_sites)] %>%
   map(check_site) %>% 
   write_yaml(file_sites)
 
