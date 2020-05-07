@@ -35,6 +35,7 @@ scrape_site <- function(site) {
     site$url %>% 
       read_html() %>% 
       html_nodes(css = site$css) %>% 
+      html_text() %>% 
       digest::digest(., algo = hash_alg),
     error = function(e) {}
   )
