@@ -3,7 +3,7 @@
 # 0 * * * * cd dir; Rscript check.R > log 2>&1
             #  ^ change this
 
-# Author: Bill Behrman
+# Authors: Sara Altman, Bill Behrman
 # Version: 2020-05-07
 
 # Libraries
