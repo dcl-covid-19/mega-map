@@ -1,0 +1,8 @@
+site_1:
+  url: https://en.wikipedia.org/wiki/Oldest_people
+  css: '#mw-content-text > div > table:nth-child(30)'
+  hash: 120c2b292d9090d55aa1bdb77f55aba6
+site_2:
+  url: https://en.wikipedia.org/wiki/Oldest_people
+  css: '#mw-content-text > div > table:nth-child(30)'
+  hash: 120c2b292d9090d55aa1bdb77f55aba6
