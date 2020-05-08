@@ -21,12 +21,10 @@ file_sites <- here::here("web-scraping/sites.yml")
 hash_alg <- "md5"
   # Email read error message
 email_read_error <- 
-  'mail -s "{site$url} read error" email_1,email_2 < /dev/null'
-                                #  ^ change this
+  'mail -s "{site$url} read error" joyce.tagal+notif@stanford.edu < /dev/null'
   # Email to check site
 email_check_site <- 
-  'mail -s "{site$url} check site" email_1,email_2 < /dev/null'
-                                #  ^ change this
+  'mail -s "{site$url} check site" joyce.tagal+notif@stanford.edu < /dev/null'
 
 #===============================================================================
 
