@@ -2,3 +2,5 @@
 .Rproj.user
 *.Rproj
 .DS_Store
+.venv
+.vscode
