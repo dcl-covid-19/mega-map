@@ -1,0 +1,31 @@
+---
+title: "scratch"
+author: "Jen Ren"
+date: "5/12/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+dataset <- read_csv("./snap_output.csv")
+```
+
+```{r}
+no_hours <- dataset %>% filter(hours == "No hours listed")
+no_hours
+```
+
+```{r}
+not_found <- dataset %>% filter(hours == "No place found")
+not_found
+```
+
+```{r}
+write_csv(x = no_hours, path = "no_hours.csv")
+write_csv(x = not_found, path = "not_found.csv")
+```
+
