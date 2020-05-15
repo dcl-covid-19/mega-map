@@ -29,3 +29,10 @@ write_csv(x = no_hours, path = "no_hours.csv")
 write_csv(x = not_found, path = "not_found.csv")
 ```
 
+Let's verify that the zipcodes were found correctly:
+
+```{r}
+no_zipcode <- dataset %>% filter(zipcode == "No zipcode found")
+no_zipcode
+```
+
