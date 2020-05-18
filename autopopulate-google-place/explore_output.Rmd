@@ -12,6 +12,7 @@ library(tidyverse)
 
 ```{r}
 dataset <- read_csv("./snap_output.csv")
+dataset_attrib <- read_csv("./snap_output_attrib.csv")
 ```
 
 ```{r}
@@ -34,5 +35,19 @@ Let's verify that the zipcodes were found correctly:
 ```{r}
 no_zipcode <- dataset %>% filter(zipcode == "No zipcode found")
 no_zipcode
+```
+
+```{r}
+dataset_attrib %>% filter(phone == "No place found")
+```
+
+```{r}
+no_status <- dataset_attrib %>% filter(status == "No business_status listed")
+
+no_status
+```
+
+```{r}
+write_csv(x = no_status, path = "no_status.csv")
 ```
 
