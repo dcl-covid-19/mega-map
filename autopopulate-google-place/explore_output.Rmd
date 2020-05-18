@@ -48,6 +48,18 @@ no_status
 ```
 
 ```{r}
+closed <- dataset_attrib %>% 
+  filter(
+    status == "CLOSED_PERMANENTLY" |
+    status == "CLOSED_TEMPORARILY"
+  )
+
+closed
+```
+
+
+```{r}
 write_csv(x = no_status, path = "no_status.csv")
+write_csv(x = closed, path = "closed.csv")
 ```
 
