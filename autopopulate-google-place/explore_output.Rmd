@@ -25,11 +25,6 @@ not_found <- dataset %>% filter(hours == "No place found")
 not_found
 ```
 
-```{r}
-write_csv(x = no_hours, path = "no_hours.csv")
-write_csv(x = not_found, path = "not_found.csv")
-```
-
 Let's verify that the zipcodes were found correctly:
 
 ```{r}
@@ -59,7 +54,9 @@ closed
 
 
 ```{r}
-write_csv(x = no_status, path = "no_status.csv")
-write_csv(x = closed, path = "closed.csv")
+write_csv(x = no_hours, path = "data/no_hours.csv")
+write_csv(x = not_found, path = "data/not_found.csv")
+write_csv(x = no_status, path = "data/no_status.csv")
+write_csv(x = closed, path = "data/closed.csv")
 ```
 
