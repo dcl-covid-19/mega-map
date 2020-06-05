@@ -1,0 +1,102 @@
+---
+title: "Look up details for Black-owned businesses"
+author: "Jen Ren"
+date: "6/4/2020"
+output: html_document
+---
+
+**Note: You'll need to set an environment variable for the Google Maps API as: `GOOGLE_MAPS_API_KEY`.
+
+```{r}
+library(googlesheets4)
+library(httr)
+library(jsonlite)
+library(tidyverse)
+```
+
+```{r}
+dataset_url <- "https://docs.google.com/spreadsheets/u/1/d/1mTthE5lwqVnTCIm3iQtQXLyxwK-pc17cuCp--BhAYX8/htmlview?fbclid=IwAR0Ue3318iT4__1oVicUWBNef9gNiw7JDzJRq7M1GNnh_h5i2GQ9kYl_n1U#"
+```
+
+```{r}
+dataset <- read_sheet(dataset_url, skip = 3) %>% 
+  rename_all(tolower)
+
+dataset_sample <- dataset %>% top_n(10, name)
+
+View(dataset_sample)
+```
+
+Define a function for looking up a place:
+
+```{r}
+has_key <- !identical(Sys.getenv("GOOGLE_MAPS_API_KEY"), "")
+
+if (!has_key) {
+  message("No Google Maps API key found; code chunks will not be run")
+}
+
+get_place_id <- function(name, city, api_key = Sys.getenv("GOOGLE_MAPS_API_KEY")) {
+  input <- str_c(name, city, sep = " ")
+  r <- GET(
+    url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json",
+    query = list(
+      key = api_key,
+      input = input,
+      inputtype = "textquery"
+    )
+  )
+  content(r, "parsed")
+}
+```
+
+Define a function for pulling the details we want:
+
+```{r}
+get_place_details <- function(place_id, api_key = Sys.getenv("GOOGLE_MAPS_API_KEY")) {
+  r <- GET(
+    "https://maps.googleapis.com/maps/api/place/details/json",
+    query = list(
+      key = api_key,
+      place_id = place_id,
+      fields = "address_component,formatted_address,geometry,business_status,url,formatted_phone_number,opening_hours,website"
+    )
+  )
+  content(r, "parsed")
+}
+```
+
+
+```{r}
+dataset_augmented <- dataset %>% 
+  mutate(json = map2(name, location, get_place_id)) %>% 
+  unnest_wider(json) %>% 
+  hoist(
+    candidates, 
+    place_id = list(1, "place_id")
+  ) %>% 
+  mutate(json = map(place_id, get_place_details)) %>% 
+  hoist(
+    json,
+    hours_gmaps = list("result", "opening_hours", "weekday_text"),
+    address_gmaps = list("result", "formatted_address"),
+    status_gmaps = list("result", "business_status"),
+    lat_gmaps = list("result", "geometry", "location", "lat"),
+    lng_gmaps = list("result", "geometry", "location", "lng"),
+    phone_gmaps = list("result", "formatted_phone_number"),
+    website_gmaps = list("result", "website"),
+    gmaps_url = list("result", "url")
+  ) %>% 
+  mutate(
+    hours_gmaps = map_chr(hours_gmaps, collapse = "\n", paste),
+    hours_gmaps = na_if(hours_gmaps, "NA")
+  ) %>% 
+  select(-candidates, -status, -json, -place_id) 
+
+dataset_augmented %>% View()
+```
+
+```{r}
+write_csv(dataset_augmented, "dataset_gmaps.csv")
+```
+
