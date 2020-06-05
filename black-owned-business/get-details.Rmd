@@ -20,7 +20,9 @@ dataset_url <- "https://docs.google.com/spreadsheets/u/1/d/1mTthE5lwqVnTCIm3iQtQ
 dataset <- read_sheet(dataset_url, skip = 3) %>% 
   rename_all(tolower)
 
-View(dataset)
+dataset_sample <- dataset %>% top_n(10, name)
+
+View(dataset_sample)
 ```
 
 Define a function for looking up a place:
@@ -46,31 +48,7 @@ get_place_id <- function(name, city, api_key = Sys.getenv("GOOGLE_MAPS_API_KEY")
 }
 ```
 
-
-```{r}
-get_place_id("Alchemy Coffee Collective", "Berkeley")
-```
-
-```{r}
-dataset_sample <- dataset %>% top_n(10, name)
-
-dataset_sample_lookup <- dataset_sample %>% 
-  mutate(json = map2(name, location, get_place_id))
-
-dataset_sample_lookup %>% View()
-```
-
-
-```{r}
-dataset_sample_place_id <- dataset_sample_lookup %>% 
-  unnest_wider(json) %>% 
-  hoist(
-    candidates, 
-    place_id = list(1, "place_id")
-  )
-
-dataset_sample_place_id %>% View()
-```
+Define a function for pulling the details we want:
 
 ```{r}
 get_place_details <- function(place_id, api_key = Sys.getenv("GOOGLE_MAPS_API_KEY")) {
@@ -86,8 +64,15 @@ get_place_details <- function(place_id, api_key = Sys.getenv("GOOGLE_MAPS_API_KE
 }
 ```
 
+
 ```{r}
-dataset_sample_place_id %>% 
+dataset_sample %>% 
+  mutate(json = map2(name, location, get_place_id)) %>% 
+  unnest_wider(json) %>% 
+  hoist(
+    candidates, 
+    place_id = list(1, "place_id")
+  ) %>% 
   mutate(json = map(place_id, get_place_details)) %>% 
   hoist(
     json,
@@ -100,66 +85,11 @@ dataset_sample_place_id %>%
     website_gmaps = list("result", "website"),
     gmaps_url = list("result", "url")
   ) %>% 
-  View()
-```
-
-
-
-## Making it work for one:
-
-```{r}
-r_lookup <- GET(
-  "https://maps.googleapis.com/maps/api/place/findplacefromtext/json",
-  query = list(
-    key = API_KEY,
-    input = "Alchemy Collective Cafe Berkeley",
-    inputtype = "textquery"
-  )
-)
-```
-
-```{r}
-content(r, "parsed")
-```
-
-```{r}
-r_details <- GET(
-  "https://maps.googleapis.com/maps/api/place/details/json",
-  query = list(
-    key = API_KEY,
-    place_id = "ChIJCeoIuHt-hYAR0OZUwj2Gqxk",
-    fields = "address_component,formatted_address,geometry,business_status,url,formatted_phone_number,opening_hours,website"
-  )
-)
-```
-
-```{r}
-View(content(r_details, "parsed"))
-```
-
-```{r}
-hours_list <- content(r_details, "parsed")$result$opening_hours$weekday_text
-hours <- paste(hours_list, collapse = "\n")
-```
-
-```{r}
-content(r_details, "parsed")$result$address_components
-```
-
-```{r}
-content(r_details, "parsed")$result$address_components[8]
-```
-
-```{r}
-addr_components <- content(r_details, "parsed")$result$address_components
-```
-
-```{r}
-tibble(addr_components) %>% 
-  hoist(
-    addr_components,
-    zipcode = c("types", "postal_code")
+  mutate(
+    hours_gmaps = map_chr(hours_gmaps, collapse = "\n", paste),
+    hours_gmaps = na_if(hours_gmaps, "NA")
   ) %>% 
+  select(-candidates, -status, -json, -place_id) %>% 
   View()
 ```
 
