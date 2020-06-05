@@ -5,6 +5,8 @@ date: "6/4/2020"
 output: html_document
 ---
 
+**Note: You'll need to set an environment variable for the Google Maps API as: `GOOGLE_MAPS_API_KEY`.
+
 ```{r}
 library(googlesheets4)
 library(httr)
