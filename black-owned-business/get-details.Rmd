@@ -66,7 +66,7 @@ get_place_details <- function(place_id, api_key = Sys.getenv("GOOGLE_MAPS_API_KE
 
 
 ```{r}
-dataset_sample %>% 
+dataset_sample_augmented <- dataset_sample %>% 
   mutate(json = map2(name, location, get_place_id)) %>% 
   unnest_wider(json) %>% 
   hoist(
@@ -89,7 +89,12 @@ dataset_sample %>%
     hours_gmaps = map_chr(hours_gmaps, collapse = "\n", paste),
     hours_gmaps = na_if(hours_gmaps, "NA")
   ) %>% 
-  select(-candidates, -status, -json, -place_id) %>% 
-  View()
+  select(-candidates, -status, -json, -place_id) 
+
+dataset_sample_augmented %>% View()
+```
+
+```{r}
+write_csv(dataset_sample_augmented, "dataset_gmaps.csv")
 ```
 
