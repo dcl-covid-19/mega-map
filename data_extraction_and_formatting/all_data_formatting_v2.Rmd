@@ -59,7 +59,7 @@ SNAP_data <-
   read_sheet(
     SNAP_key, 
     skip = 5,
-    col_types = "?????d??????????????????D?????????"
+    col_types = "?????d??????????????????D???????"
   ) %>% 
   drop_na(type) %>% 
   mutate_at(
@@ -77,6 +77,8 @@ SNAP_data <-
     status = str_to_lower(status)
   ) %>% 
   filter(!str_detect(type, "Doesn't"))
+
+SNAP_data
 ```
 
 school meal data
@@ -85,7 +87,7 @@ school_meal_data <-
   read_sheet(
     school_meal_key, 
     skip = 1,
-    col_types = "?cc??cc??ddd???????????DDD???DD?????"
+    col_types = "?ccddd??cc?dddcc??????????DDD????DD??????"
   ) %>% 
   mutate(
     open_hour = na_if(open_hour, "N/A"),
@@ -1158,6 +1160,7 @@ output_sheet <-
     clients = if_else(str_detect(data_set$eligibility, "Clients") == TRUE, 1, 0), 
     uninsured = if_else(str_detect(data_set$eligibility, "Uninsured") == TRUE, 1, 0),
     residents = if_else(str_detect(data_set$eligibility, "Residents") == TRUE, 1, 0),
+    women = if_else(str_detect(data_set$eligibility, "Women") == TRUE, 1, 0),
     notes = if_else(data_set$additional_hours == "0", 
                     data_set$notes, 
                     str_c(data_set$notes, 
@@ -1269,7 +1272,7 @@ final_output %>%
   write_sheet(ss = "1ANfnP8ghzEdj7Tr1X9CgU5chTrhZmbW9s0qudidMs0g", sheet = "Sheet1") 
 
 ##write to db
-final_output %>% 
-  write_sheet(ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "compiled sheet")
+# final_output %>% 
+#   write_sheet(ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "compiled sheet")
 ```
 
