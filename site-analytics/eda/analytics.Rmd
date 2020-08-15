@@ -1,0 +1,115 @@
+---
+title: Bay Area Community Analytics
+author: Sara Altman
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+library(lubridate)
+
+# Parameters
+file_users <- here::here("data/users.rds")
+#===============================================================================
+
+users <-
+  file_users %>% 
+  read_rds()
+```
+
+## Users over time
+
+```{r}
+users %>% 
+  count(date, wt = users) %>% 
+  ggplot(aes(date, n)) +
+  geom_point() +
+  geom_line() +
+  scale_x_date(
+    date_labels = "%b %d", 
+    breaks = 
+      c(
+        unique(floor_date(.$date, unit = "month")), 
+        unique(floor_date(.$date, unit = "month")) + 14
+      )
+  ) +
+  scale_y_continuous(breaks = scales::breaks_width(10)) +
+  labs(
+    x = "Date",
+    y = "Number of users"
+  )
+```
+
+```{r}
+users %>% 
+  group_by(week = floor_date(date, unit = "week")) %>%
+  summarize(new_users = sum(new_users) / sum(users)) %>%
+  ggplot(aes(week, new_users)) +
+  geom_line() +
+  geom_point() +
+  scale_y_continuous(
+    limits = c(0, 1), 
+    labels = scales::label_percent()
+  ) +
+  labs(
+    x = "Week",
+    y = "Percent new users"
+  )
+```
+
+
+## Operating system
+
+```{r}
+users %>% 
+  count(operating_system, wt = users) %>% 
+  mutate(
+    percent = n / sum(n),
+    operating_system = fct_reorder(operating_system, n, .desc = TRUE)
+  ) %>% 
+  ggplot(aes(operating_system, percent)) +
+  geom_col() +
+  scale_y_continuous(
+    labels = scales::label_percent(accuracy = 1), 
+    breaks = scales::breaks_width(0.1)
+  ) +
+  labs(
+    x = "Operating system",
+    y = "Percent of users",
+    title = "Users by operating system",
+    subtitle = "Most use iOS (Macs, iPhones, etc.)"
+  )
+```
+
+```{r}
+# users %>% 
+#   count(month = month(date, label = TRUE), operating_system, wt = users) %>% 
+#   group_by(month) %>% 
+#   mutate(percent =  n / sum(n)) %>% 
+#   ungroup() %>% 
+#   ggplot(
+#     aes(month, percent, color = operating_system, group = operating_system)
+#   ) +
+#   geom_point() +
+#   geom_line()
+```
+
+## Time spent
+
+```{r}
+users %>% 
+  group_by(date) %>% 
+  summarize(avg_session_duration = median(avg_session_duration)) %>% 
+  ggplot(aes(date, avg_session_duration)) +
+  geom_point() +
+  geom_line()
+```
+
