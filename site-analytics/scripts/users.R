@@ -45,7 +45,8 @@ v <-
   filter(!is.na(operating_system) & !is.na(users)) %>%
   mutate(
     date = lubridate::ymd(date),
-    avg_session_duration = as.double(avg_session_duration),
+    avg_session_duration = 
+      as.double(avg_session_duration) / 60,
     bounce_rate = parse_number(bounce_rate)
   ) %>%
   select(date, everything(), -contains("goal")) %>%

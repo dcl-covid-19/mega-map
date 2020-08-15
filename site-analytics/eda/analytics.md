@@ -1,17 +1,13 @@
----
-title: Bay Area Community Analytics
-author: Sara Altman
-date: "`r Sys.Date()`"
-output: 
-  github_document:
-    toc: true
----
+Bay Area Community Analytics
+================
+Sara Altman
+2020-08-14
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+  - [Users over time](#users-over-time)
+  - [Operating systems](#operating-systems)
+  - [Time spent on the site](#time-spent-on-the-site)
 
-```{r message=FALSE, warning=FALSE}
+``` r
 # Libraries
 library(tidyverse)
 library(lubridate)
@@ -32,7 +28,7 @@ duration <-
 
 ## Users over time
 
-```{r}
+``` r
 users %>% 
   count(date, wt = users) %>% 
   ggplot(aes(date, n)) +
@@ -53,7 +49,9 @@ users %>%
   )
 ```
 
-```{r}
+![](analytics_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+``` r
 users %>% 
   group_by(week = floor_date(date, unit = "week")) %>%
   summarize(new_users = sum(new_users) / sum(users)) %>%
@@ -70,10 +68,13 @@ users %>%
   )
 ```
 
+    ## `summarise()` ungrouping output (override with `.groups` argument)
+
+![](analytics_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ## Operating systems
 
-```{r}
+``` r
 users %>% 
   count(operating_system, wt = users) %>% 
   mutate(
@@ -94,9 +95,11 @@ users %>%
   )
 ```
 
+![](analytics_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
 ## Time spent on the site
 
-```{r}
+``` r
 duration %>% 
   mutate(
     percentage = sessions/sum(sessions),
@@ -119,3 +122,4 @@ duration %>%
   )
 ```
 
+![](analytics_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
