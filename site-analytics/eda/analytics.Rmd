@@ -19,6 +19,7 @@ library(lubridate)
 # Parameters
 file_users <- here::here("data/site_users.rds")
 file_duration <- here::here("data/duration.rds")
+file_events <- here::here("data/events.rds")
 #===============================================================================
 
 users <-
@@ -27,6 +28,10 @@ users <-
 
 duration <-
   file_duration %>% 
+  read_rds()
+
+events <-
+  file_events %>% 
   read_rds()
 ```
 
@@ -118,4 +123,101 @@ duration %>%
     title = "Session duration"
   )
 ```
+
+## Events
+
+### Counties
+
+```{r}
+events %>% 
+  filter(type == "county") %>% 
+  count(choice, wt = unique_events) %>% 
+  mutate(choice = fct_reorder(choice, n)) %>% 
+  ggplot(aes(choice, n)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "County",
+    y = "Number of unique events"
+  )
+```
+
+### Counties by OS
+
+```{r}
+events %>% 
+  filter(type == "county") %>% 
+  mutate(
+    operating_system = 
+      fct_collapse(
+        operating_system, 
+        "Other" = c("Android", "Chrome OS", "Linux")
+      ) 
+  ) %>% 
+  group_by(operating_system, choice) %>%
+  summarize(across(c(contains("event"), contains("value")), sum)) %>% 
+  mutate(
+    percent = unique_events / sum(unique_events)
+  ) %>% 
+  ungroup() %>% 
+  mutate(
+    choice = fct_reorder(choice, percent, .desc = TRUE),
+    operating_system = 
+      fct_reorder2(operating_system, choice, percent, .desc = FALSE)
+  ) %>% 
+  ggplot(
+    aes(choice, percent, color = operating_system, group = operating_system)
+  ) +
+  geom_point() +
+  geom_line() +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(
+    x = "County",
+    y = "Percent of unique events",
+    color = "OS",
+    title = "County choice by operating system"
+  ) 
+```
+
+### Resources
+
+```{r}
+v <-
+  events %>% 
+  filter(type == "resource") %>% 
+  mutate(
+    choice = 
+      fct_collapse(
+        choice, 
+        "blm" = "blm statement", 
+        "eviction" = "eviction resources"
+      )
+  ) %>% 
+  count(choice, wt = unique_events) %>% 
+  mutate(
+    percent = n / sum(n),
+    choice = fct_reorder(choice, n, .desc = TRUE)
+  ) 
+
+top_choice <- 
+  v %>% 
+  slice_max(percent)
+
+v %>% 
+  ggplot(aes(choice, percent)) +
+  geom_col() +
+  scale_y_continuous(
+    labels = scales::label_percent(accuracy = 1),
+    breaks = scales::breaks_width(0.05)
+  ) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(
+    title = "Resource choices",
+    subtitle = 
+      str_glue(
+        "{round(top_choice$percent * 100)}% select {top_choice$choice}"
+      )
+  )
+``` 
 
