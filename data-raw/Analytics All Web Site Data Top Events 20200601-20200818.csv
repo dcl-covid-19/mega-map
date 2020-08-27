@@ -1,0 +1,192 @@
+# ----------------------------------------
+# All Web Site Data
+# Top Events
+# 20200601-20200818
+# ----------------------------------------
+
+Event Label,Operating System,Total Events,Unique Events,Event Value,Avg. Value
+county - santa_clara,Macintosh,501,217,0,0.00
+county - santa_clara,iOS,416,194,0,0.00
+resource - meal,Macintosh,341,227,0,0.00
+resource - meal,iOS,315,235,0,0.00
+county - san_francisco,Macintosh,256,113,0,0.00
+resource - legal_assistance,Macintosh,186,118,0,0.00
+resource - meal,Windows,171,105,0,0.00
+resource - snap_wic_retailer,Macintosh,160,101,0,0.00
+county - alameda,Windows,148,60,0,0.00
+resource - free_grocery,iOS,146,119,0,0.00
+resource - health,Macintosh,139,76,0,0.00
+resource - free_grocery,Macintosh,126,107,0,0.00
+county - alameda,Macintosh,115,66,0,0.00
+county - santa_clara,Windows,115,74,0,0.00
+county - san_mateo,Macintosh,102,50,0,0.00
+resource - free_grocery,Windows,100,75,0,0.00
+county - san_francisco,iOS,93,74,0,0.00
+resource - mental_health,Macintosh,88,65,0,0.00
+county - san_francisco,Windows,80,42,0,0.00
+county - alameda,iOS,70,56,0,0.00
+resource - health,iOS,68,22,0,0.00
+resource - legal_assistance,Windows,63,50,0,0.00
+resource - mental_health,iOS,51,30,0,0.00
+resource - legal_assistance,iOS,48,34,0,0.00
+county - san_mateo,Windows,45,27,0,0.00
+county - santa_clara,Android,44,23,0,0.00
+county - santa_clara,Chrome OS,43,5,0,0.00
+resource - free_grocery,Android,43,34,0,0.00
+resource - snap_wic_retailer,iOS,41,28,0,0.00
+resource - eviction_resources,Macintosh,38,4,0,0.00
+resource - mental_health,Windows,36,30,0,0.00
+county - san_mateo,iOS,35,26,0,0.00
+resource - meal,Android,35,27,0,0.00
+county - anywhere,Macintosh,32,20,0,0.00
+resource - medical,Macintosh,29,14,0,0.00
+county - san_francisco,Android,28,13,0,0.00
+county - contra_costa,iOS,27,22,0,0.00
+resource - health,Windows,27,21,0,0.00
+resource - snap_wic_retailer,Windows,27,23,0,0.00
+county - monterey,Macintosh,25,15,0,0.00
+county - san_mateo santa_clara,Macintosh,20,12,0,0.00
+error Error: Bad Request,Macintosh,18,4,0,0.00
+resource - meal,Chrome OS,17,14,0,0.00
+county - contra_costa,Windows,16,10,0,0.00
+county - san_francisco,Chrome OS,16,6,0,0.00
+county - marin,Macintosh,15,13,0,0.00
+county - monterey,Android,14,8,0,0.00
+county - san_mateo,Android,13,9,0,0.00
+county - napa,Macintosh,12,9,0,0.00
+resource - free_grocery,Chrome OS,12,8,0,0.00
+resource - health,Android,12,8,0,0.00
+resource - medical,Windows,12,11,0,0.00
+resource - mental_health,Chrome OS,11,2,0,0.00
+county - contra_costa,Macintosh,10,10,0,0.00
+county - san_mateo santa_clara,iOS,10,8,0,0.00
+resource - snap_wic_retailer,Chrome OS,10,4,0,0.00
+resource - legal_assistance,Android,9,8,0,0.00
+resource - snap_wic_retailer,Android,9,7,0,0.00
+county - alameda contra_costa,Macintosh,8,7,0,0.00
+county - marin,Android,8,2,0,0.00
+resource - legal_assistance,Chrome OS,8,2,0,0.00
+resource - mental_health,Android,8,7,0,0.00
+county - solano,Windows,7,5,0,0.00
+county - anywhere,iOS,6,4,0,0.00
+county - monterey,Windows,6,3,0,0.00
+county - san_mateo,Chrome OS,6,6,0,0.00
+resource - medical,Chrome OS,6,1,0,0.00
+county - contra_costa,Android,5,5,0,0.00
+county - san_mateo santa_clara,Windows,5,2,0,0.00
+county - sonoma,Macintosh,5,5,0,0.00
+county - anywhere,Windows,4,3,0,0.00
+county - napa,Windows,4,4,0,0.00
+county - san_francisco,Linux,4,1,0,0.00
+county - solano,Android,4,1,0,0.00
+county - solano,Macintosh,4,4,0,0.00
+error TypeError: cancelled,iOS,4,4,0,0.00
+resource - health,Chrome OS,4,2,0,0.00
+resource - medical,Android,4,2,0,0.00
+county - alameda,Android,3,3,0,0.00
+county - monterey,iOS,3,2,0,0.00
+county - san-mateo,iOS,3,3,0,0.00
+error Error: Bad Request,iOS,3,2,0,0.00
+error TypeError: Cannot read property 'length' of undefined,Macintosh,3,3,0,0.00
+resource - blm,Macintosh,3,3,0,0.00
+county - marin,iOS,2,2,0,0.00
+county - marin,Windows,2,2,0,0.00
+county - san_mateo santa_clara,Chrome OS,2,2,0,0.00
+county - solano,iOS,2,2,0,0.00
+error TypeError: Cannot read property 'length' of undefined,iOS,2,1,0,0.00
+resource - blm-statement,iOS,2,1,0,0.00
+resource - eviction,Macintosh,2,1,0,0.00
+resource - health,Linux,2,1,0,0.00
+resource - legal_assistance,Linux,2,1,0,0.00
+resource - medical,iOS,2,2,0,0.00
+undefined,iOS,2,1,0,0.00
+county - santa_clara,Linux,1,1,0,0.00
+county - sonoma,Android,1,1,0,0.00
+county - sonoma,Chrome OS,1,1,0,0.00
+error TypeError: Cannot read property 'length' of undefined,Windows,1,1,0,0.00
+error TypeError: Failed to fetch,Macintosh,1,1,0,0.00
+error TypeError: Failed to fetch,Windows,1,1,0,0.00
+resource - free_grocery,Linux,1,1,0,0.00
+,,"4,846","2,902",0,0.00
+
+Day Index,Total Events
+6/1/20,168
+6/2/20,315
+6/3/20,181
+6/4/20,112
+6/5/20,62
+6/6/20,120
+6/7/20,112
+6/8/20,183
+6/9/20,266
+6/10/20,132
+6/11/20,138
+6/12/20,39
+6/13/20,30
+6/14/20,48
+6/15/20,44
+6/16/20,114
+6/17/20,150
+6/18/20,156
+6/19/20,138
+6/20/20,10
+6/21/20,10
+6/22/20,50
+6/23/20,32
+6/24/20,82
+6/25/20,61
+6/26/20,57
+6/27/20,18
+6/28/20,14
+6/29/20,84
+6/30/20,108
+7/1/20,64
+7/2/20,42
+7/3/20,16
+7/4/20,31
+7/5/20,24
+7/6/20,42
+7/7/20,140
+7/8/20,72
+7/9/20,68
+7/10/20,66
+7/11/20,6
+7/12/20,22
+7/13/20,38
+7/14/20,32
+7/15/20,24
+7/16/20,28
+7/17/20,34
+7/18/20,10
+7/19/20,2
+7/20/20,66
+7/21/20,10
+7/22/20,42
+7/23/20,30
+7/24/20,26
+7/25/20,14
+7/26/20,14
+7/27/20,46
+7/28/20,36
+7/29/20,42
+7/30/20,16
+7/31/20,32
+8/1/20,4
+8/2/20,18
+8/3/20,46
+8/4/20,36
+8/5/20,22
+8/6/20,32
+8/7/20,20
+8/8/20,14
+8/9/20,18
+8/10/20,62
+8/11/20,49
+8/12/20,50
+8/13/20,128
+8/14/20,30
+8/15/20,58
+8/16/20,36
+8/17/20,50
+8/18/20,4
+,"4,846"
