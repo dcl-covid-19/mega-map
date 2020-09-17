@@ -1,0 +1,62 @@
+---
+title: "scratch"
+author: "Jen Ren"
+date: "5/12/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+dataset <- read_csv("./snap_output.csv")
+dataset_attrib <- read_csv("./snap_output_attrib.csv")
+```
+
+```{r}
+no_hours <- dataset %>% filter(hours == "No hours listed")
+no_hours
+```
+
+```{r}
+not_found <- dataset %>% filter(hours == "No place found")
+not_found
+```
+
+Let's verify that the zipcodes were found correctly:
+
+```{r}
+no_zipcode <- dataset %>% filter(zipcode == "No zipcode found")
+no_zipcode
+```
+
+```{r}
+dataset_attrib %>% filter(phone == "No place found")
+```
+
+```{r}
+no_status <- dataset_attrib %>% filter(status == "No business_status listed")
+
+no_status
+```
+
+```{r}
+closed <- dataset_attrib %>% 
+  filter(
+    status == "CLOSED_PERMANENTLY" |
+    status == "CLOSED_TEMPORARILY"
+  )
+
+closed
+```
+
+
+```{r}
+write_csv(x = no_hours, path = "data/no_hours.csv")
+write_csv(x = not_found, path = "data/not_found.csv")
+write_csv(x = no_status, path = "data/no_status.csv")
+write_csv(x = closed, path = "data/closed.csv")
+```
+
