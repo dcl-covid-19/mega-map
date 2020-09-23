@@ -55,18 +55,18 @@ comm_resource_data <-
   mutate(
     type =
       case_when(
-        telehealth == 1 & in_person == 1 & type == "medical" 
-        ~ "medical_in_person",
-        telehealth == 1 & in_person == 1 & type == "mental_health" 
-        ~ "mental_health_in_person",
-        telehealth == 1 & in_person != 1 & type == "medical" 
-        ~ "medical_telehealth",
-        telehealth != 1 & in_person == 1 & type == "medical" 
-        ~ "medical_in_person",
-        telehealth == 1 & in_person != 1 & type == "mental_health" 
-        ~ "mental_health_telehealth",
-        telehealth != 1 & in_person == 1 & type == "mental_health" 
-        ~ "mental_health_in_person",
+        # telehealth == 1 & in_person == 1 & type == "medical" 
+        # ~ "medical_in_person",
+        # telehealth == 1 & in_person == 1 & type == "mental_health" 
+        # ~ "mental_health_in_person",
+        # telehealth == 1 & in_person != 1 & type == "medical" 
+        # ~ "medical_telehealth",
+        # telehealth != 1 & in_person == 1 & type == "medical" 
+        # ~ "medical_in_person",
+        # telehealth == 1 & in_person != 1 & type == "mental_health" 
+        # ~ "mental_health_telehealth",
+        # telehealth != 1 & in_person == 1 & type == "mental_health" 
+        # ~ "mental_health_in_person",
         type == "core_service_agency" ~ "core",
         type == "groceries" ~ "grocery",
         TRUE ~ type
