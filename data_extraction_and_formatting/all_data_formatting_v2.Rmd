@@ -59,7 +59,7 @@ SNAP_data <-
   read_sheet(
     SNAP_key, 
     skip = 5,
-    col_types = "?????d???????????????????D?????????"
+    col_types = "?????d???????????????????D??????"
   ) %>% 
   drop_na(type) %>% 
 mutate_at(
@@ -899,50 +899,50 @@ temp <-
         str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3") %>% 
         paste(str_extract(data_set$phone, "ext\\. \\d{3,4}")),
       status = if_else(str_detect(data_set$days_hours, 'CLOSED'), 0, 1),
-      delivery = ifelse(data_set$address == "Delivery", 1, 0),
+      delivery = ifelse(data_set$delivery == "1", 1, 0),
       last_update = data_set$date_verified,
       updated_by = data_set$verified_by,
       state = 'CA'
-    )
-  output_sheet <-
+    ) 
+  
+output_sheet <-
     generate_output_sheets(data_set) %>% 
     select(-(temp %>% names())) %>% 
     bind_cols(temp) 
   
-    output_sheet <-
-      output_sheet %>% 
-      mutate(
-        status = recode(data_set$status, !!! status_recode) %>% replace_na(1),
-        free = 0,
-        SNAP = str_detect(data_set$type, 'SNAP') %>%  as.integer(),
-        WIC = str_detect(data_set$type, 'WIC') %>%  as.integer(),
-        resource = case_when(
-          str_detect(data_set$type, "retailer|store") ~ 'grocery',
-          str_detect(data_set$type, "restaurant") ~ 'restaurant',
-          str_detect(data_set$type, "farm") ~ 'grocery',
-          TRUE ~ data_set$type
-        ),
-        farmers_market = str_detect(data_set$type, 'farmers') %>%  as.integer(),
-        special_hours = (!is.na(data_set$senior_hours)) %>% as.numeric(),
-        zip = data_set$zip,
-        lat = data_set$lat,
-        lon = 
-          map_dbl(data_set$lon, function(x) {
-            l <- x[[1]]
-            if (is.null(l)) {
-              return( NA_real_)
-            } else {
-              return(l)
-            }
-          }
-          )
+output_sheet <-
+  output_sheet %>% 
+  mutate(
+    status = recode(data_set$status, !!! status_recode) %>% replace_na(1),
+    free = 0,
+    SNAP = str_detect(data_set$type, 'SNAP') %>%  as.integer(),
+    WIC = str_detect(data_set$type, 'WIC') %>%  as.integer(),
+    resource = case_when(
+      str_detect(data_set$type, "retailer|store") ~ 'grocery',
+      str_detect(data_set$type, "restaurant") ~ 'restaurant',
+      str_detect(data_set$type, "farm") ~ 'grocery',
+      TRUE ~ data_set$type
+    ),
+    farmers_market = str_detect(data_set$type, 'farmers') %>%  as.integer(),
+    special_hours = (!is.na(data_set$senior_hours)) %>% as.numeric(),
+    zip = data_set$zip,
+    lat = data_set$lat,
+    lon = 
+      map_dbl(data_set$lon, function(x) {
+        l <- x[[1]]
+        if (is.null(l)) {
+          return( NA_real_)
+        } else {
+          return(l)
+        }
+      }
       )
+  )
   
-  
-SNAP_output <- output_sheet %>% select(all_of(output_variable_names)) 
+# senior hours processing? 
+# not sure what is happening here..
 
-
-  map_dfc(output_variable_names, contains_variable) %>% 
+map_dfc(output_variable_names, contains_variable) %>% 
   bind_cols(
     data_set$days_hours %>%
       map_dfr(process_hours_SNAP, senior = F)
@@ -969,38 +969,11 @@ SNAP_output <- output_sheet %>% select(all_of(output_variable_names))
     updated_by = data_set$verified_by,
     state = 'CA'
   )
+
 output_sheet <-
   generate_output_sheets(data_set) %>% 
   select(-(temp %>% names())) %>% 
   bind_cols(temp) 
-
-output_sheet <-
-  output_sheet %>% 
-  mutate(
-    free = 0,
-    SNAP = str_detect(data_set$type, 'SNAP') %>%  as.integer(),
-    WIC = str_detect(data_set$type, 'WIC') %>%  as.integer(),
-    resource = case_when(
-      str_detect(data_set$type, "retailer|store") ~ 'grocery',
-      str_detect(data_set$type, "restaurant") ~ 'restaurant',
-      str_detect(data_set$type, "farm") ~ 'grocery',
-      TRUE ~ data_set$type
-    ),
-    farmers_market = str_detect(data_set$type, 'farmers') %>%  as.integer(),
-    special_hours = (!is.na(data_set$senior_hours)) %>% as.numeric(),
-    zip = data_set$zip,
-    lat = data_set$lat,
-    lon = 
-      map_dbl(data_set$lon, function(x) {
-        l <- x[[1]]
-        if (is.null(l)) {
-          return( NA_real_)
-        } else {
-          return(l)
-        }
-      }
-      )
-  )
 
 
 SNAP_output <- output_sheet %>% select(all_of(output_variable_names)) %>% 
@@ -1318,12 +1291,11 @@ legal_resource_output <-
 final_output <-
   bind_rows(
     SNAP_output, 
-    school_meal_output, 
+    school_meal_output,
     comm_resource_output,
-    legal_resource_output, 
+    legal_resource_output,
     farmers_output
   ) %>% 
-
   mutate(
     alameda = if_else(str_detect(region,"alameda"), 1, 0),
     santa_clara = if_else(str_detect(region,"santa_clara"), 1, 0),
@@ -1373,6 +1345,10 @@ comm_resource_data %>%
 ##writing to debug
 final_output %>% 
   write_sheet(ss = "1ANfnP8ghzEdj7Tr1X9CgU5chTrhZmbW9s0qudidMs0g", sheet = "Sheet1") 
+
+final_output %>%
+  select(-last_update) %>% 
+  write_csv(path = "snapoutput.csv")
 
 ##write to db
 # final_output %>% 
