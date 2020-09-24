@@ -1,0 +1,330 @@
+---
+title: "ballot drop off"
+author: "Anjali Katta"
+date: "22/09/2020"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(rvest)
+library(pdftools)
+library(lubridate)
+library(janitor)
+```
+
+# Finished
+## Santa Clara
+https://www.sccgov.org/sites/rov/VBM/Pages/VoteEarly.aspx
+```{r}
+url <- "https://www.sccgov.org/sites/rov/VBM/Pages/VoteEarly.aspx" ## go to the website and in the chrome browser then click view > developer tools > inspect elements to figure out in what type of HTML structure is the data located. In this case it was a table. 
+
+xpath = '//*[@id="ctl00_PlaceHolderMain_RichHtmlField2__ControlWrapper_RichHtmlField"]/table[2]' ## in the inspect elements, find the section of html code that highlights the information you are interested in. Right click, copy > copy xpath
+
+data <-
+  url %>% 
+  read_html() %>% 
+  html_nodes(xpath = xpath) %>% 
+  html_table(fill = TRUE) %>% ## produces a list
+  .[[1]] ## selecting the relevant data from the list
+  
+
+combined_cols <-
+  data %>%
+  select(X4:X108) %>% ##chose to use the one entry per column variables and combine them 
+  gather(value = "locations") %>%
+  select(locations) %>%
+  drop_na() 
+
+santa_clara_ballots <- ##reg exes to extract addresses name of each entry
+  combined_cols %>% 
+  mutate(
+    county =  "Santa Clara",
+    name = str_extract(locations, "(?<!\\d)\\D*"),
+    address = str_extract(locations, "\\d+\\D*,") %>% str_remove_all(","),
+    city  = str_extract(locations, ", \\D*,") %>% str_remove_all(",|(,\\s)"),
+    state = "CA",
+    zip = str_extract(locations, "\\d{5}$"),
+    outside = 1,
+    times = "24 Hours, until 8 pm on Nov. 3", ##added from info on website
+    date_open = dmy("05/10/2020"), ##added from info on website
+    date_close = dmy("03/11/2020") ##added from info on website
+  ) %>% 
+  select(-1) 
+
+santa_clara_ballots %>% 
+  write_csv(path = "~/GitHub/mega-map-dcl/ballotdropoff_scraping/santa_clara.csv")
+
+```
+## San Mateo
+```{r}
+url <- "https://www.smcacre.org/ballot-drop-box-locations"
+xpath <- '//*[@id="node-2198-teaser"]/div/div[2]/table'
+
+data <-
+  url %>% 
+  read_html() %>% 
+  html_nodes(xpath = xpath) %>% 
+  html_table(fill = TRUE) %>% 
+  .[[1]]
+
+combined_cols <-
+  bind_rows(data %>% select(X1), data %>% select(X2) %>% rename(X1 = X2)) %>% 
+  rename(locations = X1)
+
+san_mateo_ballots <-
+  combined_cols %>% 
+  mutate(
+    county = "San Mateo",
+    name = str_extract(locations, "(?<!\\d)\\D*"),
+    address = str_extract(locations, "\\d+\\D*\\n"),
+    city  = str_extract(locations, "\\t{3}\\D*,"),
+    state = "CA",
+    zip = str_extract(locations, "\\d{5}$"),
+    outside = if_else(str_detect(name, "Inside"), 0, 1),
+    times = 
+      if_else(
+        outside !=1, 
+        "Open during business hours",
+        "24 hours, until 8 pm on Nov. 3"
+        ),
+    date_open = dmy("05/10/2020"), ##added from info on website
+    date_close = dmy("03/11/2020") ##added from info on website
+  ) %>% 
+  mutate_all(., ~str_remove_all(., "\\t|\\n|,")) %>% 
+  mutate(
+    name = str_remove(name, pattern = city)
+  ) %>% 
+  select(-1)
+
+san_mateo_ballots %>% 
+  write_csv(path = "~/GitHub/mega-map-dcl/ballotdropoff_scraping/san_mateo.csv")
+```
+## Contra Costa
+```{r}
+url <- 
+  "https://www.cocovote.us/election/presidential-general-election-november-3-2020/#Election"
+## This ones structured a little weirdly so instead we're going to use the general html table and then combine the last two table that come out of it. 
+
+tables <-  
+  url %>% 
+  read_html() %>% 
+  html_table() %>% ## manually looked at which tables were the most helpful, discovered that 2, 3 were exactly what we needed with no reg-exes required! 
+  .[2:3] 
+
+outdoor <- ## isolating each table before combining 
+  tables %>% 
+  .[[1]] %>% 
+  row_to_names(row = 1) %>% 
+  rename(name = `Drop Box Location`, address = Address, city =  City) %>% 
+  mutate(
+    outside = 1,
+    times = "24 hours until 8 pm on Nov. 3",
+    date_open = dmy("05/10/2020"), ##added from info on website
+    date_close = dmy("03/11/2020") ##added from info on website
+  ) 
+
+indoor <-
+  tables  %>% 
+  .[[2]]
+
+
+indoor <- 
+  bind_cols(
+    indoor[1] %>% 
+      rename(
+        name = `Contra Costa County Indoor Drop Boxes Available During Business Hours*`
+      ),
+    indoor[2] %>% 
+      rename(
+        address = `Contra Costa County Indoor Drop Boxes Available During Business Hours*`
+      ),
+    indoor[3] %>% 
+      rename(
+        city =`Contra Costa County Indoor Drop Boxes Available During Business Hours*`
+      ),
+    indoor[4] %>% 
+      rename(
+        times =`Contra Costa County Indoor Drop Boxes Available During Business Hours*`
+      )
+  ) %>% 
+  mutate(
+    outside = 0,
+    date_open = dmy("05/10/2020"), ##added from info on website
+    date_close = dmy("03/11/2020") ##added from info on website
+  )
+
+contra_costa_ballots <-
+  bind_rows(indoor, outdoor) %>% 
+  mutate(
+    state = "CA",
+    county = "Contra Costa", 
+    zip = NA
+  ) %>% 
+  select(
+    santa_clara_ballots %>% names()
+  )
+
+contra_costa_ballots %>% 
+  write_csv(path = "~/GitHub/mega-map-dcl/ballotdropoff_scraping/contra_costa.csv")
+```
+
+
+
+
+## Alameda County
+this ones a little bit harder because all of the code is contained in a java script function and had to do a lot of ugly and weird reg-exes :/ so ignore this one for now  
+```{r}
+url <- "https://www.acgov.org/rovapps/maps/ballotdropbox_locations.js?v=1.0"
+
+text <-
+  read_lines(
+    "~/GitHub/mega-map-dcl/ballotdropoff_scraping/ballotdropbox_locations.js"
+    )
+help <-
+  text %>% 
+  tibble() %>% 
+  rename(., value = `.`)
+
+marked <- 
+  help %>%
+  filter(str_detect(value, "\\S")) %>% 
+  mutate(
+    marker = if_else(str_detect(value, "arr\\[i\\]"), 1, 0),
+    plus_sign = if_else(str_detect(value, "\\s\\+"), 1, 0)
+    ) %>% 
+  tail(-3)
+
+full_names <-
+  marked %>% 
+  filter(marker == 1, plus_sign == 0, !str_detect(value, "\"\\+"))
+
+split_names <-
+  marked %>% 
+  filter(!(value %in% c(full_names %>% select(value) %>% pull()))) %>% 
+  head(-2) %>% 
+  filter(!str_detect(value, "google|Commented"))
+
+all_names <- split_names
+```
+
+```{r}
+split_names <- bind_rows(all_names %>% head(108), all_names %>% tail(90))
+
+marker = 1
+for(row in 1:nrow(split_names)) {
+  if(marker == 6) {
+    empty[row, 1] = 
+      paste(
+        split_names[row - 5, 1],
+        split_names[row - 4, 1],
+        split_names[row - 3, 1], 
+        split_names[row - 2, 1],
+        split_names[row - 1, 1],
+        split_names[row, 1]
+        
+      )
+    marker = 1
+  } else {
+    marker = marker + 1
+  }
+}
+
+row_nums = c(1:31)*6
+
+lines_1 <- empty[row_nums, 1] %>% as.tibble()
+```
+
+```{r}
+weird_splits <-  
+  all_names %>% 
+  tail(100) %>% 
+  head(10)
+marker = 1
+empty <- data.frame(rep(0, nrow(marked)))
+for(row in 1:nrow(split_names)) {
+  if(marker == 5) {
+    empty[row, 1] = 
+      paste(
+        weird_splits[row - 4, 1],
+        weird_splits[row - 3, 1], 
+        weird_splits[row - 2, 1],
+        weird_splits[row - 1, 1],
+        weird_splits[row, 1]
+        
+      )
+    marker = 1
+  } else {
+    marker = marker + 1
+  }
+}
+
+lines_2 <-
+  empty[c(5,10), 1] %>% 
+  as.tibble()
+```
+
+```{r}
+alameda_ballots <-  
+  full_names %>% 
+  select(value) %>% 
+  bind_rows(lines_1, lines_2) %>% 
+  mutate(
+    value = str_remove_all(value, "arr\\[i\\]|\"|\\=|/|\\+|\\t|\\n"),
+    value = str_replace(value, ",-12", ":-12"),
+    pending = if_else(str_detect(value, "pend"), 1, 0)
+  ) %>% 
+  separate(
+    value, sep = ":", 
+    into = c("city", "name", "address", "lat", "long")
+    ) %>% 
+  mutate(
+    city = str_remove_all(city, "\\s"),
+    address_zip = str_remove(address, pattern = city),
+    address = str_remove_all(address, "CA\\D+\\d*|CA|,"),
+    zip = str_extract(address_zip, "94\\d{3}"),
+    state = "CA",
+    county = "Contra Costa", 
+    outside = 1,
+    times = "24 hours until 8 p.m. on Nov. 3",
+    date_open = dmy("05/10/2020"), ##added from info on website
+    date_close = dmy("03/11/2020") ##added from info on website
+  ) %>% 
+  select(
+    county,
+    name, 
+    city, 
+    address,
+    state, 
+    zip, 
+    pending,
+    lat, 
+    long, 
+    outside, 
+    times, 
+    date_open, 
+    date_close
+    )
+
+alameda_ballots %>% 
+  write_csv(path = "~/GitHub/mega-map-dcl/ballotdropoff_scraping/alameda.csv")
+```
+
+
+
+# write to sheets
+```{r}
+ss_key <- "1NQfLSK8E5tx9m5Mk2XyW78v9sjzohmnbym7hMczpxXY"
+
+santa_clara_ballots %>% 
+  write_sheet(ss = ss_key, sheet =  "Santa Clara")
+
+san_mateo_ballots %>% 
+  write_sheet(ss = ss_key, sheet =  "San Mateo")
+
+contra_costa_ballots %>% 
+  write_sheet(ss = ss_key, sheet =  "Contra Costa")
+
+alameda_ballots %>% 
+  write_sheet(ss = ss_key, sheet =  "Alameda")
+```
+
