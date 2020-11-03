@@ -5,11 +5,14 @@
 # Change the dates to desired date range
 # Above the table, select Operating system
 # Above the table, select Secondary dimension > Time > Date
-# Change the number of rows to be the maximum
+# Scroll to the bottom, change the number of rows to be the maximum so that 
+  # all rows get exported
 # Export > CSV
+# Move CSV to data-raw
+# Change file_data path so that it points to right data
 
 # Author: Sara Altman
-# Version: 2020-08-14
+# Version: 2020-11-03
 
 # Libraries
 library(tidyverse)
@@ -17,7 +20,7 @@ library(tidyverse)
 # Parameters
 file_data <-
   here::here(
-    "data-raw/Analytics All Web Site Data Browser & OS 20200601-20200814.csv"
+    "data-raw/Analytics All Web Site Data Browser & OS 20200601-20201102.csv"
   )
 file_out <- here::here("data/site_users.rds")
 #===============================================================================

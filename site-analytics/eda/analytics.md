@@ -1,7 +1,7 @@
 Bay Area Community Analytics
 ================
 Sara Altman
-2020-08-18
+2020-11-03
 
   - [Users over time](#users-over-time)
   - [Operating systems](#operating-systems)
