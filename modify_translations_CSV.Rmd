@@ -55,7 +55,7 @@ create_csv <-function(name) {
     filter(!is.na(.[2])) %>% 
     write_csv(
       paste(
-        "~/GitHub/mega-map-dcl/translations/input/", #edit here 
+        "/Users/joycetagal/GitHub/dcl-covid-19/mega-map/translations/output/", #edit here 
         name , 
         ".csv",
         sep = ""

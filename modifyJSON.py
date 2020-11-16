@@ -8,7 +8,7 @@ import glob
 # for filename in filenames:
 
 
-os.chdir("/Users/anjailkatta/GitHub/mega-map-dcl/translations/output")
+os.chdir("/Users/joycetagal/GitHub/dcl-covid-19/mega-map/translations/output")
 
 filenames = glob.glob('./*.json')
 
