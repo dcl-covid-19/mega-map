@@ -1,14 +1,25 @@
 # Site event data
 
+# Behavior > Events > Top events
+# Select desired date range
+# Scroll to table, then click Event label
+# Secondary dimension > Users > Operating system
+# Select maximum number of rows so that all data shows
+# Export > CSV
+# Move CSV to data-raw
+# Change file_data path so that it points to right data
+
 # Author: Sara Altman
-# Version: 2020-08-18
+# Version: 2020-11-03
 
 # Libraries
 library(tidyverse)
 
 # Parameters
 file_data <- 
-  here::here("data-raw/Analytics All Web Site Data Top Events 20200601-20200818.csv")
+  here::here(
+    "data-raw/Analytics All Web Site Data Top Events 20200601-20201102.csv"
+  )
 file_out <- here::here("data/events.rds")
 #===============================================================================
 
