@@ -1,0 +1,26 @@
+import pandas as pd
+import requests
+import json
+from datetime import date
+import numpy as np
+from datetime import datetime
+
+url = "https://mymapscc.sccgov.org/Home/SearchResultJson?geocode=37.3316745,%20-121.9053698&location=San%20Jose,%20CA&selectedprogramfeature=CalFresh%20Double%20Up%20Food%20Bucks&selectedprogramfeature=CalFresh%20Food%20Restaurant%20Meals&selectedprogramfeature=Senior%20Dining%20Caf%C3%A9%20Program"
+dfs = []
+
+params = {
+    "f":"json",
+    "where":"1=1",
+    "returnGeometry":"true",
+    "outFields":"*",
+}
+
+
+res = requests.get(url, params=params)
+df = pd.json_normalize(json.loads(res.text))
+df.head(111)
+
+
+today = date.today()
+filename = 'santa_clara_county_restaurant_meals_%s.csv' % (today.strftime("%m_%d_%Y"))
+df.to_csv(filename)
