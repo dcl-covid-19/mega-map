@@ -7,6 +7,7 @@ bleach==3.1.5
 certifi==2020.6.20
 cffi==1.14.2
 chardet==3.0.4
+chromedriver-py==87.0.4280.88
 cryptography==3.2
 cycler==0.10.0
 decorator==4.4.2
@@ -67,6 +68,7 @@ requests==2.24.0
 requests-ntlm==1.1.0
 requests-oauthlib==1.3.0
 requests-toolbelt==0.9.1
+selenium==3.141.0
 Send2Trash==1.5.0
 six==1.15.0
 terminado==0.8.3
