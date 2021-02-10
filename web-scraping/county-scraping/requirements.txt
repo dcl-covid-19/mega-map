@@ -8,7 +8,7 @@ certifi==2020.6.20
 cffi==1.14.2
 chardet==3.0.4
 chromedriver-py==87.0.4280.88
-cryptography==3.2
+cryptography==3.3.2
 cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
