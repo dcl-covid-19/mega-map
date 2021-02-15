@@ -1,9 +1,11 @@
 # Web Scraping
 
-This subdirectory contains all code related to web scrapers. The scrapers can be found in
-the county-scraping subdirectory.
+This subdirectory contains all code related to web scrapers. 
 
-# Selenium and Webscraping
+## County Website Scraping
 
-In some cases when executing a GET request, the data might not be available until some javascript
-runs that will make an async request. To get around this limitation, we require the use of a webdriver to scrape to the content on the page. An example of such a script is CalfreshScraper.py.
+The county-scraping subdirectory contains examples of scripts/Jupyter notebooks that scrape data (often lists of county resources) from websites. 
+
+## Site Monitoring
+
+The site-monitoring folder contains prototype code for monitoring a set of websites for changes and sending an email notification if changes are detected. This was originally prototyped to monitor changes in school meal information on district websites. It has not been deployed.
