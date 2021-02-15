@@ -29,5 +29,3 @@ See Contra Costa County.ipynb for an example.
 ### Selenium
 
 In some cases when executing a GET request, the data might not be available until some javascript runs that will make an async request. To get around this limitation, we require the use of a webdriver to scrape to the content on the page. An example of such a script is CalfreshScraper.py.
-
-<a href="https://ibb.co/BrLwn5C"><img src="https://i.ibb.co/mXJSNVc/Screen-Shot-2021-02-15-at-6-42-54-PM.png" alt="Screen-Shot-2021-02-15-at-6-42-54-PM" border="0"></a>
