@@ -75,7 +75,7 @@ We might explain how we've designed this project. For instance, we could explain
 ## TODOs and Personal Musings
 * Find a good R tutorial
 * Find a good Jupyter notebook tutorial
-* Decide whether non-main branches and pull requests make sense here
+* Decide whether forking + non-main branches + PRs is the best approach
 * Make a pretty diagram for explaining the general workflow
 * add an example notebook with comments
 * PR etiquette -- attach an example PR to this README (woah, inception)
