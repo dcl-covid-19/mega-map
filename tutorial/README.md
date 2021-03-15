@@ -83,6 +83,7 @@ We might explain how we've designed this project. For instance, we could explain
 
 ## TODOs and Personal Musings
 * Decide whether non-main branches + PRs is the best approach, or if forking should be best practice
+    * Also decide whether we should require reviewers whenever we merge code (leaning towards no since this is non-production code)
 * Construct an extra README for the actual example project (maybe also a subdir)
 * Possibly split off sections from the main README since it's getting kinda large
 * Find a good Jupyter notebook tutorial
