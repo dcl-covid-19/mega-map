@@ -32,13 +32,11 @@ Airtable is a graph database. For documentation see [here](https://airtable.com/
 
 ## What is Carto?
 
-Carto is a relational database. For documentation [here](https://docs.carto.com/)
-
-![Carto](images/Carto.JPG)
+[Carto](https://dcl-mega-map.carto.com/tables/airtable/public) is a relational database. For documentation [here](https://docs.carto.com/)
 
 ## Why do we have one table in CARTO but 6 different tables in airtable?
 
-We are trying to make our Airtable adhere to the HSDS data structure! Many social service orgs use HSDS, so having our sharable Airtable API be in HSDS would ideally help us partner with and more easily integrate the data structures of local social service organizations. HSDS includes several tables. Our CARTO strucute is not HSDS because we chose to move to HSDS after we had built our CARTO backend. Instead of refactoring CARTO and our entire website (coded in Vue JS) we decided the make a script to transform Airtable’s HSDS structure to the CARTO structure we had made up at the outset of this project.
+We are trying to make our Airtable adhere to the [HSDS](http://docs.openreferral.org/en/latest/hsds/) data structure! Many social service orgs use HSDS, so having our sharable Airtable API be in HSDS would ideally help us partner with and more easily integrate the data structures of local social service organizations. HSDS includes several tables. Our CARTO strucute is not HSDS because we chose to move to HSDS after we had built our CARTO backend. Instead of refactoring CARTO and our entire website (coded in Vue JS) we decided the make a script to transform Airtable’s HSDS structure to the CARTO structure we had made up at the outset of this project.
 
 ## Why can’t we go directly to CARTO tables?
 
