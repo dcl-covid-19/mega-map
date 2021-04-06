@@ -1,3 +1,9 @@
+# Web Scraping
+This subdirectory contains all code related to web scrapers. The scrapers can be found in the `county-scraping` subdirectory.
+
+## Selenium and Webscraping
+In some cases when executing a GET request, the data might not be available until some javascript runs that will make an async request. To get around this limitation, we require the use of a webdriver to scrape to the content on the page. An example of such a script is `CalfreshScraper.py`.
+
 # Data flow
 
 ![Data Flow](images/Slide1.JPG)
@@ -6,7 +12,7 @@
 # Faq
 ## What is a Web Scraper program?
 
-[Web Scraper](https://github.com/dcl-covid-19/mega-map/tree/master/web-scraping/county-scraping)  is data scraping program written in python to _extract data_ from county websites to csv. 
+[Web Scraper](https://github.com/dcl-covid-19/mega-map/tree/master/web-scraping/county-scraping) is data scraping program written in python to _extract data_ from county websites to csv. 
 
 ## What is Upload csv to Airtable?
 
@@ -36,8 +42,8 @@ Airtable is a graph database. For documentation see [here](https://airtable.com/
 
 ## Why do we have one table in CARTO but 6 different tables in airtable?
 
-We are trying to make our Airtable adhere to the [HSDS](http://docs.openreferral.org/en/latest/hsds/) data structure! Many social service orgs use HSDS, so having our sharable Airtable API be in HSDS would ideally help us partner with and more easily integrate the data structures of local social service organizations. HSDS includes several tables. Our CARTO strucute is not HSDS because we chose to move to HSDS after we had built our CARTO backend. Instead of refactoring CARTO and our entire website (coded in Vue JS) we decided the make a script to transform Airtable’s HSDS structure to the CARTO structure we had made up at the outset of this project.
+We are trying to make our Airtable adhere to the [HSDS](http://docs.openreferral.org/en/latest/hsds/) data structure! Many social service orgs use HSDS, so having our sharable Airtable API be in HSDS would ideally help us partner with and more easily integrate the data structures of local social service organizations. HSDS includes several tables. Our CARTO strucute is not HSDS because we chose to move to HSDS after we had built our CARTO backend. Instead of refactoring CARTO and our entire website (coded in Vue JS) we decided the make a script to transform Airtableâ€™s HSDS structure to the CARTO structure we had made up at the outset of this project.
 
-## Why can’t we go directly to CARTO tables?
+## Why canâ€™t we go directly to CARTO tables?
 
 Because we rely on volunteer data entry and validation, Airtable is a user-friendly and accessible place for volunteers to plug in and make changes! Ideally, partners could also use Airtable to update our database. CARTO would be a less accessible interface for data work by volunteers and partners.
