@@ -1,0 +1,205 @@
+title: "AT_to_NKH"
+author: "Anjali Katta"
+date: "29/09/2020"
+output: html_document
+---
+```{r setup, include=FALSE}
+#install.packages('googlesheets4')
+#install.packages("lubridate")
+#install.packages("tidyverse")
+library(googlesheets4)
+library(lubridate)
+li?rary(tidyverse)
+gs4_auth()
+#loading in the data 
+#this should be the file path where you saved the csv you downloaded from airtable
+total_key <- "C:\\Users\\GarlicSauce\\Downloads\\services-School Meals View CSV.csv" 
+total <- 
+  read_csv(total_key) %>% 
+  mutate_at(vars(`opens_at (from schedule)`, `closes_at (from schedule)`), ~str_repl?ce(.,"0am", "0 AM"))
+# adding the information we can to the new 
+NKH_school_meals <-
+  tibble(
+    siteName = total$Name,
+    siteStatus = 
+      total$active,
+    siteAddress = total$address,
+    siteCity = total$`city (from address) (from locations)`,
+  ? siteState = "CA",
+    siteZip = total$`Zip Code (from address) (from locations)`,
+    contactPhone = total$phones,
+    startDate = "9/1",
+    endDate = "12/31",
+    daysofOperation = "",
+    breakfastTime = "",
+    lunchTime = 
+      paste(
+        total$?opens_at (from schedule)`, 
+        total$`closes_at (from schedule)`, 
+        sep = "-"
+        ),
+    snackTimeAM = "",
+    snackTimePM = "",
+    dinnerSupperTime = "",
+    sos_comments = total$Description,
+    eligibility = total$details,
+    taxonomy ? "School Meals"
+  ) %>% 
+  mutate(
+    daysofOperation = 
+      total$`weekday (from schedule)`
+    %>% 
+      str_replace("Monday", "M") %>% 
+      str_replace("Tuesday", "T") %>% 
+      str_replace("Wednesday", "W") %>% 
+      str_replace("Thursday", "TH?) %>% 
+      str_replace("Friday", "F") %>%
+      str_replace("Saturday", "SA") %>% 
+      str_replace("Sunday", "SU"),
+    sos_comments = 
+      if_else(
+        !is.na(total$`add_day (from schedule) 2`) |
+          !is.na(total$`add_hours (from schedule)?2`),
+        paste(
+          "Additional hours include: ", 
+          total$`add_day (from schedule) 2`, 
+          total$`add_hours (from schedule) 2`, 
+          sep = " "
+        ),
+        sos_comments
+      )
+  ) %>% 
+  mutate_all(., ~str_remove_all(?, "NA-NA|NA|NA-"))
+  
+# fixing the school hours
+schools_test <-
+  total %>% 
+  select_at(vars(Name, open_hour = `opens_at (from schedule)`, close_hour = `closes_at (from schedule)`)) %>% 
+  mutate_all (~if_else(str_detect(., "00:00|0:00|5:00"), str_remove(?, ":00"), .)) %>% 
+  mutate_all(~str_replace(., "0 pm", "0 PM")) %>% 
+  mutate_all(~str_replace(., "0pm", "0 PM")) %>% 
+ mutate(
+   close_hour = if_else(str_detect(close_hour, "10 AM|10AM"), "10:00 AM", close_hour),
+   time = paste(open_hour, close_hour, s?p = "-")
+   )
+to_NKH <-
+schools_test %>% 
+  mutate(time = paste(open_hour, close_hour, sep = "-")) %>% 
+  mutate(close_val = str_remove_all(close_hour, "AM|PM|:") %>% as.integer()) %>% 
+  mutate(
+    breakfastTime = 
+      if_else(close_val <= 1200 & close?val > 700, time, ""),
+    lunchTime = 
+      if_else(
+        close_val > 1201 |
+          close_val < 500 & 
+          str_detect(close_hour, "PM|pm"), 
+        time, 
+        ""
+      ),
+    dinnerTime = 
+      if_else(
+        close_val > 500 & close_va? < 800,
+        time,
+        ""
+      )
+  )
+NKH_school_meals <-
+  NKH_school_meals %>% 
+  mutate(
+    breakfastTime = to_NKH$breakfastTime,
+    lunchTime = to_NKH$lunchTime,
+    dinnerSupperTime = to_NKH$dinnerTime
+  )
+# Adding the proper Days Hours in ou? format 
+add_dayshours <-
+  total %>% 
+  select_at(vars(add_day = `add_day (from schedule) 2`, add_hours = `add_hours (from schedule) 2`)) %>% 
+  mutate(
+    daysofOperation = 
+      add_day
+    %>% 
+      str_replace("Monday", "M") %>% 
+      str_replace(?Tuesday", "T") %>% 
+      str_replace("Wednesday", "W") %>% 
+      str_replace("Thursday", "TH") %>% 
+      str_replace("Friday", "F") %>%
+      str_replace("Saturday", "SA") %>% 
+      str_replace("Sunday", "SU")
+  ) %>% 
+  separate(add_hours, into = c("o?en_hour", "close_hour"), sep = "-")
+add_dayshours_edited <- 
+  add_dayshours %>% 
+  mutate_at(
+    vars(open_hour, close_hour),
+    ~if_else(str_detect(., "00:00|0:00|5:00"), str_remove(., ":00"), .)
+    ) %>% 
+ mutate(
+   close_hour = if_else(str_detect(c?ose_hour, "10AM"), "10:00 AM", close_hour),
+   time = paste(open_hour, close_hour, sep = "-")
+   ) 
+  
+add_dayshours_edited <- 
+  add_dayshours_edited %>% 
+  mutate(
+    time = if_else(!is.na(open_hour), paste(open_hour, close_hour, sep = "-"), "")
+    ) %?% 
+  mutate(close_val = str_remove_all(close_hour, "AM|PM|:|am|pm") %>% as.integer()) %>% 
+  mutate(
+    breakfastTime = 
+      if_else(close_val <= 1200 & close_val > 700, time, ""),
+    lunchTime = 
+      if_else(
+        close_val > 1201 |
+          clo?e_val < 500 & 
+          str_detect(close_hour, "PM|pm"), 
+        time, 
+        ""
+      ),
+    dinnerTime = 
+      if_else(
+        close_val > 500 & close_val < 800 & 
+          str_detect(close_hour, "PM|pm"),
+        time,
+        ""
+      )
+  ) %>% ?  select_at(vars(
+    extra_b = breakfastTime,
+    extra_l = lunchTime,
+    extra_d = dinnerTime,
+    extra_days = daysofOperation
+  )
+  )
+# putting it all together 
+final_NKH <-
+NKH_school_meals %>% 
+  cbind(add_dayshours_edited) %>% 
+  mutate(
+    breakf?stTime =
+      if_else(
+        !is.na(extra_days) & daysofOperation == extra_days,
+        str_c(breakfastTime, extra_b, sep = ", "),
+        breakfastTime
+      ),
+    lunchTime =
+      if_else(
+        !is.na(extra_days) & daysofOperation == extra_days,?       str_c(lunchTime, extra_l, sep = ", "),
+        lunchTime
+      ),
+    dinnerSupperTime =
+       if_else(
+        !is.na(extra_days) & daysofOperation == extra_days,
+        paste(dinnerSupperTime, extra_d, sep = ", "),
+        dinnerSupperTime
+     ?)
+    ) %>%
+  mutate_at(vars(breakfastTime, lunchTime, dinnerSupperTime), ~ str_remove(., "NA\\,|^\\,")) %>% 
+  select_at(vars(-c(extra_b:extra_days)))
+errors <-
+  to_NKH %>% 
+  filter(is.na(close_val)) 
+#uploading to google drive
+ss_key <- "1INYFlE7gIjQCX?ouNK9STncdXLVgSDNcMj6mXjxrahY"
+final_NKH%>% 
+  write_sheet(ss = ss_key, sheet = "Airtable to NKH")
+```
