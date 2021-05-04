@@ -1,0 +1,346 @@
+{
+  "about": {
+    "close": "Isara",
+    "contact": "Makipag-ugnayan sa amin",
+    "contactus": {
+      "email": "email",
+      "info": "Ang pahinang ito ay nasa pamamahala ng {0} of {1}. Para sa mga katanungan at pagkikipagugnayan, magyari lang po mag-email sa {2}."
+    },
+    "devhelp": {
+      "addbusiness": "isama ang isang negosyo",
+      "addinfo": "Gamitin ang mga online form para sa {0} o {1}.",
+      "ambassadorinfo": "Tulungan kaming palawakin ang saklaw sa buong Bay Area. Makikipagtulungan ang mga embahador kasama ang mga lokal na pamahalaan at mga asosasyon sa negosyo upang dalhin ang Bay Area Community Resources sa kanilang komunidad. I-email sa amin ang {0} para magsimula.",
+      "becomeambassador": "Maging isang embahador ng komunidad",
+      "conduct": "Kodigo ng mga alituntunin",
+      "devnote": "Mga developer - hanapin ang aming {0} at {1} sa GitHub.",
+      "dupsite": "Gamitin ang aming kodigo upang makabuo ng isang site para sa iyong estado o rehiyon:",
+      "info": "Ito ay isang bukas na mapagkukunan na proyekto, na binuo upang ibahagi at mapalawak sa ibang mga komunidad.",
+      "source": "Pinagmulan kodigo",
+      "support": "Suportahan ang iyong mga kapitbahay at lokal na negosyo - tulungan kaming lumago!",
+      "updatebusiness": "i-update ang isang umiiral na tala"
+    },
+    "getinvolved": "Makisali",
+    "info": "Ang aming database ng mga mapagkukunan ay nakikinabang mula sa impormasyong nakolekta ng mga samahang ito:",
+    "linktext": "Tungkol sa amin",
+    "orgs": {
+      "bureau": "Do not translate",
+      "cfa": "Do not translate",
+      "chb": "Do not translate",
+      "farmstewards": "Do not translate",
+      "localistnc": "Do not translate",
+      "partnership": "Do not translate",
+      "dcl": "Laboratoryo ng Hamon ng Data",
+      "bln": "Malaking Lokal ng Balita"
+    },
+    "partners": "Pinagmulan ng Impormasyon",
+    "title": "Tungkol sa site na ito",
+    "front-page": {
+      "p1": "Kumusta!",
+      "p2": "Nagbibigay kami ng impormasyon tungkol sa mga mapagkukunan tulad ng libreng pagkain, tulong sa pagkain, legal na tulong, at tulong medikal.",
+      "p3": "Magsimula sa pamamagitan ng pagpili kung nasaan ka at kung ano ang hinahanap mo.",
+      "p4": {
+        "text": "Kami ay kaakibat sa {0} at {1} ng Stanford at lubos na nagpapasalamat kay Bill Behrman, Sara Altman, at Cheryl Phillips para sa kanilang patuloy na suporta at payo.",
+        "link0": "Laboratoryo ng Hamon ng Data",
+        "link1": "Malaking Lokal ng Balita"
+      }
+    },
+    "about-us-sources": "Ang aming database ng impormasyon ay nakikinabang mula sa data na nakolekta ng mga sumusunod na samahan:\ntagahanap ng tindahan ng USDA SNAP\ntagahanap ng tindahan ng USDA WIC\nPangalawang Pag-aani ng Silicon Valley\nAdvocacy ng Stanford Pediatric\n\nMayroon kaming isang koponan ng mga kamangha-manghang mga boluntaryo na nagpapatunay sa data at nangongolekta ng anumang karagdagang impormasyon tulad ng karagdagang Covid-19 na mga oras para sa mga nakatatanda, ligtas na pagpipilian ng curbside pick-up, etc.",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "Ang proyektong Bay Area Resources na ito ay puro boluntaryo na hinihimok. Mayroon kaming isang koponan ng mga tao na nangolekta at nagpapatunay ng data mula sa magkakaibang mapagkukunan. Ginagawa namin ang aming makakaya upang mapanatili ang lahat ng impormasyon sa site kamakailan hangga't maaari, subalit hindi namin masiguro na ang impormasyon ay tumpak na 100%.",
+    "about-us": {
+      "header": "Tungkol sa amin",
+      "p1": {
+        "text": "Kami ay isang boluntaryo na hinihimok, bukas na mapagkukunan upang matulungan ang mga komunidad na mag-navigate sa krisis sa COVID sa pamamagitan ng pagbibigay ng impormasyon sa mga pampublikong mapagkukunan. Ang proyektong ito ay nagsimula bilang isang {0}, at ngayon ay nagbibigay ng impormasyon sa higit pang mga mapagkukunan tulad ng mga lokasyon at iskedyul para sa libreng pagkain, tulong sa pagkain, tulong sa legal, at tulong medikal. Bahagi kami ng samahan {1}.",
+        "link1": "unBox",
+        "link0": "Mapa ng pagkain sa paaralan ng Bay Area"
+      },
+      "p2": {
+        "text": "Ang pag-unlad para sa proyektong ito ay inangkop mula sa {0}.",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "Maaari kang maghanap ng karagdagang impormasyon sa proyekto, kasama ang pinagmulan kodigo para sa pagtitiklop ng proyekto, mula sa aming {0}.",
+        "link": "pahina ng Github"
+      }
+    },
+    "info-sources": {
+      "header": "Pinagmulan ng Impormasyon",
+      "p1": "Ang aming database ng impormasyon ay nakikinabang mula sa data na nakolekta ng mga sumusunod na samahan:",
+      "p2": "Mayroon kaming isang koponan ng mga kamangha-manghang mga boluntaryo na nagpapatunay sa data at nangongolekta ng anumang karagdagang impormasyon tulad ng karagdagang Covid-19 na mga oras para sa mga nakatatanda, ligtas na pagpipilian ng curbside pick-up, etc."
+    },
+    "info-source": {
+      "link1": "tagahanap ng tindahan ng USDA SNAP",
+      "link2": "tagahanap ng tindahan ng USDA WIC",
+      "link3": "Pangalawang Pag-aani ng Silicon Valley",
+      "link4": "Advocacy ng Stanford Pediatric",
+      "link5": "Sentro ng Ekolohiya ng Berkeley"
+    },
+    "contact-us": {
+      "header": "Makipag-ugnayan sa amin",
+      "p1": {
+        "text": "Para sa mga katanungan sa anumang mga pagdaragdag ng data o kamalian, o para sa anumang iba pang mga katanungan, mangyaring makipag-ugnay sa {0}.",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "Makipag-ugnayan sa amin"
+    },
+    "disclaimer": {
+      "header": "Pagtanggi",
+      "p": "Ang proyektong Bay Area Resources na ito ay puro boluntaryo na hinihimok. Mayroon kaming isang koponan ng mga tao na nangolekta at nagpapatunay ng data mula sa magkakaibang mapagkukunan. Ginagawa namin ang aming makakaya upang mapanatili ang lahat ng impormasyon sa site kamakailan hangga't maaari, subalit hindi namin masiguro na ang impormasyon ay tumpak na 100%."
+    },
+    "spthanks": {
+      "p": "Espesyal na pasasalamat sa {0} at {1} para sa kapangyarihan ng aming site.",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "Ang aming koponan",
+      "sourcing": "Data sourcing at pagsasalin:",
+      "dev": "Data engineering at pag-unlad",
+      "resource": "mga coordinator ng mapagkukunan",
+      "translate": "tagasalin",
+      "dqual": "kalidad ng data",
+      "internal-community": "panloob na komunidad",
+      "projl": "lider ng proyekto",
+      "devlead": "lider ng pag-unlad",
+      "dqlead": "lider ng kalidad ng data"
+    },
+    "dataaccess": {
+      "header": "Pag-access sa aming Data",
+      "p": "Maaari mong ma-access ang aming data sa pamamagitan ng isang bukas na proyekto sa {0} (kailangang mag-login).",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "Pangangalaga sa mga kabataan",
+    "family": "Inihandang pagkain para sa pamilya|Mga inihandang pagkain para sa pamilya",
+    "farm": "Sakahan o merkado ng mga magsasaka|Mga sakahan & mga merkado ng mga magsasaka",
+    "food_bev": "Espesyal na pagkain at inumin",
+    "free_grocery": "Libreng Groseri|Mga Libreng Groseri",
+    "free_food": "Libreng pagkain para sa publiko",
+    "grocery": "Groseri|Mga Groseri",
+    "meal": "Libreng inihandang pagkain|Mga libreng inihandang pagkain",
+    "ballot_drop": "Lugar ng drop-off ng balota",
+    "petsupplies": "Gamit para sa mga alagang hayop",
+    "pharmacy": "Parmasya|Mga Parmasya",
+    "restaurant": "Restawran|Mga Restawran",
+    "school": "Pagkain sa paaralan|Mga pagkain sa paaralan",
+    "snap_wic_retailer": "Nagtitinda ng CalFresh/WIC|Mga nagtitinda ng CalFresh/WIC",
+    "cash_assistance": "Salaping pangtulong",
+    "food_resources": "Mga mapagkukunan ng pagkain",
+    "legal_resources": "Mga mapagkukunan ng legal",
+    "medical_resources": "Mga mapagkukunan ng medikal",
+    "mental_health_resources": "Mga mapagkukunan ng kalusugan ng kaisipan",
+    "healthcare": "Pangangalaga sa kalusugan",
+    "dv_resources": "Mga mapagkukunan ng karahasan sa tahanan",
+    "eviction_resources": "Mga mapagkukunan ng pagpapalayas",
+    "bob": "Mga restawran na pag-aari ng mga Itim na tao"
+  },
+  "dayofweek": {
+    "any": "Anumang araw",
+    "friday": "Biyernes",
+    "monday": "Lunes",
+    "saturday": "Sabado",
+    "sunday": "Linggo",
+    "thursday": "Huwebes",
+    "tuesday": "Martes",
+    "wednesday": "Miyerkules"
+  },
+  "label": {
+    "address": "Tirahan",
+    "allweek": "Buong linggo",
+    "backtolist": "Bumalik sa listahan",
+    "call_in_advance": "Dapat tumawag muna",
+    "children": "Para sa mga kabataan",
+    "close": "Isara",
+    "closed": "Sarado",
+    "closed-on": "Sarado ng",
+    "closed-today": "Sarado Ngayon",
+    "closedonday": "Sarado (sa kasalukuyang napiling araw)",
+    "curbside_pickup": "Curbside pick-up",
+    "curbside_or_delivery": "Paghahatid o curbside pick-up",
+    "delivery": "Paghahatid",
+    "discount_medical": "Diskwento para sa mga manggagawang medikal|Mga diskwento para sa mga manggagawang medikal",
+    "discounts": "Mga diskwento",
+    "drive_thru": "Drive thru",
+    "email": "Email",
+    "email_lowercase": "email",
+    "farmers_market": "Merkado ng mga magsasaka | Mga merkado ng mga magsasaka",
+    "farm_pick_up": "Pick-up sa taniman",
+    "free": "Libreng magpakukunan",
+    "free_groceries": "Lugar ng libreng groseri | Mga lugar ng libreng groseri",
+    "freemeals": "Lugar ng libreng pagkain | Mga lugar ng libreng pagkain",
+    "free_produce": "Lugar ng libreng ani | Mga lugar ng libreng ani",
+    "require_child": "Kailangan ng presensya ng bata",
+    "must_show_id": "Dapat ipakita ang ID",
+    "all_children": "Paglilingkod sa lahat ng mga bata",
+    "enrolled_children": "Ang mga mag-aaral lamang na nakatala sa distrikto",
+    "ballot_outdoor": "Sa labas ang paghulog ng balota",
+    "ballot_indoor": "Sa loob ang paghulog ng balota",
+    "twentyfourhrs": "Bukas ng beinte kwatro oras",
+    "fin_grocery": "Salapi para sa pamimili",
+    "fin_housing": "Salapi para sa renta",
+    "fin_legal": "Salapi para sa ligal na bayarin",
+    "fin_medical": "Salapi para sa bayaring pangkalusugan",
+    "fin_utilities": "Salapi para sa kagamitan",
+    "freefood": "Lugar para sa libreng pagkain",
+    "instructions": "Mga tagubilin",
+    "mapkey": "Key ng mapa",
+    "meal_public": "Mga pagkain bukas sa publiko",
+    "meal_student": "Mga pagkain para sa mga kabataan",
+    "must_preorder": "Dapat pre-order",
+    "normalhours": "Normal na oras",
+    "notes": "Tala",
+    "offers": "Mga paghahandog",
+    "open": "Bukas",
+    "openinghours": "Mga Oras",
+    "order_online": "Mag-order & magbayad online",
+    "phone": "Telepono",
+    "public": "Bukas para sa lahat",
+    "selectacategory": "Pumili ng kategorya...",
+    "selected": "Napili",
+    "seniorhours": "Mga oras para sa mga nakatatanda",
+    "seniors": "Para sa mga nakatatanda",
+    "snap": "Lugar na tinatanggap ng CalFresh | Mga lugar na tinatanggap ng CalFresh",
+    "special_hours": "Mga oras ng pamimili para sa mga nakatatanda",
+    "website": "Website",
+    "wic": "Lugar na tintanggap ng WIC | Mga lugar na tinatanggap ng WIC",
+    "ebt_pay_phone": "Magbayad gamit ang EBT sa telepono.",
+    "ebt_pay_online": "Magbayad gamit ang EBT online.",
+    "open_today": "Bukas ngayon",
+    "pay_phone": "Magbayad gamit ang EBT sa telepono.",
+    "safe_pick_up": "Ligtas na pagpipilian ng pick-up",
+    "zoom_out_for_more_results": "Mag-zoom out para sa higit pang mga resulta.",
+    "in_person": "Mga klinika sa tao",
+    "telehealth": "Tulong ng telehealth",
+    "zipcode": "Zipcode/Lokasyon",
+    "suggest_an_edit": "Pag-mungkahi na i-edit/baguhin.",
+    "reset": "I-reset/Ulitin",
+    "submit": "Ipasa",
+    "last_updated": "Ang mga detalyadong huling na-update",
+    "in_store_pickup": "Take-away",
+    "catering": "Pagtutustos ng pagkain",
+    "dv_legal": "Suporta sa legal sa karahasan sa tahanan",
+    "dv_housing": "Suporta sa pabahay sa karahasan sa tahanan",
+    "dv_medical": "Suporta sa medisina ng karahasan sa tahanan",
+    "dv_crisis": "Suporta sa krisis sa karahasan sa tahanan",
+    "dv_mental_health": "Suporta sa kalusugan ng kaisipan sa karahasan sa tahanan",
+    "apply": "Maglagay ng mga filter",
+    "filters": "Mga filter"
+  },
+  "health": {
+    "med_testing": "Eksamen para sa COVID",
+    "med_primary_care": "Pangunahing pangangalaga",
+    "med_pediatrics": "Pediyatriko",
+    "med_senior": "Pangangalaga sa mga matatanda",
+    "med_women": "Pangangalaga sa kalusugan ng kababaihan",
+    "med_urgent_care": "Agarang pangangalaga",
+    "med_dental": "Pangangalaga sa ngipin",
+    "med_vision": "Pangangalaga sa paningin",
+    "med_pharmacy": "Parmasya/Botika",
+    "med_mental_health": "Pangangalaga sa kabutihang pangkaisipan",
+    "med_hotline": "Ugnay sa deretsahang pag-uusap",
+    "med_addiction": "Suporta sa pagkagumon at paggaling",
+    "med_domestic_violence": "Suporta sa mga biktima at karahasan"
+  },
+  "languages": {
+    "ar": "Arabe",
+    "en": "Ingles",
+    "es": "Espanyol",
+    "fr": "Pranses",
+    "ja": "Japanese",
+    "ko": "Koreano",
+    "ms": "Malay",
+    "zh": "Pinasimple na Tsino",
+    "vi": "Vietnamese",
+    "tl": "Tagalog"
+  },
+  "sidebar": {
+    "home": "Homepage",
+    "close-panel": "Isara ang panel ng paghahanap",
+    "info-about-us": "Sa kasalukuyan, sinusuportahan ng site na ito ang Bay Area, CA. Sa",
+    "info-end-text": ", maaari naming mapalawak ang aming saklaw.",
+    "info-link-text": "iyong tulong",
+    "open-panel": "Bukas na panel ng paghahanap",
+    "shopsafe": "Mangyaring bumili ng ligtas!",
+    "sixfeet": "Manatiling 6 na talampakan habang namimili.",
+    "stayhome": "Kung ikaw ay may sakit, manatili sa bahay.",
+    "washhands": "Hugasan ang iyong mga kamay nang madalas.",
+    "what-do-you-need": "Ano'ng kailangan mo?",
+    "when-do-you-need-it": "Kailan mo ito kailangan?",
+    "current_location": "Kasalukuyang lokasyon",
+    "what": "Mapagkukunan ...",
+    "what-are-you-looking-for": "Ano ang hinahanap mo?",
+    "where": "Malapit sa ...",
+    "feedback": "Katugunan"
+  },
+  "title": "{0} Taguyod para sa COVID",
+  "county": {
+    "alameda": "county ng Alameda",
+    "anywhere": "Kahit saan",
+    "contra-costa": "county ng Contra Costa",
+    "marin": "county ng Marin",
+    "napa": "county ng Napa",
+    "san-francisco": "county ng San Francisco",
+    "san-mateo": "county ng San Mateo",
+    "santa-clara": "county ng Santa Clara",
+    "solano": "county ng Solano",
+    "sonoma": "county ng Sonoma",
+    "monterey": "county ng Monterey"
+  },
+  "legal": {
+    "general_info": "Pangkalahatang impormasyon",
+    "legal_assistance": "Legal na tulong",
+    "legal_criminal": "Suporta sa hustisya na legal",
+    "legal_domviolence": "Suporta sa karahasan sa tahanan",
+    "legal_worker_protection": "Tumulong sa mga karapatan ng mga manggagawa",
+    "legal_healthcare": "Suporta sa aplikasyon ng pangangalaga ng kalusugan",
+    "legal_housing": "Tumulong sa mga isyu sa pabahay",
+    "legal_immigration": "Suporta sa mga isyu sa imigrasyon"
+  },
+  "medical": {
+    "telehealth": "Mga klinika ng telehealth"
+  },
+  "mental": {
+    "in_person": "Tulong sa tao"
+  },
+  "message": {
+    "no_location_in_this_area": "Walang resulta sa lugar na ito.",
+    "no_location_meet_these_criteria": "Walang resulta para sa mga pamantayang ito.",
+    "loading": "Naglo-load ...",
+    "ie_compatibility": "Ang pook-sapot (websayt) na ito ay hindi kubkob para sa Internet Explorer at ikaw ay walang gamit sa lahat ng tungkulin/kakayahan. Para sa mas mabuting karanasan, gumamit ng ibang panginain (tulad ng Firefox)",
+    "area_not_covered": "Hindi namin sakop ang pook/lugar na ito.",
+    "select_resource": "Pag-pili ng mapagkukunan.",
+    "provide_zip": "Ibigay ang zipcode o lokasyon.",
+    "error_getting_zip": "Mayroon kalisyaan/mali sa ibinigay na zipcode/lokasyon. Paki ulit muli.",
+    "error_loading_results": "Nagkaroon ng isang error. Pakiulit muli."
+  },
+  "edit": {
+    "intro": "Botahin ang impormasyon para sa lokasyon sa talye mula sa ibaba. Pinapahalagahan namin ang tulong niyo sa pag pagpapanatili ng mapagkukunan hanggang sa napapanahon.",
+    "thanks": "Natanggap namin ang iyong edit/pagbago. Maraming salamat!",
+    "provider_name": "Ngalan/pangalan ng tagapagbigay ng serbisyo",
+    "location_name": "Pangalan ng lokasyon",
+    "website": "Pook-sapot (websayt)",
+    "opening_hours": "Oras ng pagbubukas:",
+    "senior_hours": "Oras ng pagbubukas para sa mga nakakatanda:",
+    "additional_info": "Adisyonal na impormasyon:",
+    "additional_info_text": "Mayroon pa ba na pagkukulang, kailangang baguhin o dapat na ipakita?",
+    "additional_info_placeholder": "Bagong serbisyo, lokasyon ay permanenteng sarado, oras ng pagbubukas para sa mas nakakatanda…",
+    "no_edit": "Walang pinag iba",
+    "submission_error": "Mayroong kalisyaan/mali sa pag-mungkahi. Maaaring kaming kontakin muli sa baycommunitysource@gmail.com."
+  },
+  "pebt": {
+    "header": "Benepisyo ng pagkain para sa mga bata na makakakuha ng libre o bawas na pagkain.",
+    "lead": "Mag-apply para sa P-EBT noong Hulyo 15.",
+    "link": "Mag-apply na ngayon",
+    "link_url": "https://ca.p-ebt.org/en/"
+  },
+  "ux_study": {
+    "text_main": "Gusto naming matuto nang higit pa tungkol sa kung ano ang nasa itaas ng pag-iisip para sa iyo sa oras na ito at makuha ang iyong input sa kung paano pagbutihin ang website.",
+    "link_text": "Mag-sign up ngayon.",
+    "link_url": "https://bit.ly/bac-interviews",
+    "text_sub": "Kung napili ka para sa pakikipanayam, ang lahat ng mga sesyon ay isasagawa nang malayuan sa pamamagitan ng telepono / video chat, at babayaran ka namin para sa iyong oras.",
+    "header": "Tulungan kaming maglingkod nang mas mahusay."
+  }
+}

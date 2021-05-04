@@ -1,0 +1,236 @@
+---
+title: "SNAP Sheet - cleaning"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets4)
+library(lubridate)
+library(tidyverse)
+
+```
+
+## Load data
+
+```{r}
+#  SNAP retailer sheet - copy, to not mess the original
+key <- '1KEatMG5Dx1Xm9Z-Bow60vZcPhYGIZd35HHGVEbKl-Zw'
+retailers <- 
+  read_sheet(key) %>% 
+  filter(!is.na(Type)) # removes rows without a Type
+```
+
+## Function to process open hours
+
+```{r}
+# Function to turn the day_hour / senior_hour col into one col per day 
+process_hours <- function(day_hour, senior = FALSE) {
+  
+  days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+  days_col_normal <- c("mon", "tues", "wed", "thr", "fri", "sat", "sun", "mon", "tues", "wed", "thr", "fri", "sat", "sun")
+  days_col_senior <- str_c("sp_", days_col_normal)
+  
+  if (senior) {
+    days_col <- days_col_senior
+  } else {
+    days_col <- days_col_normal
+  }
+  
+  
+  if (is.na(day_hour)) {
+    out <- rep("0", 7)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+  }
+  
+  try({
+    out <- rep("0", 7)
+    
+    for (dt in str_split(day_hour, '\\n') %>% unlist()) {
+      
+      d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
+      t <- str_split(dt, ': ') %>% unlist() %>% .[2]
+      
+      # day range
+      if (str_detect(d, '-')) {
+        start = str_split(d, ' - ') %>% unlist() %>% .[1]
+        end = str_split(d, ' - ') %>% unlist() %>% .[2]
+        
+        
+        if (str_ends(start, 's')) {
+          start <- str_sub(start, 1, -2)
+        }
+        if (str_ends(end, 's')) {
+          end <- str_sub(end, 1, -2)
+        }
+        start_i = match(start, days_long)
+        end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
+        
+        for (i in seq(start_i, end_i)) {
+          if (i > 7) {
+            out[i %% 7] = t
+          } else {
+            out[i] = t
+          }
+        }
+        # multiple, non contiguous days
+      } else if (str_detect(d, ', ')) {
+        for (single_d in str_split(d, ', ') %>% unlist()) {
+          if (str_ends(single_d, 's')) {
+            single_d <- str_sub(single_d, 1, -2)
+          }
+          start_i = match(single_d, days_long)
+          out[start_i] = t
+        }
+        # single day
+      } else {
+        if (str_ends(d, 's')) {
+          d <- str_sub(d, 1, -2)
+        }
+        start_i = match(d, days_long)
+        
+        if (is.na(start_i)) {
+          stop()
+        }
+        out[start_i] = t
+      }
+    }
+    
+    out <- str_to_upper(out)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+    
+  }, silent = T)
+  
+  out <- rep(day_hour, 7)
+  names(out) <- days_col[1:7]
+  return(out %>% as_tibble_row())
+  
+}
+
+
+```
+
+#Phone number regex
+
+```{r}
+
+
+# test <- retailers %>% 
+#   mutate(phone_test = str_extract_all(Phone, "[0-9]+") %>% str_c(collapse = " ")) 
+# 
+# test$phone_test
+
+retailers %>% 
+  mutate(phone_test = str_remove_all(Phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3")) %>% 
+  select(phone_test)
+
+```
+
+
+## Format retailers
+
+```{r}
+retailers_benefit <- 
+  retailers %>% 
+  transmute(
+    SNAP = str_detect(Type, 'SNAP') %>%  as.integer(),
+    WIC = str_detect(Type, 'WIC') %>%  as.integer(),
+    region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
+    resource = 'grocery',
+    free = 0,
+    provider_name = Name,
+    provider_addloc = '',
+    address = Address,
+    city = City,
+    state = 'CA',
+    zip = as.numeric(Zip),
+    lat = Latitude,
+    lon =  map_dbl(Longitude, function(x) {
+      l <- x[[1]]
+      if (is.null(l)) {
+        return( NA_real_)
+      } else {
+        return(l)
+      }
+    }
+    ),
+    contact = 
+      str_remove_all( Phone, "[^\\d]") %>%
+      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"), 
+    call_in_advance = 0,
+    email = '',
+    cuisine = '',
+    instructions = 'EBT at register',
+    offers = '',
+    notes = notes,
+    web_link = web_link,
+    twitter = '',
+    instagram = '',
+    facebook = facebook,
+    local = 0,
+    status = if_else(str_detect(days_hours, 'CLOSED'), 0, 1),
+    special_hours = (!is.na(senior_hours)) %>% as.numeric(),
+    order_online = (!is.na(online_ordering)) %>% as.numeric(),
+    pay_online = if_else(!is.na(online_ordering), 1, 0),
+    must_preorder = 0, 
+    in_store = 0,       #I want to make this an underscore
+    in_store_pickup = 0,      #I want to make this an underscore
+    curbside = if_else(!is.na(curbside_pickup), 1, 0),
+    drive_thru = 0,
+    delivery = if_else(!is.na(delivery), 1, 0), 
+    farm_pickup = 0,
+    farmers_market = str_detect(Type, 'farmers') %>%  as.integer(),   
+    business_closed = 0,
+    discount_medical = 0,
+    meal_student = 0,
+    meal_public = 0,
+    meal_senior = 0,
+    family_meal = 0,
+    free_produce	= 0,
+    free_groceries	= 0,
+    quality_check_complete = 0,   #Not sure what to do for this one 
+    last_update = map(retailers$date_verified, 
+                      function(d) {
+                          d_verified <- d[[1]]
+                          if (is.null(d_verified) || as.character(d_verified) == 'X') {
+                            d_verified <- NA_Date_
+                            } 
+                          return(as.Date(d_verified))
+                          }) %>% 
+                          simplify() %>% 
+                          as.Date(origin = origin),
+    updated_by = verified_by,
+    week_1 = "",
+    week_2 = "",
+    week_3 = "",
+    week_4 = "",
+    week_5 = ""
+  ) %>%
+         bind_cols(retailers$days_hours %>%
+               map_dfr(process_hours, senior = F)) %>%
+  bind_cols(retailers$senior_hours %>%
+              map_dfr(process_hours, senior = T)) %>% 
+  select(region, resource, free, provider_name, provider_addloc, address, city, state, zip, lat, lon, contact,
+         call_in_advance, email, cuisine, instructions, offers, notes, web_link, twitter, instagram, facebook,
+         local, status, mon, tues, wed, thr, fri, sat, sun, sp_mon, sp_tues, sp_wed, sp_thr, sp_fri, sp_sat, sp_sun,
+         special_hours, order_online, pay_online, must_preorder, in_store, in_store_pickup, curbside, drive_thru,
+         delivery, farm_pickup, farmers_market, business_closed, discount_medical, meal_student, meal_senior,
+         meal_public, family_meal, free_produce, free_groceries, quality_check_complete, last_update, updated_by,
+         week_1, week_2, week_3, week_4, week_5, SNAP, WIC)
+
+
+# TODO: zipcode #done 
+# TODO: clean up phone numbers (some have text) #done 
+# TODO: missing columns #done
+# TODO: manually inspect final table
+
+retailers_benefit %>% 
+  write_tsv("SNAP_data_formatted.tsv", na = "")
+
+```
+
+
+
+

@@ -1,0 +1,179 @@
+{
+  "about": {
+    "close": "Fermer",
+    "contact": "Contactez nous",
+    "contactus": {
+      "email": "email",
+      "info": "Cette page est alimentée par le {0} de {1}. Pour toute question, veuillez nous contacter par e-mail au {2}."
+    },
+    "devhelp": {
+      "addbusiness": "Ajouter une entreprise",
+      "addinfo": "Utilisez nos formulaires en ligne pour {0} ou {1}.",
+      "becomeambassador": "Devenez ambassadeur communautaire",
+      "conduct": "Code de conduite",
+      "devnote": "Développeurs - trouvez nos {0} et {1} sur GitHub.",
+      "dupsite": "Alternativement, vous pouvez dupliquer un site pour votre état.",
+      "info": "Il s'agit d'un projet open source, conçu pour partager et s'étendre à d'autres communautés.",
+      "source": "Code source",
+      "support": "Soutenez vos voisins et les entreprises locales - aidez-nous à grandir!",
+      "updatebusiness": "mettre à jour une entrée existante"
+    },
+    "getinvolved": "Être impliqué",
+    "info": "Notre base de données de ressources bénéficie des informations collectées par ces organisations:",
+    "linktext": "À propos de nous",
+    "orgs": {
+      "bureau": "Bureau des visiteurs de Chapel Hill / Orange County",
+      "cfa": "Code pour l'Amérique",
+      "chb": "Brigade de Chapel Hill",
+      "farmstewards": "Association de gestion agricole de la Caroline",
+      "localistnc": "#LocalListNC",
+      "partnership": "Partenariat du centre-ville de Chapel Hill"
+    },
+    "partners": "Sources d'informations",
+    "title": "A propos de ce site",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us": {
+      "p1": {
+        "link1": "unBox"
+      },
+      "p2": {
+        "link": "NCCovid Support"
+      }
+    },
+    "contact-us": {
+      "p1": {
+        "link": "baycommunityresource@gmail.com"
+      }
+    },
+    "spthanks": {
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "Notre équipe"
+    },
+    "dataaccess": {
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "Garde d'enfants",
+    "family": "Plats préparés en famille | Plats préparés en famille",
+    "farm": "Marché fermier ou fermier | Fermes et marchés fermiers",
+    "grocery": "Épicerie | Épicerie",
+    "meal": "Repas gratuit | Repas gratuits",
+    "petsupplies": "Fournitures pour animaux",
+    "pharmacy": "Pharmacie | Pharmacies",
+    "restaurant": "Restaurant | Restaurants",
+    "school": "Repas scolaire | Repas scolaires",
+    "cash_assistance": "Aide en espèces",
+    "food_resources": "Ressources alimentaires",
+    "legal_resources": "Ressources juridiques"
+  },
+  "dayofweek": {
+    "any": "Tout",
+    "friday": "Vendredi",
+    "monday": "Lundi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche",
+    "thursday": "Jeudi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi"
+  },
+  "label": {
+    "address": "Adresse",
+    "allweek": "Toute la semaine",
+    "backtolist": "Retour à la liste",
+    "children": "Pour les enfants",
+    "close": "Fermer",
+    "closed": "Fermé",
+    "closed-on": "Ferme le",
+    "closed-today": "Fermé aujourd'hui",
+    "closedonday": "Fermé (le jour sélectionné)",
+    "curbside_pickup": "Enterprise avec ramassage en bordure de rue|Enterprises avec ramassage en bordure de rue",
+    "delivery": "Livraison",
+    "discount_medical": "Réduction pour les travailleurs médicaux|Réductions pour les travailleurs médicaux",
+    "drive_thru": "Drive-thru",
+    "email": "Email",
+    "email_lowercase": "email",
+    "farmers_market": "Marché fermier | Marchés fermiers",
+    "farm_pick_up": "Ramassage à la ferme",
+    "free": "Ressource gratuite",
+    "free_groceries": "Emplacement d'épicerie gratuits|Emplacements d'épicerie gratuits",
+    "freemeals": "Lieu de repas gratuits|Lieux de repas gratuits",
+    "free_produce": "Lieu de production gratuit|Lieux de production gratuit",
+    "require_child": "L'enfant doit être présent",
+    "must_show_id": "Doit montrer une pièce d'identité",
+    "all_children": "Au service de tous les enfants",
+    "enrolled_children": "Seuls les étudiants inscrits dans le district",
+    "ballot_outdoor": "Bulletin de vote en plein air",
+    "ballot_indoor": "Dépôt du scrutin en salle",
+    "twentyfourhrs": "Ouvert 24 heures",
+    "fin_grocery": "Argent pour l'épicerie",
+    "fin_housing": "Espèces à louer",
+    "fin_legal": "Espèces pour frais juridiques",
+    "fin_medical": "Espèces pour frais médicaux",
+    "fin_utilities": "Argent pour les services publics",
+    "freefood": "Emplacement de restauration gratuit | Emplacements de restauration gratuits",
+    "instructions": "Instructions",
+    "mapkey": "Carte clé",
+    "meal_public": "Repas ouverts au public",
+    "meal_student": "Repas pour les étudiants",
+    "must_preorder": "Doit précommander",
+    "normalhours": "Heures normales",
+    "notes": "Remarques",
+    "offers": "Des offres",
+    "open": "Ouvert",
+    "openinghours": "Heures d'ouverture",
+    "order_online": "Commandez et payez en ligne",
+    "phone": "Téléphone",
+    "public": "Ouvert pour tous",
+    "selectacategory": "Choisissez une catégorie...",
+    "selected": "Choisi",
+    "seniorhours": "Heures seniors",
+    "special_hours": "Heures de magasinage pour les seniors",
+    "website": "Site Internet"
+  },
+  "health": {
+    "med_testing": "Test COVID",
+    "med_primary_care": "Premiers soins",
+    "med_pediatrics": "Pédiatrie",
+    "med_senior": "Soins aux seniors",
+    "med_women": "Soins de santé des femmes",
+    "med_urgent_care": "Soins d'urgence",
+    "med_dental": "Soins dentaires",
+    "med_vision": "Soins de la vue",
+    "med_pharmacy": "Pharmacie",
+    "med_mental_health": "Soin de la santé mentale",
+    "med_hotline": "Hotline",
+    "med_addiction": "Aide à la toxicomanie et au rétablissement",
+    "med_domestic_violence": "Aide aux victimes de violence domestique"
+  },
+  "languages": {
+    "ar": "Arabe",
+    "en": "Anglais",
+    "es": "Espanol",
+    "fr": "français",
+    "ja": "japonais",
+    "ko": "coréen",
+    "zh": "Chinois simplifié"
+  },
+  "sidebar": {
+    "close-panel": "Fermer le panneau de recherche",
+    "info-about-us": "Actuellement, ce site prend en charge Bay Area, CA. Avec",
+    "info-end-text": ", nous pouvons étendre notre couverture.",
+    "info-link-text": "ton aide",
+    "open-panel": "Ouvrir le panneau de recherche",
+    "shopsafe": "S'il vous plaît, achetez en toute sécurité!",
+    "sixfeet": "Restez à 6 pieds de distance lorsque vous magasinez.",
+    "stayhome": "Si vous êtes malade, restez à la maison.",
+    "washhands": "Lavez-vous souvent les mains.",
+    "what-do-you-need": "De quoi avez-vous besoin?",
+    "when-do-you-need-it": "Quand en avez-vous besoin?",
+    "what": "Ressource..."
+  },
+  "title": "Prise en charge de {0} COVID",
+  "DO NOT TRANSLATE FROM HERE DOWN": "DO NOT TRANSLATE FROM HERE DOWN"
+}

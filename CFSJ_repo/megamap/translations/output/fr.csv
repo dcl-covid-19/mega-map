@@ -1,0 +1,140 @@
+translation_id,fr
+about.close,Fermer
+about.contact,Contactez nous
+about.contactus.email,email
+about.contactus.info,"Cette page est alimentée par le {0} de {1}. Pour toute question, veuillez nous contacter par e-mail au {2}."
+about.devhelp.addbusiness,Ajouter une entreprise
+about.devhelp.addinfo,Utilisez nos formulaires en ligne pour {0} ou {1}.
+about.devhelp.becomeambassador,Devenez ambassadeur communautaire
+about.devhelp.conduct,Code de conduite
+about.devhelp.devnote,Développeurs - trouvez nos {0} et {1} sur GitHub.
+about.devhelp.dupsite,"Alternativement, vous pouvez dupliquer un site pour votre état."
+about.devhelp.info,"Il s'agit d'un projet open source, conçu pour partager et s'étendre à d'autres communautés."
+about.devhelp.source,Code source
+about.devhelp.support,Soutenez vos voisins et les entreprises locales - aidez-nous à grandir!
+about.devhelp.updatebusiness,mettre à jour une entrée existante
+about.getinvolved,Être impliqué
+about.info,Notre base de données de ressources bénéficie des informations collectées par ces organisations:
+about.linktext,À propos de nous
+about.orgs.bureau,Bureau des visiteurs de Chapel Hill / Orange County
+about.orgs.cfa,Code pour l'Amérique
+about.orgs.chb,Brigade de Chapel Hill
+about.orgs.farmstewards,Association de gestion agricole de la Caroline
+about.orgs.localistnc,#LocalListNC
+about.orgs.partnership,Partenariat du centre-ville de Chapel Hill
+about.partners,Sources d'informations
+about.title,A propos de ce site
+category.childcare,Garde d'enfants
+category.family,Plats préparés en famille | Plats préparés en famille
+category.farm,Marché fermier ou fermier | Fermes et marchés fermiers
+category.grocery,Épicerie | Épicerie
+category.meal,Repas gratuit | Repas gratuits
+category.petsupplies,Fournitures pour animaux
+category.pharmacy,Pharmacie | Pharmacies
+category.restaurant,Restaurant | Restaurants
+category.school,Repas scolaire | Repas scolaires
+dayofweek.any,Tout
+dayofweek.friday,Vendredi
+dayofweek.monday,Lundi
+dayofweek.saturday,Samedi
+dayofweek.sunday,Dimanche
+dayofweek.thursday,Jeudi
+dayofweek.tuesday,Mardi
+dayofweek.wednesday,Mercredi
+label.address,Adresse
+label.allweek,Toute la semaine
+label.backtolist,Retour à la liste
+label.children,Pour les enfants
+label.close,Fermer
+label.closed,Fermé
+label.closed-on,Ferme le
+label.closed-today,Fermé aujourd'hui
+label.closedonday,Fermé (le jour sélectionné)
+label.curbside_pickup,Enterprise avec ramassage en bordure de rue|Enterprises avec ramassage en bordure de rue
+label.delivery,Livraison
+label.discount_medical,Réduction pour les travailleurs médicaux|Réductions pour les travailleurs médicaux
+label.drive_thru,Drive-thru
+label.email,Email
+label.email_lowercase,email
+label.farmers_market,Marché fermier | Marchés fermiers
+label.farm_pick_up,Ramassage à la ferme
+label.free,Ressource gratuite
+label.free_groceries,Emplacement d'épicerie gratuits|Emplacements d'épicerie gratuits
+label.freemeals,Lieu de repas gratuits|Lieux de repas gratuits
+label.free_produce,Lieu de production gratuit|Lieux de production gratuit
+label.require_child,L'enfant doit être présent
+label.must_show_id,Doit montrer une pièce d'identité
+label.all_children,Au service de tous les enfants
+label.enrolled_children,Seuls les étudiants inscrits dans le district
+label.ballot_outdoor,Bulletin de vote en plein air
+label.ballot_indoor,Dépôt du scrutin en salle
+label.twentyfourhrs,Ouvert 24 heures
+health.med_testing,Test COVID
+health.med_primary_care,Premiers soins
+health.med_pediatrics,Pédiatrie
+health.med_senior,Soins aux seniors
+health.med_women,Soins de santé des femmes
+health.med_urgent_care,Soins d'urgence
+health.med_dental,Soins dentaires
+health.med_vision,Soins de la vue
+health.med_pharmacy,Pharmacie
+health.med_mental_health,Soin de la santé mentale
+health.med_hotline,Hotline
+health.med_addiction,Aide à la toxicomanie et au rétablissement
+health.med_domestic_violence,Aide aux victimes de violence domestique
+category.cash_assistance,Aide en espèces
+label.fin_grocery,Argent pour l'épicerie
+label.fin_housing,Espèces à louer
+label.fin_legal,Espèces pour frais juridiques
+label.fin_medical,Espèces pour frais médicaux
+label.fin_utilities,Argent pour les services publics
+label.freefood,Emplacement de restauration gratuit | Emplacements de restauration gratuits
+label.instructions,Instructions
+label.mapkey,Carte clé
+label.meal_public,Repas ouverts au public
+label.meal_student,Repas pour les étudiants
+label.must_preorder,Doit précommander
+label.normalhours,Heures normales
+label.notes,Remarques
+label.offers,Des offres
+label.open,Ouvert
+label.openinghours,Heures d'ouverture
+label.order_online,Commandez et payez en ligne
+label.phone,Téléphone
+label.public,Ouvert pour tous
+label.selectacategory,Choisissez une catégorie...
+label.selected,Choisi
+label.seniorhours,Heures seniors
+label.special_hours,Heures de magasinage pour les seniors
+label.website,Site Internet
+languages.ar,Arabe
+languages.en,Anglais
+languages.es,Espanol
+languages.fr,français
+languages.ja,japonais
+languages.ko,coréen
+languages.zh,Chinois simplifié
+sidebar.close-panel,Fermer le panneau de recherche
+sidebar.info-about-us,"Actuellement, ce site prend en charge Bay Area, CA. Avec"
+sidebar.info-end-text,", nous pouvons étendre notre couverture."
+sidebar.info-link-text,ton aide
+sidebar.open-panel,Ouvrir le panneau de recherche
+sidebar.shopsafe,"S'il vous plaît, achetez en toute sécurité!"
+sidebar.sixfeet,Restez à 6 pieds de distance lorsque vous magasinez.
+sidebar.stayhome,"Si vous êtes malade, restez à la maison."
+sidebar.washhands,Lavez-vous souvent les mains.
+sidebar.what-do-you-need,De quoi avez-vous besoin?
+sidebar.when-do-you-need-it,Quand en avez-vous besoin?
+title,Prise en charge de {0} COVID
+category.food_resources,Ressources alimentaires
+category.legal_resources,Ressources juridiques
+sidebar.what,Ressource...
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us.p1.link1,unBox
+about.about-us.p2.link,NCCovid Support
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.our-team.header,Notre équipe
+about.dataaccess.link,Big Local News
+DO NOT TRANSLATE FROM HERE DOWN,DO NOT TRANSLATE FROM HERE DOWN

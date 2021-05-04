@@ -1,0 +1,8 @@
+test:
+  url: https://en.wikipedia.org/wiki/Oldest_people
+  css: '#mw-content-text > div > table:nth-child(30)'
+  hash: d3bb2abf497d8404ae7d23940d647182
+alameda:
+  url: https://alamedausd-ca.schoolloop.com/pf4/cms2_site/view_deployment?d=x&theme_id=i12a21queqq4&group_id=1500178971500
+  css: '#block_i2av1qo81rkuzy'
+  hash: 1373245b7f93f17bdaba45ed11e53591

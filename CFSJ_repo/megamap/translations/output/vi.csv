@@ -1,0 +1,287 @@
+translation_id,vi
+about.close,Đóng
+about.contact,Liên hệ chúng tôi
+about.contactus.email,Email
+about.contactus.info,"Trang này được chạy bởi {0} của {1}. Nếu có câu hỏi, vui lòng liên hệ chúng tôi qua email {2}"
+about.devhelp.addbusiness,Thêm một doanh nghiệp
+about.devhelp.addinfo,Sử dụng tờ khai trực tuyến để {0} hoặc {1}
+about.devhelp.ambassadorinfo,Giúp chúng tôi mở rộng mức độ phủ sóng trên khắp vùng Bay. Các đại sứ sẽ làm việc với chính quyền địa phương và các hiệp hội doanh nghiệp để cung cấp các tài liệu cộng đồng của vùng Bay đến với cộng đồng của họ. Email chúng tôi tại {0} để được cung cấp các công cụ và tài liệu để bắt đầu.
+about.devhelp.becomeambassador,Trở thành một đại sứ cộng đồng
+about.devhelp.conduct,Bộ quy tắc ứng xử
+about.devhelp.devnote,Các lập trình viên - tìm {0} và {1} của chúng tôi trên GitHub.
+about.devhelp.dupsite,Sử dụng mã code của chúng tôi để xây dựng một trang web cho bang hoặc vùng địa phương của bạn.
+about.devhelp.info,"Đây là một dự án mở open-source, được xây dựng để chia sẻ và mở rộng ra các cộng đồng khác."
+about.devhelp.source,mã nguồn
+about.devhelp.support,Ủng hộ cộng đồng và các doanh nghiệp địa phương - hãy giúp chúng tôi phát triển!
+about.devhelp.updatebusiness,Thay đổi một tài liệu có sẵn
+about.getinvolved,Tham gia giúp đỡ
+about.info,Những tài liệu của chúng tôi được thu thập từ các tổ chức sau:
+about.linktext,Về tôi
+about.orgs.bureau,Do not translate
+about.orgs.cfa,Do not translate
+about.orgs.chb,Do not translate
+about.orgs.farmstewards,Do not translate
+about.orgs.localistnc,Do not translate
+about.orgs.partnership,Do not translate
+about.orgs.dcl,Cuộc thi về dữ liệu
+about.orgs.bln,Những tin tức địa phương
+about.partners,Nguồn thông tin
+about.title,Về trang này
+category.childcare,Đồ chăm sóc trẻ em
+category.family,Bữa ăn chuẩn bị sẵn|Những bữa ăn chuẩn bị sẵn
+category.farm,Chợ nông sản|Các chợ nông sản
+category.food_bev,Đồ ăn và đồ uống đặc trưng
+category.free_grocery,Lương thực miễn phí|Các lương thực miễn phí
+category.free_food,Thức ăn miễn phí cho công chúng
+category.grocery,Lương thực|Lương thực
+category.meal,Bữa ăn miễn phí|Những bữa ăn miễn phí
+category.ballot_drop,Địa điểm bỏ phiếu bầu
+category.petsupplies,Đồ cho thú nuôi
+category.pharmacy,Tiệm thuốc|Những tiệm thuốc
+category.restaurant,Nhà hàng|Những nhà hàng
+category.school,Bữa ăn trong trường|Những bữa ăn trong trường
+category.snap_wic_retailer,Nhà bán lẻ CalFresh/WIC|Những nhà bán lẻ CalFresh/WIC
+dayofweek.any,Ngày bất kỳ
+dayofweek.friday,Thứ Sáu
+dayofweek.monday,Thứ Hai
+dayofweek.saturday,Thứ Bảy
+dayofweek.sunday,Chủ Nhật
+dayofweek.thursday,Thứ Năm
+dayofweek.tuesday,Thứ Ba
+dayofweek.wednesday,Thứ Tư
+label.address,Địa chỉ
+label.allweek,Cả tuần
+label.backtolist,Quay lại danh sách
+label.call_in_advance,Phải gọi trước
+label.children,Cho trẻ em
+label.close,Đóng cửa
+label.closed,Đóng cửa
+label.closed-on,Đóng cửa vào
+label.closed-today,Đóng cửa hôm nay
+label.closedonday,Đóng cửa (vào ngày đang được chọn)
+label.curbside_pickup,Nhận hàng tại điểm hẹn
+label.curbside_or_delivery,Giao hàng tận nơi hoặc nhận hàng tại điểm hẹn
+label.delivery,Giao hàng tận nơi
+label.discount_medical,Ưu đãi cho nhân viên y tế
+label.discounts,Giảm giá
+label.drive_thru,Lái xe tạt qua
+label.email,Email
+label.email_lowercase,email
+label.farmers_market,Chợ nông sản
+label.farm_pick_up,Lấy hàng tại nông trại
+label.free,Tài nguyên miễn phí
+label.free_groceries,Địa điểm thực phẩm miễn phí
+label.freemeals,Địa điểm đồ ăn miễn phí
+label.free_produce,Địa điểm rau củ miễn phí
+label.require_child,Trẻ em cần phải có mặt
+label.must_show_id,Phải hiển thị ID
+label.all_children,Phục vụ tất cả trẻ em
+label.enrolled_children,Chỉ học sinh có ghi danh trong học khu
+label.ballot_outdoor,Bỏ phiếu ngoài trời
+label.ballot_indoor,Bỏ phiếu trong nhà
+label.twentyfourhrs,Mở cửa 24 giờ
+health.med_testing,Kiểm tra COVID
+health.med_primary_care,Ưu tiên hàng đầu
+health.med_pediatrics,Khoa nhi
+health.med_senior,Chăm sóc người già
+health.med_women,Chăm sóc sức khỏe phụ nữ
+health.med_urgent_care,Chăm sóc nhẩn cấp
+health.med_dental,Chăm sóc răng miệng
+health.med_vision,Chăm sóc thị lực
+health.med_pharmacy,Tiệm thuốc
+health.med_mental_health,Chăm sóc sức khỏe tâm thần
+health.med_hotline,Hotline
+health.med_addiction,Hỗ trợ cai nghiện và phục hồi
+health.med_domestic_violence,Hỗ trợ nạn nhân bạo lực gia đình
+category.cash_assistance,Hỗ trợ tiền mặt
+label.fin_grocery,Tiền cho thực phẩm
+label.fin_housing,Tiền thuê nhà
+label.fin_legal,Tiền cho phí pháp lý
+label.fin_medical,Tiền cho phí y tế
+label.fin_utilities,Tiền cho các tiện ích
+label.freefood,Địa điểm thực phẩm miễn phí | Địa điểm thực phẩm miễn phí
+label.instructions,Hướng dẫn
+label.mapkey,Ghi chú
+label.meal_public,Bữa ăn cho cộng đồng
+label.meal_student,Bữa ăn cho trẻ em
+label.must_preorder,Phải đặt trước
+label.normalhours,Giờ bình thường | Giờ hành chính
+label.notes,Ghi chú
+label.offers,Lời mời
+label.open,Mở cửa
+label.openinghours,Giờ mở cửa
+label.order_online,Đặt hàng và thanh toán điện tử
+label.phone,Điện thoại
+label.public,Mở cửa cho tất cả mọi người
+label.selectacategory,Chọn hạng mục
+label.selected,Đã chọn
+label.seniorhours,Giờ cho người cao tuổi
+label.seniors,Cho người cao tuổi
+label.snap,Địa điểm chấp nhận CalFresh
+label.special_hours,Giờ mua hàng cho người cao tuổi
+label.website,Trang web
+label.wic,Địa điểm chấp nhận WIC
+languages.ar,Tiếng Ả Rập
+languages.en,Tiếng Anh
+languages.es,Tiếng Tây Ban Nha
+languages.fr,Tiếng Pháp
+languages.ja,Tiếng Nhật
+languages.ko,Tiếng Hàn
+languages.ms,Tiếng Mã Lai
+languages.zh,Tiếng Trung (giản thể)
+languages.vi,Tiếng Việt
+languages.tl,Tiếng Philippines
+sidebar.home,Trang chủ
+sidebar.close-panel,Đóng khung tìm kiếm
+sidebar.info-about-us,"Trang web này hiện hỗ trợ khu vực Bay Area, CA"
+sidebar.info-end-text,", chúng tôi có thể mở rộng phạm vi"
+sidebar.info-link-text,sự giúp đỡ của bạn
+sidebar.open-panel,Mở khung tìm kiếm
+sidebar.shopsafe,Hãy mua sắm an toàn!
+sidebar.sixfeet,Giữ khoảng cách 6ft. (1.8m) khi mua hàng
+sidebar.stayhome,"Nếu bạn ốm, hãy ở nhà."
+sidebar.washhands,Hãy rửa tay thường xuyên
+sidebar.what-do-you-need,Bạn cần gì?
+sidebar.when-do-you-need-it,Khi nào bạn cần?
+title,{0} Hỗ trợ COVID
+label.ebt_pay_phone,Thanh toán bằng EBT qua điện thoại
+label.ebt_pay_online,Thanh toán bằng EBT trực tuyến
+category.food_resources,Hỗ trợ thực phẩm
+category.legal_resources,Hỗ trợ pháp lý
+category.medical_resources,Hỗ trợ y tế
+category.mental_health_resources,Hỗ trợ sức khỏe tinh thần
+county.alameda,Quận Alameda
+county.anywhere,Bất kỳ đâu
+county.contra-costa,Quận Contra Costa
+county.marin,Quận Marin
+county.napa,Quận Napa
+county.san-francisco,Quận San Francisco
+county.san-mateo,Quận San Mateo
+county.santa-clara,Quận Santa Clara
+county.solano,Quận Solano
+county.sonoma,Quận Sonoma
+county.monterey,Quận Monterey
+label.open_today,Mở cửa hôm nay
+label.pay_phone,Thanh toán bằng EBT qua điện thoại
+label.safe_pick_up,Các lựa chọn lấy hàng an toàn
+label.zoom_out_for_more_results,Thu nhỏ để có nhiều kết quả hơn
+legal.general_info,Thông tin chung
+legal.legal_assistance,Hỗ trợ pháp lý
+label.in_person,Phòng khám
+medical.telehealth,Phòng khám trực tuyến
+mental.in_person,Hỗ trợ trực tiếp
+label.telehealth,Hỗ trợ y tế trực tuyến
+message.no_location_in_this_area,Không có kết quả trong khu vực này
+sidebar.current_location,Vị trí hiện tại
+sidebar.what,Nguồn lực
+sidebar.what-are-you-looking-for,Bạn đang tìm gì?
+sidebar.where,Gần...
+legal.legal_criminal,Hỗ trợ pháp lý hình sự
+legal.legal_domviolence,Hỗ trợ bạo hành gia đình
+legal.legal_worker_protection,Quyền công nhân
+legal.legal_healthcare,Hỗ trợ điền đơn chăm sóc sức khỏa
+legal.legal_housing,Trợ giúp về các vấn đề nhà ở
+legal.legal_immigration,Trợ giúp về các vấn đề nhập cư
+about.front-page.p1,Xin chào!
+about.front-page.p2,"Chúng tôi cung cấp thông tin về những trợ giúp cộng đồng như bữa ăn miễn phí, thức ăn, pháp lý và y tế."
+about.front-page.p3,Bắt đầu bằng việc chọn vị trí của bạn và cái bạn cần tìm.
+about.front-page.p4.text,"Chúng tôi có liên kết với {0} và {1} từ Stanford và thật sự cảm ơn Bill Behrman, Sara Altman và Cheryl Phillips vì những đóng góp và tư vấn của họ"
+about.front-page.p4.link0,Cuộc thi về dữ liệu
+about.front-page.p4.link1,Những tin tức địa phương
+about.about-us-sources,"Cơ sở dữ liệu của chúng tôi dựa trên thông tin từ các tổ chức như:
+Định vị cửa hàng USDA SNAP 
+Định vị cửa hàng USDA WIX
+Tổ chức Second Harvest khu vực Silicon Valley
+Tổ chức vận đồng cho bệnh nhi Stanford
+
+Các tình nguyện viên phi thường của chúng tôi là người kiểm chứng và thu thập các thông tin như giờ hoạt động COVID-19 dành riêng cho người lớn tuổi, các lựa chọn lấy hàng an toàn từ bên lề đường..vv"
+about.about-us-contact,"Nếu bạn muốn đóng góp thông tin, phát hiện thông tin không chính xác hoặc có bất kỳ câu hỏi gì, vui lòng liên lạc {0}"
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us-disclaimer,Dự án hỗ trợ cộng đồng trong khu vực Bay Area này là hoàn toàn tình nguyện. Chúng tôi có một đội ngũ thu thập và kiểm chứng thông tin từ nhiều nguồn khác nhau. Chúng tôi nỗ lực hết sức để cập nhật thông tin nhanh nhất. Tuy vậy chúng tôi không thể đảm bảo các thông tin này luôn chính xác 100%
+about.about-us.header,Về chúng tôi
+about.about-us.p1.text,"Đây là một dự án mở và hoàn toàn tình nguyện nhằm giúp cộng đồng vượt qua khủng hoảng COVID thông qua việc cung cấp thông tin về các nguồn lực công cộng. Dự án này bắt đầu từ một {0}, và nay cung cấp thông tin về các nguồn hỗ trợ khác như địa điểm và thời gian cung cấp bữa ăn miễn phí, hỗ trợ thực phẩm, hỗ trợ pháp lý và hỗ trợ y tế. Chúng tôi là một phần của tổ chức {1}."
+about.about-us.p1.link1,unBox
+about.about-us.p1.link0,Bản đồ bữa ăn trường học khu vực Bay Area
+about.about-us.p2.text,Dự án này được mô phỏng dựa trên {0}
+about.about-us.p2.link,NCCovid Support
+about.about-us.p3.text,"Bạn có thể tìm thêm thông tin về dự án, bao gồm mã nguồn để tái thiết lập dự án từ {0}"
+about.about-us.p3.link,Trang Github
+about.info-sources.header,Nguồn thông tin
+about.info-sources.p1,Cơ sở dữ liệu của chúng tôi dựa trên thông tin từ những tổ chức sau:
+about.info-source.link1,Định vị cửa hàng USDA SNAP
+about.info-source.link2,Định vị cửa hàng USDA WIX
+about.info-source.link3,Tổ chức Second Harvest khu vực Silicon Valley
+about.info-source.link4,Tổ chức vận đồng cho bệnh nhi Stanford
+about.info-source.link5,Trung tâm nghiên cứu hệ sinh thái Berkeley
+about.info-sources.p2,"Các tình nguyện viên phi thường của chúng tôi là người kiểm chứng và thu thập các thông tin như giờ hoạt động COVID-19 dành riêng cho người lớn tuổi, các lựa chọn lấy hàng an toàn từ bên lề đường..vv"
+about.contact-us.header,Liên lạc với chúng tôi
+about.contact-us.p1.text,"Nếu bạn muốn đóng góp thông tin, phát hiện thông tin không chính xác hoặc có bất kỳ câu hỏi gì, vui lòng liên lạc {0}"
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.contact-us.contact-us-header,Liên lạc với chúng tôi tại đây
+about.disclaimer.header,Miễn trừ trách nhiệm
+about.disclaimer.p,Dự án hỗ trợ cộng đồng trong khu vực Bay Area này là hoàn toàn tình nguyện. Chúng tôi có một đội ngũ thu thập và kiểm chứng thông tin từ nhiều nguồn khác nhau. Chúng tôi nỗ lực hết sức để cập nhật thông tin nhanh nhất. Tuy vậy chúng tôi không thể đảm bảo các thông tin này luôn chính xác 100%
+message.no_location_meet_these_criteria,Không có kết quả cho lựa chọn này.
+about.spthanks.p,Chân thành cảm ơn {0} và {1} đã hỗ trợ cho trang này.
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.our-team.header,Đội ngũ của chúng tôi
+about.our-team.sourcing,Sưu tập và thông dịch dữ liệu :
+about.our-team.dev,Tạo và phát triển dữ liệu:
+about.our-team.resource,Người điều phối các nguồn hỗ trợ
+about.our-team.translate,người thông dịch
+about.our-team.dqual,chất lượng dữ liệu
+about.our-team.internal-community,cộng đồng nội bộ
+about.our-team.projl,trưởng dự án
+about.our-team.devlead,trưởng khâu phát triển
+about.our-team.dqlead,trưởng khâu chất lượng dữ liệu
+sidebar.feedback,Góp Ý
+about.dataaccess.header,Truy Cập Dữ Liệu của Chúng Tôi
+about.dataaccess.p,Quý vị có thể truy cập dữ liệu của chúng tôi thông qua dự án mở tại {0} (yêu cầu đăng nhập)
+about.dataaccess.link,Big Local News
+message.loading,Đang Tải ...
+message.ie_compatibility,"Trang web này không được Internet Explorer hỗ trợ tối đa và quý vị có thể không sử dụng được hết các chức năng. Để có trải nghiệm tốt hơn, vui lòng sử dụng một chương trình duyệt khác (ví dụ: Mozilla Firefox）"
+message.area_not_covered,Chúng tôi không bao gồm khu vực này.
+label.zipcode,Mã zipcode
+message.select_resource,Chọn một nguồn hỗ trợ.
+message.provide_zip,Cung cấp mã zipcode
+message.error_getting_zip,Mã zipcode quý vị cung cấp có lỗi. Xin vui lòng thử lại.
+label.suggest_an_edit,Đề nghị chỉnh sửa một cái gì đó
+edit.intro,Xin cập nhật thông tin cho địa điểm này trong mẫu đơn dưới đây. Chúng tôi thật sự cảm ơn sự giúp đỡ của bạn trong việc giữ cho các nguồn hỗ trợ này luôn được cập nhật.
+edit.thanks,Chúng tôi đã nhận được các chỉnh sửa của bạn. Xin cảm ơn!
+edit.provider_name,Tên nhà cung cấp
+edit.location_name,Tên địa điểm
+edit.website,Tên trang web
+edit.opening_hours,Giờ mở cửa:
+edit.senior_hours,Giờ dành cho người lớn tuổi:
+edit.additional_info,Thông tin thêm:
+edit.additional_info_text,"Còn bất cứ điều gì khác còn đang thiếu, cần được sửa đổi hoặc nên được hiển thị không?"
+edit.additional_info_placeholder,"Dịch vụ mới, địa điểm được đóng cửa vĩnh viễn, giờ mua sắm cho người lớn tuổi ..."
+label.reset,Làm lại
+label.submit,Gửi đi
+edit.no_edit,Không có gì thay đổi.
+edit.submission_error,Đã có một lỗi trong quá trình gửi biểu mẫu. Vui lòng thử lại hoặc liên hệ với chúng tôi tại baycommunityresource@gmail.com.
+pebt.header,Lợi ích thực phẩm dành cho trẻ em được nhận các bữa ăn miễn phí hoặc giảm giá.
+pebt.lead,Đăng ký xin P-EBT trước ngày 15 tháng 7.
+pebt.link,Đăng ký ngay bây giờ
+pebt.link_url,https://ca.p-ebt.org/en/
+category.healthcare,Chăm sóc sức khỏe
+label.last_updated,Thông tin chi tiết được cập nhật lần cuối
+message.error_loading_results,Có một lỗi. Vui lòng thử lại.
+ux_study.text_main,Chúng tôi muốn tìm hiểu thêm về điều quan tâm hàng đầu đối với bạn vào lúc này và nhận được ý kiến đóng góp của bạn về cách cải thiện trang web.
+ux_study.link_text,Đăng ký ngay.
+ux_study.link_url,https://bit.ly/bac-interviews
+ux_study.text_sub,"Nếu bạn được chọn để phỏng vấn, tất cả các phiên sẽ được thực hiện từ xa thông qua trò chuyện điện thoại / video và chúng tôi sẽ bù lại thời gian cho bạn."
+ux_study.header,Hãy giúp chúng tôi phục vụ bạn tốt hơn.
+label.in_store_pickup,Lấy đi
+label.delivery,Chuyển
+label.catering,Dịch vụ ăn uống
+label.dv_legal,Bạo lực gia đình hỗ trợ pháp lý
+label.dv_housing,Bạo lực gia đình hỗ trợ nhà ở
+label.dv_medical,Bạo lực gia đình hỗ trợ y tế
+label.dv_crisis,Hỗ trợ khủng hoảng bạo lực gia đình
+category.dv_resources,Tài nguyên về Bạo lực Gia đình
+label.dv_mental_health,Bạo lực gia đình hỗ trợ sức khỏe tâm thần
+label.apply,Áp dụng các bộ lọc
+label.filters,Bộ lọc
+category.eviction_resources,Tài nguyên trục xuất
+category.bob,Nhà hàng do người da đen sở hữu

@@ -1,0 +1,288 @@
+translation_id,es
+about.close,Cerrar
+about.contact,Contáctenos
+about.contactus.email,Email
+about.contactus.info,"Esta página funciona con {0} de {1}. Para preguntas, contáctenos por correo electrónico al {2}."
+about.devhelp.addbusiness,agregar un negocio
+about.devhelp.addinfo,Utilice nuestros formularios en línea para {0} o {1}.
+about.devhelp.ambassadorinfo,Ayúdenos a ampliar la cobertura en toda el Área de la Bahía. Los embajadores trabajarán con el gobierno local y las asociaciones empresariales para llevar los Recursos de la Comunidad del Área de la Bahía a su comunidad. Envíenos un correo electrónico a {0} para obtener herramientas y recursos para comenzar.
+about.devhelp.becomeambassador,Conviértase en embajador de la comunidad
+about.devhelp.conduct,Código de Conducta
+about.devhelp.devnote,Desarrolladores: encuentre nuestros {0} y {1} en GitHub.
+about.devhelp.dupsite,"Alternativamente, puede duplicar un sitio para su estado."
+about.devhelp.info,"Este es un proyecto de código abierto, creado para compartir y expandirse a otras comunidades."
+about.devhelp.source,codigo fuente
+about.devhelp.support,Apoye a sus vecinos y negocios locales: ¡ayúdenos a crecer!
+about.devhelp.updatebusiness,actualizar una entrada existente
+about.getinvolved,Involucrarse
+about.info,Nuestra base de datos de recursos se beneficia de la información recopilada por estas organizaciones:
+about.linktext,Sobre nosotros
+about.orgs.bureau,Oficina de Visitantes de Chapel Hill / Condado de Orange
+about.orgs.cfa,Código para América
+about.orgs.chb,Brigada de Chapel Hill
+about.orgs.farmstewards,Asociación de administración agrícola de Carolina
+about.orgs.localistnc,#LocalListNC
+about.orgs.partnership,Asociación del centro de Chapel Hill
+about.orgs.dcl,Laboratorio de Retos de Datos
+about.orgs.bln,Noticias Locales Grandes
+about.partners,Fuentes de información
+about.title,Sobre este sitio
+category.childcare,Cuidado de los niños
+category.family,Comida familiar preparada | Comida familiar preparada
+category.farm,Granja o Mercado de Granjeros | Granjas y Mercados de Agricultores
+category.food_bev,Comida y bebida de especialidad
+category.free_grocery,Comestible gratis|Comestibles gratis
+category.free_food,Comida gratis para el público
+category.grocery,Comestibles
+category.meal,Comida gratis | Comidas gratis
+category.ballot_drop,Urna de la boleta
+category.petsupplies,Suministros de mascotas
+category.pharmacy,Farmacia | Farmacias
+category.restaurant,Restaurante | Restaurantes
+category.school,Comida escolar | Comidas escolares
+category.snap_wic_retailer,Comerciante CalFresh/WIC|Comerciantes CalFresh/WIC
+dayofweek.any,Alguna
+dayofweek.friday,Viernes
+dayofweek.monday,Lunes
+dayofweek.saturday,Sábado
+dayofweek.sunday,Domingo
+dayofweek.thursday,Jueves
+dayofweek.tuesday,Martes
+dayofweek.wednesday,Miércoles
+label.address,Dirección
+label.allweek,Toda la semana
+label.backtolist,Volver a la lista
+label.call_in_advance,Debe llamar de antemano
+label.children,Para los niños
+label.close,Cerrar
+label.closed,Cerrado
+label.closed-on,Cerrado el
+label.closed-today,Cerrado hoy
+label.closedonday,Cerrado (en el día seleccionado actual)
+label.curbside_pickup,Negocio con recogida en la acera|Negocios con recogida en la acera
+label.curbside_or_delivery,Se entrega o se recoge en la acera
+label.delivery,Entrega
+label.discount_medical,Descuento para trabajadores médicos|Descuentos para trabajadores médicos
+label.discounts,Descuentos
+label.drive_thru,Auto-servicio
+label.email,Email
+label.email_lowercase,email
+label.farmers_market,Mercado de agricultores | Mercados de agricultores
+label.farm_pick_up,Recogida en la granja
+label.free,Recurso gratis
+label.free_groceries,Tienda de comestibles gratis|Tiendas de comestibles gratis
+label.freemeals,Lugar de comidas gratis|Lugares de comidas gratis
+label.free_produce,Lugar de productos agrícolas gratuitso|Lugares de productos agrícolas gratuitos
+label.require_child,El niño debe estar presente
+label.must_show_id,Debe mostrar identificación
+label.all_children,Para todos los niños
+label.enrolled_children,Sólo para los estudiantes inscritos en el distrito
+label.ballot_outdoor,Entrega de votos afuera
+label.ballot_indoor,Entrega de votos adentro
+label.twentyfourhrs,Abierto las 24 horas
+health.med_testing,Prueba de COVID
+health.med_primary_care,Cuidado primario
+health.med_pediatrics,Pediatría
+health.med_senior,Cuidado para los mayores de edad
+health.med_women,Salud de las mujeres
+health.med_urgent_care,Cuidados urgentes
+health.med_dental,Cuidado dental
+health.med_vision,Cuidado de la visión
+health.med_pharmacy,Farmacia
+health.med_mental_health,Cuidado de salud mental
+health.med_hotline,Línea directa
+health.med_addiction,Apoyo para adicción y recuperación
+health.med_domestic_violence,Apoyo para las víctimas de violencia dómestica
+category.cash_assistance,Ayuda en efectivo
+label.fin_grocery,Efectivo para los comestibles
+label.fin_housing,Efectivo para la renta
+label.fin_legal,Efectivo para los pagos legales
+label.fin_medical,Efectivo para los pagos médicos
+label.fin_utilities,Efectivo para los servicios públicos
+label.freefood,Ubicación de comida gratis|Ubicaciones de comida gratis
+label.instructions,Instrucciones
+label.mapkey,Guia de mapa
+label.meal_public,Comidas abiertas al público
+label.meal_student,Comidas para estudiantes
+label.must_preorder,Debe pre-ordenar
+label.normalhours,Horas normales
+label.notes,Notas
+label.offers,Ofertas
+label.open,Abierto
+label.openinghours,Horario de apertura
+label.order_online,Ordene y pague en línea
+label.phone,Teléfono
+label.public,Abierto a todos
+label.selectacategory,Seleccione una categoría...
+label.selected,Seleccionado
+label.seniorhours,Horas para gente mayor de edad
+label.seniors,Para los mayores de edad
+label.snap,Lugar que acepta CalFresh|Lugares que aceptan CalFresh
+label.special_hours,Horario comercial para gente mayor de edad
+label.website,Sitio web
+label.wic,Lugar que acepta WIC|Lugares que aceptan WIC
+languages.ar,árabe
+languages.en,inglés
+languages.es,español
+languages.fr,francés
+languages.ja,japonés
+languages.ko,coreano
+languages.ms,Malaya
+languages.zh,Chino simplificado
+languages.vi,Vietnamita
+languages.tl,Tagalo
+sidebar.home,Página de inicio
+sidebar.close-panel,Cerrar panel de búsqueda
+sidebar.info-about-us,"Actualmente, este sitio apoya el Area de la Bahía en CA. Con"
+sidebar.info-end-text,", podemos ampliar nuestra cobertura."
+sidebar.info-link-text,su ayuda
+sidebar.open-panel,Abrir panel de búsqueda
+sidebar.shopsafe,"Por favor, ¡COMPRE DE FORMA SEGURA!"
+sidebar.sixfeet,Manténgase a 6 pies de distancia cuando vaya de compras.
+sidebar.stayhome,"Si está enfermo/a, quédese en casa."
+sidebar.washhands,Lávese las manos con frecuencia.
+sidebar.what-do-you-need,¿Que necesita?
+sidebar.when-do-you-need-it,Cuando lo necesita?
+title,Soporte de {0} COVID
+label.ebt_pay_phone,Pague con EBT por el telefono
+label.ebt_pay_online,Pague con EBT en línea
+category.food_resources,Recursos Alimenticios
+category.legal_resources,Recursos Legales
+category.medical_resources,Recursos Médicos
+category.mental_health_resources,Recursos de Salud Mental
+county.alameda,El condado de Alameda
+county.anywhere,Cualquier lugar
+county.contra-costa,El condado de Contra Costa
+county.marin,El condado de Marin
+county.napa,El condado de Napa
+county.san-francisco,El condado de San Francisco
+county.san-mateo,El condado de San Mateo
+county.santa-clara,El condado de Santa Clara
+county.solano,El condado de Solano
+county.sonoma,El condado de Sonoma
+county.monterey,El condado de Monterey
+label.open_today,Abierto hoy
+label.pay_phone,Pague con EBT por el telefono
+label.safe_pick_up,Opciones para recogida segura
+label.zoom_out_for_more_results,Aleja el imagen para más resultados
+legal.general_info,Información general
+legal.legal_assistance,Asistencia legal
+label.in_person,Clínicas en persona
+medical.telehealth,Clínicas de Telesalud
+mental.in_person,Asistencia en persona
+label.telehealth,Asistencia por Telesalud
+message.no_location_in_this_area,No hay resultado en esta zona.
+sidebar.current_location,Ubicación actual
+sidebar.what,Recurso...
+sidebar.what-are-you-looking-for,¿Qué busca?
+sidebar.where,Cerca de...
+legal.legal_criminal,Apoyo con justicia penal
+legal.legal_domviolence,Apoyo con violencia dómestica
+legal.legal_worker_protection,Los derechos de los Trabajadores
+legal.legal_healthcare,Apoyo para solicitud de ayuda médica
+legal.legal_housing,Ayuda con cuestiones de vivienda
+legal.legal_immigration,Apoyo con cuestiones de inmigración
+about.front-page.p1,Hola!
+about.front-page.p2,"Brindamos información sobre los recursos como comidas gratis, alimentos, asistencia legal, y ayuda médica."
+about.front-page.p3,Empieza al seleccionar donde esta usted y lo que esta buscando.
+about.front-page.p4.text,"Estamos afiliados a {0} y {1} de Stanford y estamos extremadamente agradecidos con Bill Behrman, Sara Altman y Cheryl Phillips por su continuo apoyo y asesoramiento."
+about.front-page.p4.link0,Laboratorio de Retos de Datos
+about.front-page.p4.link1,Noticias Locales Grandes
+about.about-us-sources,"Nuestro base de datos se beneficia de los datos recogidos por las siguientes organizaciones:
+Localizador de las tiendas de USDA SNAP 
+Localizador de las tiendas de USDA WIC 
+Second Harvest de Silicon Valley
+Stanford Pediatric Advocacy
+
+Tenemos un equipo de voluntarios increíbles que verifican los datos y recopilan cualquier información adicional, como horas adicionales de Covid-19 para adultos mayores, opciones de recogida segura en la acera, etc."
+about.about-us-contact,"Si usted tiene preguntas sobre cualquier adición de datos o inexactitudes, o para cualquier otra pregunta, comuníquese con {0}."
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us-disclaimer,"Este proyecto de Recursos del Área de la Bahía es puramente voluntario. Tenemos un equipo de humanos que recopila y verifica los datos de diversas fuentes. Hacemos nuestro mejor esfuerzo para mantener toda la información en el sitio lo más actualizada posible, sin embargo, no podemos garantizar que la información sea 100% precisa."
+about.about-us.header,Acerca de nosotros
+about.about-us.p1.text,"Somos un proyecto de código abierto mantenido por voluntarios para ayudar a las comunidades a navegar la crisis COVID al proporcionar información sobre recursos públicos. Este proyecto comenzó como un {0}, y ahora proporciona información sobre más recursos, como ubicaciones y horarios para comidas gratis, asistencia alimentaria, asistencia legal y asistencia médica. Somos parte de la organización {1}."
+about.about-us.p1.link1,unBox
+about.about-us.p1.link0,mapa de comidas escolares del Área de la Bahía
+about.about-us.p2.text,El desarrollo de este proyecto fue adaptado de {0}.
+about.about-us.p2.link,NCCovid Support
+about.about-us.p3.text,"Puede encontrar más información sobre el proyecto, incluido el código fuente para replicar el proyecto, en nuestra {0}."
+about.about-us.p3.link,página de Github
+about.info-sources.header,Fuentes de Información
+about.info-sources.p1,Nuestro base de datos se beneficia de los datos recogidos por las siguientes organizaciones:
+about.info-source.link1,Localizador de las tiendas de USDA SNAP
+about.info-source.link2,Localizador de las tiendas de USDA WIC
+about.info-source.link3,Second Harvest de Silicon Valley
+about.info-source.link4,Stanford Pediatric Advocacy
+about.info-source.link5,Centro de ecología de Berkeley
+about.info-sources.p2,"Tenemos un equipo de voluntarios increíbles que verifican los datos y recopilan cualquier información adicional, como horas adicionales de Covid-19 para adultos mayores, opciones de recogida segura en la acera, etc."
+about.contact-us.header,Contactenos
+about.contact-us.p1.text,"Si usted tiene preguntas sobre cualquier adición de datos o inexactitudes, o para cualquier otra pregunta, comuníquese con {0}."
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.contact-us.contact-us-header,Contactenos aqui
+about.disclaimer.header,Renuncia
+about.disclaimer.p,"Este proyecto de Recursos del Área de la Bahía es puramente voluntario. Tenemos un equipo de humanos que recopila y verifica los datos de diversas fuentes. Hacemos nuestro mejor esfuerzo para mantener toda la información en el sitio lo más actualizada posible, sin embargo, no podemos garantizar que la información sea 100% precisa."
+message.no_location_meet_these_criteria,No hay resultado con este criterio.
+about.spthanks.p,Agradecimiento especial a {0} y {1}  por potenciar nuestro sitio
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.our-team.header,Nuestro equipo
+about.our-team.sourcing,Fuentes y traducción de datos:
+about.our-team.dev,Ingenería de datos y desarrollo:
+about.our-team.resource,coordinadores de los recursos
+about.our-team.translate,traductores
+about.our-team.dqual,calidad de los datos
+about.our-team.internal-community,comunidad interno
+about.our-team.projl,jefe del proyecto
+about.our-team.devlead,jefe de desarrollo
+about.our-team.dqlead,jefe de la calidad de los datos
+sidebar.feedback,Reacciones
+about.dataaccess.header,Acceso a los datos
+about.dataaccess.p,Usted puede acceder a nuestros datos por un proyecto abierto {0} (se requiere login)
+about.dataaccess.link,Big Local News
+message.loading,Cargando...
+message.ie_compatibility,"Este sitio web no fue optimizado para Internet Explorer y es posible que no tenga acceso a todas las funcionalidades. Para una mejor experiencia, utilice un navegador diferente (por ejemplo, Mozilla Firefox)."
+message.area_not_covered,No cubrimos esta zona.
+label.zipcode,código postal
+message.select_resource,Seleccione un recurso.
+message.provide_zip,Provee un código postal.
+message.error_getting_zip,Hubo un error con el código postal proporcionado. Inténtalo de nuevo.
+label.suggest_an_edit,Sugiera una revisión
+edit.intro,Por favor actualiza la información de este lugar en el formulario abajo. Apreciamos su ayuda para mantener los recursos actualizados.
+edit.thanks,Recibimos sus revisiones. Gracias!
+edit.provider_name,Nombre del proveedor
+edit.location_name,Nombre del lugar
+edit.website,El sitio web
+edit.opening_hours,Horas de apertura:
+edit.senior_hours,Horas para los mayores de edad:
+edit.additional_info,Información adicional:
+edit.additional_info_text,"¿Algo más que falta, debe cambiarse o debe mostrarse?"
+edit.additional_info_placeholder,"Nuevo servicio, ubicación permanentemente cerrada, horario comercial superior ..."
+label.reset,Reiniciar
+label.submit,Envia
+edit.no_edit,Nada ha cambiado.
+edit.submission_error,Hubo un error durante el envio del formulario. Inténtalo de nuevo.
+pebt.header,Beneficios de comida para los niños que reciben comidas reducidas o gratis.
+pebt.lead,Aplique para P-EBT antes del 15 de Julio.
+pebt.link,Aplique ahora
+pebt.link_url,https://ca.p-ebt.org/es
+category.healthcare,Cuidado médico
+label.last_updated,Los detalles fueron revisados
+message.error_loading_results,Hubo un error. Por favor intente de nuevo.
+ux_study.text_main,Queremos aprender más sobre lo que es más importante para usted en este momento y como podemos mejorar el sitio web.
+ux_study.link_text,Regístrese ahora.
+ux_study.link_url,https://bit.ly/bac-interviews
+ux_study.text_sub,"Si lo seleccionan para una entrevista, todas las sesiones se realizarán por teléfono o video, y le compensaremos por su tiempo."
+ux_study.header,Ayúdanos a servirle mejor.
+label.in_store_pickup,Para llevar
+label.delivery,Entrega
+label.catering,Servicios de comidas
+label.dv_legal,Apoyo legal para violencia doméstica
+label.dv_housing,Apoyo a la vivienda para violencia doméstica
+label.dv_medical,Apoyo médico para violencia doméstica
+label.dv_crisis,Apoyo de crisis para violencia doméstica
+category.dv_resources,Recursos para Violencia Domestica
+label.dv_mental_health,Apoyo de salud mental de para violencia doméstica
+label.apply,Aplique los filtros
+label.filters,Filtros
+category.eviction_resources,Recursos de desalojo
+category.bob,Restaurantes
+DO NOT TRANSLATE FROM HERE DOWN,DO NOT TRANSLATE FROM HERE DOWN

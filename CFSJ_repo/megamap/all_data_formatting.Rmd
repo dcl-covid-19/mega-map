@@ -1,0 +1,580 @@
+---
+title: "combined_data_formatting"
+author: "Anjali Katta"
+date: "08/05/2020"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets4)
+library(lubridate)
+library(tidyverse)
+```
+
+# Load Data
+
+### Google Sheets Keys
+
+```{r}
+SNAP_key <- "1GvXQYE8OXvE05xRPjywZze6PwDq8gCF5hkfqhMUgZAs"
+school_meal_key <- "1fea1BSSAhbSB0HLsatDaD8wxmwsF7ezQjNvjRK-QJQI"
+comm_resource_key <- "11tdkyX0kR8nRwMUktohdp2Wx1fGiMiHrlUP4i_8ctPM"
+legal_resource_key <- "1FCInt7l15AeS-Kn_ITc8zZNZG-x2B5FvP3snKLGGmSs"
+mega_map_key <- "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4"
+```
+
+### Loading Sheets
+
+```{r}
+SNAP_data <- 
+  read_sheet(
+    SNAP_key, 
+    skip = 5,
+    col_types = "?????d???????????????????D?????????"
+  ) %>% 
+  drop_na(type) %>% 
+  filter(status != "Closed" | is.na(status)) %>%  ##drop the closed retailers 
+  mutate(
+    additional_hours = 0,
+    additional_hours1 = 0
+  ) %>% 
+mutate_at(
+  vars(
+    EBT_pay_phone, 
+    EBT_pay_online, 
+    delivery, 
+    pay_at_pickup, 
+    curbside_pickup)
+  ,
+  ~ if_else(str_detect(.,"\\w"), "1", "") %>% as.numeric()
+)
+
+
+
+
+
+school_meal_data <-
+  read_sheet(
+    school_meal_key, 
+    skip = 1,
+    col_types = "?cc??ddd???????????DDD???DD?????"
+    ) %>% 
+  mutate(
+    days_of_week = na_if(days_of_week, "N/A"),
+    additional_hours = 0,
+    additional_hours1 = 0
+  ) %>% 
+  drop_na(open_hour, close_hour) %>% 
+  mutate(
+    days_hours = str_glue( "{days_of_week}: ", "{open_hour} - {close_hour}")
+  ) 
+
+
+comm_resource_data <- 
+  read_sheet(
+    comm_resource_key, 
+    skip = 1,
+    col_types = "?c??c?d?????????????????D?????" ## for some reason some values are being read in as a list
+  ) %>% 
+  mutate(
+    type = type %>% str_to_lower() %>% str_replace_all(" ", "_"),
+    additional_hours = 0,
+    additional_hours1 = 0,
+    resource =  case_when(
+      str_detect(type, "restaurant") ~ 'restaurant',
+      str_detect(type, "farm") ~ 'farm',
+      type == "core_service_agency" ~ "core",
+        type == "groceries" ~ "grocery",
+      TRUE ~ type
+    )
+  )
+
+# # duplicating free and non free rows 
+# comm_resource_data <- 
+#   comm_resource_data %>% 
+#   mutate(
+#     type =
+#       case_when(
+#         
+#         TRUE ~ type
+#       )
+#   )
+#   # ) %>% 
+#   # bind_rows(
+#   #   comm_resource_data %>% 
+#   #     filter(telehealth == 1 & in_person == 1 & type == "medical") %>% 
+#   #     mutate(type = "medical_telehealth")
+#   # ) %>% 
+#   # bind_rows(
+#   #   comm_resource_data %>% 
+#   #     filter(telehealth == 1 & in_person == 1 & type == "mental_health") %>% 
+#   #     mutate(type = "mental_health_telehealth")
+#   # )
+
+
+##CURRENTLY THE NOTES IS THE MAP INSTRUCTION COLUMN
+legal_resource_data <-
+  read_sheet(
+    legal_resource_key, 
+    sheet = "DATA PULL HERE", 
+    skip = 1,
+    col_types = "????????dd????????????????????D?"
+    ) %>% 
+  slice(2:n()) %>% ##works for now, change this? 
+  select(-1) %>% 
+  mutate(
+    type = type %>% str_to_lower() %>% str_replace_all(" ", "_"),
+    additional_hours = 0,
+    additional_hours1 = 0,
+    resource = 
+      case_when(
+        type == "hotline" |
+          type == "legal_services" | 
+          type == "hotline_and_legal_services" ~ "legal_services",
+        type == "general_information" ~ "legal_general_info"
+        
+      )
+  )
+
+mega_map_variables <- 
+  read_sheet(mega_map_key, sheet = "metadata") %>% 
+  select(name = `Field Name`, type = `Value Type`)
+
+output_variable_names <-
+  mega_map_variables %>% 
+  pull(name)
+```
+
+## creating output sheets to overwrite 
+
+```{r}
+
+resize <- function(df) {
+  len <- size_of - 1
+  for (i in 1:len) {
+    df <- 
+      df %>% 
+      add_row()
+  }
+  df
+}
+
+
+
+
+generate_output_sheets <- function(data_set) {
+  size_of <- count(data_set) %>% pull()
+  mega_map_variables %>% 
+    mutate(
+      type =
+        recode(
+          type,
+          text = '',
+          combo = '',
+          numeral = "0",
+        )
+    ) %>% 
+    mutate(type = if_else(is.na(type), "0", type)) %>% 
+    pivot_wider(names_from = name, values_from = type) %>% 
+    mutate_if( ~ . == "0", as.double) %>% 
+    resize() %>% 
+    fill(everything())
+}
+
+
+
+```
+
+
+
+# Process Hours Functions 
+
+```{r}
+day_hour <- comm_resource_data$days_hours
+senior <- FALSE
+process_hours <- function(day_hour, senior = FALSE) {
+  
+  days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+  days_col_normal <- c("mon", "tues", "wed", "thr", "fri", "sat", "sun", "mon", "tues", "wed", "thr", "fri", "sat", "sun")
+  days_col_senior <- str_c("sp_", days_col_normal)
+  
+  if (senior) {
+    days_col <- days_col_senior
+  } else {
+    days_col <- days_col_normal
+  }
+  
+  
+  if (is.na(day_hour)) {
+    out <- rep("0", 8)
+    names(out) <- c(days_col[1:7], "additional_hours")
+    return(out %>% as_tibble_row())
+  }
+  
+  try({
+    out <- rep("0", 8)
+    
+    # split into groups of "days: hours"
+    for (dt in str_split(day_hour, '[\\n;,]+') %>% unlist()) {
+      dt <- str_trim(dt)
+      d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
+      t <- str_split(dt, ': ') %>% unlist() %>% .[2]
+      
+      # handles additional openings on odd days
+      if (str_starts(str_trim(d, side = "left"), "\\d+")) {
+        out[8] <- if (out[8] == "0") dt else str_c(out[8], dt, sep = ", ")
+        next
+      }
+      
+      # handles normal opening hours
+      # day range
+      if (str_detect(d, '-')) {
+        start = str_split(d, ' - ') %>% unlist() %>% .[1]
+        end = str_split(d, ' - ') %>% unlist() %>% .[2]
+        
+        # remove plurals
+        if (str_ends(start, 's')) {
+          start <- str_sub(start, 1, -2)
+        }
+        if (str_ends(end, 's')) {
+          end <- str_sub(end, 1, -2)
+        }
+        
+        # find corresponding day indeces
+        start_i = match(start, days_long)
+        end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
+        
+        # populate output vector
+        for (i in seq(start_i, end_i)) {
+          if (i > 7) {
+            out[i %% 7] = if (out[i %% 7] == "0") t else str_c(out[i %% 7], t, sep = ", ")
+          } else {
+            out[i] = if (out[i] == "0") t else str_c(out[i], t, sep = ", ")
+          }
+        }
+      # multiple, non contiguous days
+      } else if (str_detect(d, ', ')) {
+        
+        # split by days, find index and populate output
+        for (single_d in str_split(d, ', ') %>% unlist()) {
+          if (str_ends(single_d, 's')) {
+            single_d <- str_sub(single_d, 1, -2)
+          }
+          start_i = match(single_d, days_long)
+          out[start_i] = if (out[start_i] == "0") t else str_c(out[start_i], t, sep = ", ")
+        }
+        
+      # single day
+      } else {
+        if (str_ends(d, 's')) {
+          d <- str_sub(d, 1, -2)
+        }
+        start_i = match(d, days_long)
+        
+        if (is.na(start_i)) {
+          stop()
+        }
+        out[start_i] = if (out[start_i] == "0") t else str_c(out[start_i], t, sep = ", ")
+      }
+    }
+    
+    out <- str_to_upper(out) %>% replace_na("")
+    names(out) <- c(days_col[1:7], "additional_hours")
+    return(out %>% as_tibble_row())
+    
+  }, silent = T)
+  
+  # handles unparsable text
+  out <- c(rep(day_hour, 7), "0")
+  names(out) <- c(days_col[1:7], "additional_hours")
+  return(out %>% as_tibble_row())
+  
+}
+
+comm_resource_data %>% tail(10)
+
+comm_resource_data$days_hours %>% tail(10) %>%
+  map_dfr(process_hours)
+
+str_split(day_hour, "[\\n,;]") 
+dt <- "Mon - Thurs: 9:00am - 8:00pm"
+
+dt <- str_trim(dt)
+      d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
+      t <- str_split(dt, ': ') %>% unlist() %>% .[2]
+
+day_hour <- "Mon - Thurs: 9:00am - 8:00pm, Friday: 9:00am - 4:00pm, Saturday : 10:00am - 2:00pm"
+```
+
+
+### Matching Output Variables to Input Variables
+```{r}
+
+yes_no_recode <- 
+  c(
+    "Yes" = 1,
+    "No" = 0,
+    .default = NA
+  )
+
+status_recode <- 
+  c(
+    "Open" = 1,
+    "Closed" = 0,
+    .default = NA
+  )
+
+
+contains_variable <- function(current_name){
+  quo_current_name <- enquo(current_name)
+  output <- tibble(x = rep(0, size_of)) ###Figure this out 
+  if (current_name %in% input_variable_names) {
+    output %>% 
+      transmute(!! quo_current_name := data_set[!! quo_current_name] %>% pull())
+  }
+}
+
+```
+
+
+## Transforming the Data  (figure out input variable part)
+```{r}
+iterate_sets <- function(data_set, data_set_name) {
+  size_of <- data_set %>% count() %>% pull()
+  input_variable_names <- data_set %>% names()
+  temp <-  
+    map_dfc(output_variable_names, contains_variable) %>% 
+    bind_cols(
+      data_set$days_hours %>%
+        map_dfr(process_hours, senior = F)
+    ) %>% 
+    bind_cols(
+      bind_cols(
+        data_set$days_hours %>%
+          map_dfr(process_hours, senior = T)
+      )
+    ) %>% 
+    mutate(
+      region = 
+        str_to_lower(data_set$county) %>% 
+        str_replace_all(' ', '_') %>% str_c(., '_county'),
+      contact = 
+        str_remove_all(data_set$phone, "[^\\d]") %>%
+        str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"),
+      status = if_else(str_detect(data_set$days_hours, 'CLOSED'), 0, 1),
+      delivery = ifelse(data_set$address == "Delivery", 1, 0),
+      last_update = data_set$date_verified,
+      updated_by = data_set$verified_by,
+      state = 'CA'
+    )
+  output_sheet <-
+    generate_output_sheets(data_set) %>% 
+    mutate(
+      additional_hours = 0,
+      additional_hours1 = 0
+    ) %>% 
+    select(-(temp %>% names())) %>% 
+    bind_cols(temp) 
+  
+  if (data_set_name == "SNAP_data") {
+    output_sheet <-
+      output_sheet %>% 
+      mutate(
+        SNAP = str_detect(data_set$type, 'SNAP') %>%  as.integer(),
+        WIC = str_detect(data_set$type, 'WIC') %>%  as.integer(),
+        resource = case_when(
+          str_detect(data_set$type, "retailer|store") ~ 'grocery',
+          str_detect(data_set$type, "restaurant") ~ 'restaurant',
+          str_detect(data_set$type, "farm") ~ 'farm',
+          TRUE ~ data_set$type
+        ),
+        farmers_market = str_detect(data_set$type, 'farmers') %>%  as.integer(),
+        special_hours = (!is.na(data_set$senior_hours)) %>% as.numeric(),
+        zip = data_set$zip,
+        lat = data_set$lat,
+        lon = 
+          map_dbl(data_set$lon, function(x) {
+            l <- x[[1]]
+            if (is.null(l)) {
+              return( NA_real_)
+            } else {
+              return(l)
+            }
+          }
+          )
+      )
+  }
+  
+  if (data_set_name == "school_meal_data") {
+    output_sheet <-
+      output_sheet %>% 
+      mutate(
+        resource = 'meal',
+        free = 1,
+        status = 1, #this was in the script! idk 
+        meal_student = 1,
+        residents = 
+          if_else(data_set$eligible_ages == "any child 18 and younger", 0, 1),
+        zip = data_set$zip,
+        lat = data_set$lat,
+        lon = 
+          map_dbl(data_set$lon, function(x) {
+            l <- x[[1]]
+            if (is.null(l)) {
+              return( NA_real_)
+            } else {
+              return(l)
+            }
+          }
+          ),
+      )
+  }
+  
+  if (data_set_name == "legal_resource_data") {
+    output_sheet <-
+      output_sheet %>% 
+      mutate(
+        free = recode(data_set$free, !!! yes_no_recode),
+        legal_housing = 
+          if_else(
+            str_detect(data_set$legal_area, "Housing & Homelessness"), 1, 0
+          ),
+        legal_worker_protection = 
+          if_else(
+            str_detect(
+              data_set$legal_area, "Employment & Worker Protections"
+            ), 1, 0),
+        legal_healthcare =
+          if_else(
+            str_detect(data_set$legal_area, "Healthcare"), 1, 0
+          ),
+        legal_immigration = 
+          if_else(
+            str_detect(data_set$legal_area, "Immigration"), 1, 0
+          ),
+        legal_criminal = 
+          if_else(
+            str_detect(data_set$legal_area, "Criminal"), 1, 0
+          ),
+        legal_domviolence = 
+          if_else(
+            str_detect(data_set$legal_area, "Domestic Violence"), 1, 0
+          ),
+        legal_contracts = 
+          if_else(
+            str_detect(data_set$legal_area, "Contracts"), 1, 0
+          ),
+        public = if_else(str_detect(data_set$eligibility, "Public") == TRUE, 1, 0),
+        seniors = if_else(str_detect(data_set$eligibility, "Seniors|65+") == TRUE, 1, 0),
+        homeless = if_else(str_detect(data_set$eligibility, "Homeless") == TRUE, 1, 0),
+        uninsured = if_else(str_detect(data_set$eligibility, "Uninsured") == TRUE, 1, 0), 
+        residents = if_else(str_detect(data_set$eligibility, "Residents") == TRUE, 1, 0),
+        low_income = if_else(str_detect(data_set$eligibility, "Low-income") == TRUE, 1, 0),
+        call_in_advance = recode(data_set$call_in_advance, !!! yes_no_recode),
+        status = recode(data_set$status, !!! status_recode),
+        clients = recode(data_set$clients, !!! yes_no_recode),
+        in_person = recode(data_set$clients, !!! yes_no_recode),
+        residents = recode(data_set$residents_only, !!! yes_no_recode),
+        special_hours = special_hours %>% as.numeric(),
+        last_update = data_set$date_verified
+        # last_update = map(data_set$date_verified,
+        #                   function(d) {
+        #                     d_verified <- d[[1]]
+        #                     if (is.null(d_verified) || as.character(d_verified) == 'X') {
+        #                       d_verified <- NA_Date_
+        #                     }
+        #                     return(as.Date(d_verified))
+        #                   }) %>%
+        #   simplify() %>%
+        #   as.Date(origin = origin)
+      )
+  }
+  
+  if (data_set_name == "comm_resource_data") {
+    output_sheet <-
+      output_sheet %>% 
+      mutate(
+        free = recode(data_set$free, !!! yes_no_recode),
+        call_in_advance = recode(data_set$call_in_advance, !!! yes_no_recode),
+        status = recode(data_set$status, !!! status_recode),
+        meal_student = 
+          if_else(str_detect(data_set$eligibility, "Children") == TRUE, 1, 0),
+        meal_public = 
+          if_else(str_detect(data_set$eligibility, "Public") == TRUE, 1, 0),
+        meal_senior = 
+          if_else(str_detect(data_set$eligibility, "Seniors") == TRUE, 1, 0),
+        free_produce = if_else(data_set$type == "groceries", 1, 0),
+        free_groceries = if_else(data_set$type  == "groceries", 1, 0), 
+        public = if_else(str_detect(data_set$eligibility, "Public") == TRUE, 1, 0),
+        seniors = if_else(str_detect(data_set$eligibility, "Seniors") == TRUE, 1, 0),
+        children = if_else(str_detect(data_set$eligibility, "Children") == TRUE, 1, 0),
+        homeless = if_else(str_detect(data_set$eligibility, "Homeless") == TRUE, 1, 0),
+        clients = if_else(str_detect(data_set$eligibility, "Clients") == TRUE, 1, 0), 
+        uninsured = if_else(str_detect(data_set$eligibility, "Uninsured") == TRUE, 1, 0), 
+        residents = if_else(str_detect(data_set$eligibility, "Residents") == TRUE, 1, 0),
+        notes = if_else(data_set$additional_hours == "0", 
+                                data_set$notes, 
+                                str_c(data_set$notes, 
+                                      " Additional hours: ", 
+                                      data_set$additional_hours)),
+        lat = data_set$lat,
+        lon = 
+          map_dbl(data_set$lon, function(x) {
+            l <- x[[1]]
+            if (is.null(l)) {
+              return( NA_real_)
+            } else {
+              return(l)
+            }
+          }
+          )
+      )
+  }
+  
+  output_sheet %>% 
+    select(
+      all_of(output_variable_names)
+    )
+}
+```
+
+
+```{r}
+##Ignore this for now!! it's fine for V1--had trouble w/ some functions
+size_of <- SNAP_data %>% count() %>% pull()
+input_variable_names <- SNAP_data %>% names()
+data_set <- SNAP_data
+SNAP_output <- iterate_sets(SNAP_data, "SNAP_data")
+
+
+size_of <- school_meal_data %>% count() %>% pull()
+input_variable_names <- school_meal_data %>% names()
+data_set <- school_meal_data
+school_meal_output <- iterate_sets(school_meal_data, "school_meal_data")
+
+size_of <- comm_resource_data %>% count() %>% pull()
+input_variable_names <- comm_resource_data %>% names()
+data_set <- comm_resource_data
+comm_resource_output <- iterate_sets(comm_resource_data, "comm_resource_data")
+
+size_of <- legal_resource_data %>% count() %>% pull()
+input_variable_names <- legal_resource_data %>% names()
+data_set <- legal_resource_data
+legal_resource_output <- iterate_sets(legal_resource_data, "legal_resource_data")
+
+
+variable <- "notes"
+SNAP_output %>% select(!! variable)
+comm_resource_output %>% select(!! variable)
+legal_resource_output %>% select(!! variable)
+school_meal_output %>% select(!! variable)
+
+
+final_output <-
+  bind_rows(SNAP_output, school_meal_output, comm_resource_output, legal_resource_output)
+
+final_output %>% 
+  write_sheet(ss = "1SOUonPM40Si4LrPoGrkUnujbmLBxCQe1SdxydH2dVI4", sheet = "compiled sheet")
+```
+
+

@@ -1,0 +1,69 @@
+---
+title: "translations"
+author: "Anjali Katta"
+date: "13/10/2020"
+output: html_document
+---
+
+```{r}
+#1. Edit the script below to determine where you want your files to go
+#2. Run this script 
+#3. Go to terminal and enter the folder where you have saved the output of this script
+#4. Run the line below in Terminal (if it doesn't work, create a folder called output and try again)
+# $ for i in *.csv; do i18n-csv2json-cli --from $i --to output --format ; done
+#5. Run this line 
+# $ cd output
+#6. Finally, run this line
+# $ rename 's/.i18n.json/.json/' *json
+```
+
+
+
+```{r}
+library(tidyverse)
+library(googlesheets4)
+```
+
+```{r}
+key <- "17vQZZnKqq4IKXUDjHOsCCLYo0KTxUDsREE7b2Ev4Ang"
+```
+
+```{r}
+all_langs_unedited <-
+  read_sheet(key, skip = 4)
+
+all_langs <-
+  all_langs_unedited %>% 
+  select(-c(`# Characters in EL`, `# Characters in VN`)) %>% 
+  filter(
+    !(`Translation ID` %in% c("NULL")) & 
+      str_detect(`Translation ID`, "^\\D")
+    ) %>% 
+  rename_at(vars(`en-US`:`tl-PH`), ~str_remove(., "-\\w{2}")) %>% 
+  mutate(translation_id = `Translation ID` %>% unlist())
+```
+
+```{r}
+names <- 
+  all_langs %>% 
+  select(-1, -translation_id) %>% 
+  names()
+
+create_csv <-function(name) {
+  all_langs %>% 
+    select(translation_id, all_of(name)) %>% 
+    filter(!is.na(.[2])) %>% 
+    write_csv(
+      paste(
+        "/Users/joycetagal/GitHub/dcl-covid-19/mega-map/translations/output/", #edit here 
+        name , 
+        ".csv",
+        sep = ""
+      )
+    )
+}
+
+walk(names , create_csv)
+```
+
+

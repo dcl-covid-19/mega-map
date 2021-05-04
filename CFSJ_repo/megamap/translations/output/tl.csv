@@ -1,0 +1,287 @@
+translation_id,tl
+about.close,Isara
+about.contact,Makipag-ugnayan sa amin
+about.contactus.email,email
+about.contactus.info,"Ang pahinang ito ay nasa pamamahala ng {0} of {1}. Para sa mga katanungan at pagkikipagugnayan, magyari lang po mag-email sa {2}."
+about.devhelp.addbusiness,isama ang isang negosyo
+about.devhelp.addinfo,Gamitin ang mga online form para sa {0} o {1}.
+about.devhelp.ambassadorinfo,Tulungan kaming palawakin ang saklaw sa buong Bay Area. Makikipagtulungan ang mga embahador kasama ang mga lokal na pamahalaan at mga asosasyon sa negosyo upang dalhin ang Bay Area Community Resources sa kanilang komunidad. I-email sa amin ang {0} para magsimula.
+about.devhelp.becomeambassador,Maging isang embahador ng komunidad
+about.devhelp.conduct,Kodigo ng mga alituntunin
+about.devhelp.devnote,Mga developer - hanapin ang aming {0} at {1} sa GitHub.
+about.devhelp.dupsite,Gamitin ang aming kodigo upang makabuo ng isang site para sa iyong estado o rehiyon:
+about.devhelp.info,"Ito ay isang bukas na mapagkukunan na proyekto, na binuo upang ibahagi at mapalawak sa ibang mga komunidad."
+about.devhelp.source,Pinagmulan kodigo
+about.devhelp.support,Suportahan ang iyong mga kapitbahay at lokal na negosyo - tulungan kaming lumago!
+about.devhelp.updatebusiness,i-update ang isang umiiral na tala
+about.getinvolved,Makisali
+about.info,Ang aming database ng mga mapagkukunan ay nakikinabang mula sa impormasyong nakolekta ng mga samahang ito:
+about.linktext,Tungkol sa amin
+about.orgs.bureau,Do not translate
+about.orgs.cfa,Do not translate
+about.orgs.chb,Do not translate
+about.orgs.farmstewards,Do not translate
+about.orgs.localistnc,Do not translate
+about.orgs.partnership,Do not translate
+about.orgs.dcl,Laboratoryo ng Hamon ng Data
+about.orgs.bln,Malaking Lokal ng Balita
+about.partners,Pinagmulan ng Impormasyon
+about.title,Tungkol sa site na ito
+category.childcare,Pangangalaga sa mga kabataan
+category.family,Inihandang pagkain para sa pamilya|Mga inihandang pagkain para sa pamilya
+category.farm,Sakahan o merkado ng mga magsasaka|Mga sakahan & mga merkado ng mga magsasaka
+category.food_bev,Espesyal na pagkain at inumin
+category.free_grocery,Libreng Groseri|Mga Libreng Groseri
+category.free_food,Libreng pagkain para sa publiko
+category.grocery,Groseri|Mga Groseri
+category.meal,Libreng inihandang pagkain|Mga libreng inihandang pagkain
+category.ballot_drop,Lugar ng drop-off ng balota
+category.petsupplies,Gamit para sa mga alagang hayop
+category.pharmacy,Parmasya|Mga Parmasya
+category.restaurant,Restawran|Mga Restawran
+category.school,Pagkain sa paaralan|Mga pagkain sa paaralan
+category.snap_wic_retailer,Nagtitinda ng CalFresh/WIC|Mga nagtitinda ng CalFresh/WIC
+dayofweek.any,Anumang araw
+dayofweek.friday,Biyernes
+dayofweek.monday,Lunes
+dayofweek.saturday,Sabado
+dayofweek.sunday,Linggo
+dayofweek.thursday,Huwebes
+dayofweek.tuesday,Martes
+dayofweek.wednesday,Miyerkules
+label.address,Tirahan
+label.allweek,Buong linggo
+label.backtolist,Bumalik sa listahan
+label.call_in_advance,Dapat tumawag muna
+label.children,Para sa mga kabataan
+label.close,Isara
+label.closed,Sarado
+label.closed-on,Sarado ng
+label.closed-today,Sarado Ngayon
+label.closedonday,Sarado (sa kasalukuyang napiling araw)
+label.curbside_pickup,Curbside pick-up
+label.curbside_or_delivery,Paghahatid o curbside pick-up
+label.delivery,Paghahatid
+label.discount_medical,Diskwento para sa mga manggagawang medikal|Mga diskwento para sa mga manggagawang medikal
+label.discounts,Mga diskwento
+label.drive_thru,Drive thru
+label.email,Email
+label.email_lowercase,email
+label.farmers_market,Merkado ng mga magsasaka | Mga merkado ng mga magsasaka
+label.farm_pick_up,Pick-up sa taniman
+label.free,Libreng magpakukunan
+label.free_groceries,Lugar ng libreng groseri | Mga lugar ng libreng groseri
+label.freemeals,Lugar ng libreng pagkain | Mga lugar ng libreng pagkain
+label.free_produce,Lugar ng libreng ani | Mga lugar ng libreng ani
+label.require_child,Kailangan ng presensya ng bata
+label.must_show_id,Dapat ipakita ang ID
+label.all_children,Paglilingkod sa lahat ng mga bata
+label.enrolled_children,Ang mga mag-aaral lamang na nakatala sa distrikto
+label.ballot_outdoor,Sa labas ang paghulog ng balota
+label.ballot_indoor,Sa loob ang paghulog ng balota
+label.twentyfourhrs,Bukas ng beinte kwatro oras
+health.med_testing,Eksamen para sa COVID
+health.med_primary_care,Pangunahing pangangalaga
+health.med_pediatrics,Pediyatriko
+health.med_senior,Pangangalaga sa mga matatanda
+health.med_women,Pangangalaga sa kalusugan ng kababaihan
+health.med_urgent_care,Agarang pangangalaga
+health.med_dental,Pangangalaga sa ngipin
+health.med_vision,Pangangalaga sa paningin
+health.med_pharmacy,Parmasya/Botika
+health.med_mental_health,Pangangalaga sa kabutihang pangkaisipan
+health.med_hotline,Ugnay sa deretsahang pag-uusap
+health.med_addiction,Suporta sa pagkagumon at paggaling
+health.med_domestic_violence,Suporta sa mga biktima at karahasan
+category.cash_assistance,Salaping pangtulong
+label.fin_grocery,Salapi para sa pamimili
+label.fin_housing,Salapi para sa renta
+label.fin_legal,Salapi para sa ligal na bayarin
+label.fin_medical,Salapi para sa bayaring pangkalusugan
+label.fin_utilities,Salapi para sa kagamitan
+label.freefood,Lugar para sa libreng pagkain
+label.instructions,Mga tagubilin
+label.mapkey,Key ng mapa
+label.meal_public,Mga pagkain bukas sa publiko
+label.meal_student,Mga pagkain para sa mga kabataan
+label.must_preorder,Dapat pre-order
+label.normalhours,Normal na oras
+label.notes,Tala
+label.offers,Mga paghahandog
+label.open,Bukas
+label.openinghours,Mga Oras
+label.order_online,Mag-order & magbayad online
+label.phone,Telepono
+label.public,Bukas para sa lahat
+label.selectacategory,Pumili ng kategorya...
+label.selected,Napili
+label.seniorhours,Mga oras para sa mga nakatatanda
+label.seniors,Para sa mga nakatatanda
+label.snap,Lugar na tinatanggap ng CalFresh | Mga lugar na tinatanggap ng CalFresh
+label.special_hours,Mga oras ng pamimili para sa mga nakatatanda
+label.website,Website
+label.wic,Lugar na tintanggap ng WIC | Mga lugar na tinatanggap ng WIC
+languages.ar,Arabe
+languages.en,Ingles
+languages.es,Espanyol
+languages.fr,Pranses
+languages.ja,Japanese
+languages.ko,Koreano
+languages.ms,Malay
+languages.zh,Pinasimple na Tsino
+languages.vi,Vietnamese
+languages.tl,Tagalog
+sidebar.home,Homepage
+sidebar.close-panel,Isara ang panel ng paghahanap
+sidebar.info-about-us,"Sa kasalukuyan, sinusuportahan ng site na ito ang Bay Area, CA. Sa"
+sidebar.info-end-text,", maaari naming mapalawak ang aming saklaw."
+sidebar.info-link-text,iyong tulong
+sidebar.open-panel,Bukas na panel ng paghahanap
+sidebar.shopsafe,Mangyaring bumili ng ligtas!
+sidebar.sixfeet,Manatiling 6 na talampakan habang namimili.
+sidebar.stayhome,"Kung ikaw ay may sakit, manatili sa bahay."
+sidebar.washhands,Hugasan ang iyong mga kamay nang madalas.
+sidebar.what-do-you-need,Ano'ng kailangan mo?
+sidebar.when-do-you-need-it,Kailan mo ito kailangan?
+title,{0} Taguyod para sa COVID
+label.ebt_pay_phone,Magbayad gamit ang EBT sa telepono.
+label.ebt_pay_online,Magbayad gamit ang EBT online.
+category.food_resources,Mga mapagkukunan ng pagkain
+category.legal_resources,Mga mapagkukunan ng legal
+category.medical_resources,Mga mapagkukunan ng medikal
+category.mental_health_resources,Mga mapagkukunan ng kalusugan ng kaisipan
+county.alameda,county ng Alameda
+county.anywhere,Kahit saan
+county.contra-costa,county ng Contra Costa
+county.marin,county ng Marin
+county.napa,county ng Napa
+county.san-francisco,county ng San Francisco
+county.san-mateo,county ng San Mateo
+county.santa-clara,county ng Santa Clara
+county.solano,county ng Solano
+county.sonoma,county ng Sonoma
+county.monterey,county ng Monterey
+label.open_today,Bukas ngayon
+label.pay_phone,Magbayad gamit ang EBT sa telepono.
+label.safe_pick_up,Ligtas na pagpipilian ng pick-up
+label.zoom_out_for_more_results,Mag-zoom out para sa higit pang mga resulta.
+legal.general_info,Pangkalahatang impormasyon
+legal.legal_assistance,Legal na tulong
+label.in_person,Mga klinika sa tao
+medical.telehealth,Mga klinika ng telehealth
+mental.in_person,Tulong sa tao
+label.telehealth,Tulong ng telehealth
+message.no_location_in_this_area,Walang resulta sa lugar na ito.
+sidebar.current_location,Kasalukuyang lokasyon
+sidebar.what,Mapagkukunan ...
+sidebar.what-are-you-looking-for,Ano ang hinahanap mo?
+sidebar.where,Malapit sa ...
+legal.legal_criminal,Suporta sa hustisya na legal
+legal.legal_domviolence,Suporta sa karahasan sa tahanan
+legal.legal_worker_protection,Tumulong sa mga karapatan ng mga manggagawa
+legal.legal_healthcare,Suporta sa aplikasyon ng pangangalaga ng kalusugan
+legal.legal_housing,Tumulong sa mga isyu sa pabahay
+legal.legal_immigration,Suporta sa mga isyu sa imigrasyon
+about.front-page.p1,Kumusta!
+about.front-page.p2,"Nagbibigay kami ng impormasyon tungkol sa mga mapagkukunan tulad ng libreng pagkain, tulong sa pagkain, legal na tulong, at tulong medikal."
+about.front-page.p3,Magsimula sa pamamagitan ng pagpili kung nasaan ka at kung ano ang hinahanap mo.
+about.front-page.p4.text,"Kami ay kaakibat sa {0} at {1} ng Stanford at lubos na nagpapasalamat kay Bill Behrman, Sara Altman, at Cheryl Phillips para sa kanilang patuloy na suporta at payo."
+about.front-page.p4.link0,Laboratoryo ng Hamon ng Data
+about.front-page.p4.link1,Malaking Lokal ng Balita
+about.about-us-sources,"Ang aming database ng impormasyon ay nakikinabang mula sa data na nakolekta ng mga sumusunod na samahan:
+tagahanap ng tindahan ng USDA SNAP
+tagahanap ng tindahan ng USDA WIC
+Pangalawang Pag-aani ng Silicon Valley
+Advocacy ng Stanford Pediatric
+
+Mayroon kaming isang koponan ng mga kamangha-manghang mga boluntaryo na nagpapatunay sa data at nangongolekta ng anumang karagdagang impormasyon tulad ng karagdagang Covid-19 na mga oras para sa mga nakatatanda, ligtas na pagpipilian ng curbside pick-up, etc."
+about.about-us-contact,"Para sa mga katanungan sa anumang mga pagdaragdag ng data o kamalian, o para sa anumang iba pang mga katanungan, mangyaring makipag-ugnay sa {0}."
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us-disclaimer,"Ang proyektong Bay Area Resources na ito ay puro boluntaryo na hinihimok. Mayroon kaming isang koponan ng mga tao na nangolekta at nagpapatunay ng data mula sa magkakaibang mapagkukunan. Ginagawa namin ang aming makakaya upang mapanatili ang lahat ng impormasyon sa site kamakailan hangga't maaari, subalit hindi namin masiguro na ang impormasyon ay tumpak na 100%."
+about.about-us.header,Tungkol sa amin
+about.about-us.p1.text,"Kami ay isang boluntaryo na hinihimok, bukas na mapagkukunan upang matulungan ang mga komunidad na mag-navigate sa krisis sa COVID sa pamamagitan ng pagbibigay ng impormasyon sa mga pampublikong mapagkukunan. Ang proyektong ito ay nagsimula bilang isang {0}, at ngayon ay nagbibigay ng impormasyon sa higit pang mga mapagkukunan tulad ng mga lokasyon at iskedyul para sa libreng pagkain, tulong sa pagkain, tulong sa legal, at tulong medikal. Bahagi kami ng samahan {1}."
+about.about-us.p1.link1,unBox
+about.about-us.p1.link0,Mapa ng pagkain sa paaralan ng Bay Area
+about.about-us.p2.text,Ang pag-unlad para sa proyektong ito ay inangkop mula sa {0}.
+about.about-us.p2.link,NCCovid Support
+about.about-us.p3.text,"Maaari kang maghanap ng karagdagang impormasyon sa proyekto, kasama ang pinagmulan kodigo para sa pagtitiklop ng proyekto, mula sa aming {0}."
+about.about-us.p3.link,pahina ng Github
+about.info-sources.header,Pinagmulan ng Impormasyon
+about.info-sources.p1,Ang aming database ng impormasyon ay nakikinabang mula sa data na nakolekta ng mga sumusunod na samahan:
+about.info-source.link1,tagahanap ng tindahan ng USDA SNAP
+about.info-source.link2,tagahanap ng tindahan ng USDA WIC
+about.info-source.link3,Pangalawang Pag-aani ng Silicon Valley
+about.info-source.link4,Advocacy ng Stanford Pediatric
+about.info-source.link5,Sentro ng Ekolohiya ng Berkeley
+about.info-sources.p2,"Mayroon kaming isang koponan ng mga kamangha-manghang mga boluntaryo na nagpapatunay sa data at nangongolekta ng anumang karagdagang impormasyon tulad ng karagdagang Covid-19 na mga oras para sa mga nakatatanda, ligtas na pagpipilian ng curbside pick-up, etc."
+about.contact-us.header,Makipag-ugnayan sa amin
+about.contact-us.p1.text,"Para sa mga katanungan sa anumang mga pagdaragdag ng data o kamalian, o para sa anumang iba pang mga katanungan, mangyaring makipag-ugnay sa {0}."
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.contact-us.contact-us-header,Makipag-ugnayan sa amin
+about.disclaimer.header,Pagtanggi
+about.disclaimer.p,"Ang proyektong Bay Area Resources na ito ay puro boluntaryo na hinihimok. Mayroon kaming isang koponan ng mga tao na nangolekta at nagpapatunay ng data mula sa magkakaibang mapagkukunan. Ginagawa namin ang aming makakaya upang mapanatili ang lahat ng impormasyon sa site kamakailan hangga't maaari, subalit hindi namin masiguro na ang impormasyon ay tumpak na 100%."
+message.no_location_meet_these_criteria,Walang resulta para sa mga pamantayang ito.
+about.spthanks.p,Espesyal na pasasalamat sa {0} at {1} para sa kapangyarihan ng aming site.
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.our-team.header,Ang aming koponan
+about.our-team.sourcing,Data sourcing at pagsasalin:
+about.our-team.dev,Data engineering at pag-unlad
+about.our-team.resource,mga coordinator ng mapagkukunan
+about.our-team.translate,tagasalin
+about.our-team.dqual,kalidad ng data
+about.our-team.internal-community,panloob na komunidad
+about.our-team.projl,lider ng proyekto
+about.our-team.devlead,lider ng pag-unlad
+about.our-team.dqlead,lider ng kalidad ng data
+sidebar.feedback,Katugunan
+about.dataaccess.header,Pag-access sa aming Data
+about.dataaccess.p,Maaari mong ma-access ang aming data sa pamamagitan ng isang bukas na proyekto sa {0} (kailangang mag-login).
+about.dataaccess.link,Big Local News
+message.loading,Naglo-load ...
+message.ie_compatibility,"Ang pook-sapot (websayt) na ito ay hindi kubkob para sa Internet Explorer at ikaw ay walang gamit sa lahat ng tungkulin/kakayahan. Para sa mas mabuting karanasan, gumamit ng ibang panginain (tulad ng Firefox)"
+message.area_not_covered,Hindi namin sakop ang pook/lugar na ito.
+label.zipcode,Zipcode/Lokasyon
+message.select_resource,Pag-pili ng mapagkukunan.
+message.provide_zip,Ibigay ang zipcode o lokasyon.
+message.error_getting_zip,Mayroon kalisyaan/mali sa ibinigay na zipcode/lokasyon. Paki ulit muli.
+label.suggest_an_edit,Pag-mungkahi na i-edit/baguhin.
+edit.intro,Botahin ang impormasyon para sa lokasyon sa talye mula sa ibaba. Pinapahalagahan namin ang tulong niyo sa pag pagpapanatili ng mapagkukunan hanggang sa napapanahon.
+edit.thanks,Natanggap namin ang iyong edit/pagbago. Maraming salamat!
+edit.provider_name,Ngalan/pangalan ng tagapagbigay ng serbisyo
+edit.location_name,Pangalan ng lokasyon
+edit.website,Pook-sapot (websayt)
+edit.opening_hours,Oras ng pagbubukas:
+edit.senior_hours,Oras ng pagbubukas para sa mga nakakatanda:
+edit.additional_info,Adisyonal na impormasyon:
+edit.additional_info_text,"Mayroon pa ba na pagkukulang, kailangang baguhin o dapat na ipakita?"
+edit.additional_info_placeholder,"Bagong serbisyo, lokasyon ay permanenteng sarado, oras ng pagbubukas para sa mas nakakatanda…"
+label.reset,I-reset/Ulitin
+label.submit,Ipasa
+edit.no_edit,Walang pinag iba
+edit.submission_error,Mayroong kalisyaan/mali sa pag-mungkahi. Maaaring kaming kontakin muli sa baycommunitysource@gmail.com.
+pebt.header,Benepisyo ng pagkain para sa mga bata na makakakuha ng libre o bawas na pagkain.
+pebt.lead,Mag-apply para sa P-EBT noong Hulyo 15.
+pebt.link,Mag-apply na ngayon
+pebt.link_url,https://ca.p-ebt.org/en/
+category.healthcare,Pangangalaga sa kalusugan
+label.last_updated,Ang mga detalyadong huling na-update
+message.error_loading_results,Nagkaroon ng isang error. Pakiulit muli.
+ux_study.text_main,Gusto naming matuto nang higit pa tungkol sa kung ano ang nasa itaas ng pag-iisip para sa iyo sa oras na ito at makuha ang iyong input sa kung paano pagbutihin ang website.
+ux_study.link_text,Mag-sign up ngayon.
+ux_study.link_url,https://bit.ly/bac-interviews
+ux_study.text_sub,"Kung napili ka para sa pakikipanayam, ang lahat ng mga sesyon ay isasagawa nang malayuan sa pamamagitan ng telepono / video chat, at babayaran ka namin para sa iyong oras."
+ux_study.header,Tulungan kaming maglingkod nang mas mahusay.
+label.in_store_pickup,Take-away
+label.delivery,Paghahatid
+label.catering,Pagtutustos ng pagkain
+label.dv_legal,Suporta sa legal sa karahasan sa tahanan
+label.dv_housing,Suporta sa pabahay sa karahasan sa tahanan
+label.dv_medical,Suporta sa medisina ng karahasan sa tahanan
+label.dv_crisis,Suporta sa krisis sa karahasan sa tahanan
+category.dv_resources,Mga mapagkukunan ng karahasan sa tahanan
+label.dv_mental_health,Suporta sa kalusugan ng kaisipan sa karahasan sa tahanan
+label.apply,Maglagay ng mga filter
+label.filters,Mga filter
+category.eviction_resources,Mga mapagkukunan ng pagpapalayas
+category.bob,Mga restawran na pag-aari ng mga Itim na tao

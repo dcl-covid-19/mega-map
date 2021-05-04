@@ -1,0 +1,168 @@
+{
+  "about": {
+    "close": "قريب",
+    "contact": "اتصل بنا",
+    "contactus": {
+      "email": "البريد الإلكتروني",
+      "info": "هذه الصفحة مدعومة من {0} من {1}. للأسئلة ، يرجى الاتصال بنا عبر البريد الإلكتروني على {2}."
+    },
+    "devhelp": {
+      "addbusiness": "إضافة عمل",
+      "addinfo": "استخدم نماذجنا عبر الإنترنت لـ {0} أو {1}.",
+      "becomeambassador": "كن سفير مجتمع",
+      "conduct": "مدونة قواعد السلوك",
+      "devnote": "مطورو البرامج - ابحث عن {0} و {1} على GitHub.",
+      "dupsite": "بدلاً من ذلك ، يمكنك تكرار موقع لولتك.",
+      "info": "هذا مشروع مفتوح المصدر ، تم بناؤه للمشاركة والتوسع في المجتمعات الأخرى.",
+      "source": "مصدر الرمز",
+      "support": "ادعم جيرانك والشركات المحلية - ساعدنا على النمو!",
+      "updatebusiness": "تحديث إدخال موجود"
+    },
+    "getinvolved": "شارك",
+    "info": "تستفيد قاعدة بياناتنا من الموارد من المعلومات التي تجمعها هذه المنظمات:",
+    "linktext": "معلومات عنا",
+    "orgs": {
+      "bureau": "مكتب زوار تشابل هيل / مقاطعة أورانج",
+      "cfa": "كود لأمريكا",
+      "chb": "لواء تشابل هيل",
+      "farmstewards": "جمعية رعاية مزرعة كارولينا",
+      "localistnc": "#LocalListNC",
+      "partnership": "شراكة وسط تشابل هيل"
+    },
+    "partners": "مصادر المعلومات",
+    "title": "عن هذا الموقع",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us": {
+      "p1": {
+        "link1": "unBox"
+      },
+      "p2": {
+        "link": "NCCovid Support"
+      }
+    },
+    "contact-us": {
+      "p1": {
+        "link": "baycommunityresource@gmail.com"
+      }
+    },
+    "spthanks": {
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "dataaccess": {
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "رعاية الطفل",
+    "family": "وجبة عائلية جاهزة | وجبات عائلية جاهزة",
+    "farm": "سوق المزارع أو المزارع | أسواق المزارع والمزارعين",
+    "grocery": "بقالة |",
+    "meal": "وجبة مجانية | وجبات مجانية",
+    "petsupplies": "مستلزمات الحيوانات الأليفة",
+    "pharmacy": "الصيدلية |",
+    "restaurant": "المطاعم |",
+    "school": "وجبة مدرسية |",
+    "cash_assistance": "المساعدة النقدية"
+  },
+  "dayofweek": {
+    "any": "أي",
+    "friday": "يوم الجمعة",
+    "monday": "الإثنين",
+    "saturday": "يوم السبت",
+    "sunday": "الأحد",
+    "thursday": "الخميس",
+    "tuesday": "الثلاثاء",
+    "wednesday": "الأربعاء"
+  },
+  "label": {
+    "address": "عنوان",
+    "allweek": "كل الاسبوع",
+    "backtolist": "الرجوع للقائمة",
+    "close": "قريب",
+    "closed": "مغلق",
+    "closed-on": "أغلقت يوم",
+    "closed-today": "مغلق اليوم",
+    "closedonday": "مغلق (في اليوم المحدد الحالي)",
+    "curbside_pickup": "البيك اب",
+    "delivery": "توصيل",
+    "discount_medical": "خصم عامل طبي | تخفيضات عامل طبي",
+    "drive_thru": "الطلب من المركبة",
+    "email": "البريد الإلكتروني",
+    "email_lowercase": "البريد الإلكتروني",
+    "farmers_market": "سوق المزارعين |",
+    "farm_pick_up": "الاستلام من المزرعة",
+    "free_groceries": "موقع بقالة مجاني | مواقع بقالة مجانية",
+    "freemeals": "موقع وجبة مجانية | مواقع وجبات مجانية",
+    "free_produce": "موقع إنتاج مجاني | مواقع إنتاج مجاني",
+    "require_child": "يحتاج الطفل أن يكون حاضرا",
+    "must_show_id": "يجب إظهار الهوية",
+    "all_children": "خدمة جميع الأطفال",
+    "enrolled_children": "فقط الطلاب المسجلين في المنطقة",
+    "ballot_outdoor": "إسقاط الاقتراع في الهواء الطلق",
+    "ballot_indoor": "إسقاط الاقتراع الداخلي",
+    "twentyfourhrs": "مفتوحة 24 ساعة",
+    "fin_grocery": "النقدية لمحلات البقالة",
+    "fin_housing": "كاش للايجار",
+    "fin_legal": "النقد مقابل الرسوم القانونية",
+    "fin_medical": "نقدا مقابل الرسوم الطبية",
+    "fin_utilities": "النقدية للمرافق",
+    "freefood": "موقع طعام مجاني | مواقع طعام مجانية",
+    "instructions": "تعليمات",
+    "mapkey": "مفتاح الخريطة",
+    "meal_public": "وجبات مفتوحة للجمهور",
+    "meal_student": "وجبات الطلاب",
+    "must_preorder": "يجب الطلب المسبق",
+    "normalhours": "ساعات العمل العادية",
+    "notes": "ملاحظات",
+    "offers": "عروض",
+    "open": "افتح",
+    "openinghours": "ساعات العمل",
+    "order_online": "اطلب وادفع عبر الإنترنت",
+    "phone": "هاتف",
+    "selectacategory": "اختر تصنيف...",
+    "selected": "المحدد",
+    "seniorhours": "ساعات كبار",
+    "special_hours": "ساعات تسوق كبار",
+    "website": "موقع الكتروني"
+  },
+  "health": {
+    "med_testing": "اختبار COVID",
+    "med_primary_care": "الرعاية الصحية الأولية",
+    "med_pediatrics": "طب الأطفال",
+    "med_senior": "رعاية كبار السن",
+    "med_women": "رعاية صحة المرأة",
+    "med_urgent_care": "الرعاية العاجلة",
+    "med_dental": "العناية بالأسنان",
+    "med_vision": "العناية بالرؤيا",
+    "med_pharmacy": "مقابل",
+    "med_mental_health": "الرعاية الصحية النفسية",
+    "med_hotline": "الخط الساخن",
+    "med_addiction": "دعم الإدمان والتعافي",
+    "med_domestic_violence": "دعم ضحايا العنف المنزلي"
+  },
+  "languages": {
+    "ar": "عربى",
+    "en": "الإنجليزية",
+    "es": "الأسبانية",
+    "fr": "الفرنسية",
+    "ja": "اليابانية",
+    "ko": "الكورية",
+    "zh": "الصينية المبسطة"
+  },
+  "sidebar": {
+    "close-panel": "أغلق لوحة البحث",
+    "info-end-text": "، يمكننا توسيع تغطيتنا.",
+    "info-link-text": "مساعدتك",
+    "open-panel": "افتح لوحة البحث",
+    "shopsafe": "من فضلك ، تسوق آمن!",
+    "sixfeet": "ابق على مسافة 6 أقدام عند التسوق.",
+    "stayhome": "إذا كنت مريضًا ، ابق في المنزل.",
+    "washhands": "اغسل يديك كثيرًا.",
+    "what-do-you-need": "ماذا تحتاج؟",
+    "when-do-you-need-it": "متى تحتاجها؟"
+  },
+  "title": "{0} دعم COVID"
+}

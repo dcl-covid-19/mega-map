@@ -1,0 +1,725 @@
+{
+  "about": {
+    "close": "Close",
+    "contact": "Contact Us",
+    "contactus": {
+      "email": "email",
+      "info": "This page is powered by the {0} of {1}. For questions, please contact us via email at {2}."
+    },
+    "devhelp": {
+      "addbusiness": "add a business",
+      "addinfo": "Use our online forms to {0} or {1}.",
+      "ambassadorinfo": "Help us expand coverage across the Bay Area. Ambassadors will work with local government and business associations to bring Bay Area Community Resources to their community. Email us at {0} for tools and resources to get started.",
+      "becomeambassador": "Become a community ambassador",
+      "conduct": "Code of Conduct",
+      "devnote": "Developers - find our {0} and {1} on GitHub.",
+      "dupsite": "Use our code to build a site for your state or region:",
+      "info": "This is an open-source project, built to share and expand to other communities.",
+      "source": "source code",
+      "support": "Support your neighbors and local businesses - help us grow!",
+      "updatebusiness": "update an existing entry"
+    },
+    "getinvolved": "Get Involved",
+    "info": "Our database of resources benefits from information collected by these organizations:",
+    "linktext": "About us",
+    "orgs": {
+      "bureau": "Chapel Hill/Orange County Visitors Bureau",
+      "cfa": "Code for America",
+      "chb": "Chapel Hill Brigade",
+      "farmstewards": "Carolina Farm Stewardship Association",
+      "localistnc": "#LocalListNC",
+      "partnership": "Chapel Hill Downtown Partnership",
+      "dcl": "Data Challenge Lab",
+      "bln": "Big Local News"
+    },
+    "partners": "Info Sources",
+    "title": "About this site",
+    "front-page": {
+      "p1": "Welcome!",
+      "p2": "We provide information on resources such as free meals, food, legal assistance, and medical help.",
+      "p3": "Start by selecting where you are and what you're looking for.",
+      "p4": {
+        "text": "We are affiliated with Stanford's {0} and {1} and are extremely grateful to Bill Behrman, Sara Altman, and Cheryl Phillips for their ongoing support and advice.",
+        "link0": "Data Challenge Lab",
+        "link1": "Big Local News"
+      }
+    },
+    "about-us-sources": "Our database of information benefits from data collected by the following organizations:\nUSDA SNAP Store locator\nUSDA WIC Store locator\nSecond Harvest of Silicon Valley\nStanford Pediatric Advocacy\n\nWe have a team of amazing volunteers who verify the data and collect any additional information such as additional Covid-19 senior hours, safe curbside pick-up options etc.",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "This Bay Area Resources project is purely volunteer-driven. We have a team of humans collecting and verifying data from diverse sources. We do our best to keep all the information on the site as up-to-date as possible, however we cannot guarantee that the information is 100% accurate.",
+    "about-us": {
+      "header": "About Us",
+      "p1": {
+        "text": "We are a volunteer-driven, open-source project to help communities navigate the COVID crisis by providing information on public resources. This project began as a {0}, and now provides information on more resources such as locations and schedules for free meals, food assistance, legal assistance, and medical help. We are part of the organization {1}.",
+        "link1": "unBox",
+        "link0": "Bay Area school meals map"
+      },
+      "p2": {
+        "text": "The development for this project was adapted from {0}.",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "You can find more information on the project, including the source code for replicating the project, from our {0}.",
+        "link": "Github page"
+      }
+    },
+    "info-sources": {
+      "header": "Info Sources",
+      "p1": "Our database of information benefits from data collected by the following organizations:",
+      "p2": "We have a team of amazing volunteers who verify the data and collect any additional information such as additional Covid-19 senior hours, safe curbside pick-up options etc."
+    },
+    "info-source": {
+      "link1": "USDA SNAP Store locator",
+      "link2": "USDA WIC Store locator",
+      "link3": "Second Harvest of Silicon Valley",
+      "link4": "Stanford Pediatric Advocacy",
+      "link5": "Berkeley Ecology Center"
+    },
+    "contact-us": {
+      "header": "Contact Us",
+      "p1": {
+        "text": "For questions on any data additions or inaccuracies, or for any other questions, please contact {0}.",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "Contact us here"
+    },
+    "disclaimer": {
+      "header": "Disclaimer",
+      "p": "This Bay Area Resources project is purely volunteer-driven. We have a team of humans collecting and verifying data from diverse sources. We do our best to keep all the information on the site as up-to-date as possible, however we cannot guarantee that the information is 100% accurate."
+    },
+    "spthanks": {
+      "p": "Special thanks to {0} and {1} for powering our site.",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "Our team",
+      "sourcing": "Data sourcing and translation:",
+      "dev": "Data engineering and development:",
+      "resource": "resource coordinators",
+      "translate": "translators",
+      "dqual": "data quality",
+      "internal-community": "internal community",
+      "projl": "project lead",
+      "devlead": "development lead",
+      "dqlead": "data quality lead"
+    },
+    "dataaccess": {
+      "header": "Accessing our Data",
+      "p": "You can access our data via an open project at {0} (login required).",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "Child care",
+    "family": "Prepared family meal|Prepared family meals",
+    "farm": "Farm or farmer market|Farms & farmers' markets",
+    "food_bev": "Speciality food & beverage",
+    "free_grocery": "Free grocery|Free groceries",
+    "free_food": "Free food for the public",
+    "grocery": "Grocery|Groceries",
+    "meal": "Free prepared meal|Free prepared meals",
+    "ballot_drop": "Ballot drop off locations",
+    "petsupplies": "Pet supplies",
+    "pharmacy": "Pharmacy|Pharmacies",
+    "restaurant": "Restaurant|Restaurants",
+    "school": "School meal|School meals",
+    "snap_wic_retailer": "CalFresh/WIC retailer|CalFresh/WIC retailers",
+    "cash_assistance": "Cash assistance",
+    "food_resources": "Food resources",
+    "legal_resources": "Legal resources",
+    "medical_resources": "Medical resources",
+    "mental_health_resources": "Mental health resources",
+    "healthcare": "Healthcare",
+    "dv_resources": "Domestic violence resources",
+    "eviction_resources": "Eviction resources",
+    "bob": "Black owned restaurants"
+  },
+  "dayofweek": {
+    "any": "Any",
+    "friday": "Friday",
+    "monday": "Monday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "thursday": "Thursday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday"
+  },
+  "label": {
+    "address": "Address",
+    "allweek": "All week",
+    "backtolist": "Back to list",
+    "call_in_advance": "Must call in advance",
+    "children": "For children",
+    "close": "Close",
+    "closed": "Closed",
+    "closed-on": "Closed on",
+    "closed-today": "Closed today",
+    "closedonday": "Closed (on the current selected day)",
+    "curbside_pickup": "Curbside pick-up",
+    "curbside_or_delivery": "Delivery or curbside pick-up",
+    "delivery": "Delivery",
+    "discount_medical": "Medical worker discount|Medical worker discounts",
+    "discounts": "Discounts",
+    "drive_thru": "Drive thru",
+    "email": "Email",
+    "email_lowercase": "email",
+    "farmers_market": "Farmers' market|Farmers' markets",
+    "farm_pick_up": "On-farm pick-up",
+    "free": "Free resource",
+    "free_groceries": "Free grocery location|Free grocery locations",
+    "freemeals": "Free meal location|Free meal locations",
+    "free_produce": "Free produce location|Free produce locations",
+    "require_child": "Child needs to be present",
+    "must_show_id": "Must show ID",
+    "all_children": "Serving all children",
+    "enrolled_children": "Only students enrolled in district",
+    "ballot_outdoor": "Outdoor ballot drop",
+    "ballot_indoor": "Indoor ballot drop",
+    "twentyfourhrs": "Open 24 Hours",
+    "fin_grocery": "Cash for groceries",
+    "fin_housing": "Cash for rent",
+    "fin_legal": "Cash for legal fees",
+    "fin_medical": "Cash for medical fees",
+    "fin_utilities": "Cash for utilities",
+    "freefood": "Free food location|Free food locations",
+    "instructions": "Instructions",
+    "mapkey": "Map Key",
+    "meal_public": "Meals open to public",
+    "meal_student": "Meals for children",
+    "must_preorder": "Must pre-order",
+    "normalhours": "Normal hours",
+    "notes": "Notes",
+    "offers": "Offers",
+    "open": "Open",
+    "openinghours": "Hours",
+    "order_online": "Order & pay online",
+    "phone": "Phone",
+    "public": "Open to all",
+    "selectacategory": "Select a category...",
+    "selected": "Selected",
+    "seniorhours": "Senior hours",
+    "seniors": "For seniors",
+    "snap": "CalFresh-accepting location|CalFresh-accepting locations",
+    "special_hours": "Senior shopping hours",
+    "website": "Website",
+    "wic": "WIC-accepting location|WIC-accepting locations",
+    "ebt_pay_phone": "Pay with EBT over the phone",
+    "ebt_pay_online": "Pay with EBT online",
+    "open_today": "Open today",
+    "pay_phone": "Pay with EBT over the phone",
+    "safe_pick_up": "Safe pick-up options",
+    "zoom_out_for_more_results": "Zoom out for more results.",
+    "in_person": "In-person clinics",
+    "telehealth": "Telehealth assistance",
+    "zipcode": "Zipcode",
+    "suggest_an_edit": "Suggest an edit",
+    "reset": "Reset",
+    "submit": "Submit",
+    "last_updated": "Details last updated",
+    "in_store_pickup": "Take-away",
+    "catering": "Catering",
+    "dv_legal": "DV legal support",
+    "dv_housing": "DV housing support",
+    "dv_medical": "DV medical support",
+    "dv_crisis": "DV crisis support",
+    "dv_mental_health": "DV mental health support",
+    "apply": "Apply filters",
+    "filters": "Filters"
+  },
+  "health": {
+    "med_testing": "COVID Testing",
+    "med_primary_care": "Primary care",
+    "med_pediatrics": "Pediatrics",
+    "med_senior": "Senior care",
+    "med_women": "Women's health care",
+    "med_urgent_care": "Urgent care",
+    "med_dental": "Dental care",
+    "med_vision": "Vision care",
+    "med_pharmacy": "Pharmacy",
+    "med_mental_health": "Mental health care",
+    "med_hotline": "Hotline",
+    "med_addiction": "Addiction and recovery support",
+    "med_domestic_violence": "Victim of domestic violence support"
+  },
+  "languages": {
+    "ar": "Arabic",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "ms": "Malay",
+    "zh": "Simplified Chinese",
+    "vi": "Vietnamese",
+    "tl": "Tagalog"
+  },
+  "sidebar": {
+    "home": "Home",
+    "close-panel": "Close search panel",
+    "info-about-us": "Currently, this site supports the Bay Area, CA. With",
+    "info-end-text": ", we can expand our coverage.",
+    "info-link-text": "your help",
+    "open-panel": "Open search panel",
+    "shopsafe": "Please, SHOP SAFE!",
+    "sixfeet": "Stay 6 ft. apart when shopping.",
+    "stayhome": "If you are sick, stay home.",
+    "washhands": "Wash your hands often.",
+    "what-do-you-need": "What do you need?",
+    "when-do-you-need-it": "When do you need it?",
+    "current_location": "Current location",
+    "what": "Resource ...",
+    "what-are-you-looking-for": "What are you looking for?",
+    "where": "Near ...",
+    "feedback": "Feedback"
+  },
+  "title": "{0} COVID Support",
+  "county": {
+    "alameda": "Alameda county",
+    "anywhere": "Anywhere",
+    "contra-costa": "Contra Costa county",
+    "marin": "Marin county",
+    "napa": "Napa county",
+    "san-francisco": "San Francisco county",
+    "san-mateo": "San Mateo county",
+    "santa-clara": "Santa Clara county",
+    "solano": "Solano county",
+    "sonoma": "Sonoma county",
+    "monterey": "Monterey county"
+  },
+  "legal": {
+    "general_info": "General information",
+    "legal_assistance": "Legal assistance",
+    "legal_criminal": "Criminal justice support",
+    "legal_domviolence": "Domestic violence support",
+    "legal_worker_protection": "Workers' rights support",
+    "legal_healthcare": "Healthcare benefits support",
+    "legal_housing": "Housing support",
+    "legal_immigration": "Immigration support"
+  },
+  "medical": {
+    "telehealth": "Telehealth clinics"
+  },
+  "mental": {
+    "in_person": "In-person assistance"
+  },
+  "message": {
+    "no_location_in_this_area": "No result in this area.",
+    "no_location_meet_these_criteria": "No result for these criteria.",
+    "loading": "Loading ...",
+    "ie_compatibility": "This website was not optimized for Internet Explorer and you may not have acces to all functionalities. For a better experience, please use a different browser (for example Mozilla Firefox）。",
+    "area_not_covered": "We don't cover this area.",
+    "select_resource": "Select a resource.",
+    "provide_zip": "Provide a zipcode.",
+    "error_getting_zip": "There was an error with the provided zipcode. Please try again.",
+    "error_loading_results": "There was an error. Please try again."
+  },
+  "edit": {
+    "intro": "Please update the information for this location in the form below. We really appreciate your help in maintaining these resources up to date.",
+    "thanks": "We've received your edits. Thank you!",
+    "provider_name": "Provider name",
+    "location_name": "Location name",
+    "website": "Website",
+    "opening_hours": "Opening hours:",
+    "senior_hours": "Senior hours:",
+    "additional_info": "Additional information:",
+    "additional_info_text": "Anything else that is missing, needs changing or should be displayed?",
+    "additional_info_placeholder": "New service, location permanently closed, senior shopping hours ...",
+    "no_edit": "Nothing has changed.",
+    "submission_error": "There was an error during the form submission. Please try again or contact us at baycommunityresource@gmail.com."
+  },
+  "pebt": {
+    "header": "Food benefits for kids who get free or reduced-price meals.",
+    "lead": "Apply for P-EBT by July 15th.",
+    "link": "Apply now",
+    "link_url": "https://ca.p-ebt.org/en/"
+  },
+  "ux_study": {
+    "text_main": "We want to learn more about what is top of mind for you at this time and get your input on how to improve the website.",
+    "link_text": "Sign up now.",
+    "link_url": "https://bit.ly/bac-interviews",
+    "text_sub": "If you are selected for interviewing,  all sessions will be conducted remotely via phone / video chat, and  we will compensate you for your time.",
+    "header": "Help us serve you better."
+  },
+  "faq": {
+    "title": "Welcome to Know Your Rights",
+    "header": "Know Your Rights",
+    "home_help_text": "Select an area below to find out more about your rights.",
+    "subcategory_header": "What best describes your situation?",
+    "subcategory_help_text": "Click on the questions below to expand answers.",
+    "back_button": "Back",
+    "categories": {
+      "criminal-justice": {
+        "title": "Criminal Justice",
+        "icon": "fa-gavel",
+        "content": {
+          "0": {
+            "title": "I've been arrested",
+            "questions": {
+              "0": {
+                "question": "What should I do?",
+                "answer": {
+                  "0": {
+                    "text": "Generally the protocols for police arrests are not different from pre-COVID times, except that they are more likely to issue summons in the field rather than bringing detainees into a station for booking {0}.",
+                    "links": {
+                      "0": {
+                        "text": "source",
+                        "link": "https://www.ppic.org/blog/how-will-covid-19-affect-arrests-in-california/"
+                      }
+                    }
+                  },
+                  "1": {
+                    "text": "You can find regular know-your-rights information for when you are stopped by the police at the ACLU Northern California Chapter's {0}.",
+                    "links": {
+                      "0": {
+                        "text": "website",
+                        "link": "https://www.aclunc.org/sites/default/files/kyr_police_en.pdf"
+                      }
+                    }
+                  }
+                }
+              },
+              "1": {
+                "question": "What is the status of the courts?",
+                "answer": {
+                  "0": {
+                    "text": "During a public health emergency like COVID-19, courts prioritize critical cases (i.e. bail hearings, emergency protective orders such as in domestic violence and child abuse cases, and contested quarantine and isolation orders) over other caseloads ({0}).",
+                    "links": {
+                      "0": {
+                        "text": "source",
+                        "link": "https://www.nolo.com/legal-encyclopedia/how-is-the-coronavirus-covid-19-impacting-criminal-cases.html"
+                      }
+                    }
+                  },
+                  "1": {
+                    "text": "You can find the most updated information about operation policies on each court's website for COVID-19 news. We list a few here for you."
+                  },
+                  "2": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "Alameda County Court Website",
+                        "link": "http://www.alameda.courts.ca.gov/Pages.aspx/COVID-19"
+                      }
+                    }
+                  },
+                  "3": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "Santa Clara County Court Website",
+                        "link": "http://www.scscourt.org/general_info/news_media/covid19.shtml#resources"
+                      }
+                    }
+                  },
+                  "4": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "San Mateo County Court Website",
+                        "link": "https://www.sanmateocourt.org/covid19.pdf"
+                      }
+                    }
+                  }
+                }
+              },
+              "2": {
+                "question": "How can I pay bail during COVID-19?",
+                "answer": {
+                  "0": {
+                    "text": "On April 6, the Judicial Council of California adopted 11 Emergency Rules and established that bail for infractions will be set at $0.00, while bail for technical violations of felony probation, Post Release Community Supervision (PRCS), or parole will be set at $5,000.00. The rules are repealed on June 10, but counties like Alameda have adopted their own \"zero bail\" emergency bail schedule."
+                  },
+                  "1": {
+                    "text": "See the {0} section.",
+                    "links": {
+                      "0": {
+                        "text": "Bail Fund Resources",
+                        "link": "#/faq/criminal-justice/2"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "title": "Someone I know has been arrested",
+            "questions": {
+              "0": {
+                "question": "Can I attend their court hearing?",
+                "answer": {
+                  "0": {
+                    "text": "Since most matters are being heard remotely through court call and a public access, listen-only line is also available. You can also check the most updated information on each court's website for COVID-19 news."
+                  },
+                  "1": {
+                    "text": "See the {0} section for a list of website addresses.",
+                    "links": {
+                      "0": {
+                        "text": "Status of courts",
+                        "link": "#/faq/criminal-justice/0/1"
+                      }
+                    }
+                  }
+                }
+              },
+              "1": {
+                "question": "How can I help them apply for bail fund?",
+                "answer": {
+                  "0": {
+                    "text": "See the {0} section for a list of website addresses.",
+                    "links": {
+                      "0": {
+                        "text": "Status of courts",
+                        "link": "#/faq/criminal-justice/0/1"
+                      }
+                    }
+                  }
+                }
+              },
+              "2": {
+                "question": "Can I visit them in incarceration?",
+                "answer": {
+                  "0": {
+                    "text": "As part of CDCR's COVID-19 prevention efforts, normal visiting will be canceled statewide until further notice. This includes non-contact visits, family visits, and the Division of Juvenile Justice. You can find updates on the CDCR {0} for visitation information.",
+                    "links": {
+                      "0": {
+                        "text": "website",
+                        "link": "https://www.cdcr.ca.gov/visitors/"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "title": "I am looking for bail fund resources during COVID",
+            "questions": {
+              "0": {
+                "question": "I’m looking for bail bonds for protesters.",
+                "answer": {
+                  "0": {
+                    "text": "There are many organizations that provide bail fund resources for protesters. We list a few here for you:"
+                  },
+                  "1": {
+                    "text": "National Lawyers Guild (NLG) San Francisco Chapter Hotline:"
+                  },
+                  "2": {
+                    "text": "(415) 285-1011 (for protestors arrested)"
+                  },
+                  "3": {
+                    "text": "(916) 500-4NLG (for friends and family). Please provide the full name and a birthday of the arrested person."
+                  },
+                  "4": {
+                    "text": "National bail fund network's {0} of protest bail funds in California.",
+                    "links": {
+                      "0": {
+                        "text": "list",
+                        "link": "https://bailfunds.github.io/#California"
+                      }
+                    }
+                  }
+                }
+              },
+              "1": {
+                "question": "I’m looking for bail resources for other charges.",
+                "answer": {
+                  "0": {
+                    "text": "You can find bail resources at the National Bail Fund Network's {0}.",
+                    "links": {
+                      "0": {
+                        "text": "website",
+                        "link": "https://www.communityjusticeexchange.org/nbfn-directory#california"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "sexual-harrassment": {
+        "title": "Sexual Harrassment",
+        "icon": "fa-restroom",
+        "content": {
+          "0": {
+            "title": "COVID-19 information",
+            "questions": {
+              "0": {
+                "question": "How can I stay safe as a survivor during the COVID-19 pandemic?",
+                "answer": {
+                  "0": {
+                    "text": "Here are hotlines and support tips for survivors during COVID-19:"
+                  },
+                  "1": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "For family and relationship stress",
+                        "link": "https://sfgov.org/dosw/sites/default/files/Family%20Violence%20Resources%20COVID-19_2020-04-13%20%282%29.pdf"
+                      }
+                    }
+                  },
+                  "2": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "For gender-based violence",
+                        "link": "https://sfgov.org/dosw/sites/default/files/COVID-19%20DV%20One%20Pager_Updated033020.pdf"
+                      }
+                    }
+                  },
+                  "3": {
+                    "text": "Here are two websites with tips for survivors on staying safe during COVID-19:"
+                  },
+                  "4": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "National Domestic Violence Hotline",
+                        "link": "https://www.thehotline.org/2020/03/13/staying-safe-during-covid-19"
+                      }
+                    }
+                  },
+                  "5": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "Sanctuary for Families",
+                        "link": "https://sanctuaryforfamilies.org/wp-content/uploads/2020/03/Safety-Plan-Flyer.pdf"
+                      }
+                    }
+                  },
+                  "6": {
+                    "text": "{0} for survivors who are currently in a relationship with their abuser.",
+                    "links": {
+                      "0": {
+                        "text": "Here is general information",
+                        "link": "https://www.womenslaw.org/about-abuse/safety-tips/domestic-violence-victims"
+                      }
+                    }
+                  }
+                }
+              },
+              "1": {
+                "question": "What additional resources and support services are available during the COVID-19 pandemic?",
+                "answer": {
+                  "0": "The Coronavirus Aid, Relief, and Economic Security Act (CARES Act) provides for an array of resources, including unemployment insurance, additional funds for serving survivors of domestic violence, and housing protections. More information about these resources can be found here:",
+                  "1": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "The National Network to End Domestic Violence",
+                        "link": "https://nnedv.org/wp-content/uploads/2020/04/Library_Policy_Housing_Resources_in_CARES_Act.pdf"
+                      }
+                    }
+                  },
+                  "2": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "Futures Without Violence",
+                        "link": "https://www.futureswithoutviolence.org/Support-for-Working-Families"
+                      }
+                    }
+                  },
+                  "3": {
+                    "text": "Survivors may face barriers obtaining relief payments provided by the CARES Act. The National Network to End Domestic Violence {0} for how survivors can obtain their payments.",
+                    "links": {
+                      "0": {
+                        "text": "has outlined processes",
+                        "link": "https://nnedv.org/wp-content/uploads/2020/04/Library_CTA_FINAL_CARESAct_ReliefPayment.pdf"
+                      }
+                    }
+                  }
+                }
+              },
+              "2": {
+                "question": "Can I be evicted during the COVID-19 pandemic?",
+                "answer": {
+                  "0": {
+                    "text": "Your state or locality may have put a pause on evictions during the COVID-19 pandemic. While these \"eviction moratoriums\" may have exceptions allowing for evictions due to criminal activity or other lease violations, domestic violence survivors have additional protections from evictions. Information on these protections and how to access them can be found {0}.",
+                    "links": {
+                      "0": {
+                        "text": "here",
+                        "link": "https://www.nhlp.org/wp-content/uploads/VAWA-Housing-Protections-COVID-19.pdf"
+                      }
+                    }
+                  }
+                }
+              },
+              "3": {
+                "question": "I have a court appearance during the COVID-19 pandemic. How should I prepare?",
+                "answer": {
+                  "0": {
+                    "text": "{0} provides general information about the court process for survivors who are not represented by lawyers.",
+                    "links": {
+                      "0": {
+                        "text": "This resource",
+                        "link": "https://www.womenslaw.org/laws/preparing-for-court-yourself"
+                      }
+                    }
+                  }
+                }
+              },
+              "4": {
+                "question": "Where can I find information on court policies during COVID-19?",
+                "answer": {
+                  "0": {
+                    "text": "Some courthouses have closed or postponed hearings due to the COVID-19 pandemic. Information on court closures and answers to frequently asked questions involving courts and COVID-19 can be found {0}.",
+                    "links": {
+                      "0": {
+                        "text": "here",
+                        "link": "https://www.womenslaw.org/laws/preparing-court-yourself/frequently-asked-questions-involving-courts-and-covid-19"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "title": "Workplace information",
+            "questions": {
+              "0": {
+                "question": "I am an employee experiencing violence or threats of violence in my workplace. What can I do?",
+                "answer": {
+                  "0": {
+                    "text": "The protections available to employees experiencing violence or threats of violence in the workplace are generally the same as pre-COVID-19. There are steps that you and your employer can take to address violence in your workplace, including filing a complaint against your employer with the government, and filing for a workplace violence restraining order."
+                  },
+                  "1": {
+                    "text": "More information on these and other steps and on different kinds of sexual harassment and workplace violence can be found here:"
+                  },
+                  "2": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "General information",
+                        "link": "https://www.womenslaw.org/about-abuse/workplace/all"
+                      }
+                    }
+                  },
+                  "3": {
+                    "text": "{0}",
+                    "links": {
+                      "0": {
+                        "text": "Filing for a workplace restraining order in California",
+                        "link": "https://www.womenslaw.org/laws/ca/restraining-orders/workplace-violence-restraining-orders"
+                      }
+                    }
+                  }
+                }
+              },
+              "1": {
+                "question": "Can I get time off from work to go to court or to get resources and/or support?"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

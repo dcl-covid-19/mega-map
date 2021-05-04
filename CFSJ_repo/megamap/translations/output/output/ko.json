@@ -1,0 +1,345 @@
+{
+  "about": {
+    "close": "닫기",
+    "contact": "문의하기",
+    "contactus": {
+      "email": "이메일",
+      "info": "이 페이지는 {1}의 {0} 에 의해 제공됩니다. 궁금한 점은 {2}으로 이메일을 통해 문의하시기 바랍니다."
+    },
+    "devhelp": {
+      "addbusiness": "사업을 추가하다",
+      "addinfo": "온라인 양식 {0} 또는 {1}에 사용하시면 됩니다.",
+      "ambassadorinfo": "베이 지역에서 우리의 적용범위를 넒히도록 도와주십시요. 우리의 대사들은 Bay Area Community Resources 를 지역사회에 더 알리기위해 각 시 및 사업체와 공동협력하도록 하겠습니다. 여기에 동참하기를 원하시는분은 {0} 에 이메일을 보내주시기 바랍니다.",
+      "becomeambassador": "지역 사회의 대사가 되십시오",
+      "conduct": "행동 강령",
+      "devnote": "개발자-GitHub에서 {0} 와 {1} 을 찾을 수 있습니다.",
+      "dupsite": "다른 주에 계신다면, 당신의 주를 위해 이 사이트를 복사 하셔도 됩니다.",
+      "info": "이 프로젝트는 다른 커뮤니티와 공유하고 확장하기 위해 제작 된 오픈 소스 프로젝트입니다.",
+      "source": "소스 코드",
+      "support": "이웃과 지역 비즈니스를 지원하십시오-우리가 성장하도록 도와주세요!",
+      "updatebusiness": "기존 항목을 업데이트"
+    },
+    "getinvolved": "참여하기",
+    "info": "우리의 리소스 데이터베이스는 다음 조직에서 수집한 정보를 활용 합니다.",
+    "linktext": "회사 소개",
+    "orgs": {
+      "bureau": "채플 힐 / 오렌지 카운티 관광청",
+      "cfa": "미국을위한 코드",
+      "chb": "채플 힐 여단",
+      "farmstewards": "캐롤라이나 농장 관리 협회",
+      "localistnc": "#LocalListNC",
+      "partnership": "채플 힐 다운타운 파트너십",
+      "dcl": "데이터 챌린지 랩",
+      "bln": "빅 로컬 뉴스"
+    },
+    "partners": "정보 출처",
+    "title": "이 사이트에 대하여",
+    "front-page": {
+      "p1": "환영합니다!",
+      "p2": "무료급식, 식품, 법률 과 의료 도움 정보 를 제공합니다.",
+      "p3": "시작하기위에 현재장소 와 찾는것을 입력하세요.",
+      "p4": {
+        "text": "저희는 스텐포드의 {0} 과 {1}에 소속 되어 있으며 특별히 빌 버맨, 사라 알트만 쉘리 필립스의 계속적인 지원과 조언에 진심으로 감사 드립니다.",
+        "link0": "데이터 챌린지 랩",
+        "link1": "빅 로컬 뉴스"
+      }
+    },
+    "about-us-sources": "저희 데이터 정보들은 아래의 조직으로부터 제공되었습니다.  USDA SNAP 가게 위치 추적기\r\nUSDA WIC 가게 위치추적기\r\nSecond Harvest of Silicon Valley\r\nStanford Pediatric Advocacy",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "이 베이지역 자료 프로젝트는 순수한 자원 봉사 입니다. 저희들은  여러 다양한 정보로 부터 자료를 모집하여 선별작업을 하는 팀 입니다. 저희들은 최선을 다해 모든 정보들이 가장 최근으로 유지 될수 있도록 하고 있습니다. 하지만 모든 정보가 100% 정확 하다고 보장을 할 수 는 없습니다.",
+    "about-us": {
+      "header": "우리에 대해",
+      "p1": {
+        "text": "저희는 자원봉사자로 지역사회에 코로나 위기에 대해 공적자원에 접근할수 있도록 정보를 제공하는 프로젝트를 하고 있습니다. 이프로젝트는 {0} 에서 부터 시작 해서 현재는 베이 지역에 학교 무료 급식 지도제공으로 시작 해서 지금은 더 자세한 사항들, 예를 들면 위치정보, 무료배급시간, 급식 보조 , 법률, 의료지원등 을 제공 합니다. 우리는 {1} 조직의 일원입니다.",
+        "link1": "unBox",
+        "link0": "베이 지역 음식제공 학교 지도"
+      },
+      "p2": {
+        "text": "이 프로젝트의 개발은 {0} 에서 적용되였습니다.",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "저의 프로젝트에대한 더 자세한 정보 또는 유사 프로젝트 를 만들기 위한 소스 코드를 원하시면 {0} 으로 가세요.",
+        "link": "Github 페이지"
+      }
+    },
+    "info-sources": {
+      "header": "정보 출처",
+      "p1": "저희 데이터 정보들은 아래의 조직으로부터 제공되었습니다.",
+      "p2": "저희들은 추가적인 코로나 -19로 인한 연장자 전용 시간 , 안전한 가게앞 픽업 옵션등의 정보를 을 소집하고 확인하는일 해주는  훌룡한 자원 봉사 팀을 보유 하고 있습니다."
+    },
+    "info-source": {
+      "link1": "USDA SNAP 가게 위치추적기",
+      "link2": "USDA WIC 가게 위치추적기",
+      "link3": "Second Harvest of Silicon Valley",
+      "link4": "스탠포드 소아과 옹호",
+      "link5": "버클리 생태 센터"
+    },
+    "contact-us": {
+      "header": "문의하기",
+      "p1": {
+        "text": "추가 자료 제공 또는 부정확한 정보 혹은 다른 문의 사항이 있으시면 {0} 으로 연락 바랍니다.",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "여기에서 저희에게 연락하십시오"
+    },
+    "disclaimer": {
+      "header": "면책 조항",
+      "p": "이 베이지역 자료 프로젝트는 순수한 자원 봉사 입니다. 저희들은  여러 다양한 정보로 부터 자료를 모집하여 선별작업을 하는 팀 입니다. 저희들은 최선을 다해 모든 정보들이 가장 최근으로 유지 될수 있도록 하고 있습니다. 하지만 모든 정보가 100% 정확 하다고 보장을 할 수 는 없습니다."
+    },
+    "spthanks": {
+      "p": "저의 사이트를 지원하신 {0} 과 {1} 에게 특별히 감사드립니다.",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "우리 팀",
+      "sourcing": "자료제공 및 번역:",
+      "dev": "정보기술 및 개발:",
+      "resource": "자료 코디네이터",
+      "translate": "번역가",
+      "dqual": "정보의 질",
+      "internal-community": "내부 커뮤니티",
+      "projl": "프로젝트 선임자",
+      "devlead": "게발 선임자",
+      "dqlead": "정보의 질 선임자"
+    },
+    "dataaccess": {
+      "header": "데이터 접근",
+      "p": "우리의 데이터를 오픈 프로젝트로 {0} 에서 접속 가능합니다 (로그인 필요 합니다).",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "육아",
+    "family": "가족 음식 세트 | 가족 음식 세트",
+    "farm": "농장 & 시장 | 농장 & 시장",
+    "food_bev": "전문 음식과 음료",
+    "free_grocery": "무료 식품| 무료 식품",
+    "free_food": "대중을위한 무료 음식",
+    "grocery": "식료품 | 식료품 점",
+    "meal": "무료 식사 | 무료 식사",
+    "petsupplies": "애완 용품",
+    "pharmacy": "약국 | 약국",
+    "restaurant": "식당 | 레스토랑",
+    "school": "학교 급식 | 학교 급식",
+    "snap_wic_retailer": "칼프레쉬/ WIC 소매상인 | 칼프레쉬/WIC 소매상인",
+    "cash_assistance": "현금 지원",
+    "food_resources": "음식 자원",
+    "legal_resources": "법률 자원",
+    "medical_resources": "의료 자원",
+    "mental_health_resources": "정신과 자원",
+    "healthcare": "보건의료",
+    "dv_resources": "가정 폭력 자료",
+    "eviction_resources": "퇴거 자원",
+    "bob": "흑인 소유 레스토랑"
+  },
+  "dayofweek": {
+    "any": "어떤",
+    "friday": "금요일",
+    "monday": "월요일",
+    "saturday": "토요일",
+    "sunday": "일요일",
+    "thursday": "목요일",
+    "tuesday": "화요일",
+    "wednesday": "수요일"
+  },
+  "label": {
+    "address": "주소",
+    "allweek": "일주일",
+    "backtolist": "다시 목록으로",
+    "call_in_advance": "먼저 전화하길 바랍니다.",
+    "children": "아이들을 위한",
+    "close": "닫기",
+    "closed": "닫은",
+    "closed-on": "휴무",
+    "closed-today": "오늘 휴무",
+    "closedonday": "휴관일 (현재 선택한 요일)",
+    "curbside_pickup": "보도 픽업 레스토랑",
+    "curbside_or_delivery": "배달 또는 픽업",
+    "delivery": "배달",
+    "discount_medical": "의료인 할인 장소",
+    "discounts": "할인",
+    "drive_thru": "드라이브스루",
+    "email": "이메일",
+    "email_lowercase": "이메일",
+    "farmers_market": "농민 시장 | 농민 시장",
+    "farm_pick_up": "농장 픽업",
+    "free": "무료 자원",
+    "free_groceries": "무료 식료품류 장소",
+    "freemeals": "무료 식사 장소",
+    "free_produce": "무료 농산물 장소",
+    "require_child": "자녀가 있어야합니다.",
+    "must_show_id": "신분증을 보여 주셔야합니다",
+    "all_children": "모든 아이들에게 봉사",
+    "enrolled_children": "학군에 등록 된 학생 만",
+    "ballot_outdoor": "야외 투표 용지",
+    "ballot_indoor": "실내 투표 용지",
+    "twentyfourhrs": "24 시간 영업",
+    "fin_grocery": "식료품을위한 현금",
+    "fin_housing": "임대 현금",
+    "fin_legal": "법률 수수료 현금",
+    "fin_medical": "의료비 현금",
+    "fin_utilities": "유틸리티에 대한 현금",
+    "freefood": "무료 음식 위치 | 무료 음식 위치",
+    "instructions": "방법",
+    "mapkey": "지도 키",
+    "meal_public": "공개 식사",
+    "meal_student": "학생 식사",
+    "must_preorder": "선주문 필요",
+    "normalhours": "정상 시간",
+    "notes": "노트",
+    "offers": "서비스",
+    "open": "열다",
+    "openinghours": "개관 시간",
+    "order_online": "온라인 주문",
+    "phone": "전화",
+    "public": "무료 개방",
+    "selectacategory": "카테고리를 선택하십시오 ...",
+    "selected": "선택된",
+    "seniorhours": "노약자 쇼핑 시간",
+    "seniors": "노인을 위한",
+    "snap": "칼프레쉬를 받는곳 | 칼프레쉬 받는곳",
+    "special_hours": "노약자 쇼핑",
+    "website": "웹 사이트",
+    "wic": "WIC 받는곳 | WIC 받는곳",
+    "ebt_pay_phone": "전화해서 EBT로 지불하기",
+    "ebt_pay_online": "온라인에서 EBT로 지불하기",
+    "open_today": "오늘 영업합니다",
+    "pay_phone": "전화해서 EBT로 지불하기",
+    "safe_pick_up": "안전하게 픽업하는 옵션",
+    "zoom_out_for_more_results": "더 많은결과를 보려면, 화면을 축소하세요",
+    "in_person": "대면 진료",
+    "telehealth": "화상 도움",
+    "zipcode": "우편번호",
+    "suggest_an_edit": "수정제안",
+    "reset": "재설정",
+    "submit": "제출",
+    "last_updated": "세부사항은 최종적으로 업데이트 됬습니다.",
+    "in_store_pickup": "테이크 아웃",
+    "catering": "케이터링",
+    "dv_legal": "가정 폭력에 대한 법적 지원",
+    "dv_housing": "가정 폭력에 대한 주택 지원",
+    "dv_medical": "가정 폭력에 대한 의료 지원",
+    "dv_crisis": "가정 폭력에 대한 위기 지원",
+    "dv_mental_health": "가정 폭력에 대한 정신 건강 지원",
+    "apply": "필터 적용",
+    "filters": "필터"
+  },
+  "health": {
+    "med_testing": "COVID 테스트",
+    "med_primary_care": "일차 진료",
+    "med_pediatrics": "소아과",
+    "med_senior": "노인 간호",
+    "med_women": "여성 건강 관리",
+    "med_urgent_care": "응급 치료",
+    "med_dental": "치과 치료",
+    "med_vision": "시력 관리",
+    "med_pharmacy": "약국",
+    "med_mental_health": "정신 건강 관리",
+    "med_hotline": "핫라인",
+    "med_addiction": "중독 및 회복 지원",
+    "med_domestic_violence": "가정 폭력 피해자 지원"
+  },
+  "languages": {
+    "ar": "아라비아어",
+    "en": "영어",
+    "es": "스페인어",
+    "fr": "프랑스어",
+    "ja": "일본어",
+    "ko": "한국어",
+    "ms": "말레이 사람",
+    "zh": "중국어",
+    "vi": "베트남어",
+    "tl": "필리핀어"
+  },
+  "sidebar": {
+    "home": "집",
+    "close-panel": "검색 창 닫기",
+    "info-about-us": "현재 이 사이트는 베이 지역을 제공합니다.",
+    "info-end-text": "웹사이트를 확장시킬 수 있습니다.",
+    "info-link-text": "당신의 도움으로",
+    "open-panel": "검색 창 열기",
+    "shopsafe": "안전한 쇼핑을 기원합니다!",
+    "sixfeet": "밖에선 사람들과 6피트 (2미터) 정도 떨어져 있으세요.",
+    "stayhome": "아프면 집에 계세요.",
+    "washhands": "손을 자주 씻으세요.",
+    "what-do-you-need": "무엇이 필요합니까?",
+    "when-do-you-need-it": "언제 필요합니까?",
+    "current_location": "현재 장소",
+    "what": "자원 ...",
+    "what-are-you-looking-for": "무엇을 찿고 있습니까?",
+    "where": "근처...",
+    "feedback": "피드백"
+  },
+  "title": "{0} COVID 지원",
+  "county": {
+    "alameda": "알라메다 카운티",
+    "anywhere": "어디서나",
+    "contra-costa": "콘트라 코스타 카운티",
+    "marin": "마린 카운티",
+    "napa": "나파 카운티",
+    "san-francisco": "샌프란시스코 카운티",
+    "san-mateo": "산 마테오 카운티",
+    "santa-clara": "산타 클라라 카운티",
+    "solano": "솔라노 카운티",
+    "sonoma": "소노마 카운티",
+    "monterey": "몬트레이 카운티"
+  },
+  "legal": {
+    "general_info": "일반 안네사항",
+    "legal_assistance": "법적 도움",
+    "legal_criminal": "사법부 도움",
+    "legal_domviolence": "가정 퐁력 도움",
+    "legal_worker_protection": "노동자 권리 도움",
+    "legal_healthcare": "의료 특혜 도움",
+    "legal_housing": "주택 지원 도움",
+    "legal_immigration": "이주 도움"
+  },
+  "medical": {
+    "telehealth": "화상 진료"
+  },
+  "mental": {
+    "in_person": "대면 도움"
+  },
+  "message": {
+    "no_location_in_this_area": "결과가 없습니다",
+    "no_location_meet_these_criteria": "결과가 없습니다.",
+    "loading": "로딩중...",
+    "ie_compatibility": "이 웹사이트는 인터넷 익스플러러에 최적화 되어 있지 않아서 기능이 작동되지 않을수 있습니다.  모든 기능을 사용 하시려면 다른 부라우져를 사용해 주세요( 예 모질라 화이어 폭스)",
+    "area_not_covered": "이지역은 지원을 하지 않습니다.",
+    "select_resource": "자료를 선택해 주세요.",
+    "provide_zip": "우편번호를 넣어 주세요.",
+    "error_getting_zip": "우편번호에 오류가 있습니다. 다시 입력해 주세요",
+    "error_loading_results": "오류가 있습니다. 다시 시도 해주세요."
+  },
+  "edit": {
+    "intro": "아래의 양식에 이지역의 정보를 업데이트 해주시기 바랍니다. 이곳의 정보를 최근으로 계속 유지 할수 있도록 도움 주셔서 감사 드립니다.",
+    "thanks": "사용자의 수정내용을 받았습니다. 감사 합니다.",
+    "provider_name": "제공자 이름",
+    "location_name": "지역명",
+    "website": "웹사이트",
+    "opening_hours": "영업시간",
+    "senior_hours": "연장자 지정 시간",
+    "additional_info": "추가 정보",
+    "additional_info_text": "이외의  누락되거나 변경해야 하거나 표기해야 할 사항들이 있습니까?",
+    "additional_info_placeholder": "새로운 세비스, 지역이 영구히 문을 닫았습니다., 연장자 지정 쇼핑 시간...",
+    "no_edit": "변경 사항이 없습니다.",
+    "submission_error": "양식제출중 오류가 발생했습니다, 다시 시도 하시거나 baycommunityresource@gmail.com 로 연락 바랍니다."
+  },
+  "pebt": {
+    "header": "무료급식이나 급식보조대상 학생들을 위한  음식서비스",
+    "lead": "7월15일까지 P-EBT 를 지원하세요.",
+    "link": "지금 지원 하세요.",
+    "link_url": "https://ca.p-ebt.org/en/"
+  },
+  "ux_study": {
+    "text_main": "현재 가장 중요한 사항에 대해 자세히 알아보고 웹 사이트를 개선하는 방법에 대한 의견을 받고 싶습니다.",
+    "link_text": "지금 등록하세요.",
+    "link_url": "https://bit.ly/bac-interviews",
+    "text_sub": "인터뷰 대상자로 선정되면 모든 세션은 전화 / 화상 채팅을 통해 원격으로 진행되며 시간을 보상 해드립니다.",
+    "header": "더 나은 서비스를 제공하도록 도와주세요."
+  }
+}

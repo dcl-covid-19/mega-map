@@ -1,0 +1,276 @@
+translation_id,ms
+about.close,Tutup
+about.contact,Hubungi Kami
+about.contactus.email,E-mel
+about.contactus.info,"Halaman ini dikuasakan oleh {0} dari {1}. Untuk pertanyaan, sila hubungi kami melalui e-mel di {2}."
+about.devhelp.addbusiness,tambah perniagaan
+about.devhelp.addinfo,Gunakan borang dalam talian kami untuk {0} atau {1}.
+about.devhelp.ambassadorinfo,Bantu kami mengembangkan liputan di seluruh Bay Area. Duta akan bekerjasama dengan kerajaan tempatan dan persatuan perniagaan untuk membawa Komuniti Bay Area kepada komuniti mereka. Kirimkan kami di {0} untuk alat dan sumber untuk bermula.
+about.devhelp.becomeambassador,Ingin menjadi duta komuniti
+about.devhelp.conduct,Tatakelakuan
+about.devhelp.devnote,Pemaju - cari {0} dan {1} pada GitHub.
+about.devhelp.dupsite,"Sebagai alternatif, anda boleh menduplikasi tapak untuk keadaan anda."
+about.devhelp.info,"Ini adalah projek sumber terbuka, dibina untuk berkongsi dan mengembangkan kepada komuniti lain."
+about.devhelp.source,kod sumber
+about.devhelp.support,Menyokong jiran anda dan perniagaan tempatan - membantu kami berkembang!
+about.devhelp.updatebusiness,kemas kini kemasukan yang sedia ada
+about.getinvolved,Melibatkan diri
+about.info,Pangkalan data kami mendapat manfaat daripada maklumat yang dikumpulkan oleh organisasi-organisasi ini:
+about.linktext,Tentang kita
+about.orgs.bureau,Chapel Hill / Biro Pelawat Orange County
+about.orgs.cfa,Kod untuk Amerika
+about.orgs.chb,Briged Hill Chapel
+about.orgs.farmstewards,Persatuan Pengawasan Ladang Carolina
+about.orgs.localistnc,#LocalListNC
+about.orgs.partnership,Perkongsian Downtown Chapel Hill
+about.orgs.dcl,Makmal Digital Stanford
+about.orgs.bln,Big Local News
+about.partners,Sumber Maklumat
+about.title,Mengenai laman web ini
+category.childcare,Penjagaan kanak-kanak
+category.family,Hidangan keluarga yang disediakan | Makanan keluarga yang disediakan
+category.farm,Pasar Ladang atau Petani | Pasaran Ladang & Petani
+category.food_bev,Produk runcit khas
+category.free_grocery,Runcit percuma | Runcit percuma
+category.grocery,Runcit | Groceries
+category.meal,Makanan percuma | Makanan percuma
+category.ballot_drop,Kotak kertas mengundi
+category.petsupplies,Bekalan Haiwan Peliharaan
+category.pharmacy,Farmasi | Farmasi
+category.restaurant,Restoran | Restoran
+category.school,Makan sekolah | Makanan sekolah
+category.snap_wic_retailer,Kedai mengambil bayaran CalFresh/WIC | Kedai mengambil bayaran CalFresh/WIC
+dayofweek.any,Sebarang
+dayofweek.friday,Jumaat
+dayofweek.monday,Isnin
+dayofweek.saturday,Sabtu
+dayofweek.sunday,Ahad
+dayofweek.thursday,Khamis
+dayofweek.tuesday,Selasa
+dayofweek.wednesday,Rabu
+label.address,Alamat
+label.allweek,Sepanjang minggu
+label.backtolist,Kembali kepada senarai
+label.call_in_advance,Sila panggil terdahulu
+label.children,Untuk kanak-kanak
+label.close,Tutup
+label.closed,Tutup
+label.closed-on,Tutup pada
+label.closed-today,Tutup Hari Ini
+label.closedonday,Ditutup (pada hari yang dipilih)
+label.curbside_pickup,Pengambilan tepi kedai
+label.curbside_or_delivery,Servis hantaran atau pengambilan disediakan
+label.delivery,penghantaran
+label.discount_medical,Diskaun penjawat perubatan | diskaun penjawat perubatan |
+label.discounts,Diskaun
+label.drive_thru,Pandu lalu
+label.email,E-mel
+label.email_lowercase,E-mel
+label.farmers_market,Pasaran Peladang | Pasaran Peladang
+label.farm_pick_up,Pengambilan di ladang
+label.free,Percuma
+label.free_groceries,Lokasi runcit percuma | Lokasi runcit percuma
+label.freemeals,Lokasi makanan percuma | Lokasi makan percuma
+label.free_produce,Lokasi menghasilkan percuma | Lokasi menghasilkan percuma
+label.require_child,Kanak-kanak mesti hadir bersama
+label.must_show_id,Mesti tunjukkan ID
+label.all_children,Untuk semua kanak-kanak
+label.enrolled_children,Untuk pelajar daerah sahaja
+label.ballot_outdoor,Tempat letak balot mengundi di luar
+label.ballot_indoor,Tempat letak balot mengundi di dalam
+label.twentyfourhrs,Buka 24 jam
+health.med_testing,Ujian COVID
+health.med_primary_care,Doktor kajian umum
+health.med_pediatrics,Doktor kanak-kanak
+health.med_senior,Doktor warga emas
+health.med_women,Doktor wanita
+health.med_urgent_care,Rawatan kecemasan
+health.med_dental,Rawatan dental
+health.med_vision,Doktor mata
+health.med_pharmacy,Farmasi
+health.med_mental_health,Doktor kesihatan mental
+health.med_hotline,Talian kecemasan
+health.med_addiction,Sokongan ketagihan dan pemulihan
+health.med_domestic_violence,Sokongan mangsa penderaan domestik
+category.cash_assistance,Bantuan wang
+label.fin_grocery,Wang untuk barangan runcit
+label.fin_housing,Wang untuk membayar sewa
+label.fin_legal,Wang untuk membayar yuran perguam
+label.fin_medical,Wang untuk membayar yuran medikal
+label.fin_utilities,Wang untuk membayar kos utiliti
+label.freefood,Tempat makanan percuma awam
+label.instructions,Arahan
+label.mapkey,Kunci Peta
+label.meal_public,Makanan dibuka untuk orang ramai
+label.meal_student,Makanan untuk pelajar
+label.must_preorder,Mesti prapesan
+label.normalhours,Waktu biasa
+label.notes,Nota
+label.offers,Tawaran
+label.open,Buka
+label.openinghours,Waktu pembukaan
+label.order_online,Beli & bayar dalam talian
+label.phone,Telefon
+label.public,Buka untuk semua
+label.selectacategory,Pilih kategori...
+label.selected,Dipilih
+label.seniorhours,Waktu membeli-belah warga emas
+label.seniors,Untuk warga emas
+label.snap,Kedai yang mengambil bayaran CalFresh
+label.special_hours,Waktu membeli-belah warga emas
+label.website,Laman web
+label.wic,Kedai yang mengambil bayaran WIC
+languages.ar,Bahasa Arab
+languages.en,Bahasa Inggeris
+languages.es,Bahasa Sepanyol
+languages.fr,Bahasa Perancis
+languages.ja,Bahasa Jepun
+languages.ko,Bahasa Korea
+languages.ms,Bahasa Melayu
+languages.zh,Bahasa Cina
+languages.vi,Bahasa Vietnam
+languages.tl,Bahasa Tagalog
+sidebar.home,Laman utama
+sidebar.close-panel,Tutup panel carian
+sidebar.info-about-us,"Pada masa ini, laman web ini menyokong Bay Area, CA. Dengan"
+sidebar.info-end-text,", kami boleh mengembangkan liputan kami."
+sidebar.info-link-text,pertolongan anda
+sidebar.open-panel,Buka panel carian
+sidebar.shopsafe,"Tolong, selamatkan!"
+sidebar.sixfeet,Tinggal 6 kaki apabila membeli-belah.
+sidebar.stayhome,"Sekiranya anda sakit, tinggal di rumah."
+sidebar.washhands,Cuci tangan anda dengan kerap.
+sidebar.what-do-you-need,Apa yang anda perlukan?
+sidebar.when-do-you-need-it,Bilakah anda memerlukannya?
+title,{0} COVID Support
+label.ebt_pay_phone,Bayar dengan EBT melalui telepon
+label.ebt_pay_online,Bayar dengan EBT melalui internet
+category.food_resources,Makanan dan barangan runcit
+category.legal_resources,Perkhidmatan peguam
+category.medical_resources,Perkhidmatan perubatan
+category.mental_health_resources,Perkhidmatan kesihatan mental
+county.alameda,Daerah Alameda
+county.anywhere,Semua
+county.contra-costa,Daerah Contra Costa
+county.marin,Daerah Marin
+county.napa,Daerah Napa
+county.san-francisco,Daerah San Francisco
+county.san-mateo,Daerah San Mateo
+county.santa-clara,Daerah Santa Clara
+county.solano,Daerah Solano
+county.sonoma,Daerah Sonoma
+county.monterey,Daerah Monterey
+label.open_today,Buka hari ini
+label.pay_phone,Bayar dengan EBT melalui telepon
+label.safe_pick_up,Cara pengambilan selamat
+label.zoom_out_for_more_results,Zoom keluar untuk lebih pilihan
+legal.general_info,Maklumat am
+legal.legal_assistance,Perkhidmatan peguam
+label.in_person,Klinik
+medical.telehealth,Klinik telehealth
+mental.in_person,Perkhidmatan kesihatan mental
+label.telehealth,Perkhidmatan mental telehealth
+message.no_location_in_this_area,Tiada pilihan di kawasan ini
+sidebar.current_location,Lokasi ini
+sidebar.what,Bantuan ...
+sidebar.what-are-you-looking-for,Apa yang anda perlukan?
+sidebar.where,Di ...
+legal.legal_criminal,Peguambela jenayah
+legal.legal_domviolence,Keganasan rumah tangga
+legal.legal_worker_protection,Hak pekerja
+legal.legal_healthcare,Permohonan insurans kesihatan
+legal.legal_housing,Sokongan isu perumahan
+legal.legal_immigration,Sokongan isu imigrasi
+about.front-page.p1,Selamat Datang!
+about.front-page.p2,"Website ini mengandungi maklumat mengenai sumber seperti makanan percuma, barangan runcit, bantuan undang-undang, dan bantuan perubatan."
+about.front-page.p3,Mulakan dengan memilih lokasi dan keperluan anda.
+about.front-page.p4.text,"Kami amat berbesar hati kepada Bill Behrman, Sara Altman dan Cheryl Phillips dari program {0} dan {1} di universiti Stanford atas nasihat dan sokongan mereka yang berterusan."
+about.front-page.p4.link0,Makmal Digital Stanford
+about.front-page.p4.link1,Big Local News
+about.about-us-sources,"Pangkalan data maklumat kami menggunakan data yang dikumpulkan oleh organisasi berikut:
+Pencari Kedai USDA SNAP
+Pencari Kedai USDA WIC
+Second Harvest Silicon Valley
+Program Advokasi Pediatrik Stanford
+
+Kumpulan sukarelawan kami lanjutnya mengesahkan data dan mengumpulkan maklumat tambahan seperti waktu senior Covid-19, pilihan pengambilan tepi jalan yang selamat dan lain-lain."
+about.about-us-contact,"Untuk pertanyaan lanjut atau untuk melaporkan masalah, hubungi {0}."
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us-disclaimer,Projek Bay Area Resources adalah projek sukarelawan. Sukarelawan kami mengumpulkan dan mengesahkan data dari pelbagai sumber. Kami cuba dengan sedaya upaya untuk memastikan semua maklumat di laman web ini tepat. Namun kami tidak dapat menjamin maklumat tersebut sepenuhnya.
+about.about-us.header,Projek Ini
+about.about-us.p1.text,"Project ini adalah sumber terbuka dan sukarelawan untuk membantu masyarakat Bay Area menavigasi krisis COVID dengan memberikan maklumat penting. Projek ini dimulakan sebagai {peta makan sekolah Bay Area}, dan kini memberikan maklumat lebih lanjut seperti jadual dan lokasi untuk bantuan makanan, bantuan undang-undang, dan bantuan perubatan. Kami ahli organisasi {1}."
+about.about-us.p1.link1,unBox
+about.about-us.p1.link0,peta makan sekolah Bay Area
+about.about-us.p2.text,Pembangunan untuk projek ini diadaptasi dari {0}.
+about.about-us.p2.link,NCCovid Support
+about.about-us.p3.text,"Anda boleh mendapatkan lebih banyak maklumat mengenai projek, termasuk kod sumber untuk meniru projek, dari halaman {0} kami."
+about.about-us.p3.link,website Github
+about.info-sources.header,Sumber maklumat
+about.info-sources.p1,Pangkalan data maklumat kami menggunakan data yang dikumpulkan oleh organisasi berikut:
+about.info-source.link1,Pencari Kedai USDA SNAP
+about.info-source.link2,Pencari Kedai USDA WIC
+about.info-source.link3,Second Harvest Silicon Valley
+about.info-source.link4,Program Advokasi Pediatrik Stanford
+about.info-source.link5,Pusat Ekologi Berkeley
+about.info-sources.p2,"Kumpulan sukarelawan kami lanjutnya mengesahkan data dan mengumpulkan maklumat tambahan seperti waktu senior Covid-19, pilihan pengambilan tepi jalan yang selamat dan lain-lain."
+about.contact-us.header,Hubungi kami
+about.contact-us.p1.text,"Untuk pertanyaan lanjut atau untuk melaporkan masalah, hubungi {0}."
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.contact-us.contact-us-header,hubungi kami di sini
+about.disclaimer.header,Penafian
+about.disclaimer.p,Projek Bay Area Resources adalah projek sukarelawan. Sukarelawan kami mengumpulkan dan mengesahkan data dari pelbagai sumber. Kami cuba dengan sedaya upaya untuk memastikan semua maklumat di laman web ini tepat. Namun kami tidak dapat menjamin maklumat tersebut sepenuhnya.
+message.no_location_meet_these_criteria,Tiada hasil di sini.
+about.spthanks.p,Ribuan terima kasih kepada {0} dan {1} yang membekalkan laman web ini.
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.our-team.header,Pasukan kami
+about.our-team.sourcing,Pengutipan dan penterjemahan data:
+about.our-team.dev,Kejuruteraan data dan laman web:
+about.our-team.resource,pengurus maklumat
+about.our-team.translate,penterjemah
+about.our-team.dqual,kualiti maklumat
+about.our-team.projl,ketua projek
+about.our-team.devlead,ketua teknikal
+about.our-team.dqlead,ketua kualiti data
+sidebar.feedback,Maklum balas
+about.dataaccess.header,Mengakses data kami
+about.dataaccess.p,Anda boleh mengakses data laman web kami melalui projek terbuka di {0} (log masuk diperlukan).
+about.dataaccess.link,Big Local News
+message.loading,Data sedang dimuatkan..
+message.ie_compatibility,"Laman web ini tidak dibina untuk Internet Explorer. Untuk pengalaman yang lebih baik, sila gunakan browser internet lain (seperti Mozilla Firefox)."
+message.area_not_covered,Kawasan ini tidak diliputi.
+label.zipcode,Zipkod
+message.select_resource,Sila memilih bantuan yang diperlukan.
+message.provide_zip,Sila memilih zipkod kawasan yang dicari.
+message.error_getting_zip,Terdapat ralat dengan zipkod yang diberi. Sila cuba lagi.
+label.suggest_an_edit,Sila beri cadangan
+edit.intro,Sila kemas kini maklumat untuk lokasi ini dalam borang di bawah. Kami amat menghargai bantuan anda untuk mengemaskini maklumat kami.
+edit.thanks,Kami telah mendapatkan cadangan kemas kini anda. Terima kasih!
+edit.provider_name,Nama penyedia
+edit.location_name,Nama tempat
+edit.website,Laman web penyedia
+edit.opening_hours,Waktu buka
+edit.senior_hours,Waktu warga emas
+edit.additional_info,Maklumat tambahan
+edit.additional_info_text,"Ada apa lagi maklumat yang hilang, perlu diubah atau mesti dipaparkan?"
+edit.additional_info_placeholder,"Perkhidmatan baru, lokasi ditutup secara kekal, waktu membeli-belah warga emas ..."
+label.reset,Kosongkan semula
+label.submit,Hantarkan
+edit.no_edit,Tiada apa yang berubah.
+edit.submission_error,Terdapat ralat semasa penghantaran borang. Sila cuba lagi atau hubungi kami di baycommunityresource@gmail.com.
+pebt.header,Faedah makanan untuk kanak-kanak yang mendapat makanan percuma atau dengan diskaun di sekolah.
+pebt.lead,Buat permohonan untuk P-EBT selewat-lewatnya pada 15 Julai.
+pebt.link,Mohon sekarang
+pebt.link_url,https://ca.p-ebt.org/en/
+label.last_updated,Maklumat dikemaskini:
+ux_study.header,Tolong kami tolong kamu.
+label.in_store_pickup,Bawa pulang
+label.delivery,Hantaran barang
+label.catering,Katering
+label.dv_legal,Sokongan legal
+label.dv_housing,Sokongan perumahan
+label.dv_medical,Sokongan medikal
+label.dv_crisis,Sokongan krisis
+category.dv_resources,Sokongan mangsa penderaan domestik
+label.dv_mental_health,Sokongan kesihatan mental
+DO NOT TRANSLATE FROM HERE DOWN,DO NOT TRANSLATE FROM HERE DOWN

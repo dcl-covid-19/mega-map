@@ -1,0 +1,335 @@
+{
+  "about": {
+    "close": "Tutup",
+    "contact": "Hubungi Kami",
+    "contactus": {
+      "email": "E-mel",
+      "info": "Halaman ini dikuasakan oleh {0} dari {1}. Untuk pertanyaan, sila hubungi kami melalui e-mel di {2}."
+    },
+    "devhelp": {
+      "addbusiness": "tambah perniagaan",
+      "addinfo": "Gunakan borang dalam talian kami untuk {0} atau {1}.",
+      "ambassadorinfo": "Bantu kami mengembangkan liputan di seluruh Bay Area. Duta akan bekerjasama dengan kerajaan tempatan dan persatuan perniagaan untuk membawa Komuniti Bay Area kepada komuniti mereka. Kirimkan kami di {0} untuk alat dan sumber untuk bermula.",
+      "becomeambassador": "Ingin menjadi duta komuniti",
+      "conduct": "Tatakelakuan",
+      "devnote": "Pemaju - cari {0} dan {1} pada GitHub.",
+      "dupsite": "Sebagai alternatif, anda boleh menduplikasi tapak untuk keadaan anda.",
+      "info": "Ini adalah projek sumber terbuka, dibina untuk berkongsi dan mengembangkan kepada komuniti lain.",
+      "source": "kod sumber",
+      "support": "Menyokong jiran anda dan perniagaan tempatan - membantu kami berkembang!",
+      "updatebusiness": "kemas kini kemasukan yang sedia ada"
+    },
+    "getinvolved": "Melibatkan diri",
+    "info": "Pangkalan data kami mendapat manfaat daripada maklumat yang dikumpulkan oleh organisasi-organisasi ini:",
+    "linktext": "Tentang kita",
+    "orgs": {
+      "bureau": "Chapel Hill / Biro Pelawat Orange County",
+      "cfa": "Kod untuk Amerika",
+      "chb": "Briged Hill Chapel",
+      "farmstewards": "Persatuan Pengawasan Ladang Carolina",
+      "localistnc": "#LocalListNC",
+      "partnership": "Perkongsian Downtown Chapel Hill",
+      "dcl": "Makmal Digital Stanford",
+      "bln": "Big Local News"
+    },
+    "partners": "Sumber Maklumat",
+    "title": "Mengenai laman web ini",
+    "front-page": {
+      "p1": "Selamat Datang!",
+      "p2": "Website ini mengandungi maklumat mengenai sumber seperti makanan percuma, barangan runcit, bantuan undang-undang, dan bantuan perubatan.",
+      "p3": "Mulakan dengan memilih lokasi dan keperluan anda.",
+      "p4": {
+        "text": "Kami amat berbesar hati kepada Bill Behrman, Sara Altman dan Cheryl Phillips dari program {0} dan {1} di universiti Stanford atas nasihat dan sokongan mereka yang berterusan.",
+        "link0": "Makmal Digital Stanford",
+        "link1": "Big Local News"
+      }
+    },
+    "about-us-sources": "Pangkalan data maklumat kami menggunakan data yang dikumpulkan oleh organisasi berikut:\nPencari Kedai USDA SNAP\nPencari Kedai USDA WIC\nSecond Harvest Silicon Valley\nProgram Advokasi Pediatrik Stanford\n\nKumpulan sukarelawan kami lanjutnya mengesahkan data dan mengumpulkan maklumat tambahan seperti waktu senior Covid-19, pilihan pengambilan tepi jalan yang selamat dan lain-lain.",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "Projek Bay Area Resources adalah projek sukarelawan. Sukarelawan kami mengumpulkan dan mengesahkan data dari pelbagai sumber. Kami cuba dengan sedaya upaya untuk memastikan semua maklumat di laman web ini tepat. Namun kami tidak dapat menjamin maklumat tersebut sepenuhnya.",
+    "about-us": {
+      "header": "Projek Ini",
+      "p1": {
+        "text": "Project ini adalah sumber terbuka dan sukarelawan untuk membantu masyarakat Bay Area menavigasi krisis COVID dengan memberikan maklumat penting. Projek ini dimulakan sebagai {peta makan sekolah Bay Area}, dan kini memberikan maklumat lebih lanjut seperti jadual dan lokasi untuk bantuan makanan, bantuan undang-undang, dan bantuan perubatan. Kami ahli organisasi {1}.",
+        "link1": "unBox",
+        "link0": "peta makan sekolah Bay Area"
+      },
+      "p2": {
+        "text": "Pembangunan untuk projek ini diadaptasi dari {0}.",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "Anda boleh mendapatkan lebih banyak maklumat mengenai projek, termasuk kod sumber untuk meniru projek, dari halaman {0} kami.",
+        "link": "website Github"
+      }
+    },
+    "info-sources": {
+      "header": "Sumber maklumat",
+      "p1": "Pangkalan data maklumat kami menggunakan data yang dikumpulkan oleh organisasi berikut:",
+      "p2": "Kumpulan sukarelawan kami lanjutnya mengesahkan data dan mengumpulkan maklumat tambahan seperti waktu senior Covid-19, pilihan pengambilan tepi jalan yang selamat dan lain-lain."
+    },
+    "info-source": {
+      "link1": "Pencari Kedai USDA SNAP",
+      "link2": "Pencari Kedai USDA WIC",
+      "link3": "Second Harvest Silicon Valley",
+      "link4": "Program Advokasi Pediatrik Stanford",
+      "link5": "Pusat Ekologi Berkeley"
+    },
+    "contact-us": {
+      "header": "Hubungi kami",
+      "p1": {
+        "text": "Untuk pertanyaan lanjut atau untuk melaporkan masalah, hubungi {0}.",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "hubungi kami di sini"
+    },
+    "disclaimer": {
+      "header": "Penafian",
+      "p": "Projek Bay Area Resources adalah projek sukarelawan. Sukarelawan kami mengumpulkan dan mengesahkan data dari pelbagai sumber. Kami cuba dengan sedaya upaya untuk memastikan semua maklumat di laman web ini tepat. Namun kami tidak dapat menjamin maklumat tersebut sepenuhnya."
+    },
+    "spthanks": {
+      "p": "Ribuan terima kasih kepada {0} dan {1} yang membekalkan laman web ini.",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "Pasukan kami",
+      "sourcing": "Pengutipan dan penterjemahan data:",
+      "dev": "Kejuruteraan data dan laman web:",
+      "resource": "pengurus maklumat",
+      "translate": "penterjemah",
+      "dqual": "kualiti maklumat",
+      "projl": "ketua projek",
+      "devlead": "ketua teknikal",
+      "dqlead": "ketua kualiti data"
+    },
+    "dataaccess": {
+      "header": "Mengakses data kami",
+      "p": "Anda boleh mengakses data laman web kami melalui projek terbuka di {0} (log masuk diperlukan).",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "Penjagaan kanak-kanak",
+    "family": "Hidangan keluarga yang disediakan | Makanan keluarga yang disediakan",
+    "farm": "Pasar Ladang atau Petani | Pasaran Ladang & Petani",
+    "food_bev": "Produk runcit khas",
+    "free_grocery": "Runcit percuma | Runcit percuma",
+    "grocery": "Runcit | Groceries",
+    "meal": "Makanan percuma | Makanan percuma",
+    "ballot_drop": "Kotak kertas mengundi",
+    "petsupplies": "Bekalan Haiwan Peliharaan",
+    "pharmacy": "Farmasi | Farmasi",
+    "restaurant": "Restoran | Restoran",
+    "school": "Makan sekolah | Makanan sekolah",
+    "snap_wic_retailer": "Kedai mengambil bayaran CalFresh/WIC | Kedai mengambil bayaran CalFresh/WIC",
+    "cash_assistance": "Bantuan wang",
+    "food_resources": "Makanan dan barangan runcit",
+    "legal_resources": "Perkhidmatan peguam",
+    "medical_resources": "Perkhidmatan perubatan",
+    "mental_health_resources": "Perkhidmatan kesihatan mental",
+    "dv_resources": "Sokongan mangsa penderaan domestik"
+  },
+  "dayofweek": {
+    "any": "Sebarang",
+    "friday": "Jumaat",
+    "monday": "Isnin",
+    "saturday": "Sabtu",
+    "sunday": "Ahad",
+    "thursday": "Khamis",
+    "tuesday": "Selasa",
+    "wednesday": "Rabu"
+  },
+  "label": {
+    "address": "Alamat",
+    "allweek": "Sepanjang minggu",
+    "backtolist": "Kembali kepada senarai",
+    "call_in_advance": "Sila panggil terdahulu",
+    "children": "Untuk kanak-kanak",
+    "close": "Tutup",
+    "closed": "Tutup",
+    "closed-on": "Tutup pada",
+    "closed-today": "Tutup Hari Ini",
+    "closedonday": "Ditutup (pada hari yang dipilih)",
+    "curbside_pickup": "Pengambilan tepi kedai",
+    "curbside_or_delivery": "Servis hantaran atau pengambilan disediakan",
+    "delivery": "Hantaran barang",
+    "discount_medical": "Diskaun penjawat perubatan | diskaun penjawat perubatan |",
+    "discounts": "Diskaun",
+    "drive_thru": "Pandu lalu",
+    "email": "E-mel",
+    "email_lowercase": "E-mel",
+    "farmers_market": "Pasaran Peladang | Pasaran Peladang",
+    "farm_pick_up": "Pengambilan di ladang",
+    "free": "Percuma",
+    "free_groceries": "Lokasi runcit percuma | Lokasi runcit percuma",
+    "freemeals": "Lokasi makanan percuma | Lokasi makan percuma",
+    "free_produce": "Lokasi menghasilkan percuma | Lokasi menghasilkan percuma",
+    "require_child": "Kanak-kanak mesti hadir bersama",
+    "must_show_id": "Mesti tunjukkan ID",
+    "all_children": "Untuk semua kanak-kanak",
+    "enrolled_children": "Untuk pelajar daerah sahaja",
+    "ballot_outdoor": "Tempat letak balot mengundi di luar",
+    "ballot_indoor": "Tempat letak balot mengundi di dalam",
+    "twentyfourhrs": "Buka 24 jam",
+    "fin_grocery": "Wang untuk barangan runcit",
+    "fin_housing": "Wang untuk membayar sewa",
+    "fin_legal": "Wang untuk membayar yuran perguam",
+    "fin_medical": "Wang untuk membayar yuran medikal",
+    "fin_utilities": "Wang untuk membayar kos utiliti",
+    "freefood": "Tempat makanan percuma awam",
+    "instructions": "Arahan",
+    "mapkey": "Kunci Peta",
+    "meal_public": "Makanan dibuka untuk orang ramai",
+    "meal_student": "Makanan untuk pelajar",
+    "must_preorder": "Mesti prapesan",
+    "normalhours": "Waktu biasa",
+    "notes": "Nota",
+    "offers": "Tawaran",
+    "open": "Buka",
+    "openinghours": "Waktu pembukaan",
+    "order_online": "Beli & bayar dalam talian",
+    "phone": "Telefon",
+    "public": "Buka untuk semua",
+    "selectacategory": "Pilih kategori...",
+    "selected": "Dipilih",
+    "seniorhours": "Waktu membeli-belah warga emas",
+    "seniors": "Untuk warga emas",
+    "snap": "Kedai yang mengambil bayaran CalFresh",
+    "special_hours": "Waktu membeli-belah warga emas",
+    "website": "Laman web",
+    "wic": "Kedai yang mengambil bayaran WIC",
+    "ebt_pay_phone": "Bayar dengan EBT melalui telepon",
+    "ebt_pay_online": "Bayar dengan EBT melalui internet",
+    "open_today": "Buka hari ini",
+    "pay_phone": "Bayar dengan EBT melalui telepon",
+    "safe_pick_up": "Cara pengambilan selamat",
+    "zoom_out_for_more_results": "Zoom keluar untuk lebih pilihan",
+    "in_person": "Klinik",
+    "telehealth": "Perkhidmatan mental telehealth",
+    "zipcode": "Zipkod",
+    "suggest_an_edit": "Sila beri cadangan",
+    "reset": "Kosongkan semula",
+    "submit": "Hantarkan",
+    "last_updated": "Maklumat dikemaskini:",
+    "in_store_pickup": "Bawa pulang",
+    "catering": "Katering",
+    "dv_legal": "Sokongan legal",
+    "dv_housing": "Sokongan perumahan",
+    "dv_medical": "Sokongan medikal",
+    "dv_crisis": "Sokongan krisis",
+    "dv_mental_health": "Sokongan kesihatan mental"
+  },
+  "health": {
+    "med_testing": "Ujian COVID",
+    "med_primary_care": "Doktor kajian umum",
+    "med_pediatrics": "Doktor kanak-kanak",
+    "med_senior": "Doktor warga emas",
+    "med_women": "Doktor wanita",
+    "med_urgent_care": "Rawatan kecemasan",
+    "med_dental": "Rawatan dental",
+    "med_vision": "Doktor mata",
+    "med_pharmacy": "Farmasi",
+    "med_mental_health": "Doktor kesihatan mental",
+    "med_hotline": "Talian kecemasan",
+    "med_addiction": "Sokongan ketagihan dan pemulihan",
+    "med_domestic_violence": "Sokongan mangsa penderaan domestik"
+  },
+  "languages": {
+    "ar": "Bahasa Arab",
+    "en": "Bahasa Inggeris",
+    "es": "Bahasa Sepanyol",
+    "fr": "Bahasa Perancis",
+    "ja": "Bahasa Jepun",
+    "ko": "Bahasa Korea",
+    "ms": "Bahasa Melayu",
+    "zh": "Bahasa Cina",
+    "vi": "Bahasa Vietnam",
+    "tl": "Bahasa Tagalog"
+  },
+  "sidebar": {
+    "home": "Laman utama",
+    "close-panel": "Tutup panel carian",
+    "info-about-us": "Pada masa ini, laman web ini menyokong Bay Area, CA. Dengan",
+    "info-end-text": ", kami boleh mengembangkan liputan kami.",
+    "info-link-text": "pertolongan anda",
+    "open-panel": "Buka panel carian",
+    "shopsafe": "Tolong, selamatkan!",
+    "sixfeet": "Tinggal 6 kaki apabila membeli-belah.",
+    "stayhome": "Sekiranya anda sakit, tinggal di rumah.",
+    "washhands": "Cuci tangan anda dengan kerap.",
+    "what-do-you-need": "Apa yang anda perlukan?",
+    "when-do-you-need-it": "Bilakah anda memerlukannya?",
+    "current_location": "Lokasi ini",
+    "what": "Bantuan ...",
+    "what-are-you-looking-for": "Apa yang anda perlukan?",
+    "where": "Di ...",
+    "feedback": "Maklum balas"
+  },
+  "title": "{0} COVID Support",
+  "county": {
+    "alameda": "Daerah Alameda",
+    "anywhere": "Semua",
+    "contra-costa": "Daerah Contra Costa",
+    "marin": "Daerah Marin",
+    "napa": "Daerah Napa",
+    "san-francisco": "Daerah San Francisco",
+    "san-mateo": "Daerah San Mateo",
+    "santa-clara": "Daerah Santa Clara",
+    "solano": "Daerah Solano",
+    "sonoma": "Daerah Sonoma",
+    "monterey": "Daerah Monterey"
+  },
+  "legal": {
+    "general_info": "Maklumat am",
+    "legal_assistance": "Perkhidmatan peguam",
+    "legal_criminal": "Peguambela jenayah",
+    "legal_domviolence": "Keganasan rumah tangga",
+    "legal_worker_protection": "Hak pekerja",
+    "legal_healthcare": "Permohonan insurans kesihatan",
+    "legal_housing": "Sokongan isu perumahan",
+    "legal_immigration": "Sokongan isu imigrasi"
+  },
+  "medical": {
+    "telehealth": "Klinik telehealth"
+  },
+  "mental": {
+    "in_person": "Perkhidmatan kesihatan mental"
+  },
+  "message": {
+    "no_location_in_this_area": "Tiada pilihan di kawasan ini",
+    "no_location_meet_these_criteria": "Tiada hasil di sini.",
+    "loading": "Data sedang dimuatkan..",
+    "ie_compatibility": "Laman web ini tidak dibina untuk Internet Explorer. Untuk pengalaman yang lebih baik, sila gunakan browser internet lain (seperti Mozilla Firefox).",
+    "area_not_covered": "Kawasan ini tidak diliputi.",
+    "select_resource": "Sila memilih bantuan yang diperlukan.",
+    "provide_zip": "Sila memilih zipkod kawasan yang dicari.",
+    "error_getting_zip": "Terdapat ralat dengan zipkod yang diberi. Sila cuba lagi."
+  },
+  "edit": {
+    "intro": "Sila kemas kini maklumat untuk lokasi ini dalam borang di bawah. Kami amat menghargai bantuan anda untuk mengemaskini maklumat kami.",
+    "thanks": "Kami telah mendapatkan cadangan kemas kini anda. Terima kasih!",
+    "provider_name": "Nama penyedia",
+    "location_name": "Nama tempat",
+    "website": "Laman web penyedia",
+    "opening_hours": "Waktu buka",
+    "senior_hours": "Waktu warga emas",
+    "additional_info": "Maklumat tambahan",
+    "additional_info_text": "Ada apa lagi maklumat yang hilang, perlu diubah atau mesti dipaparkan?",
+    "additional_info_placeholder": "Perkhidmatan baru, lokasi ditutup secara kekal, waktu membeli-belah warga emas ...",
+    "no_edit": "Tiada apa yang berubah.",
+    "submission_error": "Terdapat ralat semasa penghantaran borang. Sila cuba lagi atau hubungi kami di baycommunityresource@gmail.com."
+  },
+  "pebt": {
+    "header": "Faedah makanan untuk kanak-kanak yang mendapat makanan percuma atau dengan diskaun di sekolah.",
+    "lead": "Buat permohonan untuk P-EBT selewat-lewatnya pada 15 Julai.",
+    "link": "Mohon sekarang",
+    "link_url": "https://ca.p-ebt.org/en/"
+  },
+  "ux_study": {
+    "header": "Tolong kami tolong kamu."
+  },
+  "DO NOT TRANSLATE FROM HERE DOWN": "DO NOT TRANSLATE FROM HERE DOWN"
+}

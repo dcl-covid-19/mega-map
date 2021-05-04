@@ -1,0 +1,349 @@
+{
+  "about": {
+    "close": "关",
+    "contact": "联系我们",
+    "contactus": {
+      "email": "电子邮件",
+      "info": "该页面由 {1}的 {0} 驱动。如有疑问，请通过 {2}的电子邮件与我们联系。"
+    },
+    "devhelp": {
+      "addbusiness": "添加业务",
+      "addinfo": "使用我们的在线表格填写 {0} 或 {1}。",
+      "ambassadorinfo": "帮助我们扩大湾区覆盖范围。大使将会与当地政府部门和企业合作把我们的湾区社区资源地图带到他们的社区里。发邮件{0}来获取工具及资源。",
+      "becomeambassador": "成为社区大使",
+      "conduct": "行为守则",
+      "devnote": "开发人员-在GitHub上找到我们的 {0} 和 {1} 。",
+      "dupsite": "或者，您可以为您的州复制一个站点。",
+      "info": "这是一个开源项目，旨在与其他社区共享和扩展。",
+      "source": "源代码",
+      "support": "支持您的邻居和当地企业-帮助我们发展！",
+      "updatebusiness": "更新现有条目"
+    },
+    "getinvolved": "参与其中",
+    "info": "我们的资源数据库受益于这些组织收集的信息：",
+    "linktext": "关于我们",
+    "orgs": {
+      "bureau": "教堂山/橙县游客管理局",
+      "cfa": "美国法典",
+      "chb": "教堂山大队",
+      "farmstewards": "卡罗来纳州农场管理协会",
+      "localistnc": "#LocalListNC",
+      "partnership": "教堂山市中心合作伙伴",
+      "dcl": "数据挑战实验室",
+      "bln": "重大当地新闻"
+    },
+    "partners": "信息来源",
+    "title": "关于本网站",
+    "front-page": {
+      "p1": "你好！",
+      "p2": "我们提供包括免费餐，食物，法律协助和医疗协助资源的有关信息。",
+      "p3": "开始检索，请选择你的位置和你想要找的资源。",
+      "p4": {
+        "text": "我们隶属于斯坦福  {0} 和 {1} , 我们很感谢Bill Behrman, Sara Altman, and Cheryl Phillips 对我们给予的帮助和指导。",
+        "link0": "数据挑战实验室",
+        "link1": "重大当地新闻"
+      }
+    },
+    "about-us-sources": "我们的资源库受益于以下机构收集来的信息：USDA SNAP 商店位置检索\nUSDA WIC 商店位置检索\n硅谷 Second Harvest\n斯坦福 Pediatric Advocacy\n我们有一支志愿者队伍来核对和收集更多跟COVID-19有关的信息，包括老人时间段，街边递送服务等。",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "这个湾区资源项目全部是有志愿者完成的。我们有一支志愿者队伍搜集和核对信息。我们尽最大能力确保信息时效性，但是我们无法保证信息100%准确。",
+    "about-us": {
+      "header": "关于我们",
+      "p1": {
+        "text": "我们由志愿者协助完成的资源公共享的项目为我们的社区提供所需资源的信息来帮助度过COVID-19疫情的难关。我们项目从 {0} 开始，现在提供更全面的资源信息，包括免费餐，食物，法律协助和医疗协助等资源的开放时间和地点。这个项目最初借鉴了NC的COVID-19协助。你也在github上寻找到更多关于我们项目的信息，包括我们的程序编码。我们是{1}组织的一部分。",
+        "link1": "unBox",
+        "link0": "湾区学校用餐地图"
+      },
+      "p2": {
+        "text": "我们项目最初借鉴了 {0} 。",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "你也在 {0} 上寻找到更多关于我们项目的信息，包括我们的程序编码。",
+        "link": "github网页"
+      }
+    },
+    "info-sources": {
+      "header": "信息资源",
+      "p1": "我们的资源库受益于以下机构收集来的信息",
+      "p2": "我们有一支志愿者队伍进行资源的征集和核对，其中包裹跟Covid-19 有关信息，比如老人时间段，街边安全递送等信息。"
+    },
+    "info-source": {
+      "link1": "USDA SNAP 商店位置检索",
+      "link2": "USDA WIC 商店位置检索",
+      "link3": "硅谷 Second Harvest",
+      "link4": "斯坦福 Pediatric Advocacy",
+      "link5": "伯克利生态环保中心"
+    },
+    "contact-us": {
+      "header": "联系我们",
+      "p1": {
+        "text": "如果有关于数据增添和准确性方面的问题，或者任何其他方面的问题，请{0}。",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "这里联系我们"
+    },
+    "disclaimer": {
+      "header": "免责声明",
+      "p": "这个湾区资源项目全部是有志愿者完成的。我们有一支志愿者队伍搜集和核对信息。我们尽最大能力确保信息时效性，但是我们无法保证信息100%准确。"
+    },
+    "spthanks": {
+      "p": "特别感谢{0} 和{1} 为我们的网站提供的帮助。",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "我们的队伍",
+      "sourcing": "数据收集和翻译",
+      "dev": "数据工程师",
+      "resource": "资源协调员",
+      "translate": "翻译员",
+      "dqual": "数据质量",
+      "internal-community": "内部社区",
+      "projl": "项目负责人",
+      "devlead": "开发负责人",
+      "dqlead": "数据质量负责人"
+    },
+    "dataaccess": {
+      "header": "获取我们的数据",
+      "p": "你可以通过项目共享 {0} 来获取数据（需要登录）。",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "育儿",
+    "family": "家庭准备饭|家庭准备饭",
+    "farm": "农场或农贸市场|农场与农贸市场",
+    "food_bev": "特殊食物及饮品",
+    "free_grocery": "免费超市",
+    "free_food": "公众免费食物",
+    "grocery": "杂货|杂货",
+    "meal": "免费餐|免费餐",
+    "ballot_drop": "選票投放箱",
+    "petsupplies": "宠物用品",
+    "pharmacy": "药房|药房",
+    "restaurant": "餐厅|餐厅",
+    "school": "学校餐|学校餐",
+    "snap_wic_retailer": "营养/妇幼保健商店",
+    "cash_assistance": "现金援助",
+    "food_resources": "食物资源",
+    "legal_resources": "法律资源",
+    "medical_resources": "医疗资源",
+    "mental_health_resources": "心理健康资源",
+    "healthcare": "医疗",
+    "dv_resources": "家庭暴力帮助",
+    "eviction_resources": "驱逐住房帮助",
+    "bob": "黑人所属餐馆"
+  },
+  "dayofweek": {
+    "any": "任何",
+    "friday": "星期️五",
+    "monday": "星期一",
+    "saturday": "星期️六",
+    "sunday": "星期️日",
+    "thursday": "星期️四",
+    "tuesday": "星期二",
+    "wednesday": "星期三"
+  },
+  "label": {
+    "address": "地址",
+    "allweek": "整个星期",
+    "backtolist": "返回目录",
+    "call_in_advance": "必须提前电话咨询",
+    "children": "给孩子",
+    "close": "关",
+    "closed": "关闭",
+    "closed-on": "封闭于",
+    "closed-today": "今天休息",
+    "closedonday": "休馆（当前选定日期）",
+    "curbside_pickup": "路边捡拾",
+    "curbside_or_delivery": "送餐或者路边提餐",
+    "delivery": "送货上门",
+    "discount_medical": "医务人员折扣|医务人员折扣",
+    "discounts": "折扣",
+    "drive_thru": "得来速",
+    "email": "电子邮件",
+    "email_lowercase": "电子邮件",
+    "farmers_market": "农贸市场|农贸市场",
+    "farm_pick_up": "农场接送",
+    "free": "免费资源",
+    "free_groceries": "免费杂货店|免费杂货店",
+    "freemeals": "免费用餐地点|免费用餐地点",
+    "free_produce": "免费产品位置|免费产品位置",
+    "require_child": "儿童需要在场",
+    "must_show_id": "必须显示ID",
+    "all_children": "为所有儿童服务",
+    "enrolled_children": "只有在学区就读的学生",
+    "ballot_outdoor": "户外選票投放箱",
+    "ballot_indoor": "室内選票投放箱",
+    "twentyfourhrs": "24小时营业",
+    "fin_grocery": "杂货现金",
+    "fin_housing": "租金协助",
+    "fin_legal": "律师费现金",
+    "fin_medical": "现金医疗费",
+    "fin_utilities": "公用事业现金",
+    "freefood": "免费食品场所|免费食品场所",
+    "instructions": "说明",
+    "mapkey": "地图键",
+    "meal_public": "餐点向公众开放",
+    "meal_student": "给学生的饭菜",
+    "must_preorder": "必须预订",
+    "normalhours": "正常营业时间",
+    "notes": "笔记",
+    "offers": "优惠",
+    "open": "打开",
+    "openinghours": "营业时间",
+    "order_online": "在线订购和付款",
+    "phone": "电话",
+    "public": "面向大众",
+    "selectacategory": "选择一个类别...",
+    "selected": "选",
+    "seniorhours": "高级时间",
+    "seniors": "给老人",
+    "snap": "营养供给接受地区",
+    "special_hours": "高级购物时间",
+    "website": "网站",
+    "wic": "妇幼保健接受地区",
+    "ebt_pay_phone": "通过电话用EBT支付",
+    "ebt_pay_online": "线上EBT支付",
+    "open_today": "今日开放",
+    "pay_phone": "通过电话用EBT支付",
+    "safe_pick_up": "安全\b取物\b\b选择",
+    "zoom_out_for_more_results": "缩小以获取更多结果",
+    "in_person": "当面诊所",
+    "telehealth": "线上帮助",
+    "zipcode": "邮编",
+    "suggest_an_edit": "提供编辑建议",
+    "reset": "重制",
+    "submit": "提交",
+    "last_updated": "细节最近更新",
+    "in_store_pickup": "打包",
+    "catering": "提供餐饮",
+    "dv_legal": "家庭暴力法律支持",
+    "dv_housing": "家庭暴力住房支持",
+    "dv_medical": "家庭暴力医疗支持",
+    "dv_crisis": "家庭暴力危机支持",
+    "dv_mental_health": "家庭暴力帮助心理健康支持",
+    "apply": "过滤选项",
+    "filters": "过滤"
+  },
+  "health": {
+    "med_testing": "COVID测试",
+    "med_primary_care": "初级卫生保健",
+    "med_pediatrics": "儿科",
+    "med_senior": "老年护理",
+    "med_women": "妇女保健",
+    "med_urgent_care": "紧急护理",
+    "med_dental": "牙齿保健",
+    "med_vision": "视力保健",
+    "med_pharmacy": "药店",
+    "med_mental_health": "心理健康",
+    "med_hotline": "热线",
+    "med_addiction": "成瘾和恢复支持",
+    "med_domestic_violence": "家庭暴力受害者的支持"
+  },
+  "languages": {
+    "ar": "阿拉伯",
+    "en": "英语",
+    "es": "西班牙语",
+    "fr": "法国",
+    "ja": "日本",
+    "ko": "朝鲜的",
+    "ms": "马来语",
+    "zh": "简体中文",
+    "vi": "越南的",
+    "tl": "他加禄的"
+  },
+  "sidebar": {
+    "home": "主页",
+    "close-panel": "关闭搜索面板",
+    "info-about-us": "目前，这项服务支持湾区。",
+    "info-end-text": "，我们可以扩大覆盖范围。",
+    "info-link-text": "你的帮助",
+    "open-panel": "打开搜索面板",
+    "shopsafe": "请安全！",
+    "sixfeet": "购物时，相隔6英尺。",
+    "stayhome": "如果您生病了，请待在家里。",
+    "washhands": "经常洗手。",
+    "what-do-you-need": "你需要什么？",
+    "when-do-you-need-it": "您什么时候需要它？",
+    "current_location": "当前位置",
+    "what": "资源。。。",
+    "what-are-you-looking-for": "你在找什么？",
+    "where": "附近。。。",
+    "feedback": "反馈"
+  },
+  "title": "{0} COVID支持",
+  "county": {
+    "alameda": "阿拉米达县",
+    "anywhere": "任何地方",
+    "contra-costa": "康特拉克斯塔县",
+    "marin": "马林县",
+    "napa": "纳帕县",
+    "san-francisco": "旧金山县",
+    "san-mateo": "圣马刁县",
+    "santa-clara": "圣克拉拉县",
+    "solano": "索拉诺县",
+    "sonoma": "索诺玛县",
+    "monterey": "蒙特雷县"
+  },
+  "legal": {
+    "general_info": "综合信息",
+    "legal_assistance": "法律帮助",
+    "legal_criminal": "刑事司法协助",
+    "legal_domviolence": "家庭暴力协助",
+    "legal_worker_protection": "工人权益",
+    "legal_healthcare": "医疗保险申请帮助",
+    "legal_housing": "住所问题协助",
+    "legal_immigration": "移民问题协助"
+  },
+  "medical": {
+    "telehealth": "线上诊所"
+  },
+  "mental": {
+    "in_person": "当面帮助"
+  },
+  "message": {
+    "no_location_in_this_area": "这个区域没有结果",
+    "no_location_meet_these_criteria": "这些标准哪没有结果。",
+    "loading": "下载中",
+    "ie_compatibility": "IE 浏览器可能不支持我们的网站。为了更好的体验，请用其他浏览器（比如）",
+    "area_not_covered": "我们不覆盖这个地区",
+    "select_resource": "选择一种资源",
+    "provide_zip": "提供一个邮编",
+    "error_getting_zip": "输入邮编有误，请重试",
+    "error_loading_results": "有错误，请重试"
+  },
+  "edit": {
+    "intro": "请更新以下的地址的信息。我们非常感谢您能帮助我们确保信息更新。",
+    "thanks": "我们收到了你的编辑。谢谢！",
+    "provider_name": "提供者名称",
+    "location_name": "地点名称",
+    "website": "网页",
+    "opening_hours": "开放时间",
+    "senior_hours": "老年人时间",
+    "additional_info": "其他信息",
+    "additional_info_text": "其他忽略的信息，需要更改或者展示的信息？",
+    "additional_info_placeholder": "新的服务， 地址永久关闭，老年人购买时间",
+    "no_edit": "没有变化",
+    "submission_error": "提交错误，请重试或者通过baycommunityresource@gmail.com.联系我们。"
+  },
+  "pebt": {
+    "header": "为免费或者优惠获取食物的孩子提供的食物福利",
+    "lead": "七月15日前申请P-EBT",
+    "link": "立即申请",
+    "link_url": "https://ca.p-ebt.org/zh"
+  },
+  "ux_study": {
+    "text_main": "我们想了解目前你最在意的问题以及我们可以改进的方面",
+    "link_text": "现在报名",
+    "link_url": "https://bit.ly/bac-interviews",
+    "text_sub": "如果你被选为采访对象，所有采访都会远程通过电话或视频的方式进行，并且我们会对你进行有偿补贴。",
+    "header": "帮我们为您提供更好的服务。"
+  },
+  "faq": {
+    "title": "住房对家庭暴力的支持"
+  }
+}

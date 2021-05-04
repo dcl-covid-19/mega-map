@@ -1,0 +1,347 @@
+{
+  "about": {
+    "close": "Cerrar",
+    "contact": "Contáctenos",
+    "contactus": {
+      "email": "Email",
+      "info": "Esta página funciona con {0} de {1}. Para preguntas, contáctenos por correo electrónico al {2}."
+    },
+    "devhelp": {
+      "addbusiness": "agregar un negocio",
+      "addinfo": "Utilice nuestros formularios en línea para {0} o {1}.",
+      "ambassadorinfo": "Ayúdenos a ampliar la cobertura en toda el Área de la Bahía. Los embajadores trabajarán con el gobierno local y las asociaciones empresariales para llevar los Recursos de la Comunidad del Área de la Bahía a su comunidad. Envíenos un correo electrónico a {0} para obtener herramientas y recursos para comenzar.",
+      "becomeambassador": "Conviértase en embajador de la comunidad",
+      "conduct": "Código de Conducta",
+      "devnote": "Desarrolladores: encuentre nuestros {0} y {1} en GitHub.",
+      "dupsite": "Alternativamente, puede duplicar un sitio para su estado.",
+      "info": "Este es un proyecto de código abierto, creado para compartir y expandirse a otras comunidades.",
+      "source": "codigo fuente",
+      "support": "Apoye a sus vecinos y negocios locales: ¡ayúdenos a crecer!",
+      "updatebusiness": "actualizar una entrada existente"
+    },
+    "getinvolved": "Involucrarse",
+    "info": "Nuestra base de datos de recursos se beneficia de la información recopilada por estas organizaciones:",
+    "linktext": "Sobre nosotros",
+    "orgs": {
+      "bureau": "Oficina de Visitantes de Chapel Hill / Condado de Orange",
+      "cfa": "Código para América",
+      "chb": "Brigada de Chapel Hill",
+      "farmstewards": "Asociación de administración agrícola de Carolina",
+      "localistnc": "#LocalListNC",
+      "partnership": "Asociación del centro de Chapel Hill",
+      "dcl": "Laboratorio de Retos de Datos",
+      "bln": "Noticias Locales Grandes"
+    },
+    "partners": "Fuentes de información",
+    "title": "Sobre este sitio",
+    "front-page": {
+      "p1": "Hola!",
+      "p2": "Brindamos información sobre los recursos como comidas gratis, alimentos, asistencia legal, y ayuda médica.",
+      "p3": "Empieza al seleccionar donde esta usted y lo que esta buscando.",
+      "p4": {
+        "text": "Estamos afiliados a {0} y {1} de Stanford y estamos extremadamente agradecidos con Bill Behrman, Sara Altman y Cheryl Phillips por su continuo apoyo y asesoramiento.",
+        "link0": "Laboratorio de Retos de Datos",
+        "link1": "Noticias Locales Grandes"
+      }
+    },
+    "about-us-sources": "Nuestro base de datos se beneficia de los datos recogidos por las siguientes organizaciones:\nLocalizador de las tiendas de USDA SNAP \nLocalizador de las tiendas de USDA WIC \nSecond Harvest de Silicon Valley\nStanford Pediatric Advocacy\n\nTenemos un equipo de voluntarios increíbles que verifican los datos y recopilan cualquier información adicional, como horas adicionales de Covid-19 para adultos mayores, opciones de recogida segura en la acera, etc.",
+    "about-us-contact": {
+      "link0": "baycommunityresource@gmail.com"
+    },
+    "about-us-disclaimer": "Este proyecto de Recursos del Área de la Bahía es puramente voluntario. Tenemos un equipo de humanos que recopila y verifica los datos de diversas fuentes. Hacemos nuestro mejor esfuerzo para mantener toda la información en el sitio lo más actualizada posible, sin embargo, no podemos garantizar que la información sea 100% precisa.",
+    "about-us": {
+      "header": "Acerca de nosotros",
+      "p1": {
+        "text": "Somos un proyecto de código abierto mantenido por voluntarios para ayudar a las comunidades a navegar la crisis COVID al proporcionar información sobre recursos públicos. Este proyecto comenzó como un {0}, y ahora proporciona información sobre más recursos, como ubicaciones y horarios para comidas gratis, asistencia alimentaria, asistencia legal y asistencia médica. Somos parte de la organización {1}.",
+        "link1": "unBox",
+        "link0": "mapa de comidas escolares del Área de la Bahía"
+      },
+      "p2": {
+        "text": "El desarrollo de este proyecto fue adaptado de {0}.",
+        "link": "NCCovid Support"
+      },
+      "p3": {
+        "text": "Puede encontrar más información sobre el proyecto, incluido el código fuente para replicar el proyecto, en nuestra {0}.",
+        "link": "página de Github"
+      }
+    },
+    "info-sources": {
+      "header": "Fuentes de Información",
+      "p1": "Nuestro base de datos se beneficia de los datos recogidos por las siguientes organizaciones:",
+      "p2": "Tenemos un equipo de voluntarios increíbles que verifican los datos y recopilan cualquier información adicional, como horas adicionales de Covid-19 para adultos mayores, opciones de recogida segura en la acera, etc."
+    },
+    "info-source": {
+      "link1": "Localizador de las tiendas de USDA SNAP",
+      "link2": "Localizador de las tiendas de USDA WIC",
+      "link3": "Second Harvest de Silicon Valley",
+      "link4": "Stanford Pediatric Advocacy",
+      "link5": "Centro de ecología de Berkeley"
+    },
+    "contact-us": {
+      "header": "Contactenos",
+      "p1": {
+        "text": "Si usted tiene preguntas sobre cualquier adición de datos o inexactitudes, o para cualquier otra pregunta, comuníquese con {0}.",
+        "link": "baycommunityresource@gmail.com"
+      },
+      "contact-us-header": "Contactenos aqui"
+    },
+    "disclaimer": {
+      "header": "Renuncia",
+      "p": "Este proyecto de Recursos del Área de la Bahía es puramente voluntario. Tenemos un equipo de humanos que recopila y verifica los datos de diversas fuentes. Hacemos nuestro mejor esfuerzo para mantener toda la información en el sitio lo más actualizada posible, sin embargo, no podemos garantizar que la información sea 100% precisa."
+    },
+    "spthanks": {
+      "p": "Agradecimiento especial a {0} y {1}  por potenciar nuestro sitio",
+      "link0": "CARTO",
+      "link1": "Mapbox"
+    },
+    "our-team": {
+      "header": "Nuestro equipo",
+      "sourcing": "Fuentes y traducción de datos:",
+      "dev": "Ingenería de datos y desarrollo:",
+      "resource": "coordinadores de los recursos",
+      "translate": "traductores",
+      "dqual": "calidad de los datos",
+      "internal-community": "comunidad interno",
+      "projl": "jefe del proyecto",
+      "devlead": "jefe de desarrollo",
+      "dqlead": "jefe de la calidad de los datos"
+    },
+    "dataaccess": {
+      "header": "Acceso a los datos",
+      "p": "Usted puede acceder a nuestros datos por un proyecto abierto {0} (se requiere login)",
+      "link": "Big Local News"
+    }
+  },
+  "category": {
+    "childcare": "Cuidado de los niños",
+    "family": "Comida familiar preparada | Comida familiar preparada",
+    "farm": "Granja o Mercado de Granjeros | Granjas y Mercados de Agricultores",
+    "food_bev": "Comida y bebida de especialidad",
+    "free_grocery": "Comestible gratis|Comestibles gratis",
+    "free_food": "Comida gratis para el público",
+    "grocery": "Comestibles",
+    "meal": "Comida gratis | Comidas gratis",
+    "ballot_drop": "Urna de la boleta",
+    "petsupplies": "Suministros de mascotas",
+    "pharmacy": "Farmacia | Farmacias",
+    "restaurant": "Restaurante | Restaurantes",
+    "school": "Comida escolar | Comidas escolares",
+    "snap_wic_retailer": "Comerciante CalFresh/WIC|Comerciantes CalFresh/WIC",
+    "cash_assistance": "Ayuda en efectivo",
+    "food_resources": "Recursos Alimenticios",
+    "legal_resources": "Recursos Legales",
+    "medical_resources": "Recursos Médicos",
+    "mental_health_resources": "Recursos de Salud Mental",
+    "healthcare": "Cuidado médico",
+    "dv_resources": "Recursos para Violencia Domestica",
+    "eviction_resources": "Recursos de desalojo",
+    "bob": "Restaurantes"
+  },
+  "dayofweek": {
+    "any": "Alguna",
+    "friday": "Viernes",
+    "monday": "Lunes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "thursday": "Jueves",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles"
+  },
+  "label": {
+    "address": "Dirección",
+    "allweek": "Toda la semana",
+    "backtolist": "Volver a la lista",
+    "call_in_advance": "Debe llamar de antemano",
+    "children": "Para los niños",
+    "close": "Cerrar",
+    "closed": "Cerrado",
+    "closed-on": "Cerrado el",
+    "closed-today": "Cerrado hoy",
+    "closedonday": "Cerrado (en el día seleccionado actual)",
+    "curbside_pickup": "Negocio con recogida en la acera|Negocios con recogida en la acera",
+    "curbside_or_delivery": "Se entrega o se recoge en la acera",
+    "delivery": "Entrega",
+    "discount_medical": "Descuento para trabajadores médicos|Descuentos para trabajadores médicos",
+    "discounts": "Descuentos",
+    "drive_thru": "Auto-servicio",
+    "email": "Email",
+    "email_lowercase": "email",
+    "farmers_market": "Mercado de agricultores | Mercados de agricultores",
+    "farm_pick_up": "Recogida en la granja",
+    "free": "Recurso gratis",
+    "free_groceries": "Tienda de comestibles gratis|Tiendas de comestibles gratis",
+    "freemeals": "Lugar de comidas gratis|Lugares de comidas gratis",
+    "free_produce": "Lugar de productos agrícolas gratuitso|Lugares de productos agrícolas gratuitos",
+    "require_child": "El niño debe estar presente",
+    "must_show_id": "Debe mostrar identificación",
+    "all_children": "Para todos los niños",
+    "enrolled_children": "Sólo para los estudiantes inscritos en el distrito",
+    "ballot_outdoor": "Entrega de votos afuera",
+    "ballot_indoor": "Entrega de votos adentro",
+    "twentyfourhrs": "Abierto las 24 horas",
+    "fin_grocery": "Efectivo para los comestibles",
+    "fin_housing": "Efectivo para la renta",
+    "fin_legal": "Efectivo para los pagos legales",
+    "fin_medical": "Efectivo para los pagos médicos",
+    "fin_utilities": "Efectivo para los servicios públicos",
+    "freefood": "Ubicación de comida gratis|Ubicaciones de comida gratis",
+    "instructions": "Instrucciones",
+    "mapkey": "Guia de mapa",
+    "meal_public": "Comidas abiertas al público",
+    "meal_student": "Comidas para estudiantes",
+    "must_preorder": "Debe pre-ordenar",
+    "normalhours": "Horas normales",
+    "notes": "Notas",
+    "offers": "Ofertas",
+    "open": "Abierto",
+    "openinghours": "Horario de apertura",
+    "order_online": "Ordene y pague en línea",
+    "phone": "Teléfono",
+    "public": "Abierto a todos",
+    "selectacategory": "Seleccione una categoría...",
+    "selected": "Seleccionado",
+    "seniorhours": "Horas para gente mayor de edad",
+    "seniors": "Para los mayores de edad",
+    "snap": "Lugar que acepta CalFresh|Lugares que aceptan CalFresh",
+    "special_hours": "Horario comercial para gente mayor de edad",
+    "website": "Sitio web",
+    "wic": "Lugar que acepta WIC|Lugares que aceptan WIC",
+    "ebt_pay_phone": "Pague con EBT por el telefono",
+    "ebt_pay_online": "Pague con EBT en línea",
+    "open_today": "Abierto hoy",
+    "pay_phone": "Pague con EBT por el telefono",
+    "safe_pick_up": "Opciones para recogida segura",
+    "zoom_out_for_more_results": "Aleja el imagen para más resultados",
+    "in_person": "Clínicas en persona",
+    "telehealth": "Asistencia por Telesalud",
+    "zipcode": "código postal",
+    "suggest_an_edit": "Sugiera una revisión",
+    "reset": "Reiniciar",
+    "submit": "Envia",
+    "last_updated": "Los detalles fueron revisados",
+    "in_store_pickup": "Para llevar",
+    "catering": "Servicios de comidas",
+    "dv_legal": "Apoyo legal para violencia doméstica",
+    "dv_housing": "Apoyo a la vivienda para violencia doméstica",
+    "dv_medical": "Apoyo médico para violencia doméstica",
+    "dv_crisis": "Apoyo de crisis para violencia doméstica",
+    "dv_mental_health": "Apoyo de salud mental de para violencia doméstica",
+    "apply": "Aplique los filtros",
+    "filters": "Filtros"
+  },
+  "health": {
+    "med_testing": "Prueba de COVID",
+    "med_primary_care": "Cuidado primario",
+    "med_pediatrics": "Pediatría",
+    "med_senior": "Cuidado para los mayores de edad",
+    "med_women": "Salud de las mujeres",
+    "med_urgent_care": "Cuidados urgentes",
+    "med_dental": "Cuidado dental",
+    "med_vision": "Cuidado de la visión",
+    "med_pharmacy": "Farmacia",
+    "med_mental_health": "Cuidado de salud mental",
+    "med_hotline": "Línea directa",
+    "med_addiction": "Apoyo para adicción y recuperación",
+    "med_domestic_violence": "Apoyo para las víctimas de violencia dómestica"
+  },
+  "languages": {
+    "ar": "árabe",
+    "en": "inglés",
+    "es": "español",
+    "fr": "francés",
+    "ja": "japonés",
+    "ko": "coreano",
+    "ms": "Malaya",
+    "zh": "Chino simplificado",
+    "vi": "Vietnamita",
+    "tl": "Tagalo"
+  },
+  "sidebar": {
+    "home": "Página de inicio",
+    "close-panel": "Cerrar panel de búsqueda",
+    "info-about-us": "Actualmente, este sitio apoya el Area de la Bahía en CA. Con",
+    "info-end-text": ", podemos ampliar nuestra cobertura.",
+    "info-link-text": "su ayuda",
+    "open-panel": "Abrir panel de búsqueda",
+    "shopsafe": "Por favor, ¡COMPRE DE FORMA SEGURA!",
+    "sixfeet": "Manténgase a 6 pies de distancia cuando vaya de compras.",
+    "stayhome": "Si está enfermo/a, quédese en casa.",
+    "washhands": "Lávese las manos con frecuencia.",
+    "what-do-you-need": "¿Que necesita?",
+    "when-do-you-need-it": "Cuando lo necesita?",
+    "current_location": "Ubicación actual",
+    "what": "Recurso...",
+    "what-are-you-looking-for": "¿Qué busca?",
+    "where": "Cerca de...",
+    "feedback": "Reacciones"
+  },
+  "title": "Soporte de {0} COVID",
+  "county": {
+    "alameda": "El condado de Alameda",
+    "anywhere": "Cualquier lugar",
+    "contra-costa": "El condado de Contra Costa",
+    "marin": "El condado de Marin",
+    "napa": "El condado de Napa",
+    "san-francisco": "El condado de San Francisco",
+    "san-mateo": "El condado de San Mateo",
+    "santa-clara": "El condado de Santa Clara",
+    "solano": "El condado de Solano",
+    "sonoma": "El condado de Sonoma",
+    "monterey": "El condado de Monterey"
+  },
+  "legal": {
+    "general_info": "Información general",
+    "legal_assistance": "Asistencia legal",
+    "legal_criminal": "Apoyo con justicia penal",
+    "legal_domviolence": "Apoyo con violencia dómestica",
+    "legal_worker_protection": "Los derechos de los Trabajadores",
+    "legal_healthcare": "Apoyo para solicitud de ayuda médica",
+    "legal_housing": "Ayuda con cuestiones de vivienda",
+    "legal_immigration": "Apoyo con cuestiones de inmigración"
+  },
+  "medical": {
+    "telehealth": "Clínicas de Telesalud"
+  },
+  "mental": {
+    "in_person": "Asistencia en persona"
+  },
+  "message": {
+    "no_location_in_this_area": "No hay resultado en esta zona.",
+    "no_location_meet_these_criteria": "No hay resultado con este criterio.",
+    "loading": "Cargando...",
+    "ie_compatibility": "Este sitio web no fue optimizado para Internet Explorer y es posible que no tenga acceso a todas las funcionalidades. Para una mejor experiencia, utilice un navegador diferente (por ejemplo, Mozilla Firefox).",
+    "area_not_covered": "No cubrimos esta zona.",
+    "select_resource": "Seleccione un recurso.",
+    "provide_zip": "Provee un código postal.",
+    "error_getting_zip": "Hubo un error con el código postal proporcionado. Inténtalo de nuevo.",
+    "error_loading_results": "Hubo un error. Por favor intente de nuevo."
+  },
+  "edit": {
+    "intro": "Por favor actualiza la información de este lugar en el formulario abajo. Apreciamos su ayuda para mantener los recursos actualizados.",
+    "thanks": "Recibimos sus revisiones. Gracias!",
+    "provider_name": "Nombre del proveedor",
+    "location_name": "Nombre del lugar",
+    "website": "El sitio web",
+    "opening_hours": "Horas de apertura:",
+    "senior_hours": "Horas para los mayores de edad:",
+    "additional_info": "Información adicional:",
+    "additional_info_text": "¿Algo más que falta, debe cambiarse o debe mostrarse?",
+    "additional_info_placeholder": "Nuevo servicio, ubicación permanentemente cerrada, horario comercial superior ...",
+    "no_edit": "Nada ha cambiado.",
+    "submission_error": "Hubo un error durante el envio del formulario. Inténtalo de nuevo."
+  },
+  "pebt": {
+    "header": "Beneficios de comida para los niños que reciben comidas reducidas o gratis.",
+    "lead": "Aplique para P-EBT antes del 15 de Julio.",
+    "link": "Aplique ahora",
+    "link_url": "https://ca.p-ebt.org/es"
+  },
+  "ux_study": {
+    "text_main": "Queremos aprender más sobre lo que es más importante para usted en este momento y como podemos mejorar el sitio web.",
+    "link_text": "Regístrese ahora.",
+    "link_url": "https://bit.ly/bac-interviews",
+    "text_sub": "Si lo seleccionan para una entrevista, todas las sesiones se realizarán por teléfono o video, y le compensaremos por su tiempo.",
+    "header": "Ayúdanos a servirle mejor."
+  },
+  "DO NOT TRANSLATE FROM HERE DOWN": "DO NOT TRANSLATE FROM HERE DOWN"
+}

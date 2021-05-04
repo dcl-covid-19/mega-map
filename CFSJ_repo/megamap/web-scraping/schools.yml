@@ -1,0 +1,372 @@
+filter: css:#all > div > div > div.col-xs-12.col-sm-8.col-md-9.content-column.white-background
+  > div.row > div > div,html2text,strip
+kind: url
+name: Joyce
+url: https://jayktee.netlify.com/about/
+---
+filter: css:#block_iir1e2a2fuqdpb4o,html2text,strip
+kind: url
+name: Alameda USD
+url: https://alamedausd-ca.schoolloop.com/pf4/cms2_site/view_deployment?d=x&theme_id=i12a21queqq4&group_id=1500178971500
+---
+filter: css:#block_col1,html2text,strip
+kind: url
+name: Vacaville USD
+url: https://www.vacavilleusd.org/childnutrition
+---
+filter: css:#feed_2822417,html2text,strip
+kind: url
+name: Vallejo City Unified
+url: https://www.parentsquare.com/feeds/2822417
+---
+filter: css:#sw-module-73580,html2text,strip
+kind: url
+name: Sonoma Valley Unified
+url: https://www.sonomaschools.org/
+---
+filter: css:#main-content > div > div.ptl_page,html2text,strip
+kind: url
+name: Patterson Joint Unified
+url: https://www.patterson.k12.ca.us/cms/One.aspx?portalId=18037338&pageId=27179223
+---
+filter: css:#row_newsevents,html2text,strip
+kind: url
+name: Albany Unified
+url: https://www.ausdk12.org/
+---
+filter: css:#featured-post-2 > div,html2text,strip
+kind: url
+name: Berkeley Unified School District
+url: https://www.berkeleyschools.net/
+---
+filter: css:#content_main,html2text,strip
+kind: url
+name: Castro Valley Unified School District
+url: https://www.cv.k12.ca.us/apps/news/
+---
+filter: css:#sw-app-headlines-1197,html2text,strip
+kind: url
+name: Dublin Unified
+url: https://www.dublin.k12.ca.us/dusd
+---
+filter: css:#content,html2text,strip
+kind: url
+name: Emery Unified
+url: http://emeryusd.k12.ca.us/
+---
+filter: css:#primary,html2text,strip
+kind: url
+name: Fremont Unified
+url: https://www.fuss4schools.org/
+---
+filter: css:#block_i17a1uy1hjy,html2text,strip
+kind: url
+name: Fremont Unified 2
+url: https://www.fremont.k12.ca.us/pf4/cms2_site/view_deployment?d=x
+---
+filter: css:#block_col1,html2text,strip
+kind: url
+name: Hayward Unified
+url: https://haywardusd-ca.schoolloop.com/fs
+---
+filter: css:#left_column,html2text,strip
+kind: url
+name: New Haven Unified
+url: https://www.mynhusd.org/
+---
+filter: css:#featured-news-events > div > div > div:nth-child(1),html2text,strip
+kind: url
+name: Newark Unified School District
+url: https://www.newarkunified.org/
+---
+filter: css:#sw-content-layout4,html2text,strip
+kind: url
+name: Oakland Unified
+url: https://www.ousd.org/covid-19studentmeals
+---
+filter: css:#news_container > div.items-list,html2text,strip
+kind: url
+name: Pleasanton Unified School District
+url: https://www.pleasantonusd.net/
+---
+filter: css:#module-content-15770,html2text,strip
+kind: url
+name: San Leandro Unified School District
+url: https://www.sanleandro.k12.ca.us/Page/11741
+---
+filter: css:#content_main > div.news-list.style-overwrite,html2text,strip
+kind: url
+name: San Lorenzo Unified
+url: https://www.slzusd.org/apps/news/
+---
+filter: css:#sw-app-headlines-790,html2text,strip
+kind: url
+name: Acalanes Union High School District
+url: https://www.acalanes.k12.ca.us/auhsd
+---
+filter: css:#module-content-47,html2text,strip
+kind: url
+name: Antioch Unified
+url: https://www.antiochschools.net/ausd
+---
+filter: css:#block_col3,html2text,strip
+kind: url
+name: Brentwood Union School District
+url: https://www.brentwood.k12.ca.us/
+---
+filter: css:#mount_0_0 > div > div > div.rq0escxv.l9j0dhe7.du4w35lb > div > div >
+  div > div > div > div.d2edcug0.cbu4d94t.j83agx80.bp9cbjyn > div.d2edcug0.tn7ubyq0.cxgpxx05
+  > div > div.rq0escxv.l9j0dhe7.du4w35lb.qmfd67dx.gile2uim.buofh1pr.g5gj957u.hpfvmrgz.aov4n071.oi9244e8.bi6gxh9e.h676nmdw
+  > div > div > div > div:nth-child(2),html2text,strip
+kind: url
+name: John Swett Unified
+url: https://www.facebook.com/johnswettusd/
+---
+filter: css:#jsFullModule_content,html2text,strip
+kind: url
+name: Mt. Diablo Unified School District
+url: https://www.mdusd.org/pf4/cms2/view_all_news?group_id=1500178971570
+---
+filter: css:#block_col2,html2text,strip
+kind: url
+name: Oakley Union Elementary School District
+url: https://www.ouesd.k12.ca.us/
+---
+filter: css:#module-content-1092,html2text,strip
+kind: url
+name: Pittsburg Unified
+url: https://www.pittsburg.k12.ca.us/pittsburg
+---
+filter: css:#jsFullModule_content,html2text,strip
+kind: url
+name: San Ramon Valley Unified
+url: https://www.srvusd.net/
+---
+filter: css:#sw-app-headlines,html2text,strip
+kind: url
+name: West Contra Costa Unified
+url: https://www.wccusd.net/site/default.aspx?PageType=14&DomainID=128&PageID=805&ModuleInstanceID=19750&ViewID=c83d46ac-74fe-4857-8c9a-5922a80225e2&IsMoreExpandedView=True
+---
+filter: css:#main > div > div,html2text,strip
+kind: url
+name: Bolinas-Stinson Union
+url: https://www.bolinas-stinson.org/o/bolinas-stinson/live_feed
+---
+filter: css:p:contains("meal"),html2text
+kind: url
+name: Kentfield Elementary
+url: https://kentfieldschools.org/
+---
+filter: css:#module-content-7155,html2text,strip
+kind: url
+name: Mill Valley School District
+url: https://www.mvschools.org/site/default.aspx?PageType=3&DomainID=1&ModuleInstanceID=7155&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=17869&PageID=1
+---
+filter: css:#jsFullModule_content,html2text,strip
+kind: url
+name: Miller Creek Elementary
+url: https://www.millercreeksd.org/pf4/cms2/view_all_news?group_id=1500178971351
+---
+filter: css:#content-page-wrapper > table > tbody > tr > td:nth-child(2) > div,html2text,strip
+kind: url
+name: Novato USD
+url: https://novatofans.org/
+---
+filter: css:#content-page-wrapper table:contains("meals"),html2text,strip
+kind: url
+name: San Rafael City Schools
+url: http://www.schoolnutritionandfitness.com/index.php?sid=0511072043297817
+---
+filter: css:#sw-module-40,html2text,strip
+kind: url
+name: Sausalito Marin City
+url: https://www.smcsd.org/
+---
+filter: css:#module-content-416 > div,html2text,strip
+kind: url
+name: Alisal Union School District
+url: https://www.alisal.org/Page/1
+---
+filter: css:#content-center > div,html2text,strip
+kind: url
+name: Monterey COE
+url: https://www.montereycoe.org/resources/alerts/coronavirus/nutrition/
+---
+filter: css:#comp-k8gwfmtp,html2text,strip
+kind: url
+name: Greenfield Union School District
+url: https://www.greenfield.k12.ca.us/health-safety-updates
+---
+filter: css:#wsite-content,html2text,strip
+kind: url
+name: King City Union School District
+url: http://www.kcusd.org/
+---
+filter: css:#content_main,html2text,strip
+kind: url
+name: Monterey Peninsula Unified School District
+url: https://www.mpusd.net/apps/news/
+---
+filter: css:#post-2 > div,html2text,strip
+kind: url
+name: Pacific Grove Unified School District
+url: https://pgusd.org/
+---
+filter: css:h1:contains("meals"),html2text,strip
+kind: url
+name: Salinas City Elementary School District
+url: https://www.salinascityesd.org/schoolclosures
+---
+filter: css:#module-content-4553 > div > div.ui-widget-detail > ul > li > div > div.ui-article-description,html2text,strip
+kind: url
+name: Salinas Union High School District
+url: https://www.salinasuhsd.org/Page/1862
+---
+filter: css:#col_2,html2text,strip
+kind: url
+name: San Ardo Union School District
+url: https://www.sanlucasschool.com/
+---
+filter: css:#post-7140 > div > div > div > div > div > div > div > div > div > div,html2text,strip
+kind: url
+name: Soledad Unified School District
+url: http://soledadusd.org/covid-19-school-closure-updates-parent-resources/
+---
+filter: css:#rightcol,html2text,strip
+kind: url
+name: South Monterey County Joint Union High School District
+url: https://www2.smcjuhsd.org/
+---
+filter: css:#jsFullModule_i327a2fg5hn97l > div,html2text,strip
+kind: url
+name: Napa Valley Unified
+url: https://www.nvusd.org/nosh
+---
+filter: css:#left-area,html2text,strip
+kind: url
+name: Elk Grove Unified
+url: http://blogs.egusd.net/pressroom/
+---
+filter: css:#yui_3_17_2_1_1586132788608_85,html2text,strip
+kind: url
+name: Hollister USD
+url: https://www.hesd.org/news/
+---
+filter: css:table:contains("Site"),html2text,strip
+kind: url
+name: San Francisco Unified School District
+url: https://www.sfusd.edu/services/health-wellness/nutrition-school-meals
+---
+filter: css:#ctl00_ContentPlaceHolder1_ctl12_divContent,html2text,strip
+kind: url
+name: Banta Elementary School District
+url: http://bantasd.org/parents/grab_n__go_meals
+---
+filter: css:p:contains("meal"),html2text
+kind: url
+name: Pacific Elementary School District
+url: https://www.pacificesd.org/
+---
+filter: css:#block_i21g22x4w2s82,html2text,strip
+kind: url
+name: Pajaro Valley Unified School District
+url: https://pps-pajaro-ca.schoolloop.com/pf4/cms2/view_page?d=x&group_id=1516177972153&vdid=i21g2fmlxw0u
+---
+filter: css:#news_container > div.items-list,html2text,strip
+kind: url
+name: San Lorenzo Valley Unified
+url: https://www.slvusd.org/
+---
+filter: css:#jsFullModule_7ii2aa1tqtnepg,html2text,strip
+kind: url
+name: Scotts Valley Unified School District
+url: https://www.scottsvalleyusd.org/
+---
+filter: css:#root,html2text,strip
+kind: url
+name: Soquel Union Elementary School District
+url: https://www.soquel.suesd.org/
+---
+filter: css:#main-content,html2text,strip
+kind: url
+name: Benicia Unified
+url: https://beniciaunified.org/f/ncov/
+---
+filter: css:p:contains("meal"),html2text
+kind: url
+name: Dixon Unified
+url: https://www.dixonusd.org/schoolclosureinformation
+---
+filter: css:#sw-content-layout2,html2text,strip
+kind: url
+name: Fairfield-Suisun Unified School District
+url: https://www.fsusd.org/domain/4997
+---
+filter: css:#spn-content,html2text,strip
+kind: url
+name: Travis Unified
+url: https://www.travisusd.org/tusd
+---
+filter: css:p:contains("meal"),html2text
+kind: url
+name: Banta Elementary School District
+url: http://bantaesd.sharpschool.net/cms/one.aspx
+---
+filter: css:module-content-113,html2text,strip
+kind: url
+name: Jefferson School District
+url: https://www.jeffersonschooldistrict.com/domain/19
+---
+filter:
+  - css:
+      selector: 'events_list'
+      method: xml
+  - html2text: re
+kind: browser
+name: Lammersville United
+navigate: https://www.lammersvilleschooldistrict.net/apps/events/
+---
+filter: css:#content_main > div > div.pages-left-column-wrapper > div,html2text,strip
+kind: url
+name: Linden Unified
+url: https://www.lindenusd.com/apps/pages/index.jsp?uREC_ID=1155648&type=d&pREC_ID=1412213
+---
+filter: css:content-page-wrapper,html2text,strip
+kind: url
+name: Lodi Unified
+url: http://www.schoolnutritionandfitness.com/index.php?sid=2904102048414688
+---
+filter: css:sw-content-layout7,html2text,strip
+kind: url
+name: Manteca Unified
+url: https://www.mantecausd.net/grabandgo
+---
+filter: css:docs-container,html2text,strip
+kind: url
+name: New Hope Elementary
+url: https://www.nhesd.net/o/elementary/browse/111179
+---
+filter: css:block_col2,html2text,strip
+kind: url
+name: New Jerusalem and Delta Charter
+url: https://www.njesd.net/
+---
+filter: css:Cntnr9inlineContent-gridWrapper,html2text,strip
+kind: url
+name: Ripon Unified
+url: https://www.riponusd.net/
+---
+filter: css:ui-article,html2text,strip
+kind: url
+name: Stockton Unified
+url: https://www.stocktonusd.net/COVID-19
+---
+filter: css:fsElementContent,html2text,strip
+kind: url
+name: Tracy Unified
+url: https://www.tracy.k12.ca.us/parentstudent-information/health-services/coronavirus-page
+---
+filter: css:items-list,html2text,strip
+kind: url
+name: Lincoln United
+url: https://www.lusd.net/

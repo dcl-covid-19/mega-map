@@ -1,0 +1,216 @@
+---
+title: "legal resources formatting"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets4)
+library(lubridate)
+library(tidyverse)
+
+```
+
+## Load data
+
+```{r}
+#  SNAP retailer sheet - copy, to not mess the original
+key <- '1FCInt7l15AeS-Kn_ITc8zZNZG-x2B5FvP3snKLGGmSs'
+legal_resources <- 
+  read_sheet(key, skip = 1)  # removes rows without a Type
+```
+
+## Function to process open hours
+
+```{r}
+# Function to turn the day_hour / senior_hour col into one col per day 
+process_hours <- function(day_hour, senior = FALSE) {
+  
+  days_long <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+  days_col_normal <- c("mon", "tues", "wed", "thr", "fri", "sat", "sun", "mon", "tues", "wed", "thr", "fri", "sat", "sun")
+  days_col_senior <- str_c("sp_", days_col_normal)
+  
+  if (senior) {
+    days_col <- days_col_senior
+  } else {
+    days_col <- days_col_normal
+  }
+  
+  
+  if (is.na(day_hour)) {
+    out <- rep("0", 7)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+  }
+  
+  try({
+    out <- rep("0", 7)
+    
+    for (dt in str_split(day_hour, '\\n') %>% unlist()) {
+      
+      d <-  str_split(dt, ': ') %>% unlist() %>% .[1]
+      t <- str_split(dt, ': ') %>% unlist() %>% .[2]
+      
+      # day range
+      if (str_detect(d, '-')) {
+        start = str_split(d, ' - ') %>% unlist() %>% .[1]
+        end = str_split(d, ' - ') %>% unlist() %>% .[2]
+        
+        
+        if (str_ends(start, 's')) {
+          start <- str_sub(start, 1, -2)
+        }
+        if (str_ends(end, 's')) {
+          end <- str_sub(end, 1, -2)
+        }
+        start_i = match(start, days_long)
+        end_i = match(end, days_long[start_i : length(days_long)]) + start_i - 1
+        
+        for (i in seq(start_i, end_i)) {
+          if (i > 7) {
+            out[i %% 7] = t
+          } else {
+            out[i] = t
+          }
+        }
+        # multiple, non contiguous days
+      } else if (str_detect(d, ', ')) {
+        for (single_d in str_split(d, ', ') %>% unlist()) {
+          if (str_ends(single_d, 's')) {
+            single_d <- str_sub(single_d, 1, -2)
+          }
+          start_i = match(single_d, days_long)
+          out[start_i] = t
+        }
+        # single day
+      } else {
+        if (str_ends(d, 's')) {
+          d <- str_sub(d, 1, -2)
+        }
+        start_i = match(d, days_long)
+        
+        if (is.na(start_i)) {
+          stop()
+        }
+        out[start_i] = t
+      }
+    }
+    
+    out <- str_to_upper(out)
+    names(out) <- days_col[1:7]
+    return(out %>% as_tibble_row())
+    
+  }, silent = T)
+  
+  out <- rep(day_hour, 7)
+  names(out) <- days_col[1:7]
+  return(out %>% as_tibble_row())
+  
+}
+
+
+```
+
+#Phone number regex
+
+```{r}
+
+
+# test <- retailers %>% 
+#   mutate(phone_test = str_extract_all(Phone, "[0-9]+") %>% str_c(collapse = " ")) 
+# 
+# test$phone_test
+
+# retailers %>% 
+#   mutate(phone_test = str_remove_all(Phone, "[^\\d]") %>% str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3")) %>% 
+#   select(phone_test)
+
+```
+
+
+#From Main sheet to template sheet
+```{r}
+legal_resources_template <- 
+  legal_resources %>% 
+  mutate(
+    `Housing & Homelessness` = if_else(str_detect(`Housing & Homelessness`, "x|X"), "Housing & Homelessness", "" ), 
+    `Employment & Worker Protections` = if_else(str_detect(`Employment & Worker Protections`, "x|X"), "Employment & Worker Protections", "" ), 
+    Healthcare = if_else(str_detect(Healthcare, "x|X"), "Healthcare", "" ), 
+    `Immigration` = if_else(str_detect(`Immigration`, "x|X"), "Immigration", "" ), 
+    `Criminal` = if_else(str_detect(`Criminal`, "x|X"), "Criminal", "" ), 
+    `Domestic Violence` = if_else(str_detect(`Domestic Violence`, "x|X"), "Domestic Violence", "" ),
+    `Contracts` = if_else(str_detect(`Contracts`, "x|X"), "Contracts", "" ),
+    `Contact Phone Number` =
+      str_remove_all(`Contact Phone Number`, "[^\\d]") %>%
+      str_replace(.,"(\\d{3})(\\d{3})(\\d{4})$","(\\1) \\2-\\3"),
+    `Open Time (if relevant)` = 0, 
+     `Close Time (if relevant)` = 0, 
+  ) %>% 
+  unite(legal_type, c(`Housing & Homelessness`, `Employment & Worker Protections`, Healthcare, Immigration, Criminal, `Domestic Violence`, Contracts), na.rm = TRUE, sep = ", ")
+
+
+
+#To do: Add in the da
+
+
+
+#legal_resources_template$legal_type
+```
+```{r}
+# legal_resources_template %>% 
+#   write_csv("legal_data_template.csv", na = "")
+```
+
+
+#This converts from the template sheet to the mega_map sheet--> just changes the names of columns 
+```{r}
+
+legal_resources_template_to_megamap <- 
+  legal_resources_template %>% 
+  transmute(
+    region = str_to_lower(County) %>% str_replace_all(' ', '_') %>% str_c(., '_county'),
+    resource = `Type (Hotline/ Legal Services/ General Information)`, 
+    legal_type = `Legal Area:
+(Validation): 
+Housing & Homelessness; 
+Employment & Worker Protections; 
+Healthcare; 
+Immigration; 
+Criminal; 
+Domestic Violence; 
+Contracts`, 
+    free = `Is the resource free?`, 
+    provider_name = `Organization Name`, 
+    provider_addloc = `Additional provider location (e.g. Hayward branch)`,  
+    address	= `Address (if relevant)`, 
+    areas_served = `Areas Served (Specific County / Bay  Area/ Statewide / Nationwide)`, 
+    contact = `Contact Phone Number`,
+    call_in_advance = "",
+    email = `Contact Email`,
+    web_description = `Description (Website)`, 
+    instructions = `Short description and instructions for map`,
+    web_link = `Links (English)`,
+    web_link_sp = `Links (Spanish)`,
+    status = `Is the site open or closed during Covid-19`,
+    days_hours = `"Days  (if relevant), Open Time, Close Time"`,
+    sp_days_hours = `Special hours days, open time, close time`,
+    special_hours = `Open at special hours`,
+    phone_service = `Site offers phone assistance`,
+    in_person = `Site offers in person assistance`, 
+    eligibility = `Eligibility`,
+    clients_only = `Must be a registered client`,
+    residents_only = `Must be a resident of the area`,
+    internal_notes = Notes,
+    quality_check_complete = `Verification (if relevant)`,
+    last_update = `Date of last update for the row`,
+    updated_by = `Who updated the row`
+  )
+
+#To do: Add days hours 
+#
+
+
+```
+
+
+

@@ -1,0 +1,742 @@
+,attributes.OBJECTID,attributes.FACILITYID,attributes.INTID,attributes.SITESCHOOLDISTRICT,attributes.SITENAME,attributes.SITEADDRESS,attributes.OPENDAYS,attributes.OPENTIMES,attributes.OPENDATES,attributes.MEALTYPES,attributes.SITETYPE,attributes.SITESTATUS,attributes.DESCRIPTION,attributes.PHONENUMBER,attributes.EMAIL,attributes.WEBLINK,attributes.CITYNAME,attributes.CITYCOUNCILDISTRICT,attributes.LASTUPDATE,attributes.LASTEDITOR,attributes.NOTES,attributes.ENTERPRISEID,attributes.DESCRIPTIONLONG,geometry.x,geometry.y
+0,1,1,1,Alum Rock Union SD,Painter/Sheppard MS,"480 Rough & Ready Rd. San Jose 
+ 
+ 
+","Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,5,1588782424000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000001,Curbside pickup or walk through.,-13563497.92,4491488.531
+1,2,2,2,Alum Rock Union SD,Hubbard Elementary,1680 Foley Ave,"Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000002,Curbside pickup or walk through.,-13563107.87,4485242.835
+2,3,3,3,Alum Rock Union SD,Dorsa Elementary,1290 Bal Harbor Way,"Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000003,Curbside pickup or walk through.,-13562844.71,4486647.384
+3,4,4,4,Alum Rock Union SD,Cesar Chavez School,2000 Kammerer Ave,"Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000004,Curbside pickup or walk through.,-13563754.53,4487926.79
+4,5,5,5,Alum Rock Union SD,Arbuckle Elementary,"1970 Cinderella Ln, San Jose","Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000005,Curbside pickup or walk through.,-13563172.44,4487263.894
+5,6,6,6,Alum Rock Union SD,Linda Vista Elementary,"100 Kirk Ave, San Jose","Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000006,Curbside pickup or walk through.,-13561395.44,4491967.667
+6,7,7,7,Berryessa Union Elementary,Piedmont Middle School,"955 Piedmont Rd, San Jose","Monday through Thursday
+
+De lunes a jueves",12:00 p.m. to 1:00 p.m.,March 16th until further notice,Lunch Only,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.berryessa.k12.ca.us/Announcements/,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000007,A lunch bag will be available for students and families. Thursday will also provide a meal for Friday,-13563679.73,4494052.504
+7,8,8,8,Berryessa Union Elementary,Morrill Midde School,"1970 Morrill Ave, San Jose","Monday through Thursday
+
+De lunes a jueves",12:00 p.m. to 1:00 p.m.,March 16th until further notice,Lunch Only,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.berryessa.k12.ca.us/Announcements/,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000008,A lunch bag will be available for students and families. Thursday will also provide a meal for Friday,-13566453.72,4496441.987
+8,9,9,9,Berryessa Union Elementary,Vinci Park Elementary,"1311 Vinci Park Way, San Jose","Monday through Thursday
+
+De lunes a jueves",12:00 p.m. to 1:00 p.m.,March 16th until further notice,Lunch Only,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.berryessa.k12.ca.us/Announcements/,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000009,A lunch bag will be available for students and families. Thursday will also provide a meal for Friday,-13566832,4492224.849
+9,10,10,10,Cambrian,Price Middle School,2650 New Jersey Avenue,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cambriansd.org/,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000010,Curbside Pickup or walk thru will be available for your convenience.In the parking lot or bus lane . 18 and younger,-13572660.07,4477186.771
+10,11,11,11,Campbell,Blackford Elementary,1970 Willow St San Jose,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000011,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13572338.41,4480932.807
+11,12,12,12,Campbell,Capri Elementary,850 Chapman Dr. Campbell,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,Campbell,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000012,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13577071.24,4476161.745
+12,13,13,13,Campbell,Castlemont Elementary,3040 E. Payne Ave Campbell,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000013,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13575156.13,4481148.387
+13,14,14,14,Campbell,Lynhaven Elementary,881 S. Cypress Ave San Jose,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000014,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13576571,4482569.857
+14,15,15,15,Campbell,Rosemary Elementary,401 W Hamilton Ave Campbell,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,Campbell,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000015,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13576063.55,4480318.641
+15,16,16,16,Campbell,Sherman Oaks Elementary,1800 Fruitdale Ave San Jose,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000016,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13572620.34,4482380.197
+16,17,17,17,Campbell,Monroe Middle,1055 S. Monroe St San Jose,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.campbellusd.org/news/covid19-meals,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000017,"Serving students up to 18 years of age. A grab and go pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. Please contact Child Nutrition Services at (408) 341-7210 or e-mail at food@campbellusd.org for any questions.  ***Capri, Sherman Oaks and Rosemary elementary also will offer weekend meals to go on Fridays, from 11 am-12 pm.",-13574699.02,4482184.045
+17,18,18,18,Campbell Union High,Boynton High,"901 Boynton Avenue, San Jose
+","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000018,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13577223.89,4482474.459
+18,19,19,19,Campbell Union High,Branham High,"1570 Branham Ln, San Jose","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000019,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13569643,4474439.527
+19,20,20,20,Campbell Union High,Del Mar High,"1224 Del Mar Ave, San Jose","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000020,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13573029.29,4481560.766
+20,21,21,21,Campbell Union High,Leigh High,"5210 Leigh Ave, San Jose","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000021,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13572175.15,4472855.576
+21,22,22,22,Campbell Union High,Prospect High,"18900 Prospect Rd, Saratoga","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,Saratoga,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000022,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13581098.42,4479835.607
+22,23,23,23,Campbell Union High,Westmont High,"4805 Westmont Ave, Campbell","Monday through Saturday
+
+De lunes a sábado",11:30 a.m. to 1:00 p.m.,"March 17th though duration of the closure
+**No meal service on Memorial Day Monday May 25th.",Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cuhsd.org/apps/pages/coronavirusinfo,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000023,All children aged 18 years and younger. Meals will not be consumed on site; they are to be eaten elsewhere. A pre-packaged lunch and a pre-packaged breakfast will be offered for the following day. **Meal Service will also be offered on Saturdays,-13579389.1,4476931.529
+23,24,24,24,Cupertino Union,Cupertino Middle School,"1650 S Bernardo Ave, Sunnyvale",Monday's and Thursday's,11:00 a.m. to 1:00 p.m.,"On-going Meals through school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cusdk8.org/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=35&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=27143&PageID=1,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000024,"Monday |  Pick up meals for 3 days Breakfast and lunch for Monday, Tuesday and Wednesday Thursday  |  Pick up meals for 2 days Breakfast and lunch for Thursday and Friday",-13587554.77,4486529.398
+24,25,25,25,East Side Union HSD,Foothill High School,230 Pala Ave,Monday through Friday,12:00 to 1:00 p.m.,March 16th through duration of school closure,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,5,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000025,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger. Beginning April 13th the following sites will remain open for meal service. Families can get meals from any location you don't have to be a student attending there.  *Andrew Hill *Evergreen High *Independence High *James Lick *Mt. Pleasant *Oak Grove *Silver Creek *Overfelt,-13563043.24,4490640.503
+25,26,26,26,East Side Union HSD,Andrew Hill HS,3200 Senter Road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000026,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13562190.43,4479918.725
+26,27,27,27,East Side Union HSD,Calero High School,420 Calero Ave,Monday through Friday,12:00 to 1:00 p.m.,March 16th through duration of school closure,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,2,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000027,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger. Beginning April 13th the following sites will remain open for meal service. Families can get meals from any location you don't have to be a student attending there.  *Andrew Hill *Evergreen High *Independence High *James Lick *Mt. Pleasant *Oak Grove *Silver Creek *Overfelt,-13561677.3,4472808.182
+27,28,28,28,East Side Union HSD,Evergreen High School,3300 Quimby Road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000028,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13556369.26,4484233.641
+28,29,29,29,East Side Union HSD,Independence HS,617 N Jackson Ave,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000029,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13565190.55,4490872.803
+29,30,30,30,East Side Union HSD,James Lick HS,57 N White Road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000030,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13562083.62,4490380.74
+30,31,31,31,East Side Union HSD,Mt. Pleasant HS,1750 S White road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000031,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13559634.26,4487489.335
+31,32,32,32,East Side Union HSD,Oak Grove High School,285 Blossom Hill Road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000032,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13560841.63,4474287.991
+32,33,33,33,East Side Union HSD,Piedmont Hills High School,1377 Piedmont Road,Monday through Friday,12:00 to 1:00 p.m.,March 16th through duration of school closure,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,4,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000033,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger. Beginning April 13th the following sites will remain open for meal service. Families can get meals from any location you don't have to be a student attending there.  *Andrew Hill *Evergreen High *Independence High *James Lick *Mt. Pleasant *Oak Grove *Silver Creek *Overfelt,-13564419.55,4495269.199
+33,34,34,34,East Side Union HSD,Santa Teresa High School,6150 Snell Ave,Monday through Friday,12:00 to 1:00 p.m.,March 16th through duration of school closure,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,2,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000034,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger. Beginning April 13th the following sites will remain open for meal service. Families can get meals from any location you don't have to be a student attending there.  *Andrew Hill *Evergreen High *Independence High *James Lick *Mt. Pleasant *Oak Grove *Silver Creek *Overfelt,-13561930.56,4471951.884
+34,35,35,35,East Side Union HSD,Silver Creek High School,3434 Silver Creek Road,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000035,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13559447.35,4481528.236
+35,36,36,36,East Side Union HSD,WC Overfelt High School,1835 Cunningham Ave,"Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000036,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13562040.54,4485392.214
+36,37,37,37,East Side Union HSD,Yerba Buena High School,1855 Lucretia Ave,Monday through Friday,12:00 to 1:00 p.m.,March 16th through duration of school closure,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000037,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger. Beginning April 13th the following sites will remain open for meal service. Families can get meals from any location you don't have to be a student attending there.  *Andrew Hill *Evergreen High *Independence High *James Lick *Mt. Pleasant *Oak Grove *Silver Creek *Overfelt,-13564256.91,4484001.69
+37,38,38,38,Evergreen,Caldwalder,"3799 Cadwallader Avenue, San Jose
+
+
+",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000038,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13557397.77,4481936.732
+38,39,39,39,Evergreen,Carolyn Clark,"3701 Rue Mirassou, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000039,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13555359.65,4484046.1
+39,40,40,40,Evergreen,Cedar Grove,"2702 Sugarplum Drive, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000040,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13557980.52,4485436.545
+40,41,41,41,Evergreen,Chaboya,"3276 Cortona Drive, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000041,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13554460.41,4482662.164
+41,42,42,42,Evergreen,Dove Hill,"1460 Colt Way, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000042,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13559825.17,4481120.19
+42,43,43,43,Evergreen,Evergreen Elementary School,"3010 Fowler Road, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000043,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13556411.19,4482425.083
+43,44,44,44,Evergreen,Holly Oak Elementary School,"2995 Rossmore Way, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000044,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13558525.28,4483739.877
+44,45,45,45,Evergreen,Laurelwood,"4280 Partridge Drive, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000045,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13556442.62,4481331.184
+45,46,46,46,Evergreen,Levya,"1865 Monrovia Drive, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000046,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13560089,4483112.141
+46,47,47,47,Evergreen,Matsumoto,"4121 Mackin Woods Lane, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000047,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13554859.77,4482666.489
+47,48,48,48,Evergreen,Millbrook,"3200 Millbrook Dr., San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000048,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13557354.64,4483732.965
+48,49,49,49,Evergreen,Montegomery Elementary School,"2010 Daniel Maloney Dr, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000049,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13558849.19,4481930.35
+49,50,50,50,Evergreen,Norwood Elementary School,"3241 Remington Way, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000050,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13557559.44,4484947.102
+50,51,51,51,Evergreen,Quimby,"3190 Quimby Road, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000051,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13557132.11,4484431.112
+51,52,52,52,Evergreen,Silver Oak,"5000 Farnsworth Drive, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000052,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13554287.3,4478202.72
+52,53,53,53,Evergreen,J.F. Smith,"2220 Woodbury Ln, San Jose",Monday through Friday,11 a.m. to 1:00 p.m.,March 30th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000053,"Walk or drive curb side service. Children must be present. Served cold for families to heat at home. For more information, please call Child Nutrition Services at (408) 223-4500",-13557279.79,4480531.44
+53,54,54,54,Evergreen,Katherine Smith Elementary School,"2025 Clarice Drive, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000054,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13561158.4,4484709.325
+54,55,55,55,Evergreen,O.B. Whaley Elementary School,"2655 Alvin Avenue, San Jose","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 30th until further notice,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.eesd.org/cf_news/view.cfm?newsid=7127,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000055,"In effort to minimize close contact and large gatherings, simply walk or drive up to the front of the school for service. A typical lunch will include an entrée,fruit or fruitjuice, vegetable, whole  grain snack and milk. A vegetarian choice will not always be available. Entrees will be served cold for families to heat in the convenience of their own home. Children and teens must be present to receive a meal. Please do not attend if anyone in your party is sick or having any respiratory symptoms. For more information, please call Child Nutrition Servicesat (408) 223-4500.",-13561442.81,4483234.139
+55,56,56,56,Franklin-McKinley,Dahl Elementary School,3200 Water Street San Jose,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000056,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13563101.78,4479361.845
+56,57,57,57,Franklin-McKinley,Franklin,420 Tully Road,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000057,Starting March 30th meals will be served Monday-Friday,-13564495.64,4481666.61
+57,58,58,58,Franklin-McKinley,Hellyer Elementary School,725 Hellyer Avenue,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000058,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13560927.74,4478921.164
+58,59,59,59,Franklin-McKinley,Kennedy,1602 Lucretia Avenue,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000059,Starting March 30th meals will be served Monday-Friday,-13564425.01,4484578.826
+59,60,60,60,Franklin-McKinley,Larion Lairon College Preparatory,3975 Mira Loma Way,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000060,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13562000.37,4478469.911
+60,61,61,61,Franklin-McKinley,Los Arboles,455 Los Arboles St.,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000061,Starting March 30th meals will be served Monday-Friday,-13562197.35,4478992.282
+61,62,62,62,Franklin-McKinley,Mckinley,651 Macredes Avenue,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,3,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000062,Families will be able to pick up meals daily Monday through Friday. Meals will be provided for children 18 and younger.,-13565567.83,4486264.551
+62,63,63,63,Franklin-McKinley,Meadows,1250 Taper Lane,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000063,Starting March 30th meals will be served Monday-Friday,-13563119.71,4483959.563
+63,64,64,64,Franklin-McKinley,Ramblewood,1351 Lightland Road,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000064,Starting March 30th meals will be served Monday-Friday,-13559996.59,4480429.47
+64,65,65,65,Franklin-McKinley,Santee Elementary School,1313 Audubon Drive,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000065,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13563993.83,4485042.26
+65,66,66,66,Franklin-McKinley,Shirakawa Sr School,665 Wool Creek Drive,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000066,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13564189.35,4483096.59
+66,67,67,67,Franklin-McKinley,Stonegate School,2605 Gassman Dr.,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000067,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13562888.86,4482247.797
+67,68,68,68,Franklin-McKinley,Windmill Springs School,2880 Aetna Way,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",11:00 a.m. to 1:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/article/1184552,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000068,"As of April 27, 2020, families will be able to pick up meals Mondays, Wednesdays, and Fridays at the locations below, 11:00am to 1:00pm. On Mondays and Wednesdays, individuals will receive an additional breakfast and lunch for the days we will not be open for Grab-N-Go meals. *Friday, May 8th Santee will be providing meals for the weekend for children and adults.",-13561420.29,4481895.683
+68,69,69,69,Franklin-McKinley,Bridges,1702 McLaughlin Ave,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000069,Starting March 30th meals will be served Monday-Friday,-13563872.47,4484651.425
+69,70,70,70,Franklin-McKinley,College Connection,1855 Lucretia Ave.,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000070,Starting March 30th meals will be served Monday-Friday,-13564257.2,4483984.409
+70,71,71,71,Franklin-McKinley,Sylvandale,653 Sylvandale Ave,Monday through Friday,11:00 a.m. to 1:00 p.m.,March 16th though closure,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fmsd.org/apps/news/,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000071,Starting March 30th meals will be served Monday-Friday,-13561470.05,4479356.962
+71,72,72,72,Fremont Union HSD,Fremont High,575 W. Fremont Ave. Sunnyvale,"Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",10:30 a.m. to 12:00 p.m.,"On-going during closure. 
+
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000072,"Due to demand, the District will be closing the Lynbrook and Monta Vista locations The other 4 locations will continue to be open (Fremont, Homestead, Cupertino and Fair Oaks Park) Meals will be served  3 days a week - Monday, Wednesday and Friday This will reduce the number of trips required to receive and distribute meals Each day (M-W-F) we will provide 2 days' worth of meals Don't forget to bring a bag to help you carry all the meals - the second meal provided on Fridays is for the weekend We will be open every week, even during Spring Break!",-13584875.5,4488372.195
+72,73,73,73,Fremont Union HSD,Cupertino High,"10100 Finch Ave, Cupertino","Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",10:30 a.m. to 12:00 p.m.,"On-going during closure. 
+
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,Cupertino,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000073,"Due to demand, the District will be closing the Lynbrook and Monta Vista locations The other 4 locations will continue to be open (Fremont, Homestead, Cupertino and Fair Oaks Park) Meals will be served  3 days a week - Monday, Wednesday and Friday This will reduce the number of trips required to receive and distribute meals Each day (M-W-F) we will provide 2 days' worth of meals Don't forget to bring a bag to help you carry all the meals - the second meal provided on Fridays is for the weekend We will be open every week, even during Spring Break!",-13582066.11,4483794.133
+73,74,74,74,Fremont Union HSD,Monta Vista,"21840 McClellan Rd, Cupertino",Monday through Friday,10:30 a.m. to 12:30 p.m.,March 16th though April 3rd,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,Cupertino,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000074,Curb side or walk in,-13587293.93,4483080.744
+74,75,75,75,Fremont Union HSD,Lynbrook,"1280 Johnson Ave, Cupertino",Monday through Friday,10:30 a.m. to 12:30 p.m.,March 16th though April 3rd,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,San Jose,1,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000075,Curb side or walk in,-13581365.5,4480965.021
+75,76,76,76,Fremont Union HSD,Fair Oaks Park,"540 N Fair Oaks Ave, Sunnyvale","Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",10:30 a.m. to 12:00 p.m.,"On-going during closure. 
+
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000076,"Due to demand, the District will be closing the Lynbrook and Monta Vista locations The other 4 locations will continue to be open (Fremont, Homestead, Cupertino and Fair Oaks Park) Meals will be served  3 days a week - Monday, Wednesday and Friday This will reduce the number of trips required to receive and distribute meals Each day (M-W-F) we will provide 2 days' worth of meals Don't forget to bring a bag to help you carry all the meals - the second meal provided on Fridays is for the weekend We will be open every week, even during Spring Break!",-13582725.15,4492926.417
+76,77,77,77,Gilroy,Solorsano Middle,7121 Grenache Way Gilroy,"Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000077,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13535781.46,4439111.755
+77,78,78,78,Gilroy,South Valley Middle,385 I.O.O.F Avenue,"Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000078,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13532731.11,4441192.132
+78,79,79,79,Gilroy,ADB Elementary,9300 Wren Avenue,"Monday through Friday
+
+
+de lunes a viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000079,"Lunch and breakfast for the next day will be  available for pick-up at the sites listed.  Children do not need to be present and 1  family member may pick up all meals for all  children in the household.**Meals for weekends will be distributed on Fridays. For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13534999.25,4443384.875
+79,80,80,80,Gilroy,Eliot Elementary,475 Old Gilroy Street,"Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000080,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13532159.04,4440038.386
+80,81,81,81,Gilroy,Glen View Elementary,600 West Eighth Street,"Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000081,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13533486.64,4439188.32
+81,82,82,82,Gilroy,Rod Kelly Elementary,8755 Kern Avenue,"Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Gilroy,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000082,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13535622.53,4442001.241
+82,83,83,83,Gilroy,Rucker Elementary,"325 Santa Clara Avenue, Gilroy","Monday, Wednesday, Friday
+
+
+Lunes Miércoles Viernes
+
+**Meals for weekends will be distributed on Fridays.",10:00 a.m. -1:00 p.m.,Through June 5th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584146218/gusdk12caus/bfcq7hrb7p3yekhsrzgi/Mealsavailable_combined.pdf,Unincorporated,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000083,"Monday meal bags will contain meals through Wednesday morning. Wednesday meal bags will contain meals through Friday morning. Friday meal bags will contain meals through the following Monday morning. As always, adults may pick up as many meals as are needed for the children in their home. Children don't need to be present for adults to receive food.  . For information or if you have questions, please contact the Child Nutrition Department at Gilroy Unified School District:  (669) 205-4000, ext. 4044",-13535026.31,4446654.491
+83,84,84,84,Lakeside Joint School District,Lakeside School,"19621 Black Road, Los Gatos","Once a week, by appointment, during district office hours (10am-3pm)",10:00 a.m. -3:00 p.m.,March 16th though April 3rd,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.lakesidelosgatos.org/,Unincorporated,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000084,Staff will be reaching out individually to families that participate in the state-funded school lunch program.,-13583078.75,4466103.989
+84,85,85,85,Loma Prieta Joint Union,C.T. English Middle,"23800 Summit Rd, Los Gato",Gift Card to families who qualify for F&R lunch to buy food from the local store,,March 16th though April 3rd,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.loma.k12.ca.us/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=161&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=10036&PageID=1,Outside Santa Clara County,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000085,Staff will be reaching out individually to families that participate in the state-funded school lunch program.,-13574754.11,4456588.384
+85,87,87,87,Los Gatos Union,Fisher Middle School,19195 Fisher Ave,"Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,March 16th until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.lgusd.org/apps/pages/index.jsp?uREC_ID=222268&type=d&pREC_ID=488024,Los Gatos,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000087,Grab and Go. 18 and younger,-13577342.79,4471751.932
+86,89,89,89,Saratoga SD,Saratoga Elementary,"14592 Oak St, Saratoga","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:00 p.m.,"On-going through closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.saratogausd.org/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=12&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=4563&PageID=1,Saratoga,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000089,Drive through Please stay in your car and meals will be passed to you.,-13584712.97,4474857.796
+87,96,96,96,Luther Burbank,Luther Burbank,4 Wabash Ave San Jose,"Monday through Friday
+de lunes a viernes",11:00 a.m-12:00 p.m.,March 16th through closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.lbsd.k12.ca.us/cms/lib/CA01001039/Centricity/Domain/1/Meal%20Letter.pdf,Unincorporated,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000096,"Children must be present, only available to children enrolled in Luther Burbank Pick up meals at North Wabash gate and Olive gate.",-13572803.56,4484334.954
+88,97,97,97,Milpitas Unified,Spangler Elementary,140 N Abott Ave,"Monday's and Thursday's 
+
+Lunes y jueves",9:00 a.m. to 12:00 p.m.,March 16th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.musd.org/information-and-updates-regarding-novel-coronavirus.html,Milpitas,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000097,Normal week (w/ no holidays)  Monday service: 3 days worth of meals (pick up for Mon-Wed)  Thursday service: 4 days worth of meals (pick up for Thurs-Sunday),-13571343.69,4499298.54
+89,98,98,98,Milpitas Unified,Milpitas High,1285 Escuela Pkwy,"Monday's and Thursday's 
+
+Lunes y jueves",9:00 a.m. to 12:00 p.m.,March 16th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.musd.org/information-and-updates-regarding-novel-coronavirus.html,Milpitas,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000098,Normal week (w/ no holidays)  Monday service: 3 days worth of meals (pick up for Mon-Wed)  Thursday service: 4 days worth of meals (pick up for Thurs-Sunday),-13569906.4,4502149.294
+90,99,99,99,Milpitas Unified,MUSD Board Room,1331 E. Calavareas Blvd,"Monday's and Thursday's 
+
+Lunes y jueves",9:00 a.m. to 12:00 p.m.,March 16th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.musd.org/information-and-updates-regarding-novel-coronavirus.html,Milpitas,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000099,Normal week (w/ no holidays)  Monday service: 3 days worth of meals (pick up for Mon-Wed)  Thursday service: 4 days worth of meals (pick up for Thurs-Sunday),-13567933.83,4500182.318
+91,100,100,100,Moreland,Anderson Elementary (Moreland),"4000 Rhoda Drive SJ
+3750 Gleason Avenue SJ
+","Monday-Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 16th through end of May,"Breakfast, and Lunch.  Friday providing meals for the weekend for children and adults",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.moreland.org/apps/pages/index.jsp?uREC_ID=427292&type=d&pREC_ID=1830860,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000100,"Please stay in your car and meals will be distributed, based on the number of children in the car. If you cannot drive to the site you can walk by. Meals will be offered on a “first come, first served” basis and the number of meals will be adjusted to the number of children needing food. Families from any Moreland school can access free meals during this period, as long as their children are with the adult at the time of pick-up. Meals are available for any preschool age child - 18 years old  *Dinners will be given for 5 days at Anderson Elementary Mondays during normal Breakfast/Lunch pickup.",-13577788.02,4481600.147
+92,101,101,101,Morgan Hill Unified,Ann Sobrato High,401 Burnett Ave Morgan Hill,"March 23rd, Monday March 30th",11 a.m. to 1:00 p.m.,"March 23rd, Monday March 30th",Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Morgan Hill,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000101,Children not need to be present for pickup. If you cannot drive you can walk. Please practice social distancing and maintain 6-foot distance from others. A weeks’ worth of meals will be distributed at a time,-13544291.43,4461279.712
+93,102,102,102,Morgan Hill Unified,Los Paseos Elementary,"121 Avenida Grande, SJ","Mondays 
+
+Los Lunes",11:00 a.m. to 1:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000102,"The children receiving the meals do not need to be present when the meals are picked up. If you cannot drive to the site, you can walk by. We then request you follow the county guidance of “social distancing” and maintain a six foot distance from others. A weeks worth of meals will be distributed at that time.",-13555305.14,4470894.464
+94,103,103,103,Morgan Hill Unified,Barrett Middle,895 Barrett Ave Morgan Hill,"March 23rd, Monday March 30th",11 a.m. to 1:00 p.m.,"March 23rd, Monday March 30th",Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Morgan Hill,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000103,Children not need to be present for pickup. If you cannot drive you can walk. Please practice social distancing and maintain 6-foot distance from others. A weeks’ worth of meals will be distributed at a time,-13539967.36,4456332.15
+95,104,104,104,Morgan Hill Unified,El Toro Elementary,455 E Main Ave Morgan Hill,"March 23rd, Monday March 30th",11 a.m. to 1:00 p.m.,"March 23rd, Monday March 30th",Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Morgan Hill,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000104,Children not need to be present for pickup. If you cannot drive you can walk. Please practice social distancing and maintain 6-foot distance from others. A weeks’ worth of meals will be distributed at a time,-13541948.38,4457989.57
+96,105,105,105,Morgan Hill Unified,St Martin/Gwinn Elem.,13745 Llagas Ave San Martin,"Mondays 
+
+Los Lunes",11:00 a.m. to 1:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Unincorporated,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000105,"The children receiving the meals do not need to be present when the meals are picked up. If you cannot drive to the site, you can walk by. We then request you follow the county guidance of “social distancing” and maintain a six foot distance from others. A weeks worth of meals will be distributed at that time.",-13537616.28,4451646.983
+97,106,106,106,Morgan Hill Unified,PA Walsh,"353 W Main Ave, Morgan Hill","March 23rd, Monday March 30th",11 a.m. to 1:00 p.m.,"March 23rd, Monday March 30th",Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Morgan Hill,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000106,Children not need to be present for pickup. If you cannot drive you can walk. Please practice social distancing and maintain 6-foot distance from others. A weeks’ worth of meals will be distributed at a time,-13543331.46,4456892.981
+98,107,107,107,Mount Pleasant Elementary,Mt Pleasant STEAM Academy,"14275 Candler Avenue, San Jose
+1944 Flint Ave, San Jose","Monday through Friday
+
+
+de lunes a viernes",9:00 a.m.-12:00 p.m.,March 16th-ongoing,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.facebook.com/MountPleasantESD/posts/2523622891232303,San Jose,5,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000107,"We are pleased to be offering FREE, grab and go breakfast and lunches for all of our students.  Please stop by at Mt. Pleasant STEAM Academy or August Boeger Middle School at 7:30 am or 11:30 am. We encourage you to come!",-13559876.54,4488714.276
+99,108,108,108,Mountain View Whisman,Gabriela Mistral Elementary,505 Escuela Ave,"Monday through Friday
+
+
+de lunes a viernes",11:30 a.m. to 1:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mvwsd.org/cms/One.aspx?portalId=418858&pageId=14056991,Mountain View,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000108,"Meal service closed Friday, April 10. Food for April 10 will be given to families on April 9.",-13591450.1,4494350.138
+100,110,110,110,Oak Grove,Anderson Elementary (Oak Grove),"5800 Calpine Dr San Jose 
+","Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000110,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13560015.84,4473654.795
+101,111,111,111,Oak Grove,Hayes Elementary,5035 Poston Dr,"Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000111,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13561745.14,4475707.282
+102,112,112,112,Oak Grove,Edenvale Elementary,285 Azucar Ave,"Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000112,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13559085.19,4475738.166
+103,113,113,113,Oak Grove,Davis Intermediate,5035 Edenview Dr,"Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000113,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13560066.46,4476393.889
+104,114,114,114,Oak Grove,Stipe Elementary,5000 Lyng Dr,"Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000114,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13559323.91,4476996.005
+105,115,115,115,Oak Grove,Christopher Elementary,265 Coyote Rd,"Monday through Friday
+
+
+de lunes a viernes",10:30 to 11:30 a.m.,"Through district closure
+
+En curso hasta el cierre de la escuela","Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.ogsd.net/,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000115,Free breakfast and lunch will continue to be served to children ages 0-18 Monday through Friday. Children DO NOT need to be present in order to receive meals.,-13560787.21,4478157.543
+106,116,116,116,Orchard School,Orchard School,921 Fox Ln,"Monday's only and 3 meals will be given
+
+Thursday and Friday Meal Service at SCCOE
+
+Solo el lunes y se darán 3 comidas
+
+Servicio de comidas los jueves",11:30 a.m. to 12:30 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.orchardsd.org/,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000116,"Please stay in your car and meals will be distributed, based on the number of children in the car. If you cannot drive to the site you can walk by. Meals will be offered on a “first come, first served” basis and the number of meals will be adjusted to the number of children needing food. This program will be solely for the pick-up of meals and meals will not be consumed on site. You will recieve enoug meals for until the next time meals are dispensed. Please contact DistrictOffice@orchardsd.org with any questions.",-13570079.22,4493482.377
+107,117,117,117,Palo Alto Unified,Jane Lathrop Stanford Middle School,"480 East Meadow Drive, Palo Alto","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th though end of school year,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.pausd.org/explore-pausd/news/pausd-provide-free-meals-students-during-school-closure,Palo Alto,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000117,"PLEASE DO NOT GET OUT OF THE CAR, FOR YOUR SAFETY AND THE SAFETY OF THE FOOD SERVICE STAFF.  If you are walking or biking, please keep at least six feet between each group. Please do not come if you are sick.  ****Will be distrubiting meals for Saturday and Sunday during Friday meal distribution.",-13594176.2,4497988.829
+108,118,118,118,Palo Alto Unified,Gunn High School,"780 Arastradero Road, Palo Alto","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th though end of school year,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.pausd.org/explore-pausd/news/pausd-provide-free-meals-students-during-school-closure,Palo Alto,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000118,"PLEASE DO NOT GET OUT OF THE CAR, FOR YOUR SAFETY AND THE SAFETY OF THE FOOD SERVICE STAFF.  If you are walking or biking, please keep at least six feet between each group. Please do not come if you are sick.  ****Will be distrubiting meals for Saturday and Sunday during Friday meal distribution.",-13595753.46,4495124.057
+109,119,119,119,Palo Alto Unified,Greene Middle School,"701 N California Ave, Palo Alto","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th though end of school year,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.pausd.org/explore-pausd/news/pausd-provide-free-meals-students-during-school-closure,Palo Alto,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000119,"PLEASE DO NOT GET OUT OF THE CAR, FOR YOUR SAFETY AND THE SAFETY OF THE FOOD SERVICE STAFF.  If you are walking or biking, please keep at least six feet between each group. Please do not come if you are sick.  ****Will be distrubiting meals for Saturday and Sunday during Friday meal distribution.",-13596149.95,4500310.358
+110,120,120,120,Rocketship Public Schools,Rocketship Alma School,"198 W Alma Ave, San Jose, CA","Monday and Thursdays
+
+Lunes y jueves",9:00 a.m. to 1:00 p.m,Starting March 30th Mondays and Thursdays,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000120,Grab and Go. 18 and younger. Walk-up or drive through. No ID necessary. Adults can pick-up without children present.,-13567346.62,4482889.97
+111,121,121,121,Rocketship Public Schools,Rocketship Fuerza School,"70 S Jackson Ave, San Jose, CA","Monday and Thursdays
+
+Lunes y jueves",9:00 a.m. to 1:00 p.m,Starting March 30th Mondays and Thursdays,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000121,Grab and Go. 18 and younger. Walk-up or drive through. No ID necessary. Adults can pick-up without children present.,-13563408.8,4489069.097
+112,122,122,122,Santa Clara Unified,Mayne Elementary,5030 N. First St Alviso,"Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000122,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13577283.31,4498419.392
+113,123,123,123,Santa Clara Unified,Don Callejon School,4176 Lick Mill Blvd Santa Clara,"Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000123,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13575014.85,4494789.828
+114,124,124,124,Santa Clara Unified,Buchser Middle,1111 Bellomy St Santa Clara,"Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000124,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13574767.73,4487322.304
+115,125,125,125,Santa Clara Unified,Peterson Middle,1380 Rosalia Ave Sunnyvale,"Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000125,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13581776.84,4487962.21
+116,126,126,126,Santa Clara Unified,Cabrillo Middle,2550 Cabrillo Ave Santa Clara,"Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000126,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13577841.73,4489179.622
+117,127,127,127,San Jose Unified,San José High,"275 N 24th St, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000127,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13566610.66,4487987.418
+118,128,128,128,San Jose Unified,Grant Elementary,"470 Jackson St, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000128,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568484.05,4488096.505
+119,129,129,129,San Jose Unified,Ohlone Middle,"850 North 2nd St, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000129,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13569973.02,4488413.69
+120,130,130,130,San Jose Unified,Hoover Middle,"1635 Park Ave, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000130,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13572382.21,4485548.866
+121,131,131,131,San Jose Unified,Washington Elementary,"100 Oak St, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000131,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567765.53,4483963.44
+122,132,132,132,San Jose Unified,Galarza Elementary,"1610 Bird Ave, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000132,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568199.87,4481365.092
+123,133,133,133,San Jose Unified,Canoas Elementary,"880 Wren Dr, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000133,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567241.71,4478803.917
+124,134,134,134,San Jose Unified,Almaden Elementary,"1295 Dentwood Dr, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000134,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568156.57,4474222.351
+125,135,135,135,San Jose Unified,Allen Elementary,"820 Steinbeck Dr, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000135,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13565027.89,4473526.097
+126,136,136,136,San Jose Unified,Learning Options,"4849 Pearl Ave, San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000136,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13565992.95,4475630.927
+127,138,138,138,Sunnyvale,Bishop Elementary,"450 N Sunnyvale Ave, Sunnyvale","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th-ongoing,"Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sesd.org/,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000138,"Pick Up 18 and younger Children do not have to be present  free combined breakfast, lunch, and dinner pick up (not for onsite eating).",-13583723.72,4493188.799
+128,139,139,139,Sunnyvale,Lakewood Elementary,"750 Lakechime Drive, Sunnyvale","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th-ongoing,"Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sesd.org/,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000139,"Pick Up 18 and younger Children do not have to be present  free combined breakfast, lunch, and dinner pick up (not for onsite eating).",-13581326.94,4494748.042
+129,140,140,140,Sunnyvale,Vargas Elementary,"1054 Carson Dr, Mountain View","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th-ongoing,"Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sesd.org/,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000140,"Pick Up 18 and younger Children do not have to be present  free combined breakfast, lunch, and dinner pick up (not for onsite eating).",-13586417.63,4492412.36
+130,141,141,141,Sunnyvale,San Miguel Elementary,"777 San Miguel Avenue, Sunnyvale","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th-ongoing,"Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sesd.org/,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000141,"Pick Up 18 and younger Children do not have to be present  free combined breakfast, lunch, and dinner pick up (not for onsite eating).",-13581906.84,4493660.426
+131,142,142,142,Sunnyvale,Columbia Middle,"739 Morse Ave., Sunnyvale","Monday through Friday
+
+
+de lunes a viernes",11:00 a.m. to 1:00 p.m.,March 16th-ongoing,"Breakfast, lunch, and dinner",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sesd.org/,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000142,"Pick Up 18 and younger Children do not have to be present  free combined breakfast, lunch, and dinner pick up (not for onsite eating).",-13583103.12,4494142.19
+132,143,143,143,Union SD,Dartmouth Middle School,"5575 Dartmouth Drive, San Jose","Mondays, Wednesdays, Fridays
+
+Lunes, miércoles, viernes",11:30 a.m. to 12:30 p.m.,March 18th -on-going,Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.unionsd.org/,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000143,Bagged breakfast and lunches provided to students 18 years and under from any school. No paperwork/identification required. Pickup only: No eating at the school.,-13569672.86,4472556.562
+133,144,144,144,ACE Charter Schools,Empower MS,625 South Sunset Ave,"Mondays at Empower and Inspire Wednesdays at Charter High and Esperanza
+
+Los lunes en Empower e Inspire los miércoles en Charter High y Esperanza",11:00 a.m. to 1:00 p.m.,March 17th-until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.acecharter.org,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000144,5 days worth of meals for the whole family.,-13563589.27,4487787.074
+134,145,145,145,ACE Charter Schools,Esperanza MS,1665 Santee Dr,"Mondays at Empower and Inspire Wednesdays at Charter High and Esperanza
+
+Los lunes en Empower e Inspire los miércoles en Charter High y Esperanza",11:00 a.m. to 1:00 p.m.,March 17th-until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.acecharter.org,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000145,5 days worth of meals for the whole family.,-13563741.38,4484827.228
+135,146,146,146,ACE Charter Schools,Inspire MS,1155 E. Julian St,"Mondays at Empower and Inspire Wednesdays at Charter High and Esperanza
+
+Los lunes en Empower e Inspire los miércoles en Charter High y Esperanza",11:00 a.m. to 1:00 p.m.,March 17th-until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.acecharter.org,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000146,5 days worth of meals for the whole family.,-13566797.07,4488139.497
+136,147,147,147,ACE Charter Schools,ACE Charter HS,1776 Educational Park Dr,"Mondays at Empower and Inspire Wednesdays at Charter High and Esperanza
+
+Los lunes en Empower e Inspire los miércoles en Charter High y Esperanza",11:00 a.m. to 1:00 p.m.,March 17th-until further notice,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.acecharter.org,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000147,5 days worth of meals for the whole family.,-13565184.08,4490895.463
+137,148,148,148,Alpha Public Schools,Alpha Jose Hernandez School,1601 Cunningham Ave,"Monday through Friday
+
+
+de lunes a viernes",10:00 a.m. to 12:00 p.m.,March 16th though duration of the closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000148,Children 18 and younger (grab and go); Cornerstone families can pick up from the Alpha location or at Franklin-McKinley locations.,-13562763.86,4484667.274
+138,149,149,149,Alpha Public Schools,Cornerstone Academy,"1598 Lucretia Ave, San Jose, CA 95122",Monday through Friday,10:00 to 12:00 CAPS 11:00 to 1:00,March 16th though April 6th,,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,7,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000149,Children 18 and younger (grab and go),-13564377.13,4484537.101
+139,150,150,150,Downtown College Prep,El Camino Middle School,"1402 Monterey Hwy, San Jose","Monday through Friday
+
+
+de lunes a viernes",12:00 p.m. to 1:00 p.m. DCP ARMS 11:00-12:30,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://9f8.bcf.myftpupload.com/wp-content/uploads/2020/03/English-COVID-19-Meal-Service-Flyer.DCP_.pdf,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000150,"There will be drive up service as well as walk up service. Parents can get specific service location information on the school website. 18 and younger. Prepackaged Lunch, child must be present.",-13566749.5,4483332.472
+140,151,151,151,Downtown College Prep,El Primero High School,"1402 Monterey Hwy, San Jose","Monday through Friday
+
+
+de lunes a viernes",12:00 p.m. to 1:00 p.m. DCP ARMS 11:00-12:30,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://9f8.bcf.myftpupload.com/wp-content/uploads/2020/03/English-COVID-19-Meal-Service-Flyer.DCP_.pdf,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000151,"There will be drive up service as well as walk up service. Parents can get specific service location information on the school website. 18 and younger. Prepackaged Lunch, child must be present.",-13566770.04,4483312.157
+141,152,152,152,Downtown College Prep,DCP Alum Rock Middle School,"2888 Ocala Ave, San Jose","Monday through Friday
+
+
+de lunes a viernes",12:00 p.m. to 1:00 p.m. DCP ARMS 11:00-12:30,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://9f8.bcf.myftpupload.com/wp-content/uploads/2020/03/English-COVID-19-Meal-Service-Flyer.DCP_.pdf,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000152,"There will be drive up service as well as walk up service. Parents can get specific service location information on the school website. 18 and younger. Prepackaged Lunch, child must be present.",-13560183.39,4486838.487
+142,153,153,153,Moreland,Moreland Middle,4600 Student Lane,"Monday-Friday
+
+
+de lunes a viernes",11:00 a.m. to 12:30 p.m.,March 16th through end of May,"Breakfast, and Lunch.  Friday providing meals for the weekend for children and adults",School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.moreland.org/apps/pages/index.jsp?uREC_ID=427292&type=d&pREC_ID=1830860,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000153,"Please stay in your car and meals will be distributed, based on the number of children in the car. If you cannot drive to the site you can walk by. Meals will be offered on a “first come, first served” basis and the number of meals will be adjusted to the number of children needing food. Families from any Moreland school can access free meals during this period, as long as their children are with the adult at the time of pick-up. Meals are available for any preschool age child - 18 years old  *Dinners will be given for 5 days at Anderson Elementary Mondays during normal Breakfast/Lunch pickup.",-13579248.74,4479356.511
+143,154,154,154,Mount Pleasant Elementary,August Boeger Middle School,"1944 Flint Ave, San Jose","Monday through Friday
+
+
+de lunes a viernes",9:00 a.m.-12:00 p.m.,March 16th-ongoing,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.facebook.com/MountPleasantESD/posts/2523622891232303,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000154,"We are pleased to be offering FREE, grab and go breakfast and lunches for all of our students.  Please stop by at Mt. Pleasant STEAM Academy or August Boeger Middle School at 7:30 am or 11:30 am. We encourage you to come!",-13558596,4487583.515
+144,155,155,155,Cupertino Union,Eisenhower Elementary School,"277 Rodonovan drive, Santa Clara",Monday's and Thursday's,11:00 a.m. to 1:00 p.m.,"On-going Meals through school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cusdk8.org/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=35&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=27143&PageID=1,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000155,"Monday |  Pick up meals for 3 days Breakfast and lunch for Monday, Tuesday and Wednesday Thursday  |  Pick up meals for 2 days Breakfast and lunch for Thursday and Friday",-13579767.46,4485131.05
+145,156,156,156,Fremont Union HSD,Homestead High School,"21370 Homestead Rd, Cupertino, CA","Monday, Wednesday, Friday 
+
+Lunes, miércoles, viernes",10:30 a.m. to 12:00 p.m.,"On-going during closure. 
+
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.fuhsd.org/departments/food-services,Cupertino,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000156,"Due to demand, the District will be closing the Lynbrook and Monta Vista locations The other 4 locations will continue to be open (Fremont, Homestead, Cupertino and Fair Oaks Park) Meals will be served  3 days a week - Monday, Wednesday and Friday This will reduce the number of trips required to receive and distribute meals Each day (M-W-F) we will provide 2 days' worth of meals Don't forget to bring a bag to help you carry all the meals - the second meal provided on Fridays is for the weekend We will be open every week, even during Spring Break!",-13586431.87,4486230.229
+146,157,157,157,Los Altos Elementary,Klein Park,"Ortega and California Ave, Los Altos","Monday through Friday
+
+
+de lunes a viernes",12:00 p.m.-12:30 p.m.,March 18th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.lasdschools.org/,Mountain View,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000157,Free meals are available to all students in the Mountain View Los Altos Union High School District (MVLA) and the Los Altos School District (LASD) age 18 and younger. No IDs required. These pre-prepared grab and go cold meals will include a breakfast and a lunch.,-13592561.17,4495168.171
+147,158,158,158,Santa Clara Unified,Montague Elementary,"750 Laurie Ave, Santa Clara","Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000158,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13575060.85,4493495.846
+148,159,159,159,Santa Clara Unified,Wilcox High,"3250 Monroe St, Santa Clara","Monday distribution for 5 days
+Thursdays: 2:00-3:30 weekend Kid meal distribution ** See instructions for locations
+
+Distribución de lunes por 5 días
+",11:00 a.m. to 1:30 p.m.,On-going through closure,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.santaclarausd.org/site/default.aspx?PageType=3&DomainID=8&ModuleInstanceID=10&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=5881&PageID=9,Santa Clara,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000159,"This meal service provides breakfast and lunch for five days for each child or developmentally disabled adult in at-risk families. In addition, weekend meal distribution is available on Thursdays from 2:00-3:30 at Cabrillo Middle School, 2550 Cabrillo Ave; Don Callejon School, 4176 Lick Mill Blvd; Wilcox High School, 3250 Monroe St.; and Santa Clara Senior Center, 1303 Fremont St. Please visit only one meal site so that we have enough for everyone. Meals will be distributed on a “grab and go” basis, so stay in your car or keep at least six feet between each group. Do not come if sick.",-13579414.07,4490325.513
+149,160,160,160,Summit Public Schools,Summit Denali Middle School,"539 E Weddell Dr., Sunnyvale","Monday through Friday
+
+
+de lunes a viernes","Denali Middle School – 8:30 am – 10:30 am ; Denali High School, Rainer, and Tahoma  – 10:00 am – 12:00 pm",March 16th-ongoing,Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000160,Drive through,-13582681.33,4494580.848
+150,161,161,161,Summit Public Schools,Summit Denali,"1133 W Washington Ave., Mountain View",Monday through Friday,"8:30 to 10:30, 10:00 to 12:00",March 16th through April 3rd,Lunch,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,Mountain View,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000161,Drive through,-13590204.26,4494782.052
+151,162,162,162,Milpitas Unified,Randall Elementary,"1300 Edsel Drive, Milpitas","Monday's and Thursday's 
+
+Lunes y jueves",9:00 a.m. to 12:00 p.m.,March 16th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.musd.org/information-and-updates-regarding-novel-coronavirus.html,Milpitas,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000162,Normal week (w/ no holidays)  Monday service: 3 days worth of meals (pick up for Mon-Wed)  Thursday service: 4 days worth of meals (pick up for Thurs-Sunday),-13567811.5,4499205.047
+152,163,163,163,Morgan Hill Unified,Live Oak High School,"1505 E Main Ave, Morgan Hill","Mondays 
+
+Los Lunes",11:00 a.m. to 1:00 p.m.,"On-going through school closure
+
+En curso hasta el cierre de la escuela",Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mhusd.org/covid-19/shelter-in-place-updates,Morgan Hill,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000163,"The children receiving the meals do not need to be present when the meals are picked up. If you cannot drive to the site, you can walk by. We then request you follow the county guidance of “social distancing” and maintain a six foot distance from others. A weeks worth of meals will be distributed at that time.",-13540323.8,4459522.14
+153,164,164,164,Los Altos Elementary,Egan Junior High School,"100 Portola Ave, Los Altos","Monday through Friday
+
+
+de lunes a viernes",12:00 p.m.-12:30 p.m.,March 18th through school closure,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.lasdschools.org/,Los Altos,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000164,Free meals are available to all students in the Mountain View Los Altos Union High School District (MVLA) and the Los Altos School District (LASD) age 18 and younger. No IDs required. These pre-prepared grab and go cold meals will include a breakfast and a lunch.,-13593444.82,4494522.249
+154,565,565,565,Loma Prieta Joint Union,Loma Prieta Elementary School,"23800 Summit Rd, Los Gatos",Gift Card to families who qualify for F&R lunch to buy food from the local store,,March 16th though April 3rd,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.loma.k12.ca.us/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=161&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=10036&PageID=1,Outside Santa Clara County,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000565,Staff will be reaching out individually to families that participate in the state-funded school lunch program.,-13574752.66,4456587.697
+155,566,566,566,Summit Public Schools,Summit Denali High School,"195 Leota Avenue, Sunnyvale, CA 94086","Monday through Friday
+
+
+de lunes a viernes","Denali Middle School – 8:30 am – 10:30 am ; Denali High School, Rainer, and Tahoma  – 10:00 am – 12:00 pm",March 16th-ongoing,Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000566,Drive through,-13586516.7,4492214.758
+156,567,567,567,Santa Clara County Office of Education,County Office of Education,1290 Ridder Park Dr.,Thursday & Friday,11:30-1:30 p.m.,,Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,4,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000567,Drive through. Child and Adult meals,-13569846.06,4492722.889
+157,568,568,568,San Jose Unified,Ann Darling Elemengary,"333 N 33rd St., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000568,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13565993.07,4488867.604
+158,569,569,569,San Jose Unified,Bret Harte Middle,"7050 Bret Harte Dr., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000569,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13563652.16,4468615.638
+159,570,570,570,San Jose Unified,Empire Elementary,"1060 Empire St., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000570,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567198.09,4488654.466
+160,571,571,571,San Jose Unified,Los Alamitos Elementary,"6130 Silberman Dr., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000571,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567741.24,4470883.263
+161,572,572,572,San Jose Unified,Pioneer High School,"1290 Blossom Hill Rd., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000572,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568076.96,4473658.461
+162,573,573,573,San Jose Unified,River Glen School,"1088 Broadway Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000573,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13570058.54,4482545.52
+163,574,574,574,San Jose Unified,Schallenberger Elementary,"1280 Koch Ln., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000574,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568488.55,4478235.642
+164,575,575,575,San Jose Unified,Trace Elementary,"651 Dana Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000575,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13572717.44,4485334.25
+165,576,576,576,San Jose Unified,Willow Glen Elementary,"1425 Lincoln Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000576,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13569499.29,4481460.699
+166,577,577,577,San Jose Unified,Bachordt Elementary,"102 Sonora Ave,. San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000577,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13571279.44,4489875.545
+167,578,578,578,San Jose Unified,Gunderson High,"622 Guandabert Ln., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000578,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13564728.14,4475309.278
+168,579,579,579,San Jose Unified,Horace Mann,"55 N. 7th St., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000579,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568221.21,4486528.088
+169,580,580,580,San Jose Unified,Lincoln High,"555 Dana Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000580,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13572577.52,4485023.372
+170,581,581,581,San Jose Unified,Lowell Elementary,"625 S. 7th St., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000581,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567303.98,4485161.752
+171,582,582,582,San Jose Unified,Olinder Elementary,"890 E. Williams St., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000582,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13566058.31,4486241.2
+172,583,583,583,San Jose Unified,Reed Elementary School,"1524 Jacob Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000583,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13569243.35,4475954.637
+173,584,584,584,San Jose Unified,Terrell Elementary,"3925 Pearl Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000584,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13566322.36,4476904.421
+174,585,585,585,San Jose Unified,Willow Glen High,2001 Cottle Rd.. San Jose,"Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000585,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13559154.45,4474406.237
+175,586,586,586,San Jose Unified,Booksin Elementary,"1590 Dry Creek Rd., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,6,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000586,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13570559.07,4479385.191
+176,587,587,587,San Jose Unified,Carson Elementary,"4245 Meg Dr., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,10,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000587,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13564863.49,4476815.748
+177,588,588,588,San Jose Unified,Gardner Elementary,"502 Illinois Ave., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,3,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000588,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13569372.64,4483993.304
+178,589,589,589,San Jose Unified,Hacienda Elementary,"1290 Kimberly Dr., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000589,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13568054.03,4476763.991
+179,590,590,590,San Jose Unified,John Muir Middle,"1260 Branham Ln., San Jose","Monday through Friday
+
+
+
+de lunes a viernes",10:30 a.m.-11:30 a.m.,March 17th until school is back in session,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.sjusd.org/docs/health_wellness/SJUSD-Free-Breakfast-Lunch-Program.pdf,San Jose,9,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000590,Free grab and go lunches and breakfasts for any age.  Look for the SCHOOL BUS,-13567923.62,4475470.241
+180,591,591,591,Mountain View Whisman,Mistral Elementary,"505 Escuela Ave., Mountain View",Monday through Friday,11:30 a.m. to 1:00 p.m.,March 16th through April 3rd,Lunch and Breakfast,School,Closed,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.mvwsd.org/cms/One.aspx?portalId=418858&pageId=14056991,Mountain View,0,1588782426000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000591,"Meal service closed Friday, April 10. Food for April 10 will be given to families on April 9.",-13591524.52,4494400.74
+181,592,592,592,Summit Public Schools,Summit Rainer High,"1750 S White Rd, San Jose","Monday through Friday
+
+
+de lunes a viernes","Denali Middle School – 8:30 am – 10:30 am ; Denali High School, Rainer, and Tahoma  – 10:00 am – 12:00 pm",March 16th-ongoing,Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,5,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000592,Drive through,-13559404.39,4487625.391
+182,593,593,593,Summit Public Schools,Summit Tahoma HIgh,"285 Blossom Hill Rd, San Jose","Monday through Friday
+
+
+de lunes a viernes","Denali Middle School – 8:30 am – 10:30 am ; Denali High School, Rainer, and Tahoma  – 10:00 am – 12:00 pm",March 16th-ongoing,Breakfast and Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,,San Jose,2,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000593,Drive through,-13560941.41,4474563.269
+183,594,594,594,East Side Union HSD,Vally Palms Apartment Complex,"2155 Lanai Ave., San Jose","Monday through Friday
+
+
+de lunes a viernes",12:00 to 1:00 p.m.,"March 16th through duration of school closure
+
+En curso hasta el cierre de la escuela",Lunch,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,http://www.esuhsd.org/documents/Home%20Page/Free%20Meals%20During%20School%20Closure%20Period%20-COVID-19-%2003-16-20.pdf,San Jose,7,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000594,There will be a drive up service. Parents can get specific service location information on the school website. One meal per day for children 18 and younger.,-13562398.25,4484252.304
+184,595,595,595,Alum Rock Union SD,Ocala STEAM Academy,"2800 Ocala Ave, San Jose, CA","Monday through Thursday
+
+
+De lunes a jueves",11:00 a.m. to 1:00 p.m.,On-going through school June 9th,Lunch and Breakfast,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://resources.finalsite.net/images/v1584407264/arusdorg/ctuat3itibpp3impkobc/FamilyLetter3-6-20.pdf,San Jose,8,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000595,Curbside pickup or walk through.,-13560515.19,4486851.404
+185,596,596,596,Cupertino Union,Meyerholz Elementary School,"6990 Melvin Drive, San Jose",Monday's and Thursday's,11:00 a.m. to 1:00 p.m.,"On-going Meals through school closure
+
+En curso hasta el cierre de la escuela",,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cusdk8.org/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=35&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=27143&PageID=1,San Jose,1,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000596,"Monday |  Pick up meals for 3 days Breakfast and lunch for Monday, Tuesday and Wednesday Thursday  |  Pick up meals for 2 days Breakfast and lunch for Thursday and Friday",-13584025.57,4482042.884
+186,597,597,597,Cupertino Union,Stocklmeir Elementary School,"592 Dunholme Way, Sunnyvale, CA",Monday's and Thursday's,11:00 a.m. to 1:00 p.m.,"On-going Meals through school closure
+
+En curso hasta el cierre de la escuela",,School,Open,The school meal distribution program provides food for low-income families whose children depend on the lunch or breakfast they get from the cafeteria.,,,https://www.cusdk8.org/site/default.aspx?PageType=3&DomainID=4&ModuleInstanceID=35&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108&RenderLoc=0&FlexDataID=27143&PageID=1,Sunnyvale,0,1588782425000,FME,*updated 5.4.20 at 4:12 p.m.,EOC-FCMS-0000000597,"Monday |  Pick up meals for 3 days Breakfast and lunch for Monday, Tuesday and Wednesday Thursday  |  Pick up meals for 2 days Breakfast and lunch for Thursday and Friday",-13584134.63,4487210.475

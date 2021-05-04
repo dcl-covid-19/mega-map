@@ -1,0 +1,97 @@
+---
+title: "San Mateo Resources"
+output: html_document
+---
+
+# San Mateo County Food Resources map
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(httr)
+library(googlesheets4)
+```
+
+## Fetch data from Zonehaven
+The original map lives here: https://community.zonehaven.com/. We are going to make get requests to the Zonehaven API to filter for different types of locations.
+```{r}
+zonehaven_URL <- "https://cluster.alpha.zonehaven.com/geoserver/zonehaven/wfs"
+```
+
+```{r}
+## These are the stk_type queries that the different buttons on the map issue.
+# queries <- c(
+#   medical = "('hospitals','urgent_care','testing_facilities','pharmacies','medical')",
+#   social_services = "('social_services')",
+#   food = "('food')",
+#   parks_recreation = "('park_rec')",
+#   pet_services = "('pet_services')",
+#   home_auto = "('home_auto')",
+#   financial_legal = "('financial_legal')",
+#   other = "('other')"
+# )
+
+## Use this if you want all data
+cql_filter <- str_interp("county_id=2")
+## Use this if you want only certain stk_types
+# cql_filter <- str_interp("county_id=2 and stk_type IN ${queries[['food']]}")
+
+response <- GET(
+  zonehaven_URL, 
+  query = list(
+    service = "wfs",
+    version = "2.0.0",
+    request = "GetFeature",
+    typeName = "stk_view",
+    outputFormat = "application/json",
+    cql_filter = cql_filter
+  )
+)
+```
+
+## Convert JSON response to tibble
+The response gives us a list of "Features", which each have a "properties" field, which is itself a list of key-value pairs about a location.
+```{r}
+body <- content(response, "parsed")
+
+convert_properties_to_df <- function(.x) {
+  properties <- .x$properties
+  # Collapse bbox list of coordinates to string
+  properties$bbox <- str_c(properties$bbox, collapse = ', ')
+  
+  map(properties, ~ . %||% NA_character_) %>% # Replace NULL with NA
+    as_tibble()
+}
+
+df <- body$features %>% 
+  map_dfr(convert_properties_to_df)
+```
+
+## Clean data
+```{r}
+cleaned_raw <- df %>% 
+  mutate_if(is.character, list(~ na_if(., ""))) %>% 
+  mutate_if(is.character, list(~ na_if(., "-"))) %>% 
+  mutate_if(is.character, list(~ na_if(., "n.a."))) %>% 
+  mutate_if(is.character, list(~ na_if(., "unknown"))) %>% 
+  mutate_if(is.character, list(~ na_if(., "Not available"))) %>% 
+  mutate_at(c("stk_city", "stk_address"), ~str_to_title(.))
+```
+
+## Export data (two options)
+
+### Export to Google Sheets
+```{r}
+data <- cleaned_raw
+sheet_name <- 'all raw'
+
+doc <- gs4_find("San Mateo County Resources Map, raw data") %>% 
+  gs4_get()
+
+sheet_add(ss = doc, sheet = sheet_name)
+sheet_write(data = data, ss = doc, sheet = sheet_name)
+```
+
+### Export to rds
+```{r}
+write_rds(cleaned_raw, path = str_interp('san_mateo_raw.rds'))
+```

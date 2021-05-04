@@ -1,0 +1,131 @@
+translation_id,ar
+about.close,قريب
+about.contact,اتصل بنا
+about.contactus.email,البريد الإلكتروني
+about.contactus.info,هذه الصفحة مدعومة من {0} من {1}. للأسئلة ، يرجى الاتصال بنا عبر البريد الإلكتروني على {2}.
+about.devhelp.addbusiness,إضافة عمل
+about.devhelp.addinfo,استخدم نماذجنا عبر الإنترنت لـ {0} أو {1}.
+about.devhelp.becomeambassador,كن سفير مجتمع
+about.devhelp.conduct,مدونة قواعد السلوك
+about.devhelp.devnote,مطورو البرامج - ابحث عن {0} و {1} على GitHub.
+about.devhelp.dupsite,بدلاً من ذلك ، يمكنك تكرار موقع لولتك.
+about.devhelp.info,هذا مشروع مفتوح المصدر ، تم بناؤه للمشاركة والتوسع في المجتمعات الأخرى.
+about.devhelp.source,مصدر الرمز
+about.devhelp.support,ادعم جيرانك والشركات المحلية - ساعدنا على النمو!
+about.devhelp.updatebusiness,تحديث إدخال موجود
+about.getinvolved,شارك
+about.info,تستفيد قاعدة بياناتنا من الموارد من المعلومات التي تجمعها هذه المنظمات:
+about.linktext,معلومات عنا
+about.orgs.bureau,مكتب زوار تشابل هيل / مقاطعة أورانج
+about.orgs.cfa,كود لأمريكا
+about.orgs.chb,لواء تشابل هيل
+about.orgs.farmstewards,جمعية رعاية مزرعة كارولينا
+about.orgs.localistnc,#LocalListNC
+about.orgs.partnership,شراكة وسط تشابل هيل
+about.partners,مصادر المعلومات
+about.title,عن هذا الموقع
+category.childcare,رعاية الطفل
+category.family,وجبة عائلية جاهزة | وجبات عائلية جاهزة
+category.farm,سوق المزارع أو المزارع | أسواق المزارع والمزارعين
+category.grocery,بقالة |
+category.meal,وجبة مجانية | وجبات مجانية
+category.petsupplies,مستلزمات الحيوانات الأليفة
+category.pharmacy,الصيدلية |
+category.restaurant,المطاعم |
+category.school,وجبة مدرسية |
+dayofweek.any,أي
+dayofweek.friday,يوم الجمعة
+dayofweek.monday,الإثنين
+dayofweek.saturday,يوم السبت
+dayofweek.sunday,الأحد
+dayofweek.thursday,الخميس
+dayofweek.tuesday,الثلاثاء
+dayofweek.wednesday,الأربعاء
+label.address,عنوان
+label.allweek,كل الاسبوع
+label.backtolist,الرجوع للقائمة
+label.close,قريب
+label.closed,مغلق
+label.closed-on,أغلقت يوم
+label.closed-today,مغلق اليوم
+label.closedonday,مغلق (في اليوم المحدد الحالي)
+label.curbside_pickup,البيك اب
+label.delivery,توصيل
+label.discount_medical,خصم عامل طبي | تخفيضات عامل طبي
+label.drive_thru,الطلب من المركبة
+label.email,البريد الإلكتروني
+label.email_lowercase,البريد الإلكتروني
+label.farmers_market,سوق المزارعين |
+label.farm_pick_up,الاستلام من المزرعة
+label.free_groceries,موقع بقالة مجاني | مواقع بقالة مجانية
+label.freemeals,موقع وجبة مجانية | مواقع وجبات مجانية
+label.free_produce,موقع إنتاج مجاني | مواقع إنتاج مجاني
+label.require_child,يحتاج الطفل أن يكون حاضرا
+label.must_show_id,يجب إظهار الهوية
+label.all_children,خدمة جميع الأطفال
+label.enrolled_children,فقط الطلاب المسجلين في المنطقة
+label.ballot_outdoor,إسقاط الاقتراع في الهواء الطلق
+label.ballot_indoor,إسقاط الاقتراع الداخلي
+label.twentyfourhrs,مفتوحة 24 ساعة
+health.med_testing,اختبار COVID
+health.med_primary_care,الرعاية الصحية الأولية
+health.med_pediatrics,طب الأطفال
+health.med_senior,رعاية كبار السن
+health.med_women,رعاية صحة المرأة
+health.med_urgent_care,الرعاية العاجلة
+health.med_dental,العناية بالأسنان
+health.med_vision,العناية بالرؤيا
+health.med_pharmacy,مقابل
+health.med_mental_health,الرعاية الصحية النفسية
+health.med_hotline,الخط الساخن
+health.med_addiction,دعم الإدمان والتعافي
+health.med_domestic_violence,دعم ضحايا العنف المنزلي
+category.cash_assistance,المساعدة النقدية
+label.fin_grocery,النقدية لمحلات البقالة
+label.fin_housing,كاش للايجار
+label.fin_legal,النقد مقابل الرسوم القانونية
+label.fin_medical,نقدا مقابل الرسوم الطبية
+label.fin_utilities,النقدية للمرافق
+label.freefood,موقع طعام مجاني | مواقع طعام مجانية
+label.instructions,تعليمات
+label.mapkey,مفتاح الخريطة
+label.meal_public,وجبات مفتوحة للجمهور
+label.meal_student,وجبات الطلاب
+label.must_preorder,يجب الطلب المسبق
+label.normalhours,ساعات العمل العادية
+label.notes,ملاحظات
+label.offers,عروض
+label.open,افتح
+label.openinghours,ساعات العمل
+label.order_online,اطلب وادفع عبر الإنترنت
+label.phone,هاتف
+label.selectacategory,اختر تصنيف...
+label.selected,المحدد
+label.seniorhours,ساعات كبار
+label.special_hours,ساعات تسوق كبار
+label.website,موقع الكتروني
+languages.ar,عربى
+languages.en,الإنجليزية
+languages.es,الأسبانية
+languages.fr,الفرنسية
+languages.ja,اليابانية
+languages.ko,الكورية
+languages.zh,الصينية المبسطة
+sidebar.close-panel,أغلق لوحة البحث
+sidebar.info-end-text,، يمكننا توسيع تغطيتنا.
+sidebar.info-link-text,مساعدتك
+sidebar.open-panel,افتح لوحة البحث
+sidebar.shopsafe,من فضلك ، تسوق آمن!
+sidebar.sixfeet,ابق على مسافة 6 أقدام عند التسوق.
+sidebar.stayhome,إذا كنت مريضًا ، ابق في المنزل.
+sidebar.washhands,اغسل يديك كثيرًا.
+sidebar.what-do-you-need,ماذا تحتاج؟
+sidebar.when-do-you-need-it,متى تحتاجها؟
+title,{0} دعم COVID
+about.about-us-contact.link0,baycommunityresource@gmail.com
+about.about-us.p1.link1,unBox
+about.about-us.p2.link,NCCovid Support
+about.contact-us.p1.link,baycommunityresource@gmail.com
+about.spthanks.link0,CARTO
+about.spthanks.link1,Mapbox
+about.dataaccess.link,Big Local News
