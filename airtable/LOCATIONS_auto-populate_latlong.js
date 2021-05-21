@@ -69,9 +69,9 @@ let handleResponse = async (succeeded, json, addr) => {
         } else {
             newlat = String(json.results[0].geometry.location.lat);
             newlong = String(json.results[0].geometry.location.lng);
-            if (json.results.length > 1) {//not unique, addr is likely ambiguous
-                output.text('___ more than one lat/long returned:'+ addr);
-            }
+            //if (json.results.length > 1) {//not unique, addr is likely ambiguous
+            //    output.text('___ more than one lat/long returned:'+ addr);
+            //}
             if (count <= MAX_PRINT_COUNT) {
                 output.text('>>>latitude='+newlat+'___longitude='+newlong);
             }
