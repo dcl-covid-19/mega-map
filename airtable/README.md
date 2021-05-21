@@ -20,7 +20,7 @@ A one-time manual setup is required in Airtable.
 Note: you can modify and enhance the scripts in Airtabel or create new ones. Please remember to apply the same changes in this repo as well in order to keep the code in sync for better collaboration. 
 
 # Other Notes
-Scripts that invokes external APIs usually require some sort of API KEY. You may need to register one yourself and paste it in the script before you can run the script. It's probably a good idea NOT to check your personal API KEY into the repo. If rwquired, add instructions in the scripts on how to obtain the API KEY and where to paste it in the scripts. 
+Scripts that invokes external APIs usually require some sort of API KEY. You may need to register one yourself and paste it in the script before you can run the script. It's probably a good idea NOT to check your personal API KEY into the repo. If required, add instructions in the scripts on how to obtain the API KEY and where to paste it in the scripts. 
 
   
 
